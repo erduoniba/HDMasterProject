@@ -13,7 +13,26 @@
 		049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0EC1CD0527C0021599C /* Main.storyboard */; };
 		049DC0F01CD0527C0021599C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0EF1CD0527C0021599C /* Assets.xcassets */; };
 		049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */; };
+		049DC13B1CD05F480021599C /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC12B1CD057260021599C /* HDSubProjectOne.framework */; };
+		049DC13C1CD05F480021599C /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1311CD0572B0021599C /* HDSubProjectTwo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		049DC12A1CD057260021599C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049DC1261CD057260021599C /* HDSubProjectOne.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 049DC1041CD052B70021599C;
+			remoteInfo = HDSubProjectOne;
+		};
+		049DC1301CD0572B0021599C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049DC12C1CD0572B0021599C /* HDSubProjectTwo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 049DC1191CD052CB0021599C;
+			remoteInfo = HDSubProjectTwo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		049DC0E01CD0527C0021599C /* HDMasterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDMasterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +45,8 @@
 		049DC0EF1CD0527C0021599C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049DC0F21CD0527C0021599C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049DC0F41CD0527C0021599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049DC1261CD057260021599C /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = ../../../HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = "<group>"; };
+		049DC12C1CD0572B0021599C /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectTwo.xcodeproj; path = ../../../HDSubProjectTwo/HDSubProjectTwo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049DC13B1CD05F480021599C /* HDSubProjectOne.framework in Frameworks */,
+				049DC13C1CD05F480021599C /* HDSubProjectTwo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +81,8 @@
 		049DC0E21CD0527C0021599C /* HDMasterProject */ = {
 			isa = PBXGroup;
 			children = (
+				049DC1241CD057030021599C /* HDSubProjectOne */,
+				049DC1251CD0571E0021599C /* HDSubProjectTwo */,
 				049DC0E61CD0527C0021599C /* AppDelegate.h */,
 				049DC0E71CD0527C0021599C /* AppDelegate.m */,
 				049DC0E91CD0527C0021599C /* ViewController.h */,
@@ -77,6 +102,38 @@
 				049DC0E41CD0527C0021599C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		049DC1241CD057030021599C /* HDSubProjectOne */ = {
+			isa = PBXGroup;
+			children = (
+				049DC1261CD057260021599C /* HDSubProjectOne.xcodeproj */,
+			);
+			path = HDSubProjectOne;
+			sourceTree = "<group>";
+		};
+		049DC1251CD0571E0021599C /* HDSubProjectTwo */ = {
+			isa = PBXGroup;
+			children = (
+				049DC12C1CD0572B0021599C /* HDSubProjectTwo.xcodeproj */,
+			);
+			path = HDSubProjectTwo;
+			sourceTree = "<group>";
+		};
+		049DC1271CD057260021599C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049DC12B1CD057260021599C /* HDSubProjectOne.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		049DC12D1CD0572B0021599C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				049DC1311CD0572B0021599C /* HDSubProjectTwo.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,12 +181,39 @@
 			mainGroup = 049DC0D71CD0527C0021599C;
 			productRefGroup = 049DC0E11CD0527C0021599C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 049DC1271CD057260021599C /* Products */;
+					ProjectRef = 049DC1261CD057260021599C /* HDSubProjectOne.xcodeproj */;
+				},
+				{
+					ProductGroup = 049DC12D1CD0572B0021599C /* Products */;
+					ProjectRef = 049DC12C1CD0572B0021599C /* HDSubProjectTwo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				049DC0DF1CD0527C0021599C /* HDMasterProject */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		049DC12B1CD057260021599C /* HDSubProjectOne.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HDSubProjectOne.framework;
+			remoteRef = 049DC12A1CD057260021599C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		049DC1311CD0572B0021599C /* HDSubProjectTwo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HDSubProjectTwo.framework;
+			remoteRef = 049DC1301CD0572B0021599C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		049DC0DE1CD0527C0021599C /* Resources */ = {
@@ -265,6 +349,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HDMasterProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					../HDSubProjectOne/,
+					../HDSubProjectTwo/,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -276,6 +365,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HDMasterProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					../HDSubProjectOne/,
+					../HDSubProjectTwo/,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

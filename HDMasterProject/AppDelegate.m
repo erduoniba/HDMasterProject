@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import <HDSubProjectOne/HDSubProjectOne.h>
+#import <HDSubProjectTwo/HDSubProjectTwo.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [HDSubProjectMethodOne hdSubProjectMethodOne];
+    [HDSubProjectMethodTwo hdSubProjectMethodTwo];
+    
     return YES;
 }
 

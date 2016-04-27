@@ -1,0 +1,6 @@
+[submodule "HDSubProjectTwo"]
+	path = HDSubProjectTwo
+	url = https://github.com/erduoniba/HDSubProjectTwo.git
+[submodule "HDSubProjectOne"]
+	path = HDSubProjectOne
+	url = https://github.com/erduoniba/HDSubProjectOne.git
