@@ -13,21 +13,19 @@
 		049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0EC1CD0527C0021599C /* Main.storyboard */; };
 		049DC0F01CD0527C0021599C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0EF1CD0527C0021599C /* Assets.xcassets */; };
 		049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */; };
-		049DC13B1CD05F480021599C /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC12B1CD057260021599C /* HDSubProjectOne.framework */; };
-		049DC13C1CD05F480021599C /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1311CD0572B0021599C /* HDSubProjectTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		049DC12A1CD057260021599C /* PBXContainerItemProxy */ = {
+		049DC1431CD069170021599C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 049DC1261CD057260021599C /* HDSubProjectOne.xcodeproj */;
+			containerPortal = 049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 049DC1041CD052B70021599C;
 			remoteInfo = HDSubProjectOne;
 		};
-		049DC1301CD0572B0021599C /* PBXContainerItemProxy */ = {
+		049DC1491CD0691B0021599C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 049DC12C1CD0572B0021599C /* HDSubProjectTwo.xcodeproj */;
+			containerPortal = 049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 049DC1191CD052CB0021599C;
 			remoteInfo = HDSubProjectTwo;
@@ -45,8 +43,8 @@
 		049DC0EF1CD0527C0021599C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049DC0F21CD0527C0021599C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049DC0F41CD0527C0021599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		049DC1261CD057260021599C /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = ../../../HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = "<group>"; };
-		049DC12C1CD0572B0021599C /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectTwo.xcodeproj; path = ../../../HDSubProjectTwo/HDSubProjectTwo.xcodeproj; sourceTree = "<group>"; };
+		049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = SOURCE_ROOT; };
+		049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectTwo.xcodeproj; path = HDSubProjectTwo/HDSubProjectTwo.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049DC13B1CD05F480021599C /* HDSubProjectOne.framework in Frameworks */,
-				049DC13C1CD05F480021599C /* HDSubProjectTwo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +103,7 @@
 		049DC1241CD057030021599C /* HDSubProjectOne */ = {
 			isa = PBXGroup;
 			children = (
-				049DC1261CD057260021599C /* HDSubProjectOne.xcodeproj */,
+				049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */,
 			);
 			path = HDSubProjectOne;
 			sourceTree = "<group>";
@@ -115,23 +111,23 @@
 		049DC1251CD0571E0021599C /* HDSubProjectTwo */ = {
 			isa = PBXGroup;
 			children = (
-				049DC12C1CD0572B0021599C /* HDSubProjectTwo.xcodeproj */,
+				049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */,
 			);
 			path = HDSubProjectTwo;
 			sourceTree = "<group>";
 		};
-		049DC1271CD057260021599C /* Products */ = {
+		049DC1401CD069170021599C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				049DC12B1CD057260021599C /* HDSubProjectOne.framework */,
+				049DC1441CD069170021599C /* HDSubProjectOne.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		049DC12D1CD0572B0021599C /* Products */ = {
+		049DC1461CD0691B0021599C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				049DC1311CD0572B0021599C /* HDSubProjectTwo.framework */,
+				049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,12 +179,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 049DC1271CD057260021599C /* Products */;
-					ProjectRef = 049DC1261CD057260021599C /* HDSubProjectOne.xcodeproj */;
+					ProductGroup = 049DC1401CD069170021599C /* Products */;
+					ProjectRef = 049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */;
 				},
 				{
-					ProductGroup = 049DC12D1CD0572B0021599C /* Products */;
-					ProjectRef = 049DC12C1CD0572B0021599C /* HDSubProjectTwo.xcodeproj */;
+					ProductGroup = 049DC1461CD0691B0021599C /* Products */;
+					ProjectRef = 049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -199,18 +195,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		049DC12B1CD057260021599C /* HDSubProjectOne.framework */ = {
+		049DC1441CD069170021599C /* HDSubProjectOne.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = HDSubProjectOne.framework;
-			remoteRef = 049DC12A1CD057260021599C /* PBXContainerItemProxy */;
+			remoteRef = 049DC1431CD069170021599C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		049DC1311CD0572B0021599C /* HDSubProjectTwo.framework */ = {
+		049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = HDSubProjectTwo.framework;
-			remoteRef = 049DC1301CD0572B0021599C /* PBXContainerItemProxy */;
+			remoteRef = 049DC1491CD0691B0021599C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
