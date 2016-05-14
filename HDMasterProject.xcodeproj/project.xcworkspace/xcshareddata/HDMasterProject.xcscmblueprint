@@ -1,18 +1,24 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F2690220C970BCFB50D5FC87DBEA2F88B8170E31",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F2690220C970BCFB50D5FC87DBEA2F88B8170E31+++4DC657D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "F2690220C970BCFB50D5FC87DBEA2F88B8170E31" : 0,
-    "475B8B659E932D54189B50E576B37A5BF8A47D30" : 0,
-    "C5B8843F3824A8969CF6EC27564F973D58B616D4" : 0
+    "475B8B659E932D54189B50E576B37A5BF8A47D30+++0908C1B" : 0,
+    "F2690220C970BCFB50D5FC87DBEA2F88B8170E31+++4DC657D" : 0,
+    "C5B8843F3824A8969CF6EC27564F973D58B616D4+++F6EA6BD" : 0,
+    "C5B8843F3824A8969CF6EC27564F973D58B616D4+++276A068" : 0,
+    "475B8B659E932D54189B50E576B37A5BF8A47D30+++7154450" : 0,
+    "475B8B659E932D54189B50E576B37A5BF8A47D30+++CBFF6C9" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "329DDDC7-0FCC-4A0C-BDE8-9292D75ECD48",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "F2690220C970BCFB50D5FC87DBEA2F88B8170E31" : "HDMasterProject\/",
-    "475B8B659E932D54189B50E576B37A5BF8A47D30" : "HDSubProjectOne\/",
-    "C5B8843F3824A8969CF6EC27564F973D58B616D4" : "HDSubProjectTwo\/"
+    "475B8B659E932D54189B50E576B37A5BF8A47D30+++0908C1B" : "HDSubProjectOne\/",
+    "F2690220C970BCFB50D5FC87DBEA2F88B8170E31+++4DC657D" : "HDMasterProject\/",
+    "C5B8843F3824A8969CF6EC27564F973D58B616D4+++F6EA6BD" : "HDMasterProject\/HDSubProjectTwo\/",
+    "C5B8843F3824A8969CF6EC27564F973D58B616D4+++276A068" : "HDSubProjectTwo\/",
+    "475B8B659E932D54189B50E576B37A5BF8A47D30+++7154450" : "HDSubProjectOne\/",
+    "475B8B659E932D54189B50E576B37A5BF8A47D30+++CBFF6C9" : "HDMasterProject\/HDSubProjectOne\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "HDMasterProject",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -21,22 +27,32 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/erduoniba\/HDSubProjectOne.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "475B8B659E932D54189B50E576B37A5BF8A47D30"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "475B8B659E932D54189B50E576B37A5BF8A47D30+++0908C1B"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/erduoniba\/HDSubProjectOne.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "475B8B659E932D54189B50E576B37A5BF8A47D30"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "475B8B659E932D54189B50E576B37A5BF8A47D30+++7154450"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/erduoniba\/HDSubProjectOne.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "475B8B659E932D54189B50E576B37A5BF8A47D30+++CBFF6C9"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/erduoniba\/HDSubProjectTwo.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C5B8843F3824A8969CF6EC27564F973D58B616D4"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C5B8843F3824A8969CF6EC27564F973D58B616D4+++276A068"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/erduoniba\/HDSubProjectTwo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C5B8843F3824A8969CF6EC27564F973D58B616D4+++F6EA6BD"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/erduoniba\/HDMasterProject.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2690220C970BCFB50D5FC87DBEA2F88B8170E31"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2690220C970BCFB50D5FC87DBEA2F88B8170E31+++4DC657D"
     }
   ]
 }
