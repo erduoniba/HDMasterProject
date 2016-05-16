@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "HDMessageWaysViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSMutableArray *dataArr;
 
 @end
 
@@ -17,51 +20,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self performSelectorHD:@selector(doSomeThingOne: two: three:), @(1), @(2), @(4)];
-}
-
-- (void)performSelectorHD:(SEL)aSeletor, ...{
-    
-    if (![self respondsToSelector:aSeletor]) {
-        return ;
-    }
-    
-    NSMethodSignature *ms = [self methodSignatureForSelector:aSeletor];
-    if (!ms) {
-        return ;
-    }
-    
-    NSInvocation *inv = [NSInvocation invocationWithMethodSignature:ms];
-    if (!inv) {
-        return ;
-    }
-    
-    inv.target = self;
-    inv.selector = aSeletor;
-    NSUInteger totalArgs = ms.numberOfArguments;
-    
-    va_list arglist;
-    va_start(arglist, aSeletor);
-    
-    // 注意：1、这里设置参数的Index 需要从2开始，因为前两个被selector和target占用。
-    for (int i=2; i<totalArgs; i++) {
-
-        id argument = va_arg(arglist, id);
-        NSLog(@"%@", argument);
-        
-        [inv setArgument:&argument atIndex:i];
-    }
-    
-    [inv retainArguments];
-    [inv invoke];
-}
-
-- (void)doSomeThingOne:(NSNumber *)n1 two:(NSNumber *)n2 three:(NSNumber *)n3{
     
 }
 
-- (void)doSomeThing{
-    
+- (NSMutableArray *) dataArr{
+    if (!_dataArr) {
+        _dataArr = [NSMutableArray array];
+        [_dataArr addObject:@"HDMessageWaysViewController"];
+    }
+    return _dataArr;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArr.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"hd_cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"hd_cell"];
+    }
+    cell.textLabel.text = _dataArr[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    Class vcClass = NSClassFromString(_dataArr[indexPath.row]);
+    UIViewController *nextVC = [vcClass new];
+    [self.navigationController pushViewController:nextVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

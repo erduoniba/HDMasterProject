@@ -1,16 +1,13 @@
 //
-//  ViewController.h
+//  HDMessageWays.h
 //  HDMasterProject
 //
-//  Created by Harry on 16/4/27.
+//  Created by Harry on 16/5/16.
 //  Copyright © 2016年 HarryDeng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface HDMessageWaysViewController : UIViewController
 
 @end
-

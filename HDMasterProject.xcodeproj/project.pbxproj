@@ -13,6 +13,8 @@
 		049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0EC1CD0527C0021599C /* Main.storyboard */; };
 		049DC0F01CD0527C0021599C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0EF1CD0527C0021599C /* Assets.xcassets */; };
 		049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */; };
+		04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */; };
+		04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,10 @@
 		049DC0F41CD0527C0021599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = SOURCE_ROOT; };
 		049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectTwo.xcodeproj; path = HDSubProjectTwo/HDSubProjectTwo.xcodeproj; sourceTree = SOURCE_ROOT; };
+		04BD82A01CE96AD900943C42 /* HDMessageWaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMessageWaysViewController.h; sourceTree = "<group>"; };
+		04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMessageWaysViewController.m; sourceTree = "<group>"; };
+		04BD82A31CE96B4D00943C42 /* NSObject+Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Messages.h"; sourceTree = "<group>"; };
+		04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Messages.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		049DC0E21CD0527C0021599C /* HDMasterProject */ = {
 			isa = PBXGroup;
 			children = (
+				04BD829D1CE96AB700943C42 /* HDMessageWays */,
 				049DC1241CD057030021599C /* HDSubProjectOne */,
 				049DC1251CD0571E0021599C /* HDSubProjectTwo */,
 				049DC0E61CD0527C0021599C /* AppDelegate.h */,
@@ -130,6 +137,17 @@
 				049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		04BD829D1CE96AB700943C42 /* HDMessageWays */ = {
+			isa = PBXGroup;
+			children = (
+				04BD82A01CE96AD900943C42 /* HDMessageWaysViewController.h */,
+				04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */,
+				04BD82A31CE96B4D00943C42 /* NSObject+Messages.h */,
+				04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */,
+			);
+			path = HDMessageWays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +250,8 @@
 				049DC0EB1CD0527C0021599C /* ViewController.m in Sources */,
 				049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
+				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
+				04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
