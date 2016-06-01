@@ -41,6 +41,8 @@
         [inv setArgument:&argument atIndex:i];
     }
     
+    va_end(arglist);
+    
     [inv retainArguments];
     [inv invoke];
 }

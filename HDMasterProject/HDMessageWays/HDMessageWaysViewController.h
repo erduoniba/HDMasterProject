@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+///< 测试可变参数 ... 用 va_list 获取
 @interface HDMessageWaysViewController : UIViewController
 
 @end

@@ -27,6 +27,7 @@
     if (!_dataArr) {
         _dataArr = [NSMutableArray array];
         [_dataArr addObject:@"HDMessageWaysViewController"];
+        [_dataArr addObject:@"HDProxyDemoViewController"];
     }
     return _dataArr;
 }

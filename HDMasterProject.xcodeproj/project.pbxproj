@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0428C4151CFD8BAC001F9D6F /* HDProxyDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428C4141CFD8BAC001F9D6F /* HDProxyDemoViewController.m */; };
+		0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428C4171CFD8C43001F9D6F /* HDProxy.m */; };
+		0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428C41A1CFD8C5E001F9D6F /* HDProxyModel.m */; };
+		0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428C41E1CFDA445001F9D6F /* HDDog.m */; };
+		0428C4221CFDA498001F9D6F /* HDCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428C4211CFDA498001F9D6F /* HDCat.m */; };
+		0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428C4261CFDA4F7001F9D6F /* HDAnimalProxy.m */; };
 		049DC0E51CD0527C0021599C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DC0E41CD0527C0021599C /* main.m */; };
 		049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DC0E71CD0527C0021599C /* AppDelegate.m */; };
 		049DC0EB1CD0527C0021599C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DC0EA1CD0527C0021599C /* ViewController.m */; };
@@ -35,6 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0428C4131CFD8BAC001F9D6F /* HDProxyDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDProxyDemoViewController.h; sourceTree = "<group>"; };
+		0428C4141CFD8BAC001F9D6F /* HDProxyDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDProxyDemoViewController.m; sourceTree = "<group>"; };
+		0428C4161CFD8C43001F9D6F /* HDProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDProxy.h; sourceTree = "<group>"; };
+		0428C4171CFD8C43001F9D6F /* HDProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDProxy.m; sourceTree = "<group>"; };
+		0428C4191CFD8C5E001F9D6F /* HDProxyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDProxyModel.h; sourceTree = "<group>"; };
+		0428C41A1CFD8C5E001F9D6F /* HDProxyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDProxyModel.m; sourceTree = "<group>"; };
+		0428C41C1CFDA425001F9D6F /* HDAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAnimal.h; sourceTree = "<group>"; };
+		0428C41D1CFDA445001F9D6F /* HDDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDDog.h; sourceTree = "<group>"; };
+		0428C41E1CFDA445001F9D6F /* HDDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDDog.m; sourceTree = "<group>"; };
+		0428C4201CFDA498001F9D6F /* HDCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDCat.h; sourceTree = "<group>"; };
+		0428C4211CFDA498001F9D6F /* HDCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDCat.m; sourceTree = "<group>"; };
+		0428C4251CFDA4F7001F9D6F /* HDAnimalProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAnimalProxy.h; sourceTree = "<group>"; };
+		0428C4261CFDA4F7001F9D6F /* HDAnimalProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAnimalProxy.m; sourceTree = "<group>"; };
 		049DC0E01CD0527C0021599C /* HDMasterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDMasterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049DC0E41CD0527C0021599C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		049DC0E61CD0527C0021599C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +83,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0428C4121CFD8B7D001F9D6F /* HDProxyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0428C4131CFD8BAC001F9D6F /* HDProxyDemoViewController.h */,
+				0428C4141CFD8BAC001F9D6F /* HDProxyDemoViewController.m */,
+				0428C4231CFDA4C3001F9D6F /* HDProxyOne */,
+				0428C4241CFDA4D0001F9D6F /* HDProxyTwo */,
+			);
+			path = HDProxyDemo;
+			sourceTree = "<group>";
+		};
+		0428C4231CFDA4C3001F9D6F /* HDProxyOne */ = {
+			isa = PBXGroup;
+			children = (
+				0428C4161CFD8C43001F9D6F /* HDProxy.h */,
+				0428C4171CFD8C43001F9D6F /* HDProxy.m */,
+				0428C4191CFD8C5E001F9D6F /* HDProxyModel.h */,
+				0428C41A1CFD8C5E001F9D6F /* HDProxyModel.m */,
+			);
+			name = HDProxyOne;
+			sourceTree = "<group>";
+		};
+		0428C4241CFDA4D0001F9D6F /* HDProxyTwo */ = {
+			isa = PBXGroup;
+			children = (
+				0428C41C1CFDA425001F9D6F /* HDAnimal.h */,
+				0428C41D1CFDA445001F9D6F /* HDDog.h */,
+				0428C41E1CFDA445001F9D6F /* HDDog.m */,
+				0428C4201CFDA498001F9D6F /* HDCat.h */,
+				0428C4211CFDA498001F9D6F /* HDCat.m */,
+				0428C4251CFDA4F7001F9D6F /* HDAnimalProxy.h */,
+				0428C4261CFDA4F7001F9D6F /* HDAnimalProxy.m */,
+			);
+			name = HDProxyTwo;
+			sourceTree = "<group>";
+		};
 		049DC0D71CD0527C0021599C = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +138,6 @@
 		049DC0E21CD0527C0021599C /* HDMasterProject */ = {
 			isa = PBXGroup;
 			children = (
-				04BD829D1CE96AB700943C42 /* HDMessageWays */,
-				049DC1241CD057030021599C /* HDSubProjectOne */,
-				049DC1251CD0571E0021599C /* HDSubProjectTwo */,
 				049DC0E61CD0527C0021599C /* AppDelegate.h */,
 				049DC0E71CD0527C0021599C /* AppDelegate.m */,
 				049DC0E91CD0527C0021599C /* ViewController.h */,
@@ -94,6 +146,10 @@
 				049DC0EF1CD0527C0021599C /* Assets.xcassets */,
 				049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */,
 				049DC0F41CD0527C0021599C /* Info.plist */,
+				0428C4121CFD8B7D001F9D6F /* HDProxyDemo */,
+				04BD829D1CE96AB700943C42 /* HDMessageWays */,
+				049DC1241CD057030021599C /* HDSubProjectOne */,
+				049DC1251CD0571E0021599C /* HDSubProjectTwo */,
 				049DC0E31CD0527C0021599C /* Supporting Files */,
 			);
 			path = HDMasterProject;
@@ -247,10 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				049DC0EB1CD0527C0021599C /* ViewController.m in Sources */,
 				049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */,
+				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
+				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
+				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
+				0428C4151CFD8BAC001F9D6F /* HDProxyDemoViewController.m in Sources */,
 				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
+				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
 				04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
