@@ -20,13 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGFloat red = (random()%255) / 255.0;
-    CGFloat green = (random()%255) / 255.0;
-    CGFloat blue = (random()%255) / 255.0;
-    self.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
-    
-    self.title = NSStringFromClass(self.class);
-    
     [self proxyTestOne];
     
     [self proxyTestTwo];

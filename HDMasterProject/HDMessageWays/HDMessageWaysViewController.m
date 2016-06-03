@@ -19,13 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGFloat red = (random()%255) / 255.0;
-    CGFloat green = (random()%255) / 255.0;
-    CGFloat blue = (random()%255) / 255.0;
-    self.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
-    
-    self.title = NSStringFromClass(self.class);
-    
     [self doSomeThingOne:@(11) two:@(22) three:@"hd33"];
     [self performSelectorHD:@selector(doSomeThingOne: two: three:), @(111), @(222), @"hd333"];
     ((void (*)(id, SEL, NSNumber *, NSNumber *, NSString *))objc_msgSend)((id)self, @selector(doSomeThingOne:two:three:), @(1111), @(2222), @"hd3333");

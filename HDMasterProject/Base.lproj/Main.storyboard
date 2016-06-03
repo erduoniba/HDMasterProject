@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S84-QC-hYU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S84-QC-hYU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,7 +9,6 @@
         <!--HDMaster-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -19,25 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-4w-W8k">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HNC-8d-jhy">
                                 <rect key="frame" x="20" y="0.0" width="560" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="kfU-0J-w8P"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1Wo-LH-m2J"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="akM-u7-ANn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ZUg-gW-HZT"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="cnF-4w-W8k" secondAttribute="trailing" id="3qr-c5-kfJ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cnF-4w-W8k" secondAttribute="bottom" id="LhJ-BT-lb0"/>
-                            <constraint firstItem="cnF-4w-W8k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="o6R-gd-fRq"/>
-                            <constraint firstItem="cnF-4w-W8k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oIp-oj-UTZ"/>
+                            <constraint firstItem="HNC-8d-jhy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="C7Z-jt-KRv"/>
+                            <constraint firstItem="HNC-8d-jhy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="M9w-dI-DNI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HNC-8d-jhy" secondAttribute="bottom" id="Tqc-qv-tbp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HNC-8d-jhy" secondAttribute="trailing" id="zxq-68-t4J"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HDMaster" id="RQY-aN-TWJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="HNC-8d-jhy" id="zaE-0A-Ac5"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477" y="222"/>
         </scene>

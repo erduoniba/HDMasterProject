@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  HDMasterProject
+//
+//  Created by Harry on 16/6/2.
+//  Copyright © 2016年 HarryDeng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenWidth     CGRectGetWidth([UIScreen mainScreen].bounds)
+#define kScreenHeight    CGRectGetHeight([UIScreen mainScreen].bounds)
+
+#endif /* PrefixHeader_pch */

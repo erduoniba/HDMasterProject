@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "HDMessageWaysViewController.h"
+#import "HDFriendCycleViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *dataArr;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -20,7 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+}
+
+
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
     
+    _tableView.frame = self.view.bounds;
 }
 
 - (NSMutableArray *) dataArr{
@@ -28,6 +36,7 @@
         _dataArr = [NSMutableArray array];
         [_dataArr addObject:@"HDMessageWaysViewController"];
         [_dataArr addObject:@"HDProxyDemoViewController"];
+        [_dataArr addObject:@"HDFriendCycleViewController"];
     }
     return _dataArr;
 }
@@ -48,6 +57,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     Class vcClass = NSClassFromString(_dataArr[indexPath.row]);
     UIViewController *nextVC = [vcClass new];
+    
+    NSArray *titles = [NSStringFromClass(vcClass) componentsSeparatedByString:@"ViewController"];
+    if (titles.count > 0) {
+        nextVC.title = titles[0];
+    }
+    else{
+        nextVC.title = NSStringFromClass(vcClass);
+    }
+    
+    
+    CGFloat red = (arc4random()%255) / 255.0;
+    CGFloat green = (arc4random()%255) / 255.0;
+    CGFloat blue = (arc4random()%255) / 255.0;
+    nextVC.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
+    
     [self.navigationController pushViewController:nextVC animated:YES];
 }
 
