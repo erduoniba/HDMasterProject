@@ -59,7 +59,6 @@
     frame.origin.x = center.x - frame.size.width * 0.5;
     frame.origin.y = center.y - frame.size.height * 0.5;
     _progressLayer.frame = frame;
-    
 }
 
 - (void)setItem:(HDPhotoGroupItem *)item {

@@ -528,6 +528,22 @@
     return nil;
 }
 
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    
+    self.frameSize  = _toContainerView.frameSize;
+    _scrollView.frame = CGRectMake(-kPadding / 2, 0, self.frameSizeWidth + kPadding, self.frameSizeHeight);
+    _pager.frameSizeWidth = self.frameSizeWidth - 36;
+    _pager.frameSizeHeight = 10;
+    _pager.center = CGPointMake(self.frameSizeWidth / 2, self.frameSizeHeight - 18);
+    _scrollView.contentSize = CGSizeMake(_scrollView.frameSizeWidth * self.groupItems.count, _scrollView.frameSizeHeight);
+    
+    HDPhotoGroupCell *cell = [self cellForPage:self.currentPage];
+//    cell.imageView.frame = cell.bounds;
+    
+    NSLog(@"xxx : %f", self.bounds.size.width);
+}
+
 - (NSInteger)currentPage {
     NSInteger page = _scrollView.contentOffset.x / _scrollView.frameSizeWidth + 0.5;
     if (page >= _groupItems.count) page = (NSInteger)_groupItems.count - 1;
@@ -658,7 +674,8 @@ CGSize CGSizePixelCeil(CGSize size) {
                     _blurBackground.alpha = 0;
                     //_pager.alpha = 0;
                     if (moveToTop) {
-                        _scrollView.frameMaxY = 0;
+//                        _scrollView.frameMaxY = 0;
+                        _scrollView.frameOriginY = -self.frameSizeHeight;
                     } else {
                         _scrollView.frameOriginY = self.frameSizeHeight;
                     }
@@ -689,6 +706,7 @@ CGSize CGSizePixelCeil(CGSize size) {
 }
 
 
+#pragma mark - 支持的方法
 CGContextRef NYXCreateARGBBitmapContext(const size_t width, const size_t height, const size_t bytesPerRow)
 {
     /// Use the generic RGB color space

@@ -68,7 +68,6 @@ static const CGFloat dynamicImageViewOneLineCount = 3;
             __strong typeof(self) sSelf = wSelf;
             UIImage *iii = [sSelf imageByResizeToSize:CGSizeMake(imageView.frame.size.width, imageView.frame.size.height) image:image];
             imageView.image = iii;
-//            imageView.image = image;
         }];
         imageView.userInteractionEnabled = YES;
         imageView.tag = i;
