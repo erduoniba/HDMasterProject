@@ -11,6 +11,9 @@
 #import <HDSubProjectOne/HDSubProjectOne.h>
 #import <HDSubProjectTwo/HDSubProjectTwo.h>
 
+#import <JSPatch/JSPatch.h>
+#import "ViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,10 +23,98 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [JSPatch startWithAppKey:@"fa85a64ff99a5290"];
+    
+    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDpHyYFneEdiA1KmWQtr9WL7+UD\nEtqAG9eC3S1PR2ttxQs6XXMtuEEJCcsTSHazN54Q0+jZO0W1CXZABPn2wuAT44n3\nTZ9ocQP6cgFPvs0+b0eqx3Dy1sisypA8Ifr8feTDV7CVwqIrjnCdPl7qlYcpUINy\nfedwf5vAt8PhiGd8eQIDAQAB\n-----END PUBLIC KEY-----"];
+    
     [HDSubProjectMethodOne hdSubProjectMethodOne];
     [HDSubProjectMethodTwo hdSubProjectMethodTwo];
     
     return YES;
+}
+
+- (void)dispatch{
+    /*
+     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+     dispatch_group_t group = dispatch_group_create();
+     
+     dispatch_group_async(group, queue, ^{
+     [NSThread sleepForTimeInterval:3];
+     NSLog(@"Group 1");
+     });
+     
+     dispatch_group_async(group, queue, ^{
+     [NSThread sleepForTimeInterval:2];
+     NSLog(@"Group 2");
+     });
+     
+     dispatch_group_async(group, queue, ^{
+     [NSThread sleepForTimeInterval:1];
+     NSLog(@"Group 3");
+     });
+     
+     dispatch_group_notify(group, queue, ^{
+     NSLog(@"Update UI");
+     });*/
+    
+    
+    /*
+     dispatch_queue_t queue2 = dispatch_queue_create("c", DISPATCH_QUEUE_CONCURRENT);
+     dispatch_async(queue2, ^{
+     [NSThread sleepForTimeInterval:1];
+     
+     NSLog(@"dispatch_async 1");
+     });
+     
+     dispatch_async(queue2, ^{
+     [NSThread sleepForTimeInterval:2];
+     NSLog(@"dispatch_async 2");
+     });
+     
+     dispatch_barrier_async(queue2, ^{
+     NSLog(@"dispatch_barrier_async");
+     });
+     
+     dispatch_async(queue2, ^{
+     [NSThread sleepForTimeInterval:1];
+     NSLog(@"dispatch_async 3");
+     }); */
+    
+    
+    dispatch_queue_t queue =
+    dispatch_queue_create("com.renren.songzengbin",   DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        sleep(1);
+        NSLog(@"Thread1 read");
+    });
+    dispatch_async(queue, ^{
+        sleep(1.5);
+        NSLog(@"Thread2 read");
+    });
+    dispatch_async(queue, ^{
+        sleep(0.5);
+        NSLog(@"Thread3 read");
+    });
+    dispatch_barrier_async(queue, ^{
+        sleep(5);
+        NSLog(@"Thread is writing");
+    });
+    dispatch_async(queue, ^{
+        sleep(1);
+        NSLog(@"Thread4 is begin reading");
+    });
+    dispatch_async(queue, ^{
+        sleep(1);
+        NSLog(@"Thread5 is begin reading");
+    });
+}
+
+- (void)doIt{
+    NSLog(@" - do it");
+}
+
++ (void)doIt2{
+    NSLog(@" + do it");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -42,6 +133,13 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [JSPatch sync];
+    
+    [self doIt];
+    [self.class doIt2];
+    
+    [ViewController dddd];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

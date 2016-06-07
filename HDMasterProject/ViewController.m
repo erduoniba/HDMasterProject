@@ -24,6 +24,10 @@
     
 }
 
++ (void)dddd{
+    NSLog(@" +++ ddddd");
+}
+
 
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
