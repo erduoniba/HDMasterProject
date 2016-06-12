@@ -38,6 +38,11 @@
 		0428C4741D011149001F9D6F /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0428C4731D011149001F9D6F /* loading@2x.png */; };
 		0428C47D1D011BC3001F9D6F /* HDPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428C47A1D011BC3001F9D6F /* HDPhotoGroupCell.m */; };
 		0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0428C47C1D011BC3001F9D6F /* HDPhotoGroupView.m */; };
+		046B87EB1D0D23C80087D99C /* HDPulldownPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B87EA1D0D23C80087D99C /* HDPulldownPhotoViewController.m */; };
+		046B87EE1D0D23D90087D99C /* HDTouchControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B87ED1D0D23D90087D99C /* HDTouchControlView.m */; };
+		046B87F11D0D24000087D99C /* HDPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B87F01D0D24000087D99C /* HDPhotoViewController.m */; };
+		046B87F81D0D258D0087D99C /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 046B87F61D0D258D0087D99C /* 123.jpg */; };
+		046B87F91D0D258D0087D99C /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 046B87F71D0D258D0087D99C /* 222.png */; };
 		049DC0E51CD0527C0021599C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DC0E41CD0527C0021599C /* main.m */; };
 		049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DC0E71CD0527C0021599C /* AppDelegate.m */; };
 		049DC0EB1CD0527C0021599C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DC0EA1CD0527C0021599C /* ViewController.m */; };
@@ -127,6 +132,14 @@
 		0428C47A1D011BC3001F9D6F /* HDPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPhotoGroupCell.m; sourceTree = "<group>"; };
 		0428C47B1D011BC3001F9D6F /* HDPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPhotoGroupView.h; sourceTree = "<group>"; };
 		0428C47C1D011BC3001F9D6F /* HDPhotoGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPhotoGroupView.m; sourceTree = "<group>"; };
+		046B87E91D0D23C80087D99C /* HDPulldownPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPulldownPhotoViewController.h; sourceTree = "<group>"; };
+		046B87EA1D0D23C80087D99C /* HDPulldownPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPulldownPhotoViewController.m; sourceTree = "<group>"; };
+		046B87EC1D0D23D90087D99C /* HDTouchControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDTouchControlView.h; sourceTree = "<group>"; };
+		046B87ED1D0D23D90087D99C /* HDTouchControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTouchControlView.m; sourceTree = "<group>"; };
+		046B87EF1D0D24000087D99C /* HDPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPhotoViewController.h; sourceTree = "<group>"; };
+		046B87F01D0D24000087D99C /* HDPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPhotoViewController.m; sourceTree = "<group>"; };
+		046B87F61D0D258D0087D99C /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
+		046B87F71D0D258D0087D99C /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
 		049DC0E01CD0527C0021599C /* HDMasterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDMasterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049DC0E41CD0527C0021599C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		049DC0E61CD0527C0021599C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -292,6 +305,19 @@
 			path = PhotoGroupView;
 			sourceTree = "<group>";
 		};
+		046B87E61D0D23930087D99C /* HDPulldownPhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				046B87E91D0D23C80087D99C /* HDPulldownPhotoViewController.h */,
+				046B87EA1D0D23C80087D99C /* HDPulldownPhotoViewController.m */,
+				046B87EF1D0D24000087D99C /* HDPhotoViewController.h */,
+				046B87F01D0D24000087D99C /* HDPhotoViewController.m */,
+				046B87EC1D0D23D90087D99C /* HDTouchControlView.h */,
+				046B87ED1D0D23D90087D99C /* HDTouchControlView.m */,
+			);
+			path = HDPulldownPhotoViewController;
+			sourceTree = "<group>";
+		};
 		049DC0D71CD0527C0021599C = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +341,7 @@
 				049DC0E71CD0527C0021599C /* AppDelegate.m */,
 				049DC0E91CD0527C0021599C /* ViewController.h */,
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
+				046B87E61D0D23930087D99C /* HDPulldownPhotoViewController */,
 				0428C4421D003F36001F9D6F /* ThreeParts */,
 				0428C4321D002E67001F9D6F /* HDFriendCycleViewController */,
 				0428C4121CFD8B7D001F9D6F /* HDProxyDemo */,
@@ -333,6 +360,8 @@
 				04204B971D06780C0069A9FE /* JavaScriptCore.framework */,
 				04204B951D0677530069A9FE /* JSPatch.framework */,
 				0428C4731D011149001F9D6F /* loading@2x.png */,
+				046B87F61D0D258D0087D99C /* 123.jpg */,
+				046B87F71D0D258D0087D99C /* 222.png */,
 				049DC0EC1CD0527C0021599C /* Main.storyboard */,
 				049DC0EF1CD0527C0021599C /* Assets.xcassets */,
 				049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */,
@@ -470,10 +499,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046B87F91D0D258D0087D99C /* 222.png in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
 				049DC0F01CD0527C0021599C /* Assets.xcassets in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
+				046B87F81D0D258D0087D99C /* 123.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,10 +543,13 @@
 				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
 				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
 				0428C4661D003F42001F9D6F /* SDWebImageDownloaderOperation.m in Sources */,
+				046B87EB1D0D23C80087D99C /* HDPulldownPhotoViewController.m in Sources */,
 				0428C47D1D011BC3001F9D6F /* HDPhotoGroupCell.m in Sources */,
 				04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */,
 				0428C46E1D003F42001F9D6F /* UIView+WebCacheOperation.m in Sources */,
 				0428C4351D002E7F001F9D6F /* HDFriendCycleViewController.m in Sources */,
+				046B87EE1D0D23D90087D99C /* HDTouchControlView.m in Sources */,
+				046B87F11D0D24000087D99C /* HDPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

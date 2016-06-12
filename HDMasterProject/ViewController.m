@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "HDMessageWaysViewController.h"
 #import "HDFriendCycleViewController.h"
+#import "HDPulldownPhotoViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -41,6 +42,7 @@
         [_dataArr addObject:@"HDMessageWaysViewController"];
         [_dataArr addObject:@"HDProxyDemoViewController"];
         [_dataArr addObject:@"HDFriendCycleViewController"];
+        [_dataArr addObject:@"HDPulldownPhotoViewController"];
     }
     return _dataArr;
 }
