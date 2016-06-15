@@ -9,6 +9,7 @@
 #import "HDPulldownPhotoViewController.h"
 #import "HDTouchControlView.h"
 #import "HDPhotoViewController.h"
+#import "HDFriendCycleViewController.h"
 
 @interface HDPulldownPhotoViewController () <UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>{
     UITableView *tableView;
@@ -16,14 +17,65 @@
     HDTouchControlView *customView;
     
     CGFloat navHeight;
-    UIColor *navColor;
+    
+    CGFloat alpha;
 }
 
 @property (nonatomic, strong) HDPhotoViewController *photoVC;
 
+@property (nonatomic, strong) UIImage *saveImage;
+@property (nonatomic, strong) UIImageView *backgroundImageView;
+
+@property (nonatomic, strong) UIColor *saveTintColor;
+@property (nonatomic, strong) NSDictionary *saveTitleAttribute;
+@property (nonatomic, assign) UIStatusBarStyle saveBarStyle;
+@property (nonatomic, strong) UIColor *saveNavColor;
+
+//离开这个界面时候，导航栏的背景色
+@property (nonatomic, strong) UIColor *leaveNavColor;
+@property (nonatomic, strong) UIColor *leaveTintColor;
+
 @end
 
 @implementation HDPulldownPhotoViewController
+
+- (void)saveOriginState{
+    UINavigationBar *navigationBar = self.navigationController.navigationBar;
+    _backgroundImageView = navigationBar.subviews.firstObject;
+    _saveImage = _backgroundImageView.image;
+    
+    _saveNavColor = _backgroundImageView.backgroundColor;
+    _saveTintColor = navigationBar.tintColor;
+    _saveTitleAttribute = navigationBar.titleTextAttributes;
+    _saveBarStyle = [UIApplication sharedApplication].statusBarStyle;
+    
+    [navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [navigationBar setShadowImage:[UIImage new]]; //隐藏导航栏下面的线
+    
+    if (!_leaveTintColor) {
+        _leaveTintColor = [UIColor whiteColor];
+    }
+    if (!_leaveNavColor) {
+        _leaveNavColor = [UIColor colorWithRed:0.5 green:0.7 blue:1 alpha:0.3];
+    }
+    
+    NSDictionary *dic = @{
+                          NSForegroundColorAttributeName : _leaveTintColor
+                          };
+    self.navigationController.navigationBar.titleTextAttributes = dic; //修改title的属性
+    
+    self.navigationController.navigationBar.tintColor = _leaveTintColor;  //修改返回属性
+    _backgroundImageView.backgroundColor = _leaveNavColor;
+    
+    self.navigationController.navigationItem.backBarButtonItem.title = @"xx";
+}
+
+- (void)restoreOriginState{
+    [self.navigationController.navigationBar setBackgroundImage:_saveImage forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.subviews.firstObject.backgroundColor = _saveNavColor;
+    self.navigationController.navigationBar.tintColor = _saveTintColor;
+    self.navigationController.navigationBar.titleTextAttributes = _saveTitleAttribute;
+}
 
 - (void)loadView{
     
@@ -33,7 +85,10 @@
     customView = [[HDTouchControlView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     customView.navHeight = navHeight;
     self.view = customView;
+    
+    [self saveOriginState];
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,17 +121,15 @@
     [super viewWillAppear:animated];
     
     self.view.backgroundColor = [UIColor blackColor];
-    
-    navColor = self.navigationController.navigationBar.barTintColor;
-
-    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     
-    self.navigationController.navigationBar.barTintColor = navColor;
+    [self restoreOriginState];
 }
+
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 3;
@@ -109,15 +162,59 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    HDFriendCycleViewController *fVC = [HDFriendCycleViewController new];
+    fVC.title = @"朋友圈";
+    [self.navigationController pushViewController:fVC animated:YES];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    
+    if (alpha >= 1) {
+        //这个时候，字体是黑色的
+        return UIStatusBarStyleDefault;
+    }
+    else{
+        //这个时候，字体是白色的
+         return UIStatusBarStyleLightContent;
+    }
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat contentY = scrollView.contentOffset.y;
 //    NSLog(@"contentY : %0.2f", contentY);
     
-    CGFloat yy = contentY + 264;
-    CGFloat red = (255 - yy) / 255.0;
-    CGFloat green = (155 - yy) / 255.0;
-    CGFloat blue = (155 - yy) / 255.0;
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:red green:green blue:blue alpha:red];
+    CGFloat yy = contentY + 264 + 55;
+    alpha = yy / 255.0;
+    if (alpha > 1){
+        alpha = 1;
+    }
+    
+    NSLog(@"alpha : %0.2f", alpha);
+    _leaveNavColor = [UIColor colorWithRed:0.5 green:0.7 blue:1 alpha:alpha];
+    _backgroundImageView.backgroundColor = _leaveNavColor;
+    _leaveTintColor = [UIColor colorWithWhite:1-alpha alpha:1];
+    self.navigationController.navigationBar.tintColor = _leaveTintColor;
+    
+    /*
+    //setStatusBarStyle这个在iOS9中已经废弃
+    if (alpha >= 1) {
+        //这个时候，字体是黑色的 setStatusBarStyle这个在iOS9中已经废弃
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    }
+    else{
+        //这个时候，字体是白色的 setStatusBarStyle这个在iOS9中已经废弃
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    }
+     */
+
+    //这个方法可以触发 preferredStatusBarStyle 来改变状态栏
+    [self setNeedsStatusBarAppearanceUpdate];
+    
+    NSDictionary *dic = @{
+                          NSForegroundColorAttributeName : _leaveTintColor
+                          };
+    self.navigationController.navigationBar.titleTextAttributes = dic;
     
     if (!shouldScroll) {
         //tableView下拉消失时，不需要执行下面的代码
@@ -155,6 +252,11 @@
     }
 }
 
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    NSLog(@"%s", __func__);
+    return YES;
+}
 
 - (void)swipeToShowMainTView:(UIPanGestureRecognizer *)panGes{
     

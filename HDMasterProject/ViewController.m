@@ -43,6 +43,7 @@
         [_dataArr addObject:@"HDProxyDemoViewController"];
         [_dataArr addObject:@"HDFriendCycleViewController"];
         [_dataArr addObject:@"HDPulldownPhotoViewController"];
+        [_dataArr addObject:@"HDLogServiceViewController"];
     }
     return _dataArr;
 }
@@ -72,13 +73,12 @@
         nextVC.title = NSStringFromClass(vcClass);
     }
     
+    [self.navigationController pushViewController:nextVC animated:YES];
     
     CGFloat red = (arc4random()%255) / 255.0;
     CGFloat green = (arc4random()%255) / 255.0;
     CGFloat blue = (arc4random()%255) / 255.0;
     nextVC.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
-    
-    [self.navigationController pushViewController:nextVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="477" y="222"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="8AB-il-SKC">
             <objects>
-                <navigationController id="S84-QC-hYU" sceneMemberID="viewController">
+                <navigationController id="S84-QC-hYU" customClass="HDBaseNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Te-qR-qfq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
