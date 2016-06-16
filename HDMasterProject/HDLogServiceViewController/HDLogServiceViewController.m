@@ -41,6 +41,8 @@
 
 @property (nonatomic, strong) UITextView *textView;
 
+@property (nonatomic, assign) int pipeFileHandle;
+
 @end
 
 @implementation HDLogServiceViewController
@@ -62,12 +64,12 @@
     /*
      2: 通过获取手机所有的日志文件，根据该app的进程标识符来筛选该app的日志，这个也只是针对NSLog的输出，printf并没有获取
      */
-    [self logServiceTwo];
+//    [self logServiceTwo];
     
     /*
      3: 先将NSLog信息重定向到NSFileHandle中，然后监听NSFileHandle读入的通知，来获取NSLog信息
      */
-//    [self logServiceThree];
+    [self logServiceThree];
 }
 
 - (UITextView *)textView{
@@ -175,8 +177,8 @@
 - (void)redirectSTD:(int)fd{
     NSPipe * pipe = [NSPipe pipe] ;
     NSFileHandle *pipeReadHandle = [pipe fileHandleForReading] ;
-    int pipeFileHandle = [[pipe fileHandleForWriting] fileDescriptor];
-    dup2(pipeFileHandle, fd);
+    _pipeFileHandle = [[pipe fileHandleForWriting] fileDescriptor];
+    dup2(_pipeFileHandle, fd);
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(redirectNotificationHandle:)
@@ -200,6 +202,9 @@
 
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    //记得一定要还原 NSLog 的保存地址
+    dup2(STDERR_FILENO, _pipeFileHandle);
 }
 
 - (void)didReceiveMemoryWarning {
