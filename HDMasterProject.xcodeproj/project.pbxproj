@@ -50,10 +50,11 @@
 		049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DC0E71CD0527C0021599C /* AppDelegate.m */; };
 		049DC0EB1CD0527C0021599C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DC0EA1CD0527C0021599C /* ViewController.m */; };
 		049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0EC1CD0527C0021599C /* Main.storyboard */; };
-		049DC0F01CD0527C0021599C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0EF1CD0527C0021599C /* Assets.xcassets */; };
 		049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */; };
 		04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */; };
 		04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */; };
+		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
+		D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,7 +157,6 @@
 		049DC0E91CD0527C0021599C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		049DC0EA1CD0527C0021599C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		049DC0ED1CD0527C0021599C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		049DC0EF1CD0527C0021599C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049DC0F21CD0527C0021599C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049DC0F41CD0527C0021599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -172,6 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */,
+				D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */,
 				04204B9A1D0678120069A9FE /* libz.tbd in Frameworks */,
 				04204B981D06780C0069A9FE /* JavaScriptCore.framework in Frameworks */,
 				04204B961D0677530069A9FE /* JSPatch.framework in Frameworks */,
@@ -386,7 +388,6 @@
 				046B87F61D0D258D0087D99C /* 123.jpg */,
 				046B87F71D0D258D0087D99C /* 222.png */,
 				049DC0EC1CD0527C0021599C /* Main.storyboard */,
-				049DC0EF1CD0527C0021599C /* Assets.xcassets */,
 				049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */,
 				049DC0F41CD0527C0021599C /* Info.plist */,
 				049DC0E41CD0527C0021599C /* main.m */,
@@ -525,7 +526,6 @@
 				046B87F91D0D258D0087D99C /* 222.png in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
-				049DC0F01CD0527C0021599C /* Assets.xcassets in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
 				046B87F81D0D258D0087D99C /* 123.jpg in Resources */,
 			);
