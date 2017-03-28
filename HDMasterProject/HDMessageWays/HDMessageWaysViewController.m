@@ -34,7 +34,7 @@
     [self.view addSubview:vc.view];
     
     //需要和第一个参数的类型中保持一致，不然会crash
-    [self addMultipleValue:view, iview, vc.view];
+    [self addMultipleValue:view, iview, vc.view, nil];
 }
 
 - (void)doSomeThingOne:(NSNumber *)n1 two:(NSNumber *)n2 three:(NSString *)ss{
@@ -58,7 +58,6 @@
         nextValue = nil;
         nextValue = va_arg(valist, id);
     }
-
     
     //4.最后用va_end宏结束可变参数的获取.然后你就可以在函数里使用第二个参数了.如果函数有多个可变参数的,依次调用va_arg获取各个参数.
     va_end(valist);

@@ -41,10 +41,15 @@
 
 - (void)saveOriginState{
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
-    _backgroundImageView = navigationBar.subviews.firstObject;
-    _saveImage = _backgroundImageView.image;
-    
-    _saveNavColor = _backgroundImageView.backgroundColor;
+    if ([navigationBar.subviews.firstObject isKindOfClass:[UIImageView class]]) {
+        _backgroundImageView = navigationBar.subviews.firstObject;
+        _saveImage = _backgroundImageView.image;
+        _saveNavColor = _backgroundImageView.backgroundColor;
+    }
+    else {
+        //_backgroundImageView = navigationBar.subviews.firstObject;
+    }
+
     _saveTintColor = navigationBar.tintColor;
     _saveTitleAttribute = navigationBar.titleTextAttributes;
     _saveBarStyle = [UIApplication sharedApplication].statusBarStyle;
