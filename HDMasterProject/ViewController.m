@@ -7,9 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "HDMessageWaysViewController.h"
-#import "HDFriendCycleViewController.h"
-#import "HDPulldownPhotoViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -44,6 +41,9 @@
         [_dataArr addObject:@"HDFriendCycleViewController"];
         [_dataArr addObject:@"HDPulldownPhotoViewController"];
         [_dataArr addObject:@"HDLogServiceViewController"];
+        [_dataArr addObject:@"HDIMDemoVC"];
+        [_dataArr addObject:@"HDMaskLayerVC"];
+
     }
     return _dataArr;
 }

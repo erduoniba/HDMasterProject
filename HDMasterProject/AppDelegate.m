@@ -14,6 +14,17 @@
 #import <JSPatch/JSPatch.h>
 #import "ViewController.h"
 
+//https://leancloud.cn/docs/start.html
+#import <AVOSCloud/AVOSCloud.h>
+
+//https://leancloud.cn/docs/chatkit-ios.html#初始化
+#import <ChatKit/LCChatKit.h>
+
+
+static NSString *const leancloudAppId = @"0MekiRXH3vAPyw6SI3Uc6FSY-gzGzoHsz";
+static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
+
+
 @interface AppDelegate ()
 
 @end
@@ -29,6 +40,11 @@
     
     [HDSubProjectMethodOne hdSubProjectMethodOne];
     [HDSubProjectMethodTwo hdSubProjectMethodTwo];
+
+    [AVOSCloud setApplicationId:leancloudAppId clientKey:leancloudClientKey];
+
+    // 开启 LeanCloud 服务
+    [LCChatKit setAppId:leancloudAppId appKey:leancloudClientKey];
 
     return YES;
 }

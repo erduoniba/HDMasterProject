@@ -53,8 +53,14 @@
 		049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */; };
 		04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */; };
 		04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */; };
+		32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */; };
 		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
 		D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
+		D9E570081E8A331000C6C130 /* HDIMDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570071E8A331000C6C130 /* HDIMDemoVC.m */; };
+		D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */; };
+		D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */; };
+		D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */; };
+		D9E5701D1E8A7C9300C6C130 /* LCCKContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E5701C1E8A7C9300C6C130 /* LCCKContentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +171,17 @@
 		04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMessageWaysViewController.m; sourceTree = "<group>"; };
 		04BD82A31CE96B4D00943C42 /* NSObject+Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Messages.h"; sourceTree = "<group>"; };
 		04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Messages.m"; sourceTree = "<group>"; };
+		0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.release.xcconfig"; sourceTree = "<group>"; };
+		29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDMasterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D9E570061E8A331000C6C130 /* HDIMDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDIMDemoVC.h; sourceTree = "<group>"; };
+		D9E570071E8A331000C6C130 /* HDIMDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDIMDemoVC.m; sourceTree = "<group>"; };
+		D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDIMDemoVC.xib; sourceTree = "<group>"; };
+		D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubble_Sender@2x.png"; sourceTree = "<group>"; };
+		D9E570181E8A7B8C00C6C130 /* HDMaskLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMaskLayerVC.h; sourceTree = "<group>"; };
+		D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMaskLayerVC.m; sourceTree = "<group>"; };
+		D9E5701B1E8A7C9300C6C130 /* LCCKContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCKContentView.h; sourceTree = "<group>"; };
+		D9E5701C1E8A7C9300C6C130 /* LCCKContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCKContentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +194,7 @@
 				04204B9A1D0678120069A9FE /* libz.tbd in Frameworks */,
 				04204B981D06780C0069A9FE /* JavaScriptCore.framework in Frameworks */,
 				04204B961D0677530069A9FE /* JSPatch.framework in Frameworks */,
+				32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +363,8 @@
 			children = (
 				049DC0E21CD0527C0021599C /* HDMasterProject */,
 				049DC0E11CD0527C0021599C /* Products */,
+				EC8AE065F7280139CE980EFA /* Pods */,
+				FEC4E83549D260BFBCCAC003 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -365,6 +385,8 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D9E570171E8A7B7A00C6C130 /* HDMaskLayerVC */,
+				D9E570011E8A2E0900C6C130 /* HDIMDemoVC */,
 				04BD829D1CE96AB700943C42 /* HDMessageWays */,
 				0428C4121CFD8B7D001F9D6F /* HDProxyDemo */,
 				0428C4321D002E67001F9D6F /* HDFriendCycleViewController */,
@@ -387,6 +409,7 @@
 				0428C4731D011149001F9D6F /* loading@2x.png */,
 				046B87F61D0D258D0087D99C /* 123.jpg */,
 				046B87F71D0D258D0087D99C /* 222.png */,
+				D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */,
 				049DC0EC1CD0527C0021599C /* Main.storyboard */,
 				049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */,
 				049DC0F41CD0527C0021599C /* Info.plist */,
@@ -439,6 +462,44 @@
 			path = HDMessageWays;
 			sourceTree = "<group>";
 		};
+		D9E570011E8A2E0900C6C130 /* HDIMDemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				D9E570061E8A331000C6C130 /* HDIMDemoVC.h */,
+				D9E570071E8A331000C6C130 /* HDIMDemoVC.m */,
+				D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */,
+			);
+			path = HDIMDemoVC;
+			sourceTree = "<group>";
+		};
+		D9E570171E8A7B7A00C6C130 /* HDMaskLayerVC */ = {
+			isa = PBXGroup;
+			children = (
+				D9E570181E8A7B8C00C6C130 /* HDMaskLayerVC.h */,
+				D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */,
+				D9E5701B1E8A7C9300C6C130 /* LCCKContentView.h */,
+				D9E5701C1E8A7C9300C6C130 /* LCCKContentView.m */,
+			);
+			path = HDMaskLayerVC;
+			sourceTree = "<group>";
+		};
+		EC8AE065F7280139CE980EFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */,
+				0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEC4E83549D260BFBCCAC003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,9 +507,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049DC0F71CD0527C0021599C /* Build configuration list for PBXNativeTarget "HDMasterProject" */;
 			buildPhases = (
+				62C2B959409349FFEAB055CC /* [CP] Check Pods Manifest.lock */,
 				049DC0DC1CD0527C0021599C /* Sources */,
 				049DC0DD1CD0527C0021599C /* Frameworks */,
 				049DC0DE1CD0527C0021599C /* Resources */,
+				77C2F095BC7489696DC8A7C1 /* [CP] Embed Pods Frameworks */,
+				696F5A796DE79C7215B4305B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -523,15 +587,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */,
 				046B87F91D0D258D0087D99C /* 222.png in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
+				D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
 				046B87F81D0D258D0087D99C /* 123.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62C2B959409349FFEAB055CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		696F5A796DE79C7215B4305B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77C2F095BC7489696DC8A7C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		049DC0DC1CD0527C0021599C /* Sources */ = {
@@ -546,6 +660,7 @@
 				0428C43E1D003E80001F9D6F /* HDFriendCycleTableViewCell.m in Sources */,
 				0428C4381D002EA3001F9D6F /* HDFriendCycleModel.m in Sources */,
 				0428C4651D003F42001F9D6F /* SDWebImageDownloader.m in Sources */,
+				D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */,
 				049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */,
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
@@ -553,6 +668,7 @@
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
+				D9E5701D1E8A7C9300C6C130 /* LCCKContentView.m in Sources */,
 				0428C4611D003F42001F9D6F /* NSData+ImageContentType.m in Sources */,
 				0428C46A1D003F42001F9D6F /* UIImage+GIF.m in Sources */,
 				0428C4691D003F42001F9D6F /* UIButton+WebCache.m in Sources */,
@@ -568,6 +684,7 @@
 				0428C4631D003F42001F9D6F /* SDWebImageCompat.m in Sources */,
 				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
 				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
+				D9E570081E8A331000C6C130 /* HDIMDemoVC.m in Sources */,
 				0428C4661D003F42001F9D6F /* SDWebImageDownloaderOperation.m in Sources */,
 				046B87EB1D0D23C80087D99C /* HDPulldownPhotoViewController.m in Sources */,
 				0428C47D1D011BC3001F9D6F /* HDPhotoGroupCell.m in Sources */,
@@ -685,6 +802,7 @@
 		};
 		049DC0F81CD0527C0021599C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -708,6 +826,7 @@
 		};
 		049DC0F91CD0527C0021599C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
