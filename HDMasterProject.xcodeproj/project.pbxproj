@@ -60,7 +60,7 @@
 		D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */; };
 		D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */; };
 		D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */; };
-		D9E5701D1E8A7C9300C6C130 /* LCCKContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E5701C1E8A7C9300C6C130 /* LCCKContentView.m */; };
+		D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,8 +180,7 @@
 		D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubble_Sender@2x.png"; sourceTree = "<group>"; };
 		D9E570181E8A7B8C00C6C130 /* HDMaskLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMaskLayerVC.h; sourceTree = "<group>"; };
 		D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMaskLayerVC.m; sourceTree = "<group>"; };
-		D9E5701B1E8A7C9300C6C130 /* LCCKContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCKContentView.h; sourceTree = "<group>"; };
-		D9E5701C1E8A7C9300C6C130 /* LCCKContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCKContentView.m; sourceTree = "<group>"; };
+		D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubble_Reviceder@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +402,7 @@
 		049DC0E31CD0527C0021599C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */,
 				04204B991D0678120069A9FE /* libz.tbd */,
 				04204B971D06780C0069A9FE /* JavaScriptCore.framework */,
 				04204B951D0677530069A9FE /* JSPatch.framework */,
@@ -477,8 +477,6 @@
 			children = (
 				D9E570181E8A7B8C00C6C130 /* HDMaskLayerVC.h */,
 				D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */,
-				D9E5701B1E8A7C9300C6C130 /* LCCKContentView.h */,
-				D9E5701C1E8A7C9300C6C130 /* LCCKContentView.m */,
 			);
 			path = HDMaskLayerVC;
 			sourceTree = "<group>";
@@ -591,6 +589,7 @@
 				046B87F91D0D258D0087D99C /* 222.png in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
+				D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */,
 				D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
 				046B87F81D0D258D0087D99C /* 123.jpg in Resources */,
@@ -668,7 +667,6 @@
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
-				D9E5701D1E8A7C9300C6C130 /* LCCKContentView.m in Sources */,
 				0428C4611D003F42001F9D6F /* NSData+ImageContentType.m in Sources */,
 				0428C46A1D003F42001F9D6F /* UIImage+GIF.m in Sources */,
 				0428C4691D003F42001F9D6F /* UIButton+WebCache.m in Sources */,

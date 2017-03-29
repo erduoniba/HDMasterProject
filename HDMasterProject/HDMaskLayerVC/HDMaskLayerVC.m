@@ -34,6 +34,23 @@
     maskLayer.frame = imageView.bounds;
     maskLayer.contents = (__bridge id _Nullable)[mask CGImage];
     imageView.layer.mask = maskLayer;
+
+
+    UIImageView *imageView2 = [[UIImageView alloc] init];//这里就是我们需要显示的图片
+    image = [UIImage imageNamed:@"123.jpg"];
+    imageView2.image = image;
+    imageView2.frame = CGRectMake(50, 300, image.size.width / 2, image.size.height / 2);
+    [self.view addSubview:imageView2];
+
+    UIImage *mask2 = [UIImage imageNamed:@"MessageBubble_Reviceder"];//pic.png就是不规则的图片
+    CALayer *maskLayer2 = [CALayer layer];
+    maskLayer2.contentsScale = [UIScreen mainScreen].scale;
+
+    // 拉伸设置 contentsCenter(x, y, width, height) https://my.oschina.net/u/2438875/blog/512736
+    maskLayer2.contentsCenter = CGRectMake(.5f, .5f, .1f, .1f);
+    maskLayer2.frame = imageView2.bounds;
+    maskLayer2.contents = (__bridge id _Nullable)[mask2 CGImage];
+    imageView2.layer.mask = maskLayer2;
 }
 
 - (void)didReceiveMemoryWarning {
