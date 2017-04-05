@@ -61,6 +61,9 @@
 		D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */; };
 		D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */; };
 		D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */; };
+		D9EC73CB1E8B7B8600C92320 /* NSObject+LCCKHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC73CA1E8B7B8600C92320 /* NSObject+LCCKHUD.m */; };
+		D9EC73CE1E8B803700C92320 /* LCCKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC73CD1E8B803700C92320 /* LCCKUser.m */; };
+		D9EC73D11E8B8D7D00C92320 /* HDIMListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC73D01E8B8D7D00C92320 /* HDIMListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +184,12 @@
 		D9E570181E8A7B8C00C6C130 /* HDMaskLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMaskLayerVC.h; sourceTree = "<group>"; };
 		D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMaskLayerVC.m; sourceTree = "<group>"; };
 		D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubble_Reviceder@2x.png"; sourceTree = "<group>"; };
+		D9EC73C91E8B7B8600C92320 /* NSObject+LCCKHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LCCKHUD.h"; sourceTree = "<group>"; };
+		D9EC73CA1E8B7B8600C92320 /* NSObject+LCCKHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LCCKHUD.m"; sourceTree = "<group>"; };
+		D9EC73CC1E8B803700C92320 /* LCCKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCKUser.h; sourceTree = "<group>"; };
+		D9EC73CD1E8B803700C92320 /* LCCKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCKUser.m; sourceTree = "<group>"; };
+		D9EC73CF1E8B8D7D00C92320 /* HDIMListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDIMListVC.h; sourceTree = "<group>"; };
+		D9EC73D01E8B8D7D00C92320 /* HDIMListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDIMListVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,9 +474,15 @@
 		D9E570011E8A2E0900C6C130 /* HDIMDemoVC */ = {
 			isa = PBXGroup;
 			children = (
+				D9EC73C91E8B7B8600C92320 /* NSObject+LCCKHUD.h */,
+				D9EC73CA1E8B7B8600C92320 /* NSObject+LCCKHUD.m */,
+				D9EC73CC1E8B803700C92320 /* LCCKUser.h */,
+				D9EC73CD1E8B803700C92320 /* LCCKUser.m */,
 				D9E570061E8A331000C6C130 /* HDIMDemoVC.h */,
 				D9E570071E8A331000C6C130 /* HDIMDemoVC.m */,
 				D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */,
+				D9EC73CF1E8B8D7D00C92320 /* HDIMListVC.h */,
+				D9EC73D01E8B8D7D00C92320 /* HDIMListVC.m */,
 			);
 			path = HDIMDemoVC;
 			sourceTree = "<group>";
@@ -651,11 +666,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EC73D11E8B8D7D00C92320 /* HDIMListVC.m in Sources */,
 				0428C46B1D003F42001F9D6F /* UIImage+MultiFormat.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
 				0428C4671D003F42001F9D6F /* SDWebImageManager.m in Sources */,
 				049DC0EB1CD0527C0021599C /* ViewController.m in Sources */,
+				D9EC73CE1E8B803700C92320 /* LCCKUser.m in Sources */,
 				0428C43E1D003E80001F9D6F /* HDFriendCycleTableViewCell.m in Sources */,
 				0428C4381D002EA3001F9D6F /* HDFriendCycleModel.m in Sources */,
 				0428C4651D003F42001F9D6F /* SDWebImageDownloader.m in Sources */,
@@ -674,6 +691,7 @@
 				04544FB31D0E869F00D02AD0 /* HDLogServiceViewController.m in Sources */,
 				0428C4681D003F42001F9D6F /* SDWebImagePrefetcher.m in Sources */,
 				0428C4721D00454C001F9D6F /* UIView+Helpers.m in Sources */,
+				D9EC73CB1E8B7B8600C92320 /* NSObject+LCCKHUD.m in Sources */,
 				0428C46D1D003F42001F9D6F /* UIImageView+WebCache.m in Sources */,
 				0428C46C1D003F42001F9D6F /* UIImageView+HighlightedWebCache.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,

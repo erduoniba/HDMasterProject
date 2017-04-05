@@ -17,7 +17,9 @@
                 <outlet property="passwordTF" destination="J9o-fB-zsJ" id="EnK-VH-QXU"/>
                 <outlet property="phoneTF" destination="FQ1-Or-cgS" id="iZo-cD-Bff"/>
                 <outlet property="registerView" destination="Rnb-aZ-aCN" id="mYA-q7-NjS"/>
+                <outlet property="useLoginView" destination="coZ-vX-rvU" id="H6h-EX-J0a"/>
                 <outlet property="userNameLb" destination="U8J-4L-VOq" id="RVK-09-Vco"/>
+                <outlet property="userNameTF" destination="fyL-qa-ucC" id="nNN-CR-kaK"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Qjx-Mm-5br"/>
             </connections>
         </placeholder>
@@ -27,10 +29,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XFQ-O2-6KD">
-                    <rect key="frame" x="84" y="88" width="207" height="29"/>
+                    <rect key="frame" x="60" y="88" width="255" height="29"/>
                     <segments>
                         <segment title="注册"/>
-                        <segment title="登录"/>
+                        <segment title="手机登录"/>
+                        <segment title="用户名登录"/>
                     </segments>
                     <connections>
                         <action selector="changeModel:" destination="-1" eventType="valueChanged" id="47v-w0-M0Y"/>
@@ -115,13 +118,35 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="coZ-vX-rvU">
+                    <rect key="frame" x="0.0" y="134" width="375" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="anna" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyL-qa-ucC">
+                            <rect key="frame" x="45" y="33" width="274" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpb-m3-NW9">
+                            <rect key="frame" x="167" y="135" width="31" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="登录"/>
+                            <connections>
+                                <action selector="userNameLoginAction:" destination="-1" eventType="touchUpInside" id="vbm-EY-qPG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="XFQ-O2-6KD" secondAttribute="trailing" constant="84" id="1ai-JI-esp"/>
+                <constraint firstAttribute="trailing" secondItem="XFQ-O2-6KD" secondAttribute="trailing" constant="60" id="1ai-JI-esp"/>
                 <constraint firstAttribute="bottom" secondItem="S7p-QB-9re" secondAttribute="bottom" constant="67" id="2Vy-zS-IXe"/>
                 <constraint firstItem="S7p-QB-9re" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AqM-WE-v27"/>
-                <constraint firstItem="XFQ-O2-6KD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="84" id="EEB-jF-EiQ"/>
+                <constraint firstItem="XFQ-O2-6KD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="EEB-jF-EiQ"/>
                 <constraint firstItem="Rnb-aZ-aCN" firstAttribute="top" secondItem="XFQ-O2-6KD" secondAttribute="bottom" constant="18" id="Sb2-km-8TI"/>
                 <constraint firstAttribute="trailing" secondItem="Rnb-aZ-aCN" secondAttribute="trailing" id="U5c-yc-omT"/>
                 <constraint firstAttribute="trailing" secondItem="S7p-QB-9re" secondAttribute="trailing" id="VV3-Dd-j4S"/>

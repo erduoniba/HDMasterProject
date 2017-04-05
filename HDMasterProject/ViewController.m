@@ -17,9 +17,30 @@
 
 @implementation ViewController
 
+__weak id reference = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+    NSString *str;
+    @autoreleasepool {
+        str = [NSString stringWithFormat:@"sunnyxx"];
+        reference = str;
+        NSLog(@"----------------reference1:%@", reference);
+    }
+    NSLog(@"----------------reference2:%@", reference);
+    NSLog(@"----------------str:%@", str);
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    NSLog(@"----------------reference3:%@", reference);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    NSLog(@"----------------reference4:%@", reference);
 }
 
 + (void)dddd{

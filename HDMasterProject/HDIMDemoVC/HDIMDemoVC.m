@@ -7,8 +7,13 @@
 //
 
 #import "HDIMDemoVC.h"
+#import "HDIMListVC.h"
+
+#import "NSObject+LCCKHUD.h"
 
 #import <AVOSCloud/AVOSCloud.h>
+
+#import "LCCKUser.h"
 
 @interface HDIMDemoVC ()
 
@@ -21,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *mailTF;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;
 
+@property (weak, nonatomic) IBOutlet UIView *useLoginView;
+@property (weak, nonatomic) IBOutlet UITextField *userNameTF;
 
 @end
 
@@ -105,6 +112,8 @@
     [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:_phoneTF.text smsCode:_codeTF.text block:^(AVUser * _Nullable user, NSError * _Nullable error) {
         if (!error) {
             NSLog(@"验证码登录成功 user：%@", user);
+            
+            [self.view lcck_toast:@"登录成功"];
         }
         else {
             NSLog(@"验证码登录失败 error:%@", error);
@@ -114,14 +123,14 @@
 
 - (IBAction)changeModel:(UISegmentedControl *)sender {
 
-    NSUInteger f = [[self.view subviews] indexOfObject:_registerView];
-    NSUInteger z = [[self.view subviews] indexOfObject:_loginView];
-
     if (sender.selectedSegmentIndex == 1) {
-        [self.view exchangeSubviewAtIndex:z withSubviewAtIndex:f];
+        [self.view bringSubviewToFront:_loginView];
+    }
+    else if (sender.selectedSegmentIndex == 0) {
+        [self.view bringSubviewToFront:_registerView];
     }
     else {
-        [self.view exchangeSubviewAtIndex:f withSubviewAtIndex:z];
+        [self.view bringSubviewToFront:_useLoginView];
     }
 
     CATransition *animation = [CATransition animation];
@@ -130,6 +139,26 @@
     animation.type = @"rippleEffect";//淡入淡出效果
     [self.view.layer addAnimation:animation forKey:@"animation"];
 }
+
+- (IBAction)userNameLoginAction:(id)sender {
+
+    LCChatKit *chatKit = [LCChatKit sharedInstance];
+
+    [chatKit openWithClientId:_userNameTF.text
+                     callback:^(BOOL succeeded, NSError *error) {
+                         if (succeeded) {
+                             [self.view lcck_toast:@"登录成功"];
+                             HDIMListVC *vc = [[HDIMListVC alloc] init];
+                             [self.navigationController pushViewController:vc animated:YES];
+                         }
+                         else {
+
+                         }
+                     }];
+
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

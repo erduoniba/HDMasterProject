@@ -45,6 +45,10 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 
     // 开启 LeanCloud 服务
     [LCChatKit setAppId:leancloudAppId appKey:leancloudClientKey];
+    //添加输入框底部插件，如需更换图标标题，可子类化，然后调用 `+registerSubclass`
+    [LCCKInputViewPluginTakePhoto registerSubclass];
+    [LCCKInputViewPluginPickImage registerSubclass];
+    [LCCKInputViewPluginLocation registerSubclass];
 
     return YES;
 }
