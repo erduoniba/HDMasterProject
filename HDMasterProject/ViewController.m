@@ -64,6 +64,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDLogServiceViewController"];
         [_dataArr addObject:@"HDIMDemoVC"];
         [_dataArr addObject:@"HDMaskLayerVC"];
+        [_dataArr addObject:@"HDTextToImageVC"];
 
     }
     return _dataArr;

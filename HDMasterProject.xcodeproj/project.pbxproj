@@ -56,6 +56,7 @@
 		32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */; };
 		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
 		D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
+		D97AE1291E948542009534D2 /* HDTextToImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D97AE1281E948542009534D2 /* HDTextToImageVC.m */; };
 		D9E570081E8A331000C6C130 /* HDIMDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570071E8A331000C6C130 /* HDIMDemoVC.m */; };
 		D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */; };
 		D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */; };
@@ -177,6 +178,8 @@
 		0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.release.xcconfig"; sourceTree = "<group>"; };
 		29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDMasterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D97AE1271E948542009534D2 /* HDTextToImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDTextToImageVC.h; sourceTree = "<group>"; };
+		D97AE1281E948542009534D2 /* HDTextToImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTextToImageVC.m; sourceTree = "<group>"; };
 		D9E570061E8A331000C6C130 /* HDIMDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDIMDemoVC.h; sourceTree = "<group>"; };
 		D9E570071E8A331000C6C130 /* HDIMDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDIMDemoVC.m; sourceTree = "<group>"; };
 		D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDIMDemoVC.xib; sourceTree = "<group>"; };
@@ -393,6 +396,7 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D97AE1241E94852F009534D2 /* HDTextToImageVC */,
 				D9E570171E8A7B7A00C6C130 /* HDMaskLayerVC */,
 				D9E570011E8A2E0900C6C130 /* HDIMDemoVC */,
 				04BD829D1CE96AB700943C42 /* HDMessageWays */,
@@ -469,6 +473,15 @@
 				04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */,
 			);
 			path = HDMessageWays;
+			sourceTree = "<group>";
+		};
+		D97AE1241E94852F009534D2 /* HDTextToImageVC */ = {
+			isa = PBXGroup;
+			children = (
+				D97AE1271E948542009534D2 /* HDTextToImageVC.h */,
+				D97AE1281E948542009534D2 /* HDTextToImageVC.m */,
+			);
+			path = HDTextToImageVC;
 			sourceTree = "<group>";
 		};
 		D9E570011E8A2E0900C6C130 /* HDIMDemoVC */ = {
@@ -671,6 +684,7 @@
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
 				0428C4671D003F42001F9D6F /* SDWebImageManager.m in Sources */,
+				D97AE1291E948542009534D2 /* HDTextToImageVC.m in Sources */,
 				049DC0EB1CD0527C0021599C /* ViewController.m in Sources */,
 				D9EC73CE1E8B803700C92320 /* LCCKUser.m in Sources */,
 				0428C43E1D003E80001F9D6F /* HDFriendCycleTableViewCell.m in Sources */,
