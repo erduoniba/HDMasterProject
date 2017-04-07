@@ -57,6 +57,14 @@
 		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
 		D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
 		D97AE1291E948542009534D2 /* HDTextToImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D97AE1281E948542009534D2 /* HDTextToImageVC.m */; };
+		D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */; };
+		D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F21E978BC2000968FA /* 3333.jpg */; };
+		D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F41E978D3A000968FA /* 3333@2x.png */; };
+		D9CB73F61E9798EE000968FA /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
+		D9CB73F71E9798EE000968FA /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9CB73FB1E9798F6000968FA /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
+		D9CB73FC1E9798F6000968FA /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73FF1E979CB2000968FA /* 4444@2x.png */; };
 		D9E570081E8A331000C6C130 /* HDIMDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570071E8A331000C6C130 /* HDIMDemoVC.m */; };
 		D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */; };
 		D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */; };
@@ -82,7 +90,36 @@
 			remoteGlobalIDString = 049DC1191CD052CB0021599C;
 			remoteInfo = HDSubProjectTwo;
 		};
+		D9CB73F81E9798EE000968FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 049DC1031CD052B70021599C;
+			remoteInfo = HDSubProjectOne;
+		};
+		D9CB73FD1E9798F6000968FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 049DC1181CD052CB0021599C;
+			remoteInfo = HDSubProjectTwo;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9CB73FA1E9798EE000968FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D9CB73FC1E9798F6000968FA /* HDSubProjectTwo.framework in Embed Frameworks */,
+				D9CB73F71E9798EE000968FA /* HDSubProjectOne.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04204B951D0677530069A9FE /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
@@ -180,6 +217,11 @@
 		B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D97AE1271E948542009534D2 /* HDTextToImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDTextToImageVC.h; sourceTree = "<group>"; };
 		D97AE1281E948542009534D2 /* HDTextToImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTextToImageVC.m; sourceTree = "<group>"; };
+		D9CB73CF1E973F1B000968FA /* HDInvertedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDInvertedImageVC.h; sourceTree = "<group>"; };
+		D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDInvertedImageVC.m; sourceTree = "<group>"; };
+		D9CB73F21E978BC2000968FA /* 3333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3333.jpg; sourceTree = "<group>"; };
+		D9CB73F41E978D3A000968FA /* 3333@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3333@2x.png"; sourceTree = "<group>"; };
+		D9CB73FF1E979CB2000968FA /* 4444@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4444@2x.png"; sourceTree = "<group>"; };
 		D9E570061E8A331000C6C130 /* HDIMDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDIMDemoVC.h; sourceTree = "<group>"; };
 		D9E570071E8A331000C6C130 /* HDIMDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDIMDemoVC.m; sourceTree = "<group>"; };
 		D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDIMDemoVC.xib; sourceTree = "<group>"; };
@@ -202,7 +244,9 @@
 			files = (
 				D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */,
 				D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */,
+				D9CB73F61E9798EE000968FA /* HDSubProjectOne.framework in Frameworks */,
 				04204B9A1D0678120069A9FE /* libz.tbd in Frameworks */,
+				D9CB73FB1E9798F6000968FA /* HDSubProjectTwo.framework in Frameworks */,
 				04204B981D06780C0069A9FE /* JavaScriptCore.framework in Frameworks */,
 				04204B961D0677530069A9FE /* JSPatch.framework in Frameworks */,
 				32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */,
@@ -396,6 +440,7 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D9CB73CC1E973F10000968FA /* HDInvertedImageVC */,
 				D97AE1241E94852F009534D2 /* HDTextToImageVC */,
 				D9E570171E8A7B7A00C6C130 /* HDMaskLayerVC */,
 				D9E570011E8A2E0900C6C130 /* HDIMDemoVC */,
@@ -415,6 +460,9 @@
 		049DC0E31CD0527C0021599C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9CB73F41E978D3A000968FA /* 3333@2x.png */,
+				D9CB73FF1E979CB2000968FA /* 4444@2x.png */,
+				D9CB73F21E978BC2000968FA /* 3333.jpg */,
 				D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */,
 				04204B991D0678120069A9FE /* libz.tbd */,
 				04204B971D06780C0069A9FE /* JavaScriptCore.framework */,
@@ -484,6 +532,15 @@
 			path = HDTextToImageVC;
 			sourceTree = "<group>";
 		};
+		D9CB73CC1E973F10000968FA /* HDInvertedImageVC */ = {
+			isa = PBXGroup;
+			children = (
+				D9CB73CF1E973F1B000968FA /* HDInvertedImageVC.h */,
+				D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */,
+			);
+			path = HDInvertedImageVC;
+			sourceTree = "<group>";
+		};
 		D9E570011E8A2E0900C6C130 /* HDIMDemoVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,10 +596,13 @@
 				049DC0DE1CD0527C0021599C /* Resources */,
 				77C2F095BC7489696DC8A7C1 /* [CP] Embed Pods Frameworks */,
 				696F5A796DE79C7215B4305B /* [CP] Copy Pods Resources */,
+				D9CB73FA1E9798EE000968FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9CB73F91E9798EE000968FA /* PBXTargetDependency */,
+				D9CB73FE1E9798F6000968FA /* PBXTargetDependency */,
 			);
 			name = HDMasterProject;
 			productName = HDMasterProject;
@@ -555,11 +615,13 @@
 		049DC0D81CD0527C0021599C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = HarryDeng;
 				TargetAttributes = {
 					049DC0DF1CD0527C0021599C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = B9FH944VTE;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -614,9 +676,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */,
+				D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */,
 				046B87F91D0D258D0087D99C /* 222.png in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
+				D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */,
+				D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */,
 				D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */,
 				D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
@@ -689,6 +754,7 @@
 				D9EC73CE1E8B803700C92320 /* LCCKUser.m in Sources */,
 				0428C43E1D003E80001F9D6F /* HDFriendCycleTableViewCell.m in Sources */,
 				0428C4381D002EA3001F9D6F /* HDFriendCycleModel.m in Sources */,
+				D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */,
 				0428C4651D003F42001F9D6F /* SDWebImageDownloader.m in Sources */,
 				D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */,
 				049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */,
@@ -728,6 +794,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D9CB73F91E9798EE000968FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HDSubProjectOne;
+			targetProxy = D9CB73F81E9798EE000968FA /* PBXContainerItemProxy */;
+		};
+		D9CB73FE1E9798F6000968FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HDSubProjectTwo;
+			targetProxy = D9CB73FD1E9798F6000968FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		049DC0EC1CD0527C0021599C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -762,8 +841,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -806,8 +887,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -835,6 +918,7 @@
 			baseConfigurationReference = B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B9FH944VTE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
@@ -851,6 +935,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "47c59c2c-9929-44d7-84cf-3d573ebaebbc";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_dev;
 			};
 			name = Debug;
 		};
@@ -859,6 +945,7 @@
 			baseConfigurationReference = 0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
@@ -875,6 +962,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

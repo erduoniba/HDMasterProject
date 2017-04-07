@@ -65,6 +65,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDIMDemoVC"];
         [_dataArr addObject:@"HDMaskLayerVC"];
         [_dataArr addObject:@"HDTextToImageVC"];
+        [_dataArr addObject:@"HDInvertedImageVC"];
 
     }
     return _dataArr;

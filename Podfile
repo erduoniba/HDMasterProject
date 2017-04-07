@@ -9,4 +9,5 @@ target 'HDMasterProject' do
 	pod 'AVOSCloudIM'             # 实时通信模块
     pod 'ChatKit'                 # leancloud的IM聊天UI组件
 
+    pod 'NYXImagesKit'            # image各种处理Category
 end

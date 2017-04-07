@@ -46,9 +46,6 @@
         _saveImage = _backgroundImageView.image;
         _saveNavColor = _backgroundImageView.backgroundColor;
     }
-    else {
-        //_backgroundImageView = navigationBar.subviews.firstObject;
-    }
 
     _saveTintColor = navigationBar.tintColor;
     _saveTitleAttribute = navigationBar.titleTextAttributes;

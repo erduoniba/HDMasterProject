@@ -37,6 +37,7 @@ PODS:
     - DACircularProgress (~> 2.3)
     - MBProgressHUD (~> 0.9)
     - SDWebImage (!= 3.7.2, ~> 3.7)
+  - NYXImagesKit (2.3)
   - pop (1.0.9)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - AVOSCloud
   - AVOSCloudIM
   - ChatKit
+  - NYXImagesKit
 
 SPEC CHECKSUMS:
   AVOSCloud: 839b30ac3b382ad56c957ed6dd28a0a537d33d67
@@ -61,10 +63,11 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MLLabel: df58127ce0bd1f87890ecc3232db77a85ce4cd97
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
+  NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
 
-PODFILE CHECKSUM: b6a77e459a3227a957b8197db5c03a7c64cacbdc
+PODFILE CHECKSUM: c3e25355d1d943ff751711bb709873e9b8ca1679
 
 COCOAPODS: 1.2.1.beta.1
