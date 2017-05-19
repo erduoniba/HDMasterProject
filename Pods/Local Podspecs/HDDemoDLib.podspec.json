@@ -1,0 +1,48 @@
+{
+  "name": "HDDemoDLib",
+  "module_name": "HDDemoDLib",
+  "version": "0.0.1",
+  "summary": "HDDemoDLib.",
+  "description": "新房的sdk,采用cocoapods的模式添加",
+  "homepage": "http://xf.fangdd.com/shenzhen",
+  "authors": {
+    "denglibing": "denglibing@fangdd.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "license": {
+    "type": "MIT"
+  },
+  "source": {
+    "git": "ssh://denglibing@teamcode.fangdd.net:29418/fangdd/customer/fdd-app-ios-sdk",
+    "tag": "0.0.1"
+  },
+  "subspecs": [
+    {
+      "name": "HDDemoDLib",
+      "source_files": "HDDemoDLib/*.{h,m,mm}",
+      "resources": "HDDemoDLib/mapapi.bundle"
+    },
+    {
+      "name": "BaiduMapKit",
+      "vendored_frameworks": "HDDemoDLib/BaiduMapKit/*.framework",
+      "vendored_libraries": "HDDemoDLib/BaiduMapKit/thirdlibs/*.a",
+      "frameworks": [
+        "CoreLocation",
+        "QuartzCore",
+        "OpenGLES",
+        "SystemConfiguration",
+        "CoreGraphics",
+        "Security",
+        "CoreTelephony"
+      ],
+      "libraries": [
+        "sqlite3.0",
+        "stdc++.6.0.9"
+      ],
+      "resources": "HDDemoDLib/BaiduMapKit/Resources/mapapi.bundle"
+    }
+  ]
+}

@@ -54,8 +54,19 @@
 		04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */; };
 		04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */; };
 		32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */; };
+		D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */; };
 		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
 		D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
+		D94F0C391EA87E0100697923 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E21EA740D8008A8EEA /* libsqlite3.0.tbd */; };
+		D94F0C3A1EA87E0600697923 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E61EA740E8008A8EEA /* libstdc++.6.0.9.tbd */; };
+		D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E41EA740DE008A8EEA /* CoreTelephony.framework */; };
+		D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94F0DC71EA8CD7000697923 /* CFNetwork.framework */; };
+		D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914D61EA7408B008A8EEA /* CoreLocation.framework */; };
+		D97914D91EA74093008A8EEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914D81EA74093008A8EEA /* QuartzCore.framework */; };
+		D97914DB1EA7409C008A8EEA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914DA1EA7409C008A8EEA /* OpenGLES.framework */; };
+		D97914DD1EA740A3008A8EEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914DC1EA740A3008A8EEA /* SystemConfiguration.framework */; };
+		D97914DF1EA740AC008A8EEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914DE1EA740AC008A8EEA /* CoreGraphics.framework */; };
+		D97914E11EA740C4008A8EEA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E01EA740C4008A8EEA /* Security.framework */; };
 		D97AE1291E948542009534D2 /* HDTextToImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D97AE1281E948542009534D2 /* HDTextToImageVC.m */; };
 		D97C97EA1E9B387500DDA9D0 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D97C97E91E9B387500DDA9D0 /* UINavigationBar+Awesome.m */; };
 		D97C981A1E9B4F3200DDA9D0 /* AllAroundPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = D97C98191E9B4F3200DDA9D0 /* AllAroundPullView.m */; };
@@ -63,13 +74,13 @@
 		D97C981E1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D97C981C1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png */; };
 		D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D97C98201E9B5B6700DDA9D0 /* NHSelectBar.m */; };
 		D97C98231E9B778800DDA9D0 /* 2222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D97C98221E9B778800DDA9D0 /* 2222.jpg */; };
+		D9ACA6891EA86732009A9219 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
+		D9ACA68A1EA86732009A9219 /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9ACA68D1EA86732009A9219 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
+		D9ACA68E1EA86732009A9219 /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */; };
 		D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F21E978BC2000968FA /* 3333.jpg */; };
 		D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F41E978D3A000968FA /* 3333@2x.png */; };
-		D9CB73F61E9798EE000968FA /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
-		D9CB73F71E9798EE000968FA /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D9CB73FB1E9798F6000968FA /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
-		D9CB73FC1E9798F6000968FA /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73FF1E979CB2000968FA /* 4444@2x.png */; };
 		D9E570081E8A331000C6C130 /* HDIMDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570071E8A331000C6C130 /* HDIMDemoVC.m */; };
 		D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */; };
@@ -96,14 +107,14 @@
 			remoteGlobalIDString = 049DC1191CD052CB0021599C;
 			remoteInfo = HDSubProjectTwo;
 		};
-		D9CB73F81E9798EE000968FA /* PBXContainerItemProxy */ = {
+		D9ACA68B1EA86732009A9219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 049DC1031CD052B70021599C;
 			remoteInfo = HDSubProjectOne;
 		};
-		D9CB73FD1E9798F6000968FA /* PBXContainerItemProxy */ = {
+		D9ACA68F1EA86732009A9219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */;
 			proxyType = 1;
@@ -113,14 +124,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D9CB73FA1E9798EE000968FA /* Embed Frameworks */ = {
+		D9ACA6911EA86732009A9219 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D9CB73FC1E9798F6000968FA /* HDSubProjectTwo.framework in Embed Frameworks */,
-				D9CB73F71E9798EE000968FA /* HDSubProjectOne.framework in Embed Frameworks */,
+				D9ACA68E1EA86732009A9219 /* HDSubProjectTwo.framework in Embed Frameworks */,
+				D9ACA68A1EA86732009A9219 /* HDSubProjectOne.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +232,19 @@
 		0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.release.xcconfig"; sourceTree = "<group>"; };
 		29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDMasterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D93FC37A1ECD8946009A7C3C /* HDGCDTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDGCDTestVC.h; sourceTree = "<group>"; };
+		D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDGCDTestVC.m; sourceTree = "<group>"; };
+		D94F0D9E1EA8C12F00697923 /* HDDemoDLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HDDemoDLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/HDMasterProject-dhzorybjxmjuvyfcfkuicxjaknew/Build/Products/Debug-iphoneos/HDDemoDLib/HDDemoDLib.framework"; sourceTree = "<group>"; };
+		D94F0DC71EA8CD7000697923 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D97914D61EA7408B008A8EEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D97914D81EA74093008A8EEA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D97914DA1EA7409C008A8EEA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D97914DC1EA740A3008A8EEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D97914DE1EA740AC008A8EEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D97914E01EA740C4008A8EEA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D97914E21EA740D8008A8EEA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D97914E41EA740DE008A8EEA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D97914E61EA740E8008A8EEA /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		D97AE1271E948542009534D2 /* HDTextToImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDTextToImageVC.h; sourceTree = "<group>"; };
 		D97AE1281E948542009534D2 /* HDTextToImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTextToImageVC.m; sourceTree = "<group>"; };
 		D97C97E81E9B387500DDA9D0 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
@@ -257,11 +281,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */,
+				D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */,
+				D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */,
+				D94F0C3A1EA87E0600697923 /* libstdc++.6.0.9.tbd in Frameworks */,
+				D94F0C391EA87E0100697923 /* libsqlite3.0.tbd in Frameworks */,
+				D97914DF1EA740AC008A8EEA /* CoreGraphics.framework in Frameworks */,
+				D9ACA6891EA86732009A9219 /* HDSubProjectOne.framework in Frameworks */,
+				D97914E11EA740C4008A8EEA /* Security.framework in Frameworks */,
+				D9ACA68D1EA86732009A9219 /* HDSubProjectTwo.framework in Frameworks */,
+				D97914DB1EA7409C008A8EEA /* OpenGLES.framework in Frameworks */,
+				D97914D91EA74093008A8EEA /* QuartzCore.framework in Frameworks */,
+				D97914DD1EA740A3008A8EEA /* SystemConfiguration.framework in Frameworks */,
 				D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */,
 				D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */,
-				D9CB73F61E9798EE000968FA /* HDSubProjectOne.framework in Frameworks */,
 				04204B9A1D0678120069A9FE /* libz.tbd in Frameworks */,
-				D9CB73FB1E9798F6000968FA /* HDSubProjectTwo.framework in Frameworks */,
 				04204B981D06780C0069A9FE /* JavaScriptCore.framework in Frameworks */,
 				04204B961D0677530069A9FE /* JSPatch.framework in Frameworks */,
 				32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */,
@@ -457,6 +491,7 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D93FC3791ECD891C009A7C3C /* HDGCDTestVC */,
 				D9CB73CC1E973F10000968FA /* HDInvertedImageVC */,
 				D97AE1241E94852F009534D2 /* HDTextToImageVC */,
 				D9E570171E8A7B7A00C6C130 /* HDMaskLayerVC */,
@@ -479,10 +514,10 @@
 			children = (
 				D97C981B1E9B4FC400DDA9D0 /* fdd_logo_refresh@2x.png */,
 				D97C981C1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png */,
+				D97C98221E9B778800DDA9D0 /* 2222.jpg */,
 				D9CB73F41E978D3A000968FA /* 3333@2x.png */,
 				D9CB73FF1E979CB2000968FA /* 4444@2x.png */,
 				D9CB73F21E978BC2000968FA /* 3333.jpg */,
-				D97C98221E9B778800DDA9D0 /* 2222.jpg */,
 				D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */,
 				04204B991D0678120069A9FE /* libz.tbd */,
 				04204B971D06780C0069A9FE /* JavaScriptCore.framework */,
@@ -541,6 +576,15 @@
 				04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */,
 			);
 			path = HDMessageWays;
+			sourceTree = "<group>";
+		};
+		D93FC3791ECD891C009A7C3C /* HDGCDTestVC */ = {
+			isa = PBXGroup;
+			children = (
+				D93FC37A1ECD8946009A7C3C /* HDGCDTestVC.h */,
+				D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */,
+			);
+			path = HDGCDTestVC;
 			sourceTree = "<group>";
 		};
 		D97AE1241E94852F009534D2 /* HDTextToImageVC */ = {
@@ -618,6 +662,17 @@
 		FEC4E83549D260BFBCCAC003 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D94F0DC71EA8CD7000697923 /* CFNetwork.framework */,
+				D94F0D9E1EA8C12F00697923 /* HDDemoDLib.framework */,
+				D97914E61EA740E8008A8EEA /* libstdc++.6.0.9.tbd */,
+				D97914E41EA740DE008A8EEA /* CoreTelephony.framework */,
+				D97914E21EA740D8008A8EEA /* libsqlite3.0.tbd */,
+				D97914E01EA740C4008A8EEA /* Security.framework */,
+				D97914DE1EA740AC008A8EEA /* CoreGraphics.framework */,
+				D97914DC1EA740A3008A8EEA /* SystemConfiguration.framework */,
+				D97914DA1EA7409C008A8EEA /* OpenGLES.framework */,
+				D97914D81EA74093008A8EEA /* QuartzCore.framework */,
+				D97914D61EA7408B008A8EEA /* CoreLocation.framework */,
 				29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */,
 			);
 			name = Frameworks;
@@ -636,13 +691,13 @@
 				049DC0DE1CD0527C0021599C /* Resources */,
 				77C2F095BC7489696DC8A7C1 /* [CP] Embed Pods Frameworks */,
 				696F5A796DE79C7215B4305B /* [CP] Copy Pods Resources */,
-				D9CB73FA1E9798EE000968FA /* Embed Frameworks */,
+				D9ACA6911EA86732009A9219 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D9CB73F91E9798EE000968FA /* PBXTargetDependency */,
-				D9CB73FE1E9798F6000968FA /* PBXTargetDependency */,
+				D9ACA68C1EA86732009A9219 /* PBXTargetDependency */,
+				D9ACA6901EA86732009A9219 /* PBXTargetDependency */,
 			);
 			name = HDMasterProject;
 			productName = HDMasterProject;
@@ -816,6 +871,7 @@
 				04544FB31D0E869F00D02AD0 /* HDLogServiceViewController.m in Sources */,
 				0428C4681D003F42001F9D6F /* SDWebImagePrefetcher.m in Sources */,
 				0428C4721D00454C001F9D6F /* UIView+Helpers.m in Sources */,
+				D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */,
 				D9EC73CB1E8B7B8600C92320 /* NSObject+LCCKHUD.m in Sources */,
 				0428C46D1D003F42001F9D6F /* UIImageView+WebCache.m in Sources */,
 				0428C46C1D003F42001F9D6F /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -841,15 +897,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D9CB73F91E9798EE000968FA /* PBXTargetDependency */ = {
+		D9ACA68C1EA86732009A9219 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HDSubProjectOne;
-			targetProxy = D9CB73F81E9798EE000968FA /* PBXContainerItemProxy */;
+			targetProxy = D9ACA68B1EA86732009A9219 /* PBXContainerItemProxy */;
 		};
-		D9CB73FE1E9798F6000968FA /* PBXTargetDependency */ = {
+		D9ACA6901EA86732009A9219 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HDSubProjectTwo;
-			targetProxy = D9CB73FD1E9798F6000968FA /* PBXContainerItemProxy */;
+			targetProxy = D9ACA68F1EA86732009A9219 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -968,21 +1024,33 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
+					"$(PROJECT_DIR)/HDMasterProject/HDMapVC/BaiduMapKit",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = HDMasterProject/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = HDMasterProject/Info.plist;
 				LD_GENERATE_MAP_FILE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)",
+					"$(inherited)",
 					../HDSubProjectOne/,
 					../HDSubProjectTwo/,
+					"$(PROJECT_DIR)/HDMasterProject/HDMapVC/BaiduMapKit/thirdlibs",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Objc",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "47c59c2c-9929-44d7-84cf-3d573ebaebbc";
 				PROVISIONING_PROFILE_SPECIFIER = wildcard_dev;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -995,20 +1063,33 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
+					"$(PROJECT_DIR)/HDMasterProject/HDMapVC/BaiduMap_IOSSDK_v3",
+					"$(PROJECT_DIR)/HDMasterProject/HDMapVC/BaiduMapKit",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = HDMasterProject/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = HDMasterProject/Info.plist;
 				LD_GENERATE_MAP_FILE = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)",
+					"$(inherited)",
 					../HDSubProjectOne/,
 					../HDSubProjectTwo/,
+					"$(PROJECT_DIR)/HDMasterProject/HDMapVC/BaiduMapKit/thirdlibs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Objc",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

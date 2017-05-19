@@ -21,6 +21,8 @@ __weak id reference = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
+
     NSString *str;
     @autoreleasepool {
         str = [NSString stringWithFormat:@"sunnyxx"];
@@ -66,7 +68,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDMaskLayerVC"];
         [_dataArr addObject:@"HDTextToImageVC"];
         [_dataArr addObject:@"HDInvertedImageVC"];
-
+        [_dataArr addObject:@"HDGCDTestVC"];
     }
     return _dataArr;
 }

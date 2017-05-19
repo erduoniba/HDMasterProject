@@ -42,7 +42,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - UITableView+FDTemplateLayoutCell (1.5.beta)
+  - UITableView+FDTemplateLayoutCell (1.6)
 
 DEPENDENCIES:
   - AVOSCloud
@@ -65,9 +65,9 @@ SPEC CHECKSUMS:
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: c3e25355d1d943ff751711bb709873e9b8ca1679
+PODFILE CHECKSUM: 9e699885f09888cff74fc0b919170064c06cbcf1
 
-COCOAPODS: 1.2.1.beta.1
+COCOAPODS: 1.2.1
