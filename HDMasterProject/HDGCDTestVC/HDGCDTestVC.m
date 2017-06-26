@@ -57,8 +57,8 @@
     //[self test8];
     //[self test9];
     //[self test10];
-    //[self test11];
-    [self test12];
+    [self test11];
+//    [self test12];
 }
 
 - (void)test1 {

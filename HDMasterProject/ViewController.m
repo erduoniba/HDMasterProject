@@ -69,6 +69,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDTextToImageVC"];
         [_dataArr addObject:@"HDInvertedImageVC"];
         [_dataArr addObject:@"HDGCDTestVC"];
+        [_dataArr addObject:@"HDSortVC"];
     }
     return _dataArr;
 }

@@ -78,6 +78,7 @@
 		D9ACA68A1EA86732009A9219 /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9ACA68D1EA86732009A9219 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
 		D9ACA68E1EA86732009A9219 /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C64E941EF8ED28005194D7 /* HDSortVC.m */; };
 		D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */; };
 		D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F21E978BC2000968FA /* 3333.jpg */; };
 		D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F41E978D3A000968FA /* 3333@2x.png */; };
@@ -256,6 +257,8 @@
 		D97C981F1E9B5B6700DDA9D0 /* NHSelectBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHSelectBar.h; sourceTree = "<group>"; };
 		D97C98201E9B5B6700DDA9D0 /* NHSelectBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHSelectBar.m; sourceTree = "<group>"; };
 		D97C98221E9B778800DDA9D0 /* 2222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2222.jpg; sourceTree = "<group>"; };
+		D9C64E931EF8ED28005194D7 /* HDSortVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSortVC.h; sourceTree = "<group>"; };
+		D9C64E941EF8ED28005194D7 /* HDSortVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSortVC.m; sourceTree = "<group>"; };
 		D9CB73CF1E973F1B000968FA /* HDInvertedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDInvertedImageVC.h; sourceTree = "<group>"; };
 		D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDInvertedImageVC.m; sourceTree = "<group>"; };
 		D9CB73F21E978BC2000968FA /* 3333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3333.jpg; sourceTree = "<group>"; };
@@ -491,6 +494,7 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D9C64E921EF8ED10005194D7 /* HDSortVC */,
 				D93FC3791ECD891C009A7C3C /* HDGCDTestVC */,
 				D9CB73CC1E973F10000968FA /* HDInvertedImageVC */,
 				D97AE1241E94852F009534D2 /* HDTextToImageVC */,
@@ -612,6 +616,15 @@
 				D97C98191E9B4F3200DDA9D0 /* AllAroundPullView.m */,
 			);
 			path = AllAroundPullView;
+			sourceTree = "<group>";
+		};
+		D9C64E921EF8ED10005194D7 /* HDSortVC */ = {
+			isa = PBXGroup;
+			children = (
+				D9C64E931EF8ED28005194D7 /* HDSortVC.h */,
+				D9C64E941EF8ED28005194D7 /* HDSortVC.m */,
+			);
+			path = HDSortVC;
 			sourceTree = "<group>";
 		};
 		D9CB73CC1E973F10000968FA /* HDInvertedImageVC */ = {
@@ -844,6 +857,7 @@
 			files = (
 				D9EC73D11E8B8D7D00C92320 /* HDIMListVC.m in Sources */,
 				0428C46B1D003F42001F9D6F /* UIImage+MultiFormat.m in Sources */,
+				D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
 				0428C4671D003F42001F9D6F /* SDWebImageManager.m in Sources */,
