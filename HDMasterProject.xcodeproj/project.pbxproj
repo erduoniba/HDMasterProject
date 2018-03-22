@@ -61,6 +61,12 @@
 		D94F0C3A1EA87E0600697923 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E61EA740E8008A8EEA /* libstdc++.6.0.9.tbd */; };
 		D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E41EA740DE008A8EEA /* CoreTelephony.framework */; };
 		D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94F0DC71EA8CD7000697923 /* CFNetwork.framework */; };
+		D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615AC2060B11000072A3A /* HDBarChartsViewController.m */; };
+		D95615B02060B4BD00072A3A /* HDBarChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615AF2060B4BD00072A3A /* HDBarChartsView.m */; };
+		D95615B42060EF2000072A3A /* HDBarChartsElementManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */; };
+		D95615B920624BD700072A3A /* HDBarChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615B820624BD700072A3A /* HDBarChartsModel.m */; };
+		D96607C2201726EE00E7B989 /* HDWeakArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D96607C1201726EE00E7B989 /* HDWeakArrayVC.m */; };
+		D96607C52017273A00E7B989 /* HDDelegateTaget.m in Sources */ = {isa = PBXBuildFile; fileRef = D96607C42017273A00E7B989 /* HDDelegateTaget.m */; };
 		D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914D61EA7408B008A8EEA /* CoreLocation.framework */; };
 		D97914D91EA74093008A8EEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914D81EA74093008A8EEA /* QuartzCore.framework */; };
 		D97914DB1EA7409C008A8EEA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914DA1EA7409C008A8EEA /* OpenGLES.framework */; };
@@ -74,6 +80,9 @@
 		D97C981E1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D97C981C1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png */; };
 		D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D97C98201E9B5B6700DDA9D0 /* NHSelectBar.m */; };
 		D97C98231E9B778800DDA9D0 /* 2222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D97C98221E9B778800DDA9D0 /* 2222.jpg */; };
+		D98C3A001FFB58060082E14E /* UIDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */; };
+		D98C3A021FFB58FB0082E14E /* iOSAppReverseEngineering.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */; };
+		D98C3A041FFB5A350082E14E /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98C3A031FFB5A350082E14E /* QuickLook.framework */; };
 		D9ACA6891EA86732009A9219 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
 		D9ACA68A1EA86732009A9219 /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9ACA68D1EA86732009A9219 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
@@ -237,6 +246,18 @@
 		D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDGCDTestVC.m; sourceTree = "<group>"; };
 		D94F0D9E1EA8C12F00697923 /* HDDemoDLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HDDemoDLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/HDMasterProject-dhzorybjxmjuvyfcfkuicxjaknew/Build/Products/Debug-iphoneos/HDDemoDLib/HDDemoDLib.framework"; sourceTree = "<group>"; };
 		D94F0DC71EA8CD7000697923 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D95615AB2060B11000072A3A /* HDBarChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDBarChartsViewController.h; sourceTree = "<group>"; };
+		D95615AC2060B11000072A3A /* HDBarChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDBarChartsViewController.m; sourceTree = "<group>"; };
+		D95615AE2060B4BD00072A3A /* HDBarChartsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDBarChartsView.h; sourceTree = "<group>"; };
+		D95615AF2060B4BD00072A3A /* HDBarChartsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDBarChartsView.m; sourceTree = "<group>"; };
+		D95615B22060EF2000072A3A /* HDBarChartsElementManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDBarChartsElementManager.h; sourceTree = "<group>"; };
+		D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDBarChartsElementManager.m; sourceTree = "<group>"; };
+		D95615B720624BD700072A3A /* HDBarChartsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDBarChartsModel.h; sourceTree = "<group>"; };
+		D95615B820624BD700072A3A /* HDBarChartsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDBarChartsModel.m; sourceTree = "<group>"; };
+		D96607C0201726EE00E7B989 /* HDWeakArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWeakArrayVC.h; sourceTree = "<group>"; };
+		D96607C1201726EE00E7B989 /* HDWeakArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDWeakArrayVC.m; sourceTree = "<group>"; };
+		D96607C32017273A00E7B989 /* HDDelegateTaget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDelegateTaget.h; sourceTree = "<group>"; };
+		D96607C42017273A00E7B989 /* HDDelegateTaget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDelegateTaget.m; sourceTree = "<group>"; };
 		D97914D61EA7408B008A8EEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D97914D81EA74093008A8EEA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D97914DA1EA7409C008A8EEA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -257,6 +278,10 @@
 		D97C981F1E9B5B6700DDA9D0 /* NHSelectBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHSelectBar.h; sourceTree = "<group>"; };
 		D97C98201E9B5B6700DDA9D0 /* NHSelectBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHSelectBar.m; sourceTree = "<group>"; };
 		D97C98221E9B778800DDA9D0 /* 2222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2222.jpg; sourceTree = "<group>"; };
+		D98C39FE1FFB58060082E14E /* UIDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDocumentViewController.h; sourceTree = "<group>"; };
+		D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDocumentViewController.m; sourceTree = "<group>"; };
+		D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = iOSAppReverseEngineering.pdf; sourceTree = "<group>"; };
+		D98C3A031FFB5A350082E14E /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		D9C64E931EF8ED28005194D7 /* HDSortVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSortVC.h; sourceTree = "<group>"; };
 		D9C64E941EF8ED28005194D7 /* HDSortVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSortVC.m; sourceTree = "<group>"; };
 		D9CB73CF1E973F1B000968FA /* HDInvertedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDInvertedImageVC.h; sourceTree = "<group>"; };
@@ -284,6 +309,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98C3A041FFB5A350082E14E /* QuickLook.framework in Frameworks */,
 				D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */,
 				D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */,
 				D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */,
@@ -494,6 +520,9 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D95615AA2060B05800072A3A /* HDBarChartsView */,
+				D96607BF201726A900E7B989 /* HDWeakArrayVC */,
+				D98C39FD1FFB57BC0082E14E /* UIDocumentInteractionController */,
 				D9C64E921EF8ED10005194D7 /* HDSortVC */,
 				D93FC3791ECD891C009A7C3C /* HDGCDTestVC */,
 				D9CB73CC1E973F10000968FA /* HDInvertedImageVC */,
@@ -591,6 +620,32 @@
 			path = HDGCDTestVC;
 			sourceTree = "<group>";
 		};
+		D95615AA2060B05800072A3A /* HDBarChartsView */ = {
+			isa = PBXGroup;
+			children = (
+				D95615B22060EF2000072A3A /* HDBarChartsElementManager.h */,
+				D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */,
+				D95615B720624BD700072A3A /* HDBarChartsModel.h */,
+				D95615B820624BD700072A3A /* HDBarChartsModel.m */,
+				D95615AE2060B4BD00072A3A /* HDBarChartsView.h */,
+				D95615AF2060B4BD00072A3A /* HDBarChartsView.m */,
+				D95615AB2060B11000072A3A /* HDBarChartsViewController.h */,
+				D95615AC2060B11000072A3A /* HDBarChartsViewController.m */,
+			);
+			path = HDBarChartsView;
+			sourceTree = "<group>";
+		};
+		D96607BF201726A900E7B989 /* HDWeakArrayVC */ = {
+			isa = PBXGroup;
+			children = (
+				D96607C0201726EE00E7B989 /* HDWeakArrayVC.h */,
+				D96607C1201726EE00E7B989 /* HDWeakArrayVC.m */,
+				D96607C32017273A00E7B989 /* HDDelegateTaget.h */,
+				D96607C42017273A00E7B989 /* HDDelegateTaget.m */,
+			);
+			path = HDWeakArrayVC;
+			sourceTree = "<group>";
+		};
 		D97AE1241E94852F009534D2 /* HDTextToImageVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,6 +671,16 @@
 				D97C98191E9B4F3200DDA9D0 /* AllAroundPullView.m */,
 			);
 			path = AllAroundPullView;
+			sourceTree = "<group>";
+		};
+		D98C39FD1FFB57BC0082E14E /* UIDocumentInteractionController */ = {
+			isa = PBXGroup;
+			children = (
+				D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */,
+				D98C39FE1FFB58060082E14E /* UIDocumentViewController.h */,
+				D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */,
+			);
+			path = UIDocumentInteractionController;
 			sourceTree = "<group>";
 		};
 		D9C64E921EF8ED10005194D7 /* HDSortVC */ = {
@@ -675,6 +740,7 @@
 		FEC4E83549D260BFBCCAC003 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D98C3A031FFB5A350082E14E /* QuickLook.framework */,
 				D94F0DC71EA8CD7000697923 /* CFNetwork.framework */,
 				D94F0D9E1EA8C12F00697923 /* HDDemoDLib.framework */,
 				D97914E61EA740E8008A8EEA /* libstdc++.6.0.9.tbd */,
@@ -787,6 +853,7 @@
 				D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */,
 				D97C981E1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png in Resources */,
 				046B87F91D0D258D0087D99C /* 222.png in Resources */,
+				D98C3A021FFB58FB0082E14E /* iOSAppReverseEngineering.pdf in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
 				D97C981D1E9B4FC400DDA9D0 /* fdd_logo_refresh@2x.png in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
@@ -856,12 +923,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9EC73D11E8B8D7D00C92320 /* HDIMListVC.m in Sources */,
+				D95615B920624BD700072A3A /* HDBarChartsModel.m in Sources */,
 				0428C46B1D003F42001F9D6F /* UIImage+MultiFormat.m in Sources */,
+				D96607C52017273A00E7B989 /* HDDelegateTaget.m in Sources */,
 				D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
 				0428C4671D003F42001F9D6F /* SDWebImageManager.m in Sources */,
 				D97AE1291E948542009534D2 /* HDTextToImageVC.m in Sources */,
+				D95615B02060B4BD00072A3A /* HDBarChartsView.m in Sources */,
 				D97C981A1E9B4F3200DDA9D0 /* AllAroundPullView.m in Sources */,
 				049DC0EB1CD0527C0021599C /* ViewController.m in Sources */,
 				D9EC73CE1E8B803700C92320 /* LCCKUser.m in Sources */,
@@ -883,11 +953,13 @@
 				0428C4691D003F42001F9D6F /* UIButton+WebCache.m in Sources */,
 				0428C4151CFD8BAC001F9D6F /* HDProxyDemoViewController.m in Sources */,
 				04544FB31D0E869F00D02AD0 /* HDLogServiceViewController.m in Sources */,
+				D98C3A001FFB58060082E14E /* UIDocumentViewController.m in Sources */,
 				0428C4681D003F42001F9D6F /* SDWebImagePrefetcher.m in Sources */,
 				0428C4721D00454C001F9D6F /* UIView+Helpers.m in Sources */,
 				D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */,
 				D9EC73CB1E8B7B8600C92320 /* NSObject+LCCKHUD.m in Sources */,
 				0428C46D1D003F42001F9D6F /* UIImageView+WebCache.m in Sources */,
+				D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */,
 				0428C46C1D003F42001F9D6F /* UIImageView+HighlightedWebCache.m in Sources */,
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,
@@ -900,10 +972,12 @@
 				0428C4661D003F42001F9D6F /* SDWebImageDownloaderOperation.m in Sources */,
 				046B87EB1D0D23C80087D99C /* HDPulldownPhotoViewController.m in Sources */,
 				0428C47D1D011BC3001F9D6F /* HDPhotoGroupCell.m in Sources */,
+				D95615B42060EF2000072A3A /* HDBarChartsElementManager.m in Sources */,
 				04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */,
 				0428C46E1D003F42001F9D6F /* UIView+WebCacheOperation.m in Sources */,
 				0428C4351D002E7F001F9D6F /* HDFriendCycleViewController.m in Sources */,
 				046B87EE1D0D23D90087D99C /* HDTouchControlView.m in Sources */,
+				D96607C2201726EE00E7B989 /* HDWeakArrayVC.m in Sources */,
 				046B87F11D0D24000087D99C /* HDPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

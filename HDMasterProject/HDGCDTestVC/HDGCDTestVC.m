@@ -57,8 +57,8 @@
     //[self test8];
     //[self test9];
     //[self test10];
-    [self test11];
-//    [self test12];
+//    [self test11];
+    [self test12];
 }
 
 - (void)test1 {
@@ -284,15 +284,17 @@
 }
 
 - (void)test12 {
-    dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_CONCURRENT);
-    dispatch_apply(10, queue, ^(size_t index){
-        NSLog(@"%zu", index);
-    });
-    NSLog(@"done");
-
+    NSLog(@"1");
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-    dispatch_time_t timeout = dispatch_time(DISPATCH_TIME_NOW, 10 * NSEC_PER_SEC);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"2");
+        dispatch_semaphore_signal(semaphore);
+    });
+    NSLog(@"3");
+
+    dispatch_time_t timeout = dispatch_time(DISPATCH_TIME_NOW, 1.1 * NSEC_PER_SEC);
     dispatch_semaphore_wait(semaphore, timeout);
+    NSLog(@"done");
 }
 
 

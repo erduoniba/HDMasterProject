@@ -8,10 +8,17 @@
 
 #import "ViewController.h"
 
+#import "HDDelegateTaget.h"
+
+#include <libkern/OSAtomic.h>
+#include <execinfo.h>
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *dataArr;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) HDDelegateTaget *delegateTaget;
 
 @end
 
@@ -21,8 +28,6 @@ __weak id reference = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
-
     NSString *str;
     @autoreleasepool {
         str = [NSString stringWithFormat:@"sunnyxx"];
@@ -31,13 +36,24 @@ __weak id reference = nil;
     }
     NSLog(@"----------------reference2:%@", reference);
     NSLog(@"----------------str:%@", str);
+
+    _delegateTaget = [HDDelegateTaget sharedInstance];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
     NSLog(@"----------------reference3:%@", reference);
+
+    NSLog(@"%d", _delegateTaget.index);
+    _delegateTaget.index ++;
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //删除里面的对象之后，里面的对象将自动dealloc
+        //[_delegateTaget.delegates removeAllObjects];
+    });
 }
+
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -70,6 +86,9 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDInvertedImageVC"];
         [_dataArr addObject:@"HDGCDTestVC"];
         [_dataArr addObject:@"HDSortVC"];
+        [_dataArr addObject:@"UIDocumentViewController"];
+        [_dataArr addObject:@"HDWeakArrayVC"];
+        [_dataArr addObject:@"HDBarChartsViewController"];
     }
     return _dataArr;
 }
