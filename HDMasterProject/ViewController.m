@@ -89,6 +89,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"UIDocumentViewController"];
         [_dataArr addObject:@"HDWeakArrayVC"];
         [_dataArr addObject:@"HDBarChartsViewController"];
+        [_dataArr addObject:@"HDEyeViewDemo"];
     }
     return _dataArr;
 }

@@ -80,6 +80,13 @@
 		D97C981E1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D97C981C1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png */; };
 		D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D97C98201E9B5B6700DDA9D0 /* NHSelectBar.m */; };
 		D97C98231E9B778800DDA9D0 /* 2222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D97C98221E9B778800DDA9D0 /* 2222.jpg */; };
+		D9841E1F2063951700B7E139 /* HDEyeViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9841E1E2063951700B7E139 /* HDEyeViewDemo.m */; };
+		D9841E222063954000B7E139 /* HDEyeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9841E212063954000B7E139 /* HDEyeView.m */; };
+		D9841E2820639E7400B7E139 /* HDEyeAnimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9841E2720639E7400B7E139 /* HDEyeAnimateView.m */; };
+		D9841E2A20639F2700B7E139 /* icon_sight_capture_mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9841E2920639F2700B7E139 /* icon_sight_capture_mask@2x.png */; };
+		D9841E2D2063A5F400B7E139 /* HDEyeCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9841E2C2063A5F400B7E139 /* HDEyeCoverView.m */; };
+		D9841E312063B9B000B7E139 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9841E302063B9B000B7E139 /* logo@2x.png */; };
+		D9841E332063BE6700B7E139 /* eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9841E322063BE6700B7E139 /* eye@2x.png */; };
 		D98C3A001FFB58060082E14E /* UIDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */; };
 		D98C3A021FFB58FB0082E14E /* iOSAppReverseEngineering.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */; };
 		D98C3A041FFB5A350082E14E /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98C3A031FFB5A350082E14E /* QuickLook.framework */; };
@@ -278,6 +285,17 @@
 		D97C981F1E9B5B6700DDA9D0 /* NHSelectBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHSelectBar.h; sourceTree = "<group>"; };
 		D97C98201E9B5B6700DDA9D0 /* NHSelectBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHSelectBar.m; sourceTree = "<group>"; };
 		D97C98221E9B778800DDA9D0 /* 2222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2222.jpg; sourceTree = "<group>"; };
+		D9841E1D2063951700B7E139 /* HDEyeViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDEyeViewDemo.h; sourceTree = "<group>"; };
+		D9841E1E2063951700B7E139 /* HDEyeViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDEyeViewDemo.m; sourceTree = "<group>"; };
+		D9841E202063954000B7E139 /* HDEyeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDEyeView.h; sourceTree = "<group>"; };
+		D9841E212063954000B7E139 /* HDEyeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDEyeView.m; sourceTree = "<group>"; };
+		D9841E2620639E7400B7E139 /* HDEyeAnimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDEyeAnimateView.h; sourceTree = "<group>"; };
+		D9841E2720639E7400B7E139 /* HDEyeAnimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDEyeAnimateView.m; sourceTree = "<group>"; };
+		D9841E2920639F2700B7E139 /* icon_sight_capture_mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sight_capture_mask@2x.png"; sourceTree = "<group>"; };
+		D9841E2B2063A5F400B7E139 /* HDEyeCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDEyeCoverView.h; sourceTree = "<group>"; };
+		D9841E2C2063A5F400B7E139 /* HDEyeCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDEyeCoverView.m; sourceTree = "<group>"; };
+		D9841E302063B9B000B7E139 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		D9841E322063BE6700B7E139 /* eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye@2x.png"; sourceTree = "<group>"; };
 		D98C39FE1FFB58060082E14E /* UIDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDocumentViewController.h; sourceTree = "<group>"; };
 		D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDocumentViewController.m; sourceTree = "<group>"; };
 		D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = iOSAppReverseEngineering.pdf; sourceTree = "<group>"; };
@@ -520,6 +538,7 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D9841E1C206394FB00B7E139 /* HDEyeViewDemo */,
 				D95615AA2060B05800072A3A /* HDBarChartsView */,
 				D96607BF201726A900E7B989 /* HDWeakArrayVC */,
 				D98C39FD1FFB57BC0082E14E /* UIDocumentInteractionController */,
@@ -623,14 +642,9 @@
 		D95615AA2060B05800072A3A /* HDBarChartsView */ = {
 			isa = PBXGroup;
 			children = (
-				D95615B22060EF2000072A3A /* HDBarChartsElementManager.h */,
-				D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */,
-				D95615B720624BD700072A3A /* HDBarChartsModel.h */,
-				D95615B820624BD700072A3A /* HDBarChartsModel.m */,
-				D95615AE2060B4BD00072A3A /* HDBarChartsView.h */,
-				D95615AF2060B4BD00072A3A /* HDBarChartsView.m */,
 				D95615AB2060B11000072A3A /* HDBarChartsViewController.h */,
 				D95615AC2060B11000072A3A /* HDBarChartsViewController.m */,
+				D9841E232063964400B7E139 /* HDBarCharts */,
 			);
 			path = HDBarChartsView;
 			sourceTree = "<group>";
@@ -671,6 +685,53 @@
 				D97C98191E9B4F3200DDA9D0 /* AllAroundPullView.m */,
 			);
 			path = AllAroundPullView;
+			sourceTree = "<group>";
+		};
+		D9841E1C206394FB00B7E139 /* HDEyeViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D9841E2520639E6700B7E139 /* HDEyeViewAmimate */,
+				D9841E2420639E5200B7E139 /* HDEyeViewLayer */,
+				D9841E1D2063951700B7E139 /* HDEyeViewDemo.h */,
+				D9841E1E2063951700B7E139 /* HDEyeViewDemo.m */,
+				D9841E322063BE6700B7E139 /* eye@2x.png */,
+				D9841E302063B9B000B7E139 /* logo@2x.png */,
+			);
+			path = HDEyeViewDemo;
+			sourceTree = "<group>";
+		};
+		D9841E232063964400B7E139 /* HDBarCharts */ = {
+			isa = PBXGroup;
+			children = (
+				D95615B22060EF2000072A3A /* HDBarChartsElementManager.h */,
+				D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */,
+				D95615B720624BD700072A3A /* HDBarChartsModel.h */,
+				D95615B820624BD700072A3A /* HDBarChartsModel.m */,
+				D95615AE2060B4BD00072A3A /* HDBarChartsView.h */,
+				D95615AF2060B4BD00072A3A /* HDBarChartsView.m */,
+			);
+			path = HDBarCharts;
+			sourceTree = "<group>";
+		};
+		D9841E2420639E5200B7E139 /* HDEyeViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D9841E202063954000B7E139 /* HDEyeView.h */,
+				D9841E212063954000B7E139 /* HDEyeView.m */,
+			);
+			path = HDEyeViewLayer;
+			sourceTree = "<group>";
+		};
+		D9841E2520639E6700B7E139 /* HDEyeViewAmimate */ = {
+			isa = PBXGroup;
+			children = (
+				D9841E2920639F2700B7E139 /* icon_sight_capture_mask@2x.png */,
+				D9841E2620639E7400B7E139 /* HDEyeAnimateView.h */,
+				D9841E2720639E7400B7E139 /* HDEyeAnimateView.m */,
+				D9841E2B2063A5F400B7E139 /* HDEyeCoverView.h */,
+				D9841E2C2063A5F400B7E139 /* HDEyeCoverView.m */,
+			);
+			path = HDEyeViewAmimate;
 			sourceTree = "<group>";
 		};
 		D98C39FD1FFB57BC0082E14E /* UIDocumentInteractionController */ = {
@@ -849,12 +910,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9841E2A20639F2700B7E139 /* icon_sight_capture_mask@2x.png in Resources */,
 				D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */,
 				D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */,
 				D97C981E1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png in Resources */,
 				046B87F91D0D258D0087D99C /* 222.png in Resources */,
 				D98C3A021FFB58FB0082E14E /* iOSAppReverseEngineering.pdf in Resources */,
+				D9841E332063BE6700B7E139 /* eye@2x.png in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
+				D9841E312063B9B000B7E139 /* logo@2x.png in Resources */,
 				D97C981D1E9B4FC400DDA9D0 /* fdd_logo_refresh@2x.png in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
 				D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */,
@@ -927,11 +991,14 @@
 				0428C46B1D003F42001F9D6F /* UIImage+MultiFormat.m in Sources */,
 				D96607C52017273A00E7B989 /* HDDelegateTaget.m in Sources */,
 				D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */,
+				D9841E1F2063951700B7E139 /* HDEyeViewDemo.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
 				0428C4671D003F42001F9D6F /* SDWebImageManager.m in Sources */,
+				D9841E222063954000B7E139 /* HDEyeView.m in Sources */,
 				D97AE1291E948542009534D2 /* HDTextToImageVC.m in Sources */,
 				D95615B02060B4BD00072A3A /* HDBarChartsView.m in Sources */,
+				D9841E2D2063A5F400B7E139 /* HDEyeCoverView.m in Sources */,
 				D97C981A1E9B4F3200DDA9D0 /* AllAroundPullView.m in Sources */,
 				049DC0EB1CD0527C0021599C /* ViewController.m in Sources */,
 				D9EC73CE1E8B803700C92320 /* LCCKUser.m in Sources */,
@@ -944,6 +1011,7 @@
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
+				D9841E2820639E7400B7E139 /* HDEyeAnimateView.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
