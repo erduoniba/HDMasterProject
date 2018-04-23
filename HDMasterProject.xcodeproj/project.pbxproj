@@ -67,6 +67,9 @@
 		D95615B920624BD700072A3A /* HDBarChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615B820624BD700072A3A /* HDBarChartsModel.m */; };
 		D96607C2201726EE00E7B989 /* HDWeakArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D96607C1201726EE00E7B989 /* HDWeakArrayVC.m */; };
 		D96607C52017273A00E7B989 /* HDDelegateTaget.m in Sources */ = {isa = PBXBuildFile; fileRef = D96607C42017273A00E7B989 /* HDDelegateTaget.m */; };
+		D9716429208D6BAC005B4F4F /* HDDelegateDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9716428208D6BAC005B4F4F /* HDDelegateDemo.m */; };
+		D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = D971642B208D6BBF005B4F4F /* HDDelegateObject1.m */; };
+		D971642F208D6BC9005B4F4F /* HDDelegateObject2.m in Sources */ = {isa = PBXBuildFile; fileRef = D971642E208D6BC9005B4F4F /* HDDelegateObject2.m */; };
 		D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914D61EA7408B008A8EEA /* CoreLocation.framework */; };
 		D97914D91EA74093008A8EEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914D81EA74093008A8EEA /* QuartzCore.framework */; };
 		D97914DB1EA7409C008A8EEA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914DA1EA7409C008A8EEA /* OpenGLES.framework */; };
@@ -94,6 +97,8 @@
 		D9ACA68A1EA86732009A9219 /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9ACA68D1EA86732009A9219 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
 		D9ACA68E1EA86732009A9219 /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9B7D90E2071D91900D64580 /* MideaAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B7D90C2071D91800D64580 /* MideaAlertController.m */; };
+		D9B7D9112071DE1200D64580 /* HDAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B7D9102071DE1200D64580 /* HDAlertViewController.m */; };
 		D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C64E941EF8ED28005194D7 /* HDSortVC.m */; };
 		D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */; };
 		D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F21E978BC2000968FA /* 3333.jpg */; };
@@ -265,6 +270,13 @@
 		D96607C1201726EE00E7B989 /* HDWeakArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDWeakArrayVC.m; sourceTree = "<group>"; };
 		D96607C32017273A00E7B989 /* HDDelegateTaget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDelegateTaget.h; sourceTree = "<group>"; };
 		D96607C42017273A00E7B989 /* HDDelegateTaget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDelegateTaget.m; sourceTree = "<group>"; };
+		D9716427208D6BAC005B4F4F /* HDDelegateDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDelegateDemo.h; sourceTree = "<group>"; };
+		D9716428208D6BAC005B4F4F /* HDDelegateDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDelegateDemo.m; sourceTree = "<group>"; };
+		D971642A208D6BBF005B4F4F /* HDDelegateObject1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDelegateObject1.h; sourceTree = "<group>"; };
+		D971642B208D6BBF005B4F4F /* HDDelegateObject1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDelegateObject1.m; sourceTree = "<group>"; };
+		D971642D208D6BC9005B4F4F /* HDDelegateObject2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDelegateObject2.h; sourceTree = "<group>"; };
+		D971642E208D6BC9005B4F4F /* HDDelegateObject2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDelegateObject2.m; sourceTree = "<group>"; };
+		D9716430208D6F4E005B4F4F /* HDProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDProtocol.h; sourceTree = "<group>"; };
 		D97914D61EA7408B008A8EEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D97914D81EA74093008A8EEA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D97914DA1EA7409C008A8EEA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -300,6 +312,10 @@
 		D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDocumentViewController.m; sourceTree = "<group>"; };
 		D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = iOSAppReverseEngineering.pdf; sourceTree = "<group>"; };
 		D98C3A031FFB5A350082E14E /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		D9B7D90C2071D91800D64580 /* MideaAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MideaAlertController.m; sourceTree = "<group>"; };
+		D9B7D90D2071D91800D64580 /* MideaAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MideaAlertController.h; sourceTree = "<group>"; };
+		D9B7D90F2071DE1200D64580 /* HDAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAlertViewController.h; sourceTree = "<group>"; };
+		D9B7D9102071DE1200D64580 /* HDAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAlertViewController.m; sourceTree = "<group>"; };
 		D9C64E931EF8ED28005194D7 /* HDSortVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSortVC.h; sourceTree = "<group>"; };
 		D9C64E941EF8ED28005194D7 /* HDSortVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSortVC.m; sourceTree = "<group>"; };
 		D9CB73CF1E973F1B000968FA /* HDInvertedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDInvertedImageVC.h; sourceTree = "<group>"; };
@@ -538,6 +554,7 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D9716426208D6B92005B4F4F /* HDDelegateDemo */,
 				D9841E1C206394FB00B7E139 /* HDEyeViewDemo */,
 				D95615AA2060B05800072A3A /* HDBarChartsView */,
 				D96607BF201726A900E7B989 /* HDWeakArrayVC */,
@@ -642,6 +659,10 @@
 		D95615AA2060B05800072A3A /* HDBarChartsView */ = {
 			isa = PBXGroup;
 			children = (
+				D9B7D90D2071D91800D64580 /* MideaAlertController.h */,
+				D9B7D90C2071D91800D64580 /* MideaAlertController.m */,
+				D9B7D90F2071DE1200D64580 /* HDAlertViewController.h */,
+				D9B7D9102071DE1200D64580 /* HDAlertViewController.m */,
 				D95615AB2060B11000072A3A /* HDBarChartsViewController.h */,
 				D95615AC2060B11000072A3A /* HDBarChartsViewController.m */,
 				D9841E232063964400B7E139 /* HDBarCharts */,
@@ -658,6 +679,20 @@
 				D96607C42017273A00E7B989 /* HDDelegateTaget.m */,
 			);
 			path = HDWeakArrayVC;
+			sourceTree = "<group>";
+		};
+		D9716426208D6B92005B4F4F /* HDDelegateDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D9716427208D6BAC005B4F4F /* HDDelegateDemo.h */,
+				D9716428208D6BAC005B4F4F /* HDDelegateDemo.m */,
+				D971642A208D6BBF005B4F4F /* HDDelegateObject1.h */,
+				D971642B208D6BBF005B4F4F /* HDDelegateObject1.m */,
+				D971642D208D6BC9005B4F4F /* HDDelegateObject2.h */,
+				D971642E208D6BC9005B4F4F /* HDDelegateObject2.m */,
+				D9716430208D6F4E005B4F4F /* HDProtocol.h */,
+			);
+			path = HDDelegateDemo;
 			sourceTree = "<group>";
 		};
 		D97AE1241E94852F009534D2 /* HDTextToImageVC */ = {
@@ -993,8 +1028,10 @@
 				D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */,
 				D9841E1F2063951700B7E139 /* HDEyeViewDemo.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
+				D9B7D90E2071D91900D64580 /* MideaAlertController.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
 				0428C4671D003F42001F9D6F /* SDWebImageManager.m in Sources */,
+				D971642F208D6BC9005B4F4F /* HDDelegateObject2.m in Sources */,
 				D9841E222063954000B7E139 /* HDEyeView.m in Sources */,
 				D97AE1291E948542009534D2 /* HDTextToImageVC.m in Sources */,
 				D95615B02060B4BD00072A3A /* HDBarChartsView.m in Sources */,
@@ -1008,6 +1045,7 @@
 				0428C4651D003F42001F9D6F /* SDWebImageDownloader.m in Sources */,
 				D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */,
 				049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */,
+				D9716429208D6BAC005B4F4F /* HDDelegateDemo.m in Sources */,
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
@@ -1029,6 +1067,7 @@
 				0428C46D1D003F42001F9D6F /* UIImageView+WebCache.m in Sources */,
 				D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */,
 				0428C46C1D003F42001F9D6F /* UIImageView+HighlightedWebCache.m in Sources */,
+				D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */,
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,
 				0428C4641D003F42001F9D6F /* SDWebImageDecoder.m in Sources */,
@@ -1046,6 +1085,7 @@
 				0428C4351D002E7F001F9D6F /* HDFriendCycleViewController.m in Sources */,
 				046B87EE1D0D23D90087D99C /* HDTouchControlView.m in Sources */,
 				D96607C2201726EE00E7B989 /* HDWeakArrayVC.m in Sources */,
+				D9B7D9112071DE1200D64580 /* HDAlertViewController.m in Sources */,
 				046B87F11D0D24000087D99C /* HDPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

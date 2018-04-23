@@ -11,6 +11,9 @@
 #import "HDBarChartsView.h"
 #import "HDBarChartsModel.h"
 
+#import "MideaAlertController.h"
+#import "HDAlertViewController.h"
+
 @interface HDBarChartsViewController ()
 
 @property (nonatomic, assign) NSInteger blocks;
@@ -50,6 +53,61 @@
     stepper2.maximumValue = 4;
     stepper2.minimumValue = 1;
     [self.view addSubview:stepper2];
+
+//    for (int i=0; i<100; i++) {
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * i / 10.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [self showAlertVC];
+//        });
+//    }
+
+
+
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self showAlertVC];
+//    });
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self showAlertVC];
+//    });
+}
+
+- (UIViewController*)topMostWindowController
+{
+    UIViewController *topController = [[UIApplication sharedApplication].delegate.window rootViewController];
+
+    //  Getting topMost ViewController
+    while ([topController presentedViewController])    topController = [topController presentedViewController];
+
+    //  Returning topMost ViewController
+    return topController;
+}
+
+- (UIViewController*)currentViewController;
+{
+    UIViewController *currentViewController = [self topMostWindowController];
+
+    while ([currentViewController isKindOfClass:[UINavigationController class]] && [(UINavigationController*)currentViewController topViewController])
+    currentViewController = [(UINavigationController*)currentViewController topViewController];
+
+    return currentViewController;
+}
+
+- (void)showAlertVC {
+//    [[MideaAlertController alertWithAlertTitle:@"XX"
+//                                       message:@"YY"
+//                                     cancelBtn:@"CANCEL"
+//                                 cancelHandler:^(MideaAlertController *alert) {
+//
+//                                 }] show];
+
+    HDAlertViewController *alertVC = [HDAlertViewController alertControllerWithTitle:@"xxxx" message:@"yyyy" preferredStyle:UIAlertControllerStyleAlert];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+
+    }]];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"sure" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+
+    }]];
+    [[self currentViewController] presentViewController:alertVC animated:YES completion:Nil];
 }
 
 - (void)blocksCount:(UIStepper *)stepper {

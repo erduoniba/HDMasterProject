@@ -90,6 +90,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDWeakArrayVC"];
         [_dataArr addObject:@"HDBarChartsViewController"];
         [_dataArr addObject:@"HDEyeViewDemo"];
+        [_dataArr addObject:@"HDDelegateDemo"];
     }
     return _dataArr;
 }
