@@ -65,6 +65,10 @@
 		D95615B02060B4BD00072A3A /* HDBarChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615AF2060B4BD00072A3A /* HDBarChartsView.m */; };
 		D95615B42060EF2000072A3A /* HDBarChartsElementManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */; };
 		D95615B920624BD700072A3A /* HDBarChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615B820624BD700072A3A /* HDBarChartsModel.m */; };
+		D964E3EA208DD1A600197A98 /* HDCategoryDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D964E3E9208DD1A600197A98 /* HDCategoryDemo.m */; };
+		D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D964E3EC208DD1B400197A98 /* HDCategory.m */; };
+		D964E42E208DE00D00197A98 /* HDCategory+One.m in Sources */ = {isa = PBXBuildFile; fileRef = D964E3EF208DD1E800197A98 /* HDCategory+One.m */; };
+		D964E42F208DE00D00197A98 /* HDCategory+Two.m in Sources */ = {isa = PBXBuildFile; fileRef = D964E3F2208DD1F100197A98 /* HDCategory+Two.m */; };
 		D96607C2201726EE00E7B989 /* HDWeakArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D96607C1201726EE00E7B989 /* HDWeakArrayVC.m */; };
 		D96607C52017273A00E7B989 /* HDDelegateTaget.m in Sources */ = {isa = PBXBuildFile; fileRef = D96607C42017273A00E7B989 /* HDDelegateTaget.m */; };
 		D9716429208D6BAC005B4F4F /* HDDelegateDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9716428208D6BAC005B4F4F /* HDDelegateDemo.m */; };
@@ -266,6 +270,14 @@
 		D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDBarChartsElementManager.m; sourceTree = "<group>"; };
 		D95615B720624BD700072A3A /* HDBarChartsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDBarChartsModel.h; sourceTree = "<group>"; };
 		D95615B820624BD700072A3A /* HDBarChartsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDBarChartsModel.m; sourceTree = "<group>"; };
+		D964E3E8208DD1A600197A98 /* HDCategoryDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCategoryDemo.h; sourceTree = "<group>"; };
+		D964E3E9208DD1A600197A98 /* HDCategoryDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDCategoryDemo.m; sourceTree = "<group>"; };
+		D964E3EB208DD1B400197A98 /* HDCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCategory.h; sourceTree = "<group>"; };
+		D964E3EC208DD1B400197A98 /* HDCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDCategory.m; sourceTree = "<group>"; };
+		D964E3EE208DD1E800197A98 /* HDCategory+One.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDCategory+One.h"; sourceTree = "<group>"; };
+		D964E3EF208DD1E800197A98 /* HDCategory+One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HDCategory+One.m"; sourceTree = "<group>"; };
+		D964E3F1208DD1F100197A98 /* HDCategory+Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDCategory+Two.h"; sourceTree = "<group>"; };
+		D964E3F2208DD1F100197A98 /* HDCategory+Two.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HDCategory+Two.m"; sourceTree = "<group>"; };
 		D96607C0201726EE00E7B989 /* HDWeakArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWeakArrayVC.h; sourceTree = "<group>"; };
 		D96607C1201726EE00E7B989 /* HDWeakArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDWeakArrayVC.m; sourceTree = "<group>"; };
 		D96607C32017273A00E7B989 /* HDDelegateTaget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDelegateTaget.h; sourceTree = "<group>"; };
@@ -554,6 +566,7 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D964E3E7208DD18000197A98 /* HDCategoryDemo */,
 				D9716426208D6B92005B4F4F /* HDDelegateDemo */,
 				D9841E1C206394FB00B7E139 /* HDEyeViewDemo */,
 				D95615AA2060B05800072A3A /* HDBarChartsView */,
@@ -668,6 +681,21 @@
 				D9841E232063964400B7E139 /* HDBarCharts */,
 			);
 			path = HDBarChartsView;
+			sourceTree = "<group>";
+		};
+		D964E3E7208DD18000197A98 /* HDCategoryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D964E3E8208DD1A600197A98 /* HDCategoryDemo.h */,
+				D964E3E9208DD1A600197A98 /* HDCategoryDemo.m */,
+				D964E3EB208DD1B400197A98 /* HDCategory.h */,
+				D964E3EC208DD1B400197A98 /* HDCategory.m */,
+				D964E3EE208DD1E800197A98 /* HDCategory+One.h */,
+				D964E3EF208DD1E800197A98 /* HDCategory+One.m */,
+				D964E3F1208DD1F100197A98 /* HDCategory+Two.h */,
+				D964E3F2208DD1F100197A98 /* HDCategory+Two.m */,
+			);
+			path = HDCategoryDemo;
 			sourceTree = "<group>";
 		};
 		D96607BF201726A900E7B989 /* HDWeakArrayVC */ = {
@@ -1050,6 +1078,7 @@
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
 				D9841E2820639E7400B7E139 /* HDEyeAnimateView.m in Sources */,
+				D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
@@ -1065,6 +1094,7 @@
 				D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */,
 				D9EC73CB1E8B7B8600C92320 /* NSObject+LCCKHUD.m in Sources */,
 				0428C46D1D003F42001F9D6F /* UIImageView+WebCache.m in Sources */,
+				D964E3EA208DD1A600197A98 /* HDCategoryDemo.m in Sources */,
 				D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */,
 				0428C46C1D003F42001F9D6F /* UIImageView+HighlightedWebCache.m in Sources */,
 				D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */,
@@ -1083,6 +1113,8 @@
 				04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */,
 				0428C46E1D003F42001F9D6F /* UIView+WebCacheOperation.m in Sources */,
 				0428C4351D002E7F001F9D6F /* HDFriendCycleViewController.m in Sources */,
+				D964E42F208DE00D00197A98 /* HDCategory+Two.m in Sources */,
+				D964E42E208DE00D00197A98 /* HDCategory+One.m in Sources */,
 				046B87EE1D0D23D90087D99C /* HDTouchControlView.m in Sources */,
 				D96607C2201726EE00E7B989 /* HDWeakArrayVC.m in Sources */,
 				D9B7D9112071DE1200D64580 /* HDAlertViewController.m in Sources */,
@@ -1221,6 +1253,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
 					"$(PROJECT_DIR)/HDMasterProject/HDMapVC/BaiduMapKit",
+					"$(PROJECT_DIR)/HDMasterProject/HDCategoryDemo",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = HDMasterProject/PrefixHeader.pch;
@@ -1261,6 +1294,7 @@
 					"$(PROJECT_DIR)/HDMasterProject",
 					"$(PROJECT_DIR)/HDMasterProject/HDMapVC/BaiduMap_IOSSDK_v3",
 					"$(PROJECT_DIR)/HDMasterProject/HDMapVC/BaiduMapKit",
+					"$(PROJECT_DIR)/HDMasterProject/HDCategoryDemo",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PREFIX_HEADER = HDMasterProject/PrefixHeader.pch;

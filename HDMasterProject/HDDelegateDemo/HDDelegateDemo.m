@@ -27,9 +27,11 @@
 
     _obj1 = [HDDelegateObject1 new];
     _obj1.hdDemoProtocol = self;
+    NSLog(@"==%@", [_obj1 hdDoSomething2:nil]);
 
     _obj2 = [HDDelegateObject2 new];
     _obj2.hdDemoProtocol = self;
+    NSLog(@"==%@", [_obj2 hdDoSomething2:nil]);
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [_obj1 action];

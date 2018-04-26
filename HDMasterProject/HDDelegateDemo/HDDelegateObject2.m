@@ -17,4 +17,8 @@
     }
 }
 
+- (NSString *)hdDoSomething2:(id)obj {
+    return @"HDDelegateObject2-hdDoSomething2";
+}
+
 @end

@@ -11,3 +11,10 @@
 - (NSString *)hdDoSomething:(id)obj;
 
 @end
+
+
+@protocol HDProtocol2 <NSObject>
+
+- (NSString *)hdDoSomething2:(id)obj;
+
+@end

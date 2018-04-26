@@ -10,7 +10,7 @@
 
 #import "HDProtocol.h"
 
-@interface HDDelegateObject1 : NSObject
+@interface HDDelegateObject1 : NSObject <HDProtocol2>
 
 @property (nonatomic, weak) id <HDProtocol> hdDemoProtocol;
 
