@@ -14,11 +14,7 @@
 #import <JSPatch/JSPatch.h>
 #import "ViewController.h"
 
-//https://leancloud.cn/docs/start.html
-#import <AVOSCloud/AVOSCloud.h>
-
-//https://leancloud.cn/docs/chatkit-ios.html#初始化
-#import <ChatKit/LCChatKit.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 
 static NSString *const leancloudAppId = @"0MekiRXH3vAPyw6SI3Uc6FSY-gzGzoHsz";
@@ -41,14 +37,10 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     [HDSubProjectMethodOne hdSubProjectMethodOne];
     [HDSubProjectMethodTwo hdSubProjectMethodTwo];
 
-    [AVOSCloud setApplicationId:leancloudAppId clientKey:leancloudClientKey];
+    [IQKeyboardManager sharedManager].enable = YES;
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
 
-    // 开启 LeanCloud 服务
-    [LCChatKit setAppId:leancloudAppId appKey:leancloudClientKey];
-    //添加输入框底部插件，如需更换图标标题，可子类化，然后调用 `+registerSubclass`
-    [LCCKInputViewPluginTakePhoto registerSubclass];
-    [LCCKInputViewPluginPickImage registerSubclass];
-    [LCCKInputViewPluginLocation registerSubclass];
+    [self startLaunchingAnimation];
 
     return YES;
 }
@@ -164,6 +156,20 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)startLaunchingAnimation {
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LaunchScreen" bundle:[NSBundle mainBundle]];
+    UIView *launchScreenView = sb.instantiateInitialViewController.view;
+    launchScreenView.frame = window.bounds;
+    [window.rootViewController.view addSubview:launchScreenView];
+
+    [UIView animateWithDuration:0.2 delay:1 options:UIViewAnimationOptionCurveLinear animations:^{
+        launchScreenView.alpha = 0;
+    } completion:^(BOOL finished) {
+        [launchScreenView removeFromSuperview];
+    }];
 }
 
 @end

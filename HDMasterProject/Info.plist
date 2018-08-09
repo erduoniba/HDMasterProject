@@ -47,6 +47,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSContactsUsageDescription</key>
+	<string></string>
 	<key>CFBundleDisplayName</key>
 	<string>HDMasterProject</string>
 </dict>

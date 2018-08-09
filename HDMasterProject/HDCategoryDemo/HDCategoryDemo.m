@@ -11,7 +11,6 @@
 #import "HDCategory.h"
 //#import "HDCategory+One.h"
 //#import "HDCategory+Two.h"
-#import <HDCagegoryFramework/HDCagegoryFramework.h>
 
 @interface HDCategoryDemo ()
 

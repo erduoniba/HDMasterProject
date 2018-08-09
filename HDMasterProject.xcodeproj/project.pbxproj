@@ -54,6 +54,7 @@
 		04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */; };
 		04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */; };
 		32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */; };
+		D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */; };
 		D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */; };
 		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
 		D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
@@ -94,6 +95,7 @@
 		D9841E2D2063A5F400B7E139 /* HDEyeCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9841E2C2063A5F400B7E139 /* HDEyeCoverView.m */; };
 		D9841E312063B9B000B7E139 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9841E302063B9B000B7E139 /* logo@2x.png */; };
 		D9841E332063BE6700B7E139 /* eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9841E322063BE6700B7E139 /* eye@2x.png */; };
+		D989756A20E24362005945D3 /* HDAddressBookDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D989756920E24362005945D3 /* HDAddressBookDemo.m */; };
 		D98C3A001FFB58060082E14E /* UIDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */; };
 		D98C3A021FFB58FB0082E14E /* iOSAppReverseEngineering.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */; };
 		D98C3A041FFB5A350082E14E /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98C3A031FFB5A350082E14E /* QuickLook.framework */; };
@@ -108,14 +110,13 @@
 		D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F21E978BC2000968FA /* 3333.jpg */; };
 		D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F41E978D3A000968FA /* 3333@2x.png */; };
 		D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73FF1E979CB2000968FA /* 4444@2x.png */; };
-		D9E570081E8A331000C6C130 /* HDIMDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570071E8A331000C6C130 /* HDIMDemoVC.m */; };
-		D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */; };
+		D9DFD01620C9213500763A00 /* HDShareInstanceSonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD01520C9213500763A00 /* HDShareInstanceSonDemo.m */; };
+		D9DFD01920C9216900763A00 /* HDShareInstanceFather.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD01820C9216900763A00 /* HDShareInstanceFather.m */; };
+		D9DFD01C20C9218F00763A00 /* HDShareInstanceOne.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD01B20C9218F00763A00 /* HDShareInstanceOne.m */; };
+		D9DFD01F20C921A300763A00 /* HDShareInstanceTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD01E20C921A300763A00 /* HDShareInstanceTwo.m */; };
 		D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */; };
 		D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */; };
 		D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */; };
-		D9EC73CB1E8B7B8600C92320 /* NSObject+LCCKHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC73CA1E8B7B8600C92320 /* NSObject+LCCKHUD.m */; };
-		D9EC73CE1E8B803700C92320 /* LCCKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC73CD1E8B803700C92320 /* LCCKUser.m */; };
-		D9EC73D11E8B8D7D00C92320 /* HDIMListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC73D01E8B8D7D00C92320 /* HDIMListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +259,8 @@
 		0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.release.xcconfig"; sourceTree = "<group>"; };
 		29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDMasterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D90B8A0D210F174A00748600 /* HDTextFieldDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDTextFieldDemo.h; sourceTree = "<group>"; };
+		D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDTextFieldDemo.m; sourceTree = "<group>"; };
 		D93FC37A1ECD8946009A7C3C /* HDGCDTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDGCDTestVC.h; sourceTree = "<group>"; };
 		D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDGCDTestVC.m; sourceTree = "<group>"; };
 		D94F0D9E1EA8C12F00697923 /* HDDemoDLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HDDemoDLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/HDMasterProject-dhzorybjxmjuvyfcfkuicxjaknew/Build/Products/Debug-iphoneos/HDDemoDLib/HDDemoDLib.framework"; sourceTree = "<group>"; };
@@ -320,6 +323,8 @@
 		D9841E2C2063A5F400B7E139 /* HDEyeCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDEyeCoverView.m; sourceTree = "<group>"; };
 		D9841E302063B9B000B7E139 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		D9841E322063BE6700B7E139 /* eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye@2x.png"; sourceTree = "<group>"; };
+		D989756820E24362005945D3 /* HDAddressBookDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAddressBookDemo.h; sourceTree = "<group>"; };
+		D989756920E24362005945D3 /* HDAddressBookDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAddressBookDemo.m; sourceTree = "<group>"; };
 		D98C39FE1FFB58060082E14E /* UIDocumentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDocumentViewController.h; sourceTree = "<group>"; };
 		D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDocumentViewController.m; sourceTree = "<group>"; };
 		D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = iOSAppReverseEngineering.pdf; sourceTree = "<group>"; };
@@ -335,19 +340,18 @@
 		D9CB73F21E978BC2000968FA /* 3333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3333.jpg; sourceTree = "<group>"; };
 		D9CB73F41E978D3A000968FA /* 3333@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3333@2x.png"; sourceTree = "<group>"; };
 		D9CB73FF1E979CB2000968FA /* 4444@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4444@2x.png"; sourceTree = "<group>"; };
-		D9E570061E8A331000C6C130 /* HDIMDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDIMDemoVC.h; sourceTree = "<group>"; };
-		D9E570071E8A331000C6C130 /* HDIMDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDIMDemoVC.m; sourceTree = "<group>"; };
-		D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDIMDemoVC.xib; sourceTree = "<group>"; };
+		D9DFD01420C9213500763A00 /* HDShareInstanceSonDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDShareInstanceSonDemo.h; sourceTree = "<group>"; };
+		D9DFD01520C9213500763A00 /* HDShareInstanceSonDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDShareInstanceSonDemo.m; sourceTree = "<group>"; };
+		D9DFD01720C9216900763A00 /* HDShareInstanceFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDShareInstanceFather.h; sourceTree = "<group>"; };
+		D9DFD01820C9216900763A00 /* HDShareInstanceFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDShareInstanceFather.m; sourceTree = "<group>"; };
+		D9DFD01A20C9218F00763A00 /* HDShareInstanceOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDShareInstanceOne.h; sourceTree = "<group>"; };
+		D9DFD01B20C9218F00763A00 /* HDShareInstanceOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDShareInstanceOne.m; sourceTree = "<group>"; };
+		D9DFD01D20C921A300763A00 /* HDShareInstanceTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDShareInstanceTwo.h; sourceTree = "<group>"; };
+		D9DFD01E20C921A300763A00 /* HDShareInstanceTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDShareInstanceTwo.m; sourceTree = "<group>"; };
 		D9E570131E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubble_Sender@2x.png"; sourceTree = "<group>"; };
 		D9E570181E8A7B8C00C6C130 /* HDMaskLayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMaskLayerVC.h; sourceTree = "<group>"; };
 		D9E570191E8A7B8C00C6C130 /* HDMaskLayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMaskLayerVC.m; sourceTree = "<group>"; };
 		D9EC73B91E8B727800C92320 /* MessageBubble_Reviceder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageBubble_Reviceder@2x.png"; sourceTree = "<group>"; };
-		D9EC73C91E8B7B8600C92320 /* NSObject+LCCKHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LCCKHUD.h"; sourceTree = "<group>"; };
-		D9EC73CA1E8B7B8600C92320 /* NSObject+LCCKHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LCCKHUD.m"; sourceTree = "<group>"; };
-		D9EC73CC1E8B803700C92320 /* LCCKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCKUser.h; sourceTree = "<group>"; };
-		D9EC73CD1E8B803700C92320 /* LCCKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCKUser.m; sourceTree = "<group>"; };
-		D9EC73CF1E8B8D7D00C92320 /* HDIMListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDIMListVC.h; sourceTree = "<group>"; };
-		D9EC73D01E8B8D7D00C92320 /* HDIMListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDIMListVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -566,6 +570,9 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D90B8A0C210F172A00748600 /* HDTextFieldDemo */,
+				D989756720E242E2005945D3 /* HDAddressBook */,
+				D9DFD01320C9211600763A00 /* HDShareInstanceSonDemo */,
 				D964E3E7208DD18000197A98 /* HDCategoryDemo */,
 				D9716426208D6B92005B4F4F /* HDDelegateDemo */,
 				D9841E1C206394FB00B7E139 /* HDEyeViewDemo */,
@@ -577,7 +584,6 @@
 				D9CB73CC1E973F10000968FA /* HDInvertedImageVC */,
 				D97AE1241E94852F009534D2 /* HDTextToImageVC */,
 				D9E570171E8A7B7A00C6C130 /* HDMaskLayerVC */,
-				D9E570011E8A2E0900C6C130 /* HDIMDemoVC */,
 				04BD829D1CE96AB700943C42 /* HDMessageWays */,
 				0428C4121CFD8B7D001F9D6F /* HDProxyDemo */,
 				0428C4321D002E67001F9D6F /* HDFriendCycleViewController */,
@@ -658,6 +664,15 @@
 				04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */,
 			);
 			path = HDMessageWays;
+			sourceTree = "<group>";
+		};
+		D90B8A0C210F172A00748600 /* HDTextFieldDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D90B8A0D210F174A00748600 /* HDTextFieldDemo.h */,
+				D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */,
+			);
+			path = HDTextFieldDemo;
 			sourceTree = "<group>";
 		};
 		D93FC3791ECD891C009A7C3C /* HDGCDTestVC */ = {
@@ -797,6 +812,15 @@
 			path = HDEyeViewAmimate;
 			sourceTree = "<group>";
 		};
+		D989756720E242E2005945D3 /* HDAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				D989756820E24362005945D3 /* HDAddressBookDemo.h */,
+				D989756920E24362005945D3 /* HDAddressBookDemo.m */,
+			);
+			path = HDAddressBook;
+			sourceTree = "<group>";
+		};
 		D98C39FD1FFB57BC0082E14E /* UIDocumentInteractionController */ = {
 			isa = PBXGroup;
 			children = (
@@ -827,20 +851,19 @@
 			path = HDInvertedImageVC;
 			sourceTree = "<group>";
 		};
-		D9E570011E8A2E0900C6C130 /* HDIMDemoVC */ = {
+		D9DFD01320C9211600763A00 /* HDShareInstanceSonDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D9EC73C91E8B7B8600C92320 /* NSObject+LCCKHUD.h */,
-				D9EC73CA1E8B7B8600C92320 /* NSObject+LCCKHUD.m */,
-				D9EC73CC1E8B803700C92320 /* LCCKUser.h */,
-				D9EC73CD1E8B803700C92320 /* LCCKUser.m */,
-				D9E570061E8A331000C6C130 /* HDIMDemoVC.h */,
-				D9E570071E8A331000C6C130 /* HDIMDemoVC.m */,
-				D9E5700F1E8A3CCD00C6C130 /* HDIMDemoVC.xib */,
-				D9EC73CF1E8B8D7D00C92320 /* HDIMListVC.h */,
-				D9EC73D01E8B8D7D00C92320 /* HDIMListVC.m */,
+				D9DFD01420C9213500763A00 /* HDShareInstanceSonDemo.h */,
+				D9DFD01520C9213500763A00 /* HDShareInstanceSonDemo.m */,
+				D9DFD01720C9216900763A00 /* HDShareInstanceFather.h */,
+				D9DFD01820C9216900763A00 /* HDShareInstanceFather.m */,
+				D9DFD01A20C9218F00763A00 /* HDShareInstanceOne.h */,
+				D9DFD01B20C9218F00763A00 /* HDShareInstanceOne.m */,
+				D9DFD01D20C921A300763A00 /* HDShareInstanceTwo.h */,
+				D9DFD01E20C921A300763A00 /* HDShareInstanceTwo.m */,
 			);
-			path = HDIMDemoVC;
+			path = HDShareInstanceSonDemo;
 			sourceTree = "<group>";
 		};
 		D9E570171E8A7B7A00C6C130 /* HDMaskLayerVC */ = {
@@ -893,7 +916,6 @@
 				049DC0DD1CD0527C0021599C /* Frameworks */,
 				049DC0DE1CD0527C0021599C /* Resources */,
 				77C2F095BC7489696DC8A7C1 /* [CP] Embed Pods Frameworks */,
-				696F5A796DE79C7215B4305B /* [CP] Copy Pods Resources */,
 				D9ACA6911EA86732009A9219 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -988,7 +1010,6 @@
 				D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */,
 				D97C98231E9B778800DDA9D0 /* 2222.jpg in Resources */,
 				D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */,
-				D9E570101E8A3CCD00C6C130 /* HDIMDemoVC.xib in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
 				046B87F81D0D258D0087D99C /* 123.jpg in Resources */,
 			);
@@ -1003,28 +1024,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HDMasterProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		696F5A796DE79C7215B4305B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77C2F095BC7489696DC8A7C1 /* [CP] Embed Pods Frameworks */ = {
@@ -1033,9 +1042,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/NYXImagesKit/NYXImagesKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYXImagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1049,7 +1065,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9EC73D11E8B8D7D00C92320 /* HDIMListVC.m in Sources */,
 				D95615B920624BD700072A3A /* HDBarChartsModel.m in Sources */,
 				0428C46B1D003F42001F9D6F /* UIImage+MultiFormat.m in Sources */,
 				D96607C52017273A00E7B989 /* HDDelegateTaget.m in Sources */,
@@ -1064,9 +1079,9 @@
 				D97AE1291E948542009534D2 /* HDTextToImageVC.m in Sources */,
 				D95615B02060B4BD00072A3A /* HDBarChartsView.m in Sources */,
 				D9841E2D2063A5F400B7E139 /* HDEyeCoverView.m in Sources */,
+				D9DFD01C20C9218F00763A00 /* HDShareInstanceOne.m in Sources */,
 				D97C981A1E9B4F3200DDA9D0 /* AllAroundPullView.m in Sources */,
 				049DC0EB1CD0527C0021599C /* ViewController.m in Sources */,
-				D9EC73CE1E8B803700C92320 /* LCCKUser.m in Sources */,
 				0428C43E1D003E80001F9D6F /* HDFriendCycleTableViewCell.m in Sources */,
 				0428C4381D002EA3001F9D6F /* HDFriendCycleModel.m in Sources */,
 				D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */,
@@ -1077,6 +1092,7 @@
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
+				D9DFD01620C9213500763A00 /* HDShareInstanceSonDemo.m in Sources */,
 				D9841E2820639E7400B7E139 /* HDEyeAnimateView.m in Sources */,
 				D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
@@ -1084,6 +1100,7 @@
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
 				0428C4611D003F42001F9D6F /* NSData+ImageContentType.m in Sources */,
 				D97C97EA1E9B387500DDA9D0 /* UINavigationBar+Awesome.m in Sources */,
+				D9DFD01F20C921A300763A00 /* HDShareInstanceTwo.m in Sources */,
 				0428C46A1D003F42001F9D6F /* UIImage+GIF.m in Sources */,
 				0428C4691D003F42001F9D6F /* UIButton+WebCache.m in Sources */,
 				0428C4151CFD8BAC001F9D6F /* HDProxyDemoViewController.m in Sources */,
@@ -1092,7 +1109,6 @@
 				0428C4681D003F42001F9D6F /* SDWebImagePrefetcher.m in Sources */,
 				0428C4721D00454C001F9D6F /* UIView+Helpers.m in Sources */,
 				D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */,
-				D9EC73CB1E8B7B8600C92320 /* NSObject+LCCKHUD.m in Sources */,
 				0428C46D1D003F42001F9D6F /* UIImageView+WebCache.m in Sources */,
 				D964E3EA208DD1A600197A98 /* HDCategoryDemo.m in Sources */,
 				D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */,
@@ -1100,18 +1116,20 @@
 				D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */,
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,
+				D989756A20E24362005945D3 /* HDAddressBookDemo.m in Sources */,
 				0428C4641D003F42001F9D6F /* SDWebImageDecoder.m in Sources */,
 				0428C4621D003F42001F9D6F /* SDImageCache.m in Sources */,
 				0428C4631D003F42001F9D6F /* SDWebImageCompat.m in Sources */,
+				D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */,
 				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
 				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
-				D9E570081E8A331000C6C130 /* HDIMDemoVC.m in Sources */,
 				0428C4661D003F42001F9D6F /* SDWebImageDownloaderOperation.m in Sources */,
 				046B87EB1D0D23C80087D99C /* HDPulldownPhotoViewController.m in Sources */,
 				0428C47D1D011BC3001F9D6F /* HDPhotoGroupCell.m in Sources */,
 				D95615B42060EF2000072A3A /* HDBarChartsElementManager.m in Sources */,
 				04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */,
 				0428C46E1D003F42001F9D6F /* UIView+WebCacheOperation.m in Sources */,
+				D9DFD01920C9216900763A00 /* HDShareInstanceFather.m in Sources */,
 				0428C4351D002E7F001F9D6F /* HDFriendCycleViewController.m in Sources */,
 				D964E42F208DE00D00197A98 /* HDCategory+Two.m in Sources */,
 				D964E42E208DE00D00197A98 /* HDCategory+One.m in Sources */,

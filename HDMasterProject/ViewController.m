@@ -80,7 +80,6 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDFriendCycleViewController"];
         [_dataArr addObject:@"HDPulldownPhotoViewController"];
         [_dataArr addObject:@"HDLogServiceViewController"];
-        [_dataArr addObject:@"HDIMDemoVC"];
         [_dataArr addObject:@"HDMaskLayerVC"];
         [_dataArr addObject:@"HDTextToImageVC"];
         [_dataArr addObject:@"HDInvertedImageVC"];
@@ -92,6 +91,9 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDEyeViewDemo"];
         [_dataArr addObject:@"HDDelegateDemo"];
         [_dataArr addObject:@"HDCategoryDemo"];
+        [_dataArr addObject:@"HDShareInstanceSonDemo"];
+        [_dataArr addObject:@"HDAddressBookDemo"];
+        [_dataArr addObject:@"HDTextFieldDemo"];
     }
     return _dataArr;
 }

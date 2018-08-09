@@ -163,9 +163,12 @@
     NSLog(@"<<<<<-  logServiceThreePrefix  ->>>>>>");
     
     [self redirectSTD:STDERR_FILENO];
-    
+
     for (int i=1; i<20; i++) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(i * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            if (self) {
+//
+//            }
             NSLog(@"<<<<<-  logServiceThreeMiddle%d  ->>>>>>", i);
         });
     }
@@ -202,7 +205,6 @@
 
 - (void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    
     //记得一定要还原 NSLog 的保存地址
     dup2(STDERR_FILENO, _pipeFileHandle);
 }
