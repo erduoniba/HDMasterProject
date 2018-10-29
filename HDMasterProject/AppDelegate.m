@@ -16,6 +16,7 @@
 
 #import <IQKeyboardManager/IQKeyboardManager.h>
 
+#import "HDNetStatusManager/HDNetStatusManager.h"
 
 static NSString *const leancloudAppId = @"0MekiRXH3vAPyw6SI3Uc6FSY-gzGzoHsz";
 static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
@@ -30,10 +31,10 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [JSPatch startWithAppKey:@"fa85a64ff99a5290"];
-    
-    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDpHyYFneEdiA1KmWQtr9WL7+UD\nEtqAG9eC3S1PR2ttxQs6XXMtuEEJCcsTSHazN54Q0+jZO0W1CXZABPn2wuAT44n3\nTZ9ocQP6cgFPvs0+b0eqx3Dy1sisypA8Ifr8feTDV7CVwqIrjnCdPl7qlYcpUINy\nfedwf5vAt8PhiGd8eQIDAQAB\n-----END PUBLIC KEY-----"];
-    
+//    [JSPatch startWithAppKey:@"fa85a64ff99a5290"];
+//
+//    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDpHyYFneEdiA1KmWQtr9WL7+UD\nEtqAG9eC3S1PR2ttxQs6XXMtuEEJCcsTSHazN54Q0+jZO0W1CXZABPn2wuAT44n3\nTZ9ocQP6cgFPvs0+b0eqx3Dy1sisypA8Ifr8feTDV7CVwqIrjnCdPl7qlYcpUINy\nfedwf5vAt8PhiGd8eQIDAQAB\n-----END PUBLIC KEY-----"];
+
     [HDSubProjectMethodOne hdSubProjectMethodOne];
     [HDSubProjectMethodTwo hdSubProjectMethodTwo];
 
@@ -41,6 +42,8 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
 
     [self startLaunchingAnimation];
+
+    [[HDNetStatusManager sharedInstance] startMonitoring];
 
     return YES;
 }

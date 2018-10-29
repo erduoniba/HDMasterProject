@@ -11,4 +11,5 @@ target 'HDMasterProject' do
     pod 'NYXImagesKit'            # image各种处理Category
     pod 'IQKeyboardManager', '6.0.4'
     pod 'SDWebImage', '3.7.2'
+    pod 'AFNetworking'
 end

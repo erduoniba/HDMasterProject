@@ -75,6 +75,9 @@
 		D9716429208D6BAC005B4F4F /* HDDelegateDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9716428208D6BAC005B4F4F /* HDDelegateDemo.m */; };
 		D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */ = {isa = PBXBuildFile; fileRef = D971642B208D6BBF005B4F4F /* HDDelegateObject1.m */; };
 		D971642F208D6BC9005B4F4F /* HDDelegateObject2.m in Sources */ = {isa = PBXBuildFile; fileRef = D971642E208D6BC9005B4F4F /* HDDelegateObject2.m */; };
+		D977296221845FB7008A0A07 /* HDNetStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D977296121845FB7008A0A07 /* HDNetStatusManager.m */; };
+		D977296521847434008A0A07 /* HDNetStatusViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = D977296421847434008A0A07 /* HDNetStatusViewController1.m */; };
+		D977296821847445008A0A07 /* HDNetStatusViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D977296721847445008A0A07 /* HDNetStatusViewController2.m */; };
 		D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914D61EA7408B008A8EEA /* CoreLocation.framework */; };
 		D97914D91EA74093008A8EEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914D81EA74093008A8EEA /* QuartzCore.framework */; };
 		D97914DB1EA7409C008A8EEA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914DA1EA7409C008A8EEA /* OpenGLES.framework */; };
@@ -106,6 +109,13 @@
 		D9B7D90E2071D91900D64580 /* MideaAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B7D90C2071D91800D64580 /* MideaAlertController.m */; };
 		D9B7D9112071DE1200D64580 /* HDAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B7D9102071DE1200D64580 /* HDAlertViewController.m */; };
 		D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C64E941EF8ED28005194D7 /* HDSortVC.m */; };
+		D9C894962133DD2A00030E95 /* GYSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894952133DD2A00030E95 /* GYSwitch.m */; };
+		D9C894992133DD4500030E95 /* HDSwitchDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894982133DD4500030E95 /* HDSwitchDemo.m */; };
+		D9C894A42134034200030E95 /* HDSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C894A32134034200030E95 /* HDSwitch.m */; };
+		D9C894A72134103200030E95 /* public_ic_switchon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C894A52134103200030E95 /* public_ic_switchon@3x.png */; };
+		D9C894A82134103200030E95 /* public_ic_switchon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C894A62134103200030E95 /* public_ic_switchon@2x.png */; };
+		D9C894AB2134103B00030E95 /* public_ic_switchoff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C894A92134103B00030E95 /* public_ic_switchoff@2x.png */; };
+		D9C894AC2134103B00030E95 /* public_ic_switchoff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C894AA2134103B00030E95 /* public_ic_switchoff@3x.png */; };
 		D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */; };
 		D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F21E978BC2000968FA /* 3333.jpg */; };
 		D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F41E978D3A000968FA /* 3333@2x.png */; };
@@ -292,6 +302,12 @@
 		D971642D208D6BC9005B4F4F /* HDDelegateObject2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDelegateObject2.h; sourceTree = "<group>"; };
 		D971642E208D6BC9005B4F4F /* HDDelegateObject2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDelegateObject2.m; sourceTree = "<group>"; };
 		D9716430208D6F4E005B4F4F /* HDProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDProtocol.h; sourceTree = "<group>"; };
+		D977296021845FB7008A0A07 /* HDNetStatusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetStatusManager.h; sourceTree = "<group>"; };
+		D977296121845FB7008A0A07 /* HDNetStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNetStatusManager.m; sourceTree = "<group>"; };
+		D977296321847434008A0A07 /* HDNetStatusViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetStatusViewController1.h; sourceTree = "<group>"; };
+		D977296421847434008A0A07 /* HDNetStatusViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNetStatusViewController1.m; sourceTree = "<group>"; };
+		D977296621847445008A0A07 /* HDNetStatusViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetStatusViewController2.h; sourceTree = "<group>"; };
+		D977296721847445008A0A07 /* HDNetStatusViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNetStatusViewController2.m; sourceTree = "<group>"; };
 		D97914D61EA7408B008A8EEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D97914D81EA74093008A8EEA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D97914DA1EA7409C008A8EEA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -335,6 +351,16 @@
 		D9B7D9102071DE1200D64580 /* HDAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAlertViewController.m; sourceTree = "<group>"; };
 		D9C64E931EF8ED28005194D7 /* HDSortVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSortVC.h; sourceTree = "<group>"; };
 		D9C64E941EF8ED28005194D7 /* HDSortVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSortVC.m; sourceTree = "<group>"; };
+		D9C894942133DD2900030E95 /* GYSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYSwitch.h; sourceTree = "<group>"; };
+		D9C894952133DD2A00030E95 /* GYSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYSwitch.m; sourceTree = "<group>"; };
+		D9C894972133DD4500030E95 /* HDSwitchDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDSwitchDemo.h; sourceTree = "<group>"; };
+		D9C894982133DD4500030E95 /* HDSwitchDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDSwitchDemo.m; sourceTree = "<group>"; };
+		D9C894A22134034200030E95 /* HDSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDSwitch.h; sourceTree = "<group>"; };
+		D9C894A32134034200030E95 /* HDSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDSwitch.m; sourceTree = "<group>"; };
+		D9C894A52134103200030E95 /* public_ic_switchon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_ic_switchon@3x.png"; sourceTree = "<group>"; };
+		D9C894A62134103200030E95 /* public_ic_switchon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_ic_switchon@2x.png"; sourceTree = "<group>"; };
+		D9C894A92134103B00030E95 /* public_ic_switchoff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_ic_switchoff@2x.png"; sourceTree = "<group>"; };
+		D9C894AA2134103B00030E95 /* public_ic_switchoff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_ic_switchoff@3x.png"; sourceTree = "<group>"; };
 		D9CB73CF1E973F1B000968FA /* HDInvertedImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDInvertedImageVC.h; sourceTree = "<group>"; };
 		D9CB73D01E973F1B000968FA /* HDInvertedImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDInvertedImageVC.m; sourceTree = "<group>"; };
 		D9CB73F21E978BC2000968FA /* 3333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3333.jpg; sourceTree = "<group>"; };
@@ -570,6 +596,8 @@
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D977295F21845F95008A0A07 /* HDNetStatusManager */,
+				D9C894932133DCBD00030E95 /* HDSwitchDemo */,
 				D90B8A0C210F172A00748600 /* HDTextFieldDemo */,
 				D989756720E242E2005945D3 /* HDAddressBook */,
 				D9DFD01320C9211600763A00 /* HDShareInstanceSonDemo */,
@@ -600,6 +628,10 @@
 		049DC0E31CD0527C0021599C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9C894A92134103B00030E95 /* public_ic_switchoff@2x.png */,
+				D9C894AA2134103B00030E95 /* public_ic_switchoff@3x.png */,
+				D9C894A62134103200030E95 /* public_ic_switchon@2x.png */,
+				D9C894A52134103200030E95 /* public_ic_switchon@3x.png */,
 				D97C981B1E9B4FC400DDA9D0 /* fdd_logo_refresh@2x.png */,
 				D97C981C1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png */,
 				D97C98221E9B778800DDA9D0 /* 2222.jpg */,
@@ -738,6 +770,19 @@
 			path = HDDelegateDemo;
 			sourceTree = "<group>";
 		};
+		D977295F21845F95008A0A07 /* HDNetStatusManager */ = {
+			isa = PBXGroup;
+			children = (
+				D977296021845FB7008A0A07 /* HDNetStatusManager.h */,
+				D977296121845FB7008A0A07 /* HDNetStatusManager.m */,
+				D977296321847434008A0A07 /* HDNetStatusViewController1.h */,
+				D977296421847434008A0A07 /* HDNetStatusViewController1.m */,
+				D977296621847445008A0A07 /* HDNetStatusViewController2.h */,
+				D977296721847445008A0A07 /* HDNetStatusViewController2.m */,
+			);
+			path = HDNetStatusManager;
+			sourceTree = "<group>";
+		};
 		D97AE1241E94852F009534D2 /* HDTextToImageVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -840,6 +885,19 @@
 			path = HDSortVC;
 			sourceTree = "<group>";
 		};
+		D9C894932133DCBD00030E95 /* HDSwitchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D9C894972133DD4500030E95 /* HDSwitchDemo.h */,
+				D9C894982133DD4500030E95 /* HDSwitchDemo.m */,
+				D9C894942133DD2900030E95 /* GYSwitch.h */,
+				D9C894952133DD2A00030E95 /* GYSwitch.m */,
+				D9C894A22134034200030E95 /* HDSwitch.h */,
+				D9C894A32134034200030E95 /* HDSwitch.m */,
+			);
+			path = HDSwitchDemo;
+			sourceTree = "<group>";
+		};
 		D9CB73CC1E973F10000968FA /* HDInvertedImageVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -940,7 +998,7 @@
 				TargetAttributes = {
 					049DC0DF1CD0527C0021599C = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = B9FH944VTE;
+						DevelopmentTeam = HQ353LFGTA;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1000,16 +1058,20 @@
 				D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */,
 				D97C981E1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png in Resources */,
 				046B87F91D0D258D0087D99C /* 222.png in Resources */,
+				D9C894AB2134103B00030E95 /* public_ic_switchoff@2x.png in Resources */,
 				D98C3A021FFB58FB0082E14E /* iOSAppReverseEngineering.pdf in Resources */,
 				D9841E332063BE6700B7E139 /* eye@2x.png in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
 				D9841E312063B9B000B7E139 /* logo@2x.png in Resources */,
+				D9C894A72134103200030E95 /* public_ic_switchon@3x.png in Resources */,
 				D97C981D1E9B4FC400DDA9D0 /* fdd_logo_refresh@2x.png in Resources */,
+				D9C894AC2134103B00030E95 /* public_ic_switchoff@3x.png in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
 				D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */,
 				D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */,
 				D97C98231E9B778800DDA9D0 /* 2222.jpg in Resources */,
 				D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */,
+				D9C894A82134103200030E95 /* public_ic_switchon@2x.png in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
 				046B87F81D0D258D0087D99C /* 123.jpg in Resources */,
 			);
@@ -1043,12 +1105,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/NYXImagesKit/NYXImagesKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYXImagesKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -1092,14 +1156,17 @@
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
+				D9C894A42134034200030E95 /* HDSwitch.m in Sources */,
 				D9DFD01620C9213500763A00 /* HDShareInstanceSonDemo.m in Sources */,
 				D9841E2820639E7400B7E139 /* HDEyeAnimateView.m in Sources */,
 				D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
+				D9C894992133DD4500030E95 /* HDSwitchDemo.m in Sources */,
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
 				0428C4611D003F42001F9D6F /* NSData+ImageContentType.m in Sources */,
 				D97C97EA1E9B387500DDA9D0 /* UINavigationBar+Awesome.m in Sources */,
+				D977296221845FB7008A0A07 /* HDNetStatusManager.m in Sources */,
 				D9DFD01F20C921A300763A00 /* HDShareInstanceTwo.m in Sources */,
 				0428C46A1D003F42001F9D6F /* UIImage+GIF.m in Sources */,
 				0428C4691D003F42001F9D6F /* UIButton+WebCache.m in Sources */,
@@ -1114,12 +1181,15 @@
 				D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */,
 				0428C46C1D003F42001F9D6F /* UIImageView+HighlightedWebCache.m in Sources */,
 				D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */,
+				D977296521847434008A0A07 /* HDNetStatusViewController1.m in Sources */,
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,
+				D977296821847445008A0A07 /* HDNetStatusViewController2.m in Sources */,
 				D989756A20E24362005945D3 /* HDAddressBookDemo.m in Sources */,
 				0428C4641D003F42001F9D6F /* SDWebImageDecoder.m in Sources */,
 				0428C4621D003F42001F9D6F /* SDImageCache.m in Sources */,
 				0428C4631D003F42001F9D6F /* SDWebImageCompat.m in Sources */,
+				D9C894962133DD2A00030E95 /* GYSwitch.m in Sources */,
 				D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */,
 				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
 				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
@@ -1266,7 +1336,9 @@
 			baseConfigurationReference = B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B9FH944VTE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HQ353LFGTA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
@@ -1296,7 +1368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "47c59c2c-9929-44d7-84cf-3d573ebaebbc";
-				PROVISIONING_PROFILE_SPECIFIER = wildcard_dev;
+				PROVISIONING_PROFILE_SPECIFIER = "com.harry.*";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
@@ -1306,7 +1378,9 @@
 			baseConfigurationReference = 0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HQ353LFGTA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
@@ -1336,7 +1410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: com.harry.*";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;

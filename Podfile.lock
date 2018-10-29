@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - IQKeyboardManager (6.0.4)
   - NYXImagesKit (2.3)
   - SDWebImage (3.7.2):
@@ -6,21 +21,24 @@ PODS:
   - SDWebImage/Core (3.7.2)
 
 DEPENDENCIES:
+  - AFNetworking
   - IQKeyboardManager (= 6.0.4)
   - NYXImagesKit
   - SDWebImage (= 3.7.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - IQKeyboardManager
     - NYXImagesKit
     - SDWebImage
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 
-PODFILE CHECKSUM: 2f3aade7eb133154bcace03f94a03d47e154ad50
+PODFILE CHECKSUM: bde19d4a046ee5a630958cf52c3b8bd18decf369
 
 COCOAPODS: 1.5.3

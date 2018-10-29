@@ -94,6 +94,8 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDShareInstanceSonDemo"];
         [_dataArr addObject:@"HDAddressBookDemo"];
         [_dataArr addObject:@"HDTextFieldDemo"];
+        [_dataArr addObject:@"HDSwitchDemo"];
+        [_dataArr addObject:@"HDNetStatusViewController1"];
     }
     return _dataArr;
 }
