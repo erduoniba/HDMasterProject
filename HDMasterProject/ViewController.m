@@ -120,7 +120,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDSwitchDemo"];
         [_dataArr addObject:@"HDNetStatusViewController1"];
         [_dataArr addObject:@"HDVideoDemoViewController"];
-        
+        [_dataArr addObject:@"HDRangeDemoViewController"];
     }
     return _dataArr;
 }
@@ -134,12 +134,12 @@ __weak id reference = nil;
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"hd_cell"];
     }
-    cell.textLabel.text = _dataArr[indexPath.row];
+    cell.textLabel.text = _dataArr[_dataArr.count - indexPath.row - 1];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Class vcClass = NSClassFromString(_dataArr[indexPath.row]);
+    Class vcClass = NSClassFromString(_dataArr[_dataArr.count - indexPath.row - 1]);
     UIViewController *nextVC = [vcClass new];
     
     NSArray *titles = [NSStringFromClass(vcClass) componentsSeparatedByString:@"ViewController"];
