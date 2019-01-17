@@ -28,6 +28,15 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 
 @implementation AppDelegate
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    NSString *videoAllowRotation = [[NSUserDefaults standardUserDefaults] objectForKey:@"videoAllowRotation"];
+    if ([videoAllowRotation isEqualToString:@"1"]) {
+        //菜谱视频跟随系统横竖屏播放
+        return UIInterfaceOrientationMaskAll;
+    }
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 

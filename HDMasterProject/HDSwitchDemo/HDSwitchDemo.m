@@ -20,26 +20,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
-
+    
     GYSwitch *sw = [[GYSwitch alloc] initWithFrame:CGRectMake(50, 100, 100, 40)];
     [self.view addSubview:sw];
 
     HDSwitch *ss = [[HDSwitch alloc] initWithOnImage:[UIImage imageNamed:@"public_ic_switchon"] offImage:[UIImage imageNamed:@"public_ic_switchoff"] frame:CGRectMake(50, 200, 200, 40)];
     ss.backgroundColor = [UIColor clearColor];
+    [ss addTarget:self action:@selector(switchClicked:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:ss];
 
-//    [ss addTarget:self action:@selector(switchClicked:) forControlEvents:UIControlEventTouchUpInside];
+    //UITextView的文字布局不是从最左边开始的
+    UITextView *tv = [[UITextView alloc] initWithFrame:CGRectMake(100, 300, 200, 100)];
+    [self.view addSubview:tv];
 }
 
 - (void)switchClicked:(HDSwitch *)ss {
-    ss.isOn = !ss.isOn;
-    [ss sendActionsForControlEvents:UIControlEventValueChanged];
+//    ss.isOn = !ss.isOn;
+//    [ss sendActionsForControlEvents:UIControlEventValueChanged];
+    NSLog(@"sss : %d", ss.isOn);
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
+    self.view.backgroundColor = [UIColor whiteColor];
     //self.view.backgroundColor = [UIColor blackColor];
 }
 

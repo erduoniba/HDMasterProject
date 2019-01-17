@@ -21,7 +21,7 @@ typedef void (^ HDNetworkStatus)(HDNetStatusManager *manager, AFNetworkReachabil
 /**
  当前网络状态
  */
-@property (nonatomic, assign) AFNetworkReachabilityStatus currenntStauts;
+@property (nonatomic, assign) AFNetworkReachabilityStatus networkReachabilityStatus;
 
 /**
  延时多久再将网络状态回调出去，默认是0.5秒之后回调

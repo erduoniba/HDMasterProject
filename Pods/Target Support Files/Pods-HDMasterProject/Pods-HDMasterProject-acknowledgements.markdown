@@ -24,6 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## Dynatrace
+
+Dynatrace privately-owned by midea
+
 ## IQKeyboardManager
 
 MIT License

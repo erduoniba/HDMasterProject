@@ -1,0 +1,54 @@
+{
+  "name": "Dynatrace",
+  "version": "7.2.1.1213",
+  "summary": "Dynatrace collects app performance and usage data in real-time",
+  "description": "Dynatrace provides the next generation intelligent application, service and infrastructure monitoring\\nplatform.",
+  "homepage": "https://www.dynatrace.com",
+  "license": {
+    "type": "Commercial",
+    "text": "Dynatrace privately-owned by midea"
+  },
+  "authors": {
+    "denglibing": "libing.deng@midea.com"
+  },
+  "source": {
+    "git": "http://172.16.10.165/midea-common/Dynatrace.git"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "public_header_files": "Dynatrace/agent/*.h",
+  "source_files": "Dynatrace/agent/*.{h,m}",
+  "compiler_flags": "-DOS_OBJECT_USE_OBJC=1",
+  "requires_arc": true,
+  "default_subspecs": "framework",
+  "libraries": [
+    "z",
+    "sqlite3",
+    "c++"
+  ],
+  "frameworks": [
+    "CoreLocation",
+    "CoreTelephony",
+    "Security",
+    "SystemConfiguration",
+    "MessageUI",
+    "WebKit"
+  ],
+  "subspecs": [
+    {
+      "name": "lib",
+      "ios": {
+        "vendored_libraries": "Dynatrace/agent/libDynatrace.a"
+      },
+      "public_header_files": "Dynatrace/agent/*.h",
+      "source_files": "Dynatrace/agent/*.{h,m}"
+    },
+    {
+      "name": "framework",
+      "ios": {
+        "vendored_frameworks": "Dynatrace/agent/Dynatrace.framework"
+      }
+    }
+  ]
+}

@@ -38,6 +38,29 @@ __weak id reference = nil;
     NSLog(@"----------------str:%@", str);
 
     _delegateTaget = [HDDelegateTaget sharedInstance];
+    
+    [self methodSync];
+}
+
+- (NSInteger)methodSync {
+    NSLog(@"methodSync 开始");
+    __block NSInteger result = 0;
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_enter(group);
+    [self methodAsync:^(NSInteger value) {
+        result = value;
+        dispatch_group_leave(group);
+    }];
+    dispatch_group_wait(group, 3);
+    NSLog(@"methodSync 结束 result:%ld", (long)result);
+    return result;
+}
+
+- (void)methodAsync:(void (^)(NSInteger))cc {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        sleep(10);
+        cc(2);
+    });
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -96,6 +119,8 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDTextFieldDemo"];
         [_dataArr addObject:@"HDSwitchDemo"];
         [_dataArr addObject:@"HDNetStatusViewController1"];
+        [_dataArr addObject:@"HDVideoDemoViewController"];
+        
     }
     return _dataArr;
 }

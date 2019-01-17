@@ -55,17 +55,21 @@
 		04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */; };
 		32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */; };
 		D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */; };
+		D927B40121D0AEDA0013B5F8 /* HDDSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D927B40021D0AEDA0013B5F8 /* HDDSwitch.m */; };
+		D927B40321D0AF340013B5F8 /* smart_ic_switch_l@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D927B40221D0AF340013B5F8 /* smart_ic_switch_l@2x.png */; };
+		D927D13021F07BB400C73547 /* MideaVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D927D12F21F07BB300C73547 /* MideaVideoViewController.m */; };
+		D93AE85A21E348BA006606A2 /* HDVideoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93AE85921E348BA006606A2 /* HDVideoDemoViewController.m */; };
 		D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */; };
 		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
 		D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
 		D94F0C391EA87E0100697923 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E21EA740D8008A8EEA /* libsqlite3.0.tbd */; };
-		D94F0C3A1EA87E0600697923 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E61EA740E8008A8EEA /* libstdc++.6.0.9.tbd */; };
 		D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E41EA740DE008A8EEA /* CoreTelephony.framework */; };
 		D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94F0DC71EA8CD7000697923 /* CFNetwork.framework */; };
 		D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615AC2060B11000072A3A /* HDBarChartsViewController.m */; };
 		D95615B02060B4BD00072A3A /* HDBarChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615AF2060B4BD00072A3A /* HDBarChartsView.m */; };
 		D95615B42060EF2000072A3A /* HDBarChartsElementManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */; };
 		D95615B920624BD700072A3A /* HDBarChartsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D95615B820624BD700072A3A /* HDBarChartsModel.m */; };
+		D959099721CE125B00F69F77 /* home_refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D959099621CE125B00F69F77 /* home_refresh@3x.png */; };
 		D964E3EA208DD1A600197A98 /* HDCategoryDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D964E3E9208DD1A600197A98 /* HDCategoryDemo.m */; };
 		D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D964E3EC208DD1B400197A98 /* HDCategory.m */; };
 		D964E42E208DE00D00197A98 /* HDCategory+One.m in Sources */ = {isa = PBXBuildFile; fileRef = D964E3EF208DD1E800197A98 /* HDCategory+One.m */; };
@@ -271,6 +275,13 @@
 		B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D90B8A0D210F174A00748600 /* HDTextFieldDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDTextFieldDemo.h; sourceTree = "<group>"; };
 		D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDTextFieldDemo.m; sourceTree = "<group>"; };
+		D927B3FF21D0AEDA0013B5F8 /* HDDSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDSwitch.h; sourceTree = "<group>"; };
+		D927B40021D0AEDA0013B5F8 /* HDDSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDSwitch.m; sourceTree = "<group>"; };
+		D927B40221D0AF340013B5F8 /* smart_ic_switch_l@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smart_ic_switch_l@2x.png"; sourceTree = "<group>"; };
+		D927D12E21F07BB300C73547 /* MideaVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MideaVideoViewController.h; sourceTree = "<group>"; };
+		D927D12F21F07BB300C73547 /* MideaVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MideaVideoViewController.m; sourceTree = "<group>"; };
+		D93AE85821E348BA006606A2 /* HDVideoDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDVideoDemoViewController.h; sourceTree = "<group>"; };
+		D93AE85921E348BA006606A2 /* HDVideoDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDVideoDemoViewController.m; sourceTree = "<group>"; };
 		D93FC37A1ECD8946009A7C3C /* HDGCDTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDGCDTestVC.h; sourceTree = "<group>"; };
 		D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDGCDTestVC.m; sourceTree = "<group>"; };
 		D94F0D9E1EA8C12F00697923 /* HDDemoDLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HDDemoDLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/HDMasterProject-dhzorybjxmjuvyfcfkuicxjaknew/Build/Products/Debug-iphoneos/HDDemoDLib/HDDemoDLib.framework"; sourceTree = "<group>"; };
@@ -283,6 +294,7 @@
 		D95615B32060EF2000072A3A /* HDBarChartsElementManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDBarChartsElementManager.m; sourceTree = "<group>"; };
 		D95615B720624BD700072A3A /* HDBarChartsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDBarChartsModel.h; sourceTree = "<group>"; };
 		D95615B820624BD700072A3A /* HDBarChartsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDBarChartsModel.m; sourceTree = "<group>"; };
+		D959099621CE125B00F69F77 /* home_refresh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_refresh@3x.png"; sourceTree = "<group>"; };
 		D964E3E8208DD1A600197A98 /* HDCategoryDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCategoryDemo.h; sourceTree = "<group>"; };
 		D964E3E9208DD1A600197A98 /* HDCategoryDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDCategoryDemo.m; sourceTree = "<group>"; };
 		D964E3EB208DD1B400197A98 /* HDCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDCategory.h; sourceTree = "<group>"; };
@@ -316,7 +328,6 @@
 		D97914E01EA740C4008A8EEA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D97914E21EA740D8008A8EEA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		D97914E41EA740DE008A8EEA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		D97914E61EA740E8008A8EEA /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		D97AE1271E948542009534D2 /* HDTextToImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDTextToImageVC.h; sourceTree = "<group>"; };
 		D97AE1281E948542009534D2 /* HDTextToImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDTextToImageVC.m; sourceTree = "<group>"; };
 		D97C97E81E9B387500DDA9D0 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
@@ -349,6 +360,7 @@
 		D9B7D90D2071D91800D64580 /* MideaAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MideaAlertController.h; sourceTree = "<group>"; };
 		D9B7D90F2071DE1200D64580 /* HDAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAlertViewController.h; sourceTree = "<group>"; };
 		D9B7D9102071DE1200D64580 /* HDAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAlertViewController.m; sourceTree = "<group>"; };
+		D9BA48AE21B75D6600977CDB /* HDMasterProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HDMasterProject.entitlements; sourceTree = "<group>"; };
 		D9C64E931EF8ED28005194D7 /* HDSortVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSortVC.h; sourceTree = "<group>"; };
 		D9C64E941EF8ED28005194D7 /* HDSortVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSortVC.m; sourceTree = "<group>"; };
 		D9C894942133DD2900030E95 /* GYSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYSwitch.h; sourceTree = "<group>"; };
@@ -389,7 +401,6 @@
 				D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */,
 				D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */,
 				D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */,
-				D94F0C3A1EA87E0600697923 /* libstdc++.6.0.9.tbd in Frameworks */,
 				D94F0C391EA87E0100697923 /* libsqlite3.0.tbd in Frameworks */,
 				D97914DF1EA740AC008A8EEA /* CoreGraphics.framework in Frameworks */,
 				D9ACA6891EA86732009A9219 /* HDSubProjectOne.framework in Frameworks */,
@@ -590,12 +601,15 @@
 		049DC0E21CD0527C0021599C /* HDMasterProject */ = {
 			isa = PBXGroup;
 			children = (
+				D9BA48AE21B75D6600977CDB /* HDMasterProject.entitlements */,
 				049DC0E61CD0527C0021599C /* AppDelegate.h */,
 				049DC0E71CD0527C0021599C /* AppDelegate.m */,
 				049DC0E91CD0527C0021599C /* ViewController.h */,
 				049DC0EA1CD0527C0021599C /* ViewController.m */,
+				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D93AE85721E3489F006606A2 /* HDVideoDemo */,
 				D977295F21845F95008A0A07 /* HDNetStatusManager */,
 				D9C894932133DCBD00030E95 /* HDSwitchDemo */,
 				D90B8A0C210F172A00748600 /* HDTextFieldDemo */,
@@ -705,6 +719,17 @@
 				D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */,
 			);
 			path = HDTextFieldDemo;
+			sourceTree = "<group>";
+		};
+		D93AE85721E3489F006606A2 /* HDVideoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D93AE85821E348BA006606A2 /* HDVideoDemoViewController.h */,
+				D93AE85921E348BA006606A2 /* HDVideoDemoViewController.m */,
+				D927D12E21F07BB300C73547 /* MideaVideoViewController.h */,
+				D927D12F21F07BB300C73547 /* MideaVideoViewController.m */,
+			);
+			path = HDVideoDemo;
 			sourceTree = "<group>";
 		};
 		D93FC3791ECD891C009A7C3C /* HDGCDTestVC */ = {
@@ -894,6 +919,9 @@
 				D9C894952133DD2A00030E95 /* GYSwitch.m */,
 				D9C894A22134034200030E95 /* HDSwitch.h */,
 				D9C894A32134034200030E95 /* HDSwitch.m */,
+				D927B3FF21D0AEDA0013B5F8 /* HDDSwitch.h */,
+				D927B40021D0AEDA0013B5F8 /* HDDSwitch.m */,
+				D927B40221D0AF340013B5F8 /* smart_ic_switch_l@2x.png */,
 			);
 			path = HDSwitchDemo;
 			sourceTree = "<group>";
@@ -948,7 +976,6 @@
 				D98C3A031FFB5A350082E14E /* QuickLook.framework */,
 				D94F0DC71EA8CD7000697923 /* CFNetwork.framework */,
 				D94F0D9E1EA8C12F00697923 /* HDDemoDLib.framework */,
-				D97914E61EA740E8008A8EEA /* libstdc++.6.0.9.tbd */,
 				D97914E41EA740DE008A8EEA /* CoreTelephony.framework */,
 				D97914E21EA740D8008A8EEA /* libsqlite3.0.tbd */,
 				D97914E01EA740C4008A8EEA /* Security.framework */,
@@ -1000,6 +1027,11 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = HQ353LFGTA;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.HotspotConfiguration = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -1065,6 +1097,8 @@
 				D9841E312063B9B000B7E139 /* logo@2x.png in Resources */,
 				D9C894A72134103200030E95 /* public_ic_switchon@3x.png in Resources */,
 				D97C981D1E9B4FC400DDA9D0 /* fdd_logo_refresh@2x.png in Resources */,
+				D959099721CE125B00F69F77 /* home_refresh@3x.png in Resources */,
+				D927B40321D0AF340013B5F8 /* smart_ic_switch_l@2x.png in Resources */,
 				D9C894AC2134103B00030E95 /* public_ic_switchoff@3x.png in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
 				D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */,
@@ -1106,6 +1140,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${PODS_ROOT}/Dynatrace/Dynatrace/agent/Dynatrace.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/NYXImagesKit/NYXImagesKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -1113,6 +1148,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dynatrace.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYXImagesKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -1155,6 +1191,7 @@
 				D9716429208D6BAC005B4F4F /* HDDelegateDemo.m in Sources */,
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
+				D927B40121D0AEDA0013B5F8 /* HDDSwitch.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
 				D9C894A42134034200030E95 /* HDSwitch.m in Sources */,
 				D9DFD01620C9213500763A00 /* HDShareInstanceSonDemo.m in Sources */,
@@ -1183,6 +1220,7 @@
 				D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */,
 				D977296521847434008A0A07 /* HDNetStatusViewController1.m in Sources */,
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
+				D927D13021F07BB400C73547 /* MideaVideoViewController.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,
 				D977296821847445008A0A07 /* HDNetStatusViewController2.m in Sources */,
 				D989756A20E24362005945D3 /* HDAddressBookDemo.m in Sources */,
@@ -1205,6 +1243,7 @@
 				D964E42E208DE00D00197A98 /* HDCategory+One.m in Sources */,
 				046B87EE1D0D23D90087D99C /* HDTouchControlView.m in Sources */,
 				D96607C2201726EE00E7B989 /* HDWeakArrayVC.m in Sources */,
+				D93AE85A21E348BA006606A2 /* HDVideoDemoViewController.m in Sources */,
 				D9B7D9112071DE1200D64580 /* HDAlertViewController.m in Sources */,
 				046B87F11D0D24000087D99C /* HDPhotoViewController.m in Sources */,
 			);
@@ -1336,6 +1375,7 @@
 			baseConfigurationReference = B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HQ353LFGTA;
@@ -1378,6 +1418,7 @@
 			baseConfigurationReference = 0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HQ353LFGTA;

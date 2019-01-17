@@ -20,14 +20,38 @@
     NSLog(@"HDNetStatusViewController2 dealloc");
 }
 
+static NSString *hdhd = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 
     HDNetStatusManager *manager = [HDNetStatusManager sharedInstance];
-    NSLog(@"HDNetStatusViewController2 - currenntStauts %d", (int)manager.currenntStauts);
+    NSLog(@"HDNetStatusViewController2 - networkReachabilityStatus %d", (int)manager.networkReachabilityStatus);
     [manager addNetworkChangeObserver:self networkStatus:^(HDNetStatusManager *mm, AFNetworkReachabilityStatus status) {
-        NSLog(@"HDNetStatusViewController2 - status %d", (int)mm.currenntStauts);
+        NSLog(@"HDNetStatusViewController2 - status %d", (int)mm.networkReachabilityStatus);
     }];
+
+
+    if (hdhd.length == 0) {
+        hdhd = [[NSUserDefaults standardUserDefaults] stringForKey:@"hdhd"];
+
+        if (hdhd.length == 0) {
+            hdhd = [NSString stringWithFormat:@"hello %d", rand()];
+            [[NSUserDefaults standardUserDefaults] setObject:hdhd forKey:@"hdhd"];
+        }
+    }
+
+    NSLog(@"ssss : %@", hdhd);
+    
+    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    view.image = [UIImage imageNamed:@"home_refresh"];
+    [self.view addSubview:view];
+    
+    UISwitch *ss = [[UISwitch alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
+    [self.view addSubview:ss];
+    
+
 }
 
 /*
