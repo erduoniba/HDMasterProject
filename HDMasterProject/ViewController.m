@@ -121,6 +121,8 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDNetStatusViewController1"];
         [_dataArr addObject:@"HDVideoDemoViewController"];
         [_dataArr addObject:@"HDRangeDemoViewController"];
+        [_dataArr addObject:@"HDGCDTimeDemo"];
+        
     }
     return _dataArr;
 }

@@ -59,6 +59,8 @@
 		D927B40321D0AF340013B5F8 /* smart_ic_switch_l@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D927B40221D0AF340013B5F8 /* smart_ic_switch_l@2x.png */; };
 		D927D13021F07BB400C73547 /* MideaVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D927D12F21F07BB300C73547 /* MideaVideoViewController.m */; };
 		D927D13421F0811D00C73547 /* HDRangeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D927D13321F0811D00C73547 /* HDRangeDemoViewController.m */; };
+		D927D13C21F0851000C73547 /* HDGCDTimeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D927D13A21F0851000C73547 /* HDGCDTimeDemo.m */; };
+		D927D13D21F0851000C73547 /* HDGCDTimeDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D927D13B21F0851000C73547 /* HDGCDTimeDemo.xib */; };
 		D93AE85A21E348BA006606A2 /* HDVideoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93AE85921E348BA006606A2 /* HDVideoDemoViewController.m */; };
 		D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */; };
 		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
@@ -283,6 +285,9 @@
 		D927D12F21F07BB300C73547 /* MideaVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MideaVideoViewController.m; sourceTree = "<group>"; };
 		D927D13221F0811D00C73547 /* HDRangeDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDRangeDemoViewController.h; sourceTree = "<group>"; };
 		D927D13321F0811D00C73547 /* HDRangeDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDRangeDemoViewController.m; sourceTree = "<group>"; };
+		D927D13921F0851000C73547 /* HDGCDTimeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDGCDTimeDemo.h; sourceTree = "<group>"; };
+		D927D13A21F0851000C73547 /* HDGCDTimeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDGCDTimeDemo.m; sourceTree = "<group>"; };
+		D927D13B21F0851000C73547 /* HDGCDTimeDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDGCDTimeDemo.xib; sourceTree = "<group>"; };
 		D93AE85821E348BA006606A2 /* HDVideoDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDVideoDemoViewController.h; sourceTree = "<group>"; };
 		D93AE85921E348BA006606A2 /* HDVideoDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDVideoDemoViewController.m; sourceTree = "<group>"; };
 		D93FC37A1ECD8946009A7C3C /* HDGCDTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDGCDTestVC.h; sourceTree = "<group>"; };
@@ -612,6 +617,7 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				D927D13521F084D800C73547 /* HDGCDTimeDemo */,
 				D927D13121F080EE00C73547 /* HDRangeDemo */,
 				D93AE85721E3489F006606A2 /* HDVideoDemo */,
 				D977295F21845F95008A0A07 /* HDNetStatusManager */,
@@ -732,6 +738,16 @@
 				D927D13321F0811D00C73547 /* HDRangeDemoViewController.m */,
 			);
 			path = HDRangeDemo;
+			sourceTree = "<group>";
+		};
+		D927D13521F084D800C73547 /* HDGCDTimeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D927D13921F0851000C73547 /* HDGCDTimeDemo.h */,
+				D927D13A21F0851000C73547 /* HDGCDTimeDemo.m */,
+				D927D13B21F0851000C73547 /* HDGCDTimeDemo.xib */,
+			);
+			path = HDGCDTimeDemo;
 			sourceTree = "<group>";
 		};
 		D93AE85721E3489F006606A2 /* HDVideoDemo */ = {
@@ -1098,6 +1114,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D927D13D21F0851000C73547 /* HDGCDTimeDemo.xib in Resources */,
 				D9841E2A20639F2700B7E139 /* icon_sight_capture_mask@2x.png in Resources */,
 				D9E570141E8A7B5B00C6C130 /* MessageBubble_Sender@2x.png in Resources */,
 				D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */,
@@ -1185,6 +1202,7 @@
 				D9841E1F2063951700B7E139 /* HDEyeViewDemo.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				D9B7D90E2071D91900D64580 /* MideaAlertController.m in Sources */,
+				D927D13C21F0851000C73547 /* HDGCDTimeDemo.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
 				0428C4671D003F42001F9D6F /* SDWebImageManager.m in Sources */,
 				D971642F208D6BC9005B4F4F /* HDDelegateObject2.m in Sources */,
