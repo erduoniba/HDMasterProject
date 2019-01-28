@@ -43,6 +43,14 @@
     [button addTarget:self action:@selector(nextAction1) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [UIViewController attemptRotationToDeviceOrientation];
+    NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
+    [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
+}
+
 - (void)nextAction1 {
     [self presentViewController:_playerViewController animated:YES completion:^{
         [_playerViewController.player play];

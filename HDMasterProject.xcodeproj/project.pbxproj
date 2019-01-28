@@ -127,6 +127,9 @@
 		D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F21E978BC2000968FA /* 3333.jpg */; };
 		D9CB73F51E978D3A000968FA /* 3333@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73F41E978D3A000968FA /* 3333@2x.png */; };
 		D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9CB73FF1E979CB2000968FA /* 4444@2x.png */; };
+		D9D919D521F6FA260062B593 /* MideaDisposeScanCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D919D121F6FA250062B593 /* MideaDisposeScanCodeTool.m */; };
+		D9D919D621F6FA260062B593 /* GetQRID.c in Sources */ = {isa = PBXBuildFile; fileRef = D9D919D221F6FA250062B593 /* GetQRID.c */; };
+		D9D919D921F6FAA20062B593 /* HDMideaScanCodeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D919D821F6FAA20062B593 /* HDMideaScanCodeDemo.m */; };
 		D9DFD01620C9213500763A00 /* HDShareInstanceSonDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD01520C9213500763A00 /* HDShareInstanceSonDemo.m */; };
 		D9DFD01920C9216900763A00 /* HDShareInstanceFather.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD01820C9216900763A00 /* HDShareInstanceFather.m */; };
 		D9DFD01C20C9218F00763A00 /* HDShareInstanceOne.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DFD01B20C9218F00763A00 /* HDShareInstanceOne.m */; };
@@ -386,6 +389,12 @@
 		D9CB73F21E978BC2000968FA /* 3333.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3333.jpg; sourceTree = "<group>"; };
 		D9CB73F41E978D3A000968FA /* 3333@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3333@2x.png"; sourceTree = "<group>"; };
 		D9CB73FF1E979CB2000968FA /* 4444@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4444@2x.png"; sourceTree = "<group>"; };
+		D9D919D121F6FA250062B593 /* MideaDisposeScanCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MideaDisposeScanCodeTool.m; sourceTree = "<group>"; };
+		D9D919D221F6FA250062B593 /* GetQRID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GetQRID.c; sourceTree = "<group>"; };
+		D9D919D321F6FA260062B593 /* GetQRID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetQRID.h; sourceTree = "<group>"; };
+		D9D919D421F6FA260062B593 /* MideaDisposeScanCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MideaDisposeScanCodeTool.h; sourceTree = "<group>"; };
+		D9D919D721F6FAA20062B593 /* HDMideaScanCodeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDMideaScanCodeDemo.h; sourceTree = "<group>"; };
+		D9D919D821F6FAA20062B593 /* HDMideaScanCodeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDMideaScanCodeDemo.m; sourceTree = "<group>"; };
 		D9DFD01420C9213500763A00 /* HDShareInstanceSonDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDShareInstanceSonDemo.h; sourceTree = "<group>"; };
 		D9DFD01520C9213500763A00 /* HDShareInstanceSonDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDShareInstanceSonDemo.m; sourceTree = "<group>"; };
 		D9DFD01720C9216900763A00 /* HDShareInstanceFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDShareInstanceFather.h; sourceTree = "<group>"; };
@@ -609,6 +618,7 @@
 		049DC0E21CD0527C0021599C /* HDMasterProject */ = {
 			isa = PBXGroup;
 			children = (
+				D9D919D021F6F9F90062B593 /* HDMideaScanCodeDemo */,
 				D9BA48AE21B75D6600977CDB /* HDMasterProject.entitlements */,
 				049DC0E61CD0527C0021599C /* AppDelegate.h */,
 				049DC0E71CD0527C0021599C /* AppDelegate.m */,
@@ -966,6 +976,19 @@
 			path = HDInvertedImageVC;
 			sourceTree = "<group>";
 		};
+		D9D919D021F6F9F90062B593 /* HDMideaScanCodeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D9D919D321F6FA260062B593 /* GetQRID.h */,
+				D9D919D221F6FA250062B593 /* GetQRID.c */,
+				D9D919D421F6FA260062B593 /* MideaDisposeScanCodeTool.h */,
+				D9D919D121F6FA250062B593 /* MideaDisposeScanCodeTool.m */,
+				D9D919D721F6FAA20062B593 /* HDMideaScanCodeDemo.h */,
+				D9D919D821F6FAA20062B593 /* HDMideaScanCodeDemo.m */,
+			);
+			path = HDMideaScanCodeDemo;
+			sourceTree = "<group>";
+		};
 		D9DFD01320C9211600763A00 /* HDShareInstanceSonDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1225,6 +1248,7 @@
 				D927B40121D0AEDA0013B5F8 /* HDDSwitch.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
 				D9C894A42134034200030E95 /* HDSwitch.m in Sources */,
+				D9D919D521F6FA260062B593 /* MideaDisposeScanCodeTool.m in Sources */,
 				D9DFD01620C9213500763A00 /* HDShareInstanceSonDemo.m in Sources */,
 				D9841E2820639E7400B7E139 /* HDEyeAnimateView.m in Sources */,
 				D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */,
@@ -1234,6 +1258,7 @@
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
 				0428C4611D003F42001F9D6F /* NSData+ImageContentType.m in Sources */,
 				D97C97EA1E9B387500DDA9D0 /* UINavigationBar+Awesome.m in Sources */,
+				D9D919D621F6FA260062B593 /* GetQRID.c in Sources */,
 				D977296221845FB7008A0A07 /* HDNetStatusManager.m in Sources */,
 				D9DFD01F20C921A300763A00 /* HDShareInstanceTwo.m in Sources */,
 				0428C46A1D003F42001F9D6F /* UIImage+GIF.m in Sources */,
@@ -1252,6 +1277,7 @@
 				D977296521847434008A0A07 /* HDNetStatusViewController1.m in Sources */,
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
 				D927D13021F07BB400C73547 /* MideaVideoViewController.m in Sources */,
+				D9D919D921F6FAA20062B593 /* HDMideaScanCodeDemo.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,
 				D977296821847445008A0A07 /* HDNetStatusViewController2.m in Sources */,
 				D989756A20E24362005945D3 /* HDAddressBookDemo.m in Sources */,
@@ -1451,9 +1477,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = HQ353LFGTA;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
@@ -1483,7 +1509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "XC: com.harry.*";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
