@@ -14,10 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - Dynatrace (7.2.1.1213):
-    - Dynatrace/framework (= 7.2.1.1213)
-  - Dynatrace/framework (7.2.1.1213)
-  - IQKeyboardManager (6.0.4)
+  - IQKeyboardManager (6.1.1)
   - NYXImagesKit (2.3)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
@@ -25,8 +22,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - Dynatrace (from `http://172.16.10.165/midea-common/Dynatrace.git`, branch `master`)
-  - IQKeyboardManager (= 6.0.4)
+  - IQKeyboardManager (= 6.1.1)
   - NYXImagesKit
   - SDWebImage (= 3.7.2)
 
@@ -37,23 +33,12 @@ SPEC REPOS:
     - NYXImagesKit
     - SDWebImage
 
-EXTERNAL SOURCES:
-  Dynatrace:
-    :branch: master
-    :git: http://172.16.10.165/midea-common/Dynatrace.git
-
-CHECKOUT OPTIONS:
-  Dynatrace:
-    :commit: d10874a44298f6554774a0ec18a902c0fb9a3d3f
-    :git: http://172.16.10.165/midea-common/Dynatrace.git
-
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  Dynatrace: a91725aff9b0da1d2aeec491f97ef7390c96e09f
-  IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 
-PODFILE CHECKSUM: 9018a3e8c0abd6d2264786eff9d4d09a75838125
+PODFILE CHECKSUM: ff6c61582d9f5dadb6b23a2ebb7280a10625fcdd
 
 COCOAPODS: 1.5.3

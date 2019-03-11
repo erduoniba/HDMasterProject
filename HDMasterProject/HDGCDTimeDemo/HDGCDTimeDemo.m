@@ -26,6 +26,12 @@
     
     _isRun = NO;
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self performSelectorInBackground:@selector(ddd) withObject:nil];
+}
+
+- (void)ddd {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"xx" object:nil];
 }
 
 - (IBAction)startAction:(id)sender {

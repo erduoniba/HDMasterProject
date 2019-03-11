@@ -34,10 +34,21 @@
     [self.view addSubview:tv];
 }
 
+static int j = 0;
 - (void)switchClicked:(HDSwitch *)ss {
 //    ss.isOn = !ss.isOn;
 //    [ss sendActionsForControlEvents:UIControlEventValueChanged];
     NSLog(@"sss : %d", ss.isOn);
+    
+    static int i = 0;
+    i++;
+    j++;
+    NSLog(@"iii %d jjj %d", i, j);
+    
+    NSMutableDictionary *dd = [@{
+                                 @"x" : @"y",
+                                 } mutableCopy];
+    NSLog(@"dd %@", dd);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -11,7 +11,11 @@
 
 #import "HDNetStatusManager.h"
 
+static NSString *test = nil;
+
 @interface HDNetStatusViewController1 ()
+
+@property (nonatomic, copy) NSString *ttt;
 
 @end
 
@@ -19,6 +23,15 @@
 
 - (void)dealloc {
     NSLog(@"HDNetStatusViewController1 dealloc");
+}
+
++ (instancetype)sharedInstance {
+    static id instance;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
 }
 
 - (void)viewDidLoad {
@@ -49,10 +62,24 @@
     gradient.startPoint = CGPointMake(0, 0);
     gradient.endPoint = CGPointMake(1, 0);
     [colorView.layer addSublayer:gradient];
+    
+    [self.class testFunction];
 }
 
 - (void)nextAction {
     [self.navigationController pushViewController:HDNetStatusViewController2.new animated:YES];
+}
+
++ (void)testFunction {
+    for (int i=0; i<10000; i++) {
+        
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSString *temp = [NSString stringWithFormat:@"temp_%d", (int)i];
+            test = temp;
+            [HDNetStatusViewController1 sharedInstance].ttt = temp;
+        });
+
+    }
 }
 
 @end

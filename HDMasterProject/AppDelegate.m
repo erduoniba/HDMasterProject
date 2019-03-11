@@ -177,7 +177,7 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     launchScreenView.frame = window.bounds;
     [window.rootViewController.view addSubview:launchScreenView];
 
-    [UIView animateWithDuration:0.2 delay:1 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:0.3 delay:0.2 options:UIViewAnimationOptionCurveLinear animations:^{
         launchScreenView.alpha = 0;
     } completion:^(BOOL finished) {
         [launchScreenView removeFromSuperview];

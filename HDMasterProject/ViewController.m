@@ -36,29 +36,109 @@ __weak id reference = nil;
     }
     NSLog(@"----------------reference2:%@", reference);
     NSLog(@"----------------str:%@", str);
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"dispatch_get_main_queue1");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"dispatch_get_main_queue2");
+        });
+    });
 
     _delegateTaget = [HDDelegateTaget sharedInstance];
     
-    [self methodSync];
+//    [self methodSync1];
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//       [self methodSync2];
+//    });
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self methodSync3];
+//    });
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ddd) name:@"xx" object:nil];
 }
 
-- (NSInteger)methodSync {
-    NSLog(@"methodSync 开始");
+- (void)ddd {
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//
+//    });
+    NSLog(@"%@ %@", [NSThread currentThread], [NSThread mainThread]);
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"请开启手机蓝牙" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil]];
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
+
+- (NSInteger)methodSync1 {
+    NSLog(@"methodSync1 开始");
+    NSTimeInterval start = [[NSDate date] timeIntervalSince1970];
     __block NSInteger result = 0;
+
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_enter(group);
     [self methodAsync:^(NSInteger value) {
         result = value;
+        NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+        NSLog(@"methodSync1 中 result:%ld duration: %ld", (long)result, (long)(end - start));
+
         dispatch_group_leave(group);
     }];
-    dispatch_group_wait(group, 3);
-    NSLog(@"methodSync 结束 result:%ld", (long)result);
+    dispatch_group_wait(group, dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)));
+
+    NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+    NSLog(@"methodSync1 结束 result:%ld duration: %ld", (long)result, (long)(end - start));
     return result;
+}
+
+- (NSInteger)methodSync2 {
+    NSLog(@"methodSync2 开始");
+    NSTimeInterval start = [[NSDate date] timeIntervalSince1970];
+    __block NSInteger result = 0;
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_enter(group);
+    [self methodAsync:^(NSInteger value) {
+        result = value;
+        NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+        NSLog(@"methodSync2 中 result:%ld duration: %ld", (long)result, (long)(end - start));
+        
+        dispatch_group_leave(group);
+    }];
+    dispatch_group_wait(group, dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)));
+    
+    NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+    NSLog(@"methodSync2 结束 result:%ld duration: %ld", (long)result, (long)(end - start));
+    return result;
+}
+
+- (void)methodSync3 {
+    NSLog(@"methodSync3 开始");
+    NSTimeInterval start = [[NSDate date] timeIntervalSince1970];
+    __block NSInteger result = 0;
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_enter(group);
+    [self methodAsync:^(NSInteger value) {
+        result = value;
+        NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+        NSLog(@"methodSync3 中 result:%ld duration: %ld", (long)result, (long)(end - start));
+        
+        dispatch_group_leave(group);
+    }];
+    dispatch_group_notify(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+        NSLog(@"methodSync3 结束 result:%ld duration: %ld", (long)result, (long)(end - start));
+    });
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+        NSLog(@"methodSync3 结束 result:%ld duration: %ld", (long)result, (long)(end - start));
+    });
 }
 
 - (void)methodAsync:(void (^)(NSInteger))cc {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        sleep(10);
+        sleep(5);
         cc(2);
     });
 }

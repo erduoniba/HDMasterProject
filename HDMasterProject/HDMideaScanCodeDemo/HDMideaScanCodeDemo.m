@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view.
     NSString *code = @"http://qrcode.midea.com/midea_e1/index.html?cd=OOhEXE0p7qYli4tDeyjXgLrYVodKo-zZGECjF8xn&SSID=midea_e1_Z010&mode=1";
     
-    _textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 80, kScreenWidth - 20, 100)];
+    _textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 120, kScreenWidth - 20, 100)];
     _textView.text = code;
     [self.view addSubview:_textView];
     
