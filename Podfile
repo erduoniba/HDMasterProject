@@ -12,6 +12,8 @@ target 'HDMasterProject' do
     pod 'IQKeyboardManager', '6.1.1'
     pod 'SDWebImage', '3.7.2'
     pod 'AFNetworking'
+    pod 'LBXScan/LBXZBar','~> 2.3'
+
 #    pod 'Dynatrace', :git => 'http://172.16.10.165/midea-common/Dynatrace.git', :branch => 'master'
 #    pod 'WeexSDK', :inhibit_warnings => true, :git => 'http://172.16.10.165/midea-common/Weex.git', :branch => 'master'
 #    pod 'AppDynamicsAgent'

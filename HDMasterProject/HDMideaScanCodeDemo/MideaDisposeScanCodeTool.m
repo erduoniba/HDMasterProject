@@ -15,9 +15,10 @@
 
 + (NSDictionary *)disposeApplianceCode:(NSString *)code {
     NSString *categoryStr;  //类别，不带0x，例如：fd
-    NSString *modelNumStr;  //SN8，例如：ZNCZ1475
+    NSString *sn8;  //SN8，例如：ZNCZ1475
     NSString *ssid;         //二维码对应设备的ssid，例如：midea_fd_0008
     NSString *mode = @"0";  //配网模式 '0':'AP', '1':'快连', '2':'声波', '3':'蓝牙' , '4':'零配' , '100':'动态扫码配网'
+    NSString *sn;
     if ([code rangeOfString:@"cd="].location != NSNotFound) {
         NSArray *comAry = [code componentsSeparatedByString:@"="];
         NSString *cdSsidStr = [self objectAtIndexCheck:comAry index:1];
@@ -28,19 +29,23 @@
         else {
             cdStr = cdSsidStr;
         }
+        cdStr = [cdStr stringByReplacingOccurrencesOfString:@" " withString:@""];
         const char * a =[cdStr UTF8String];
         char finally[33];
         getQRID(a,finally);
-        NSString *cdResult;
         if (strlen(finally)) {
             char myfinally[33] = {0};
             strncpy(myfinally, finally, 32);
-            cdResult = [NSString stringWithCString:myfinally encoding:NSUTF8StringEncoding];
+            sn = [NSString stringWithCString:myfinally encoding:NSUTF8StringEncoding];
         }
-
-        categoryStr = [NSString stringWithFormat:@"%@", [cdResult substringWithRange:NSMakeRange(4, 2)]];
-        modelNumStr  = [NSString stringWithFormat:@"%@", [cdResult substringWithRange:NSMakeRange(9, 8)]];
-
+        if (sn.length > 5) {
+            categoryStr = [NSString stringWithFormat:@"%@", [sn substringWithRange:NSMakeRange(4, 2)]];
+        }
+        if (sn.length > 16){
+            sn8  = [NSString stringWithFormat:@"%@", [sn substringWithRange:NSMakeRange(9, 8)]];
+        }
+        
+        
         // http://qrcode.midea.com/midea_FD/index.html?cd=1OCn9cfJhAydVnXnzIARCHslse5UbniO4VJyKXdZ&SSID=midea_fd_0008
         NSArray *arr = [code componentsSeparatedByString:@"?"];
         if (arr.count > 1) {
@@ -59,7 +64,7 @@
                         }
                     }
                 }
-
+                
                 //获取mode
                 if ([param.lowercaseString containsString:@"mode="]) {
                     NSArray *modeArr = [param componentsSeparatedByString:@"="];
@@ -71,10 +76,8 @@
         }
     }
     else if ([code rangeOfString:@"type="].location != NSNotFound) {
-        NSArray  *comAry = [code componentsSeparatedByString:@"type"];
-        NSString *cdSsidStr = [self objectAtIndexCheck:comAry index:1];
-        NSString *typeStr = [cdSsidStr substringFromIndex:1];
-        NSString *cdResult;
+        NSArray  *comAry = [code componentsSeparatedByString:@"type="];
+        NSString *typeStr = [self objectAtIndexCheck:comAry index:1];
         if ([typeStr rangeOfString:@"&"].location != NSNotFound) {
             NSArray *tempArr = [typeStr componentsSeparatedByString:@"&"];
             //获取mode
@@ -87,20 +90,25 @@
                     }
                 }
             }
-            cdResult = [self objectAtIndexCheck:tempArr index:0];
+            sn = [self objectAtIndexCheck:tempArr index:0];
         }
         else {
-            cdResult = cdSsidStr;
+            sn = typeStr;
         }
-        categoryStr = [NSString stringWithString:[cdResult substringWithRange:NSMakeRange(4, 2)]];
-        modelNumStr = [NSString stringWithString:[cdResult substringFromIndex:cdResult.length - 8]];
+        if (sn.length > 5) {
+            categoryStr = [NSString stringWithString:[sn substringWithRange:NSMakeRange(4, 2)]];
+        }
+        if (sn.length > 7) {
+            sn8 = [NSString stringWithString:[sn substringFromIndex:sn.length - 8]];
+        }
     }
-
+    
     NSDictionary *result = @{
                              @"category" : categoryStr ? : @"",
-                             @"modelNum" : modelNumStr ? : @"",
+                             @"sn8" : sn8 ? : @"",
                              @"ssid"    : ssid ? : @"",
                              @"mode"    : mode ? : @"0",
+                             @"sn"      : sn ? : @"",
                              };
     return result;
 }

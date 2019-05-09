@@ -145,15 +145,20 @@ __weak id reference = nil;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [UIApplication sharedApplication].statusBarHidden = NO;
 
     NSLog(@"----------------reference3:%@", reference);
 
     NSLog(@"%d", _delegateTaget.index);
     _delegateTaget.index ++;
 
+    CFAbsoluteTime StartTime = CFAbsoluteTimeGetCurrent();
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         //删除里面的对象之后，里面的对象将自动dealloc
         //[_delegateTaget.delegates removeAllObjects];
+        
+        double launchTime = (CFAbsoluteTimeGetCurrent() - StartTime);
+        printf("launchTime : %0.3f", launchTime);
     });
 }
 
