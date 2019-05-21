@@ -38,6 +38,9 @@
             strncpy(myfinally, finally, 32);
             sn = [NSString stringWithCString:myfinally encoding:NSUTF8StringEncoding];
         }
+        else {
+            sn = cdStr;
+        }
         if (sn.length > 5) {
             categoryStr = [NSString stringWithFormat:@"%@", [sn substringWithRange:NSMakeRange(4, 2)]];
         }

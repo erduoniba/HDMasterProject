@@ -24,12 +24,13 @@
     // Do any additional setup after loading the view.
     NSString *code = @"http://qrcode.midea.com/midea_e1/index.html?cd=OOhEXE0p7qYli4tDeyjXgLrYVodKo-zZGECjF8xn&SSID=midea_e1_Z010&mode=1";
     code = @"http://qrcode.midea.com/midea_10/index.html?cd=1OCn9cfJhAydVnXnzIARCHslse5UbniO4VJyKXdZ&SSID=midea_10_0008";
-    code = @"http://www.midea.com/kt_APP/index.html?cd=D110001139515429210004";
-//    code = @"http://qrcode.midea.com/index.html?v=2&type=0000DA21338000724&mode=0&tsn=0000DA2133800088868021413001";
+    
+//    code = @"http://qrcode.midea.com/midea_10/index.html?cd=0000B01110M3L20A818A101100140000&SSID=midea_10_0008";
     
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 120, kScreenWidth - 20, 100)];
     _textView.text = code;
     [self.view addSubview:_textView];
+    meiju://nfc?fun=1&cd=0000B01110M3L20A818A101100140000&SSID=midea_b0_0014&mode=3
     
     _textView2 = [[UITextView alloc] initWithFrame:CGRectMake(10, _textView.frame.size.height + _textView.frame.origin.y + 20, kScreenWidth - 20, 120)];
     [self.view addSubview:_textView2];
@@ -41,6 +42,13 @@
     [self.view addSubview:bt];
     
 //    [UIApplication sharedApplication].statusBarHidden = YES;
+    
+    NSString *version = [UIDevice currentDevice].systemVersion;
+    if (version.doubleValue >= 11.0) {
+        // 针对 11.0 以上的iOS系统进行处理
+    } else {
+        // 针对 11.0 以下的iOS系统进行处理
+    }
 }
 
 - (void)qrCodeAction {
