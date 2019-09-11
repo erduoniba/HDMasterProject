@@ -13,6 +13,7 @@
 
 #import <JSPatch/JSPatch.h>
 #import "ViewController.h"
+#import "HDDDLog.h"
 
 #import <IQKeyboardManager/IQKeyboardManager.h>
 
@@ -54,7 +55,7 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 
     [[HDNetStatusManager sharedInstance] startMonitoring];
     
-
+    [HDDDLog configurationDDLog:@"HDLogs"];
 
     return YES;
 }

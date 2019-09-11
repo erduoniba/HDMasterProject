@@ -12,4 +12,8 @@
 #define kScreenWidth     CGRectGetWidth([UIScreen mainScreen].bounds)
 #define kScreenHeight    CGRectGetHeight([UIScreen mainScreen].bounds)
 
+//#import <CocoaLumberjack/CocoaLumberjack.h>
+
+//static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
 #endif /* PrefixHeader_pch */

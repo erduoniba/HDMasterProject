@@ -21,6 +21,17 @@
 
 @implementation HDVideoDemoViewController
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    AVPlayerViewController *AVVC = (AVPlayerViewController*)_playerViewController;
+    if (AVVC.player && _playerItem) {
+        [_playerItem removeObserver:self forKeyPath:@"status"];
+        [AVVC.player removeObserver:self forKeyPath:@"rate"];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object: _playerItem];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -50,6 +61,8 @@
     NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
     [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
 }
+
+
 
 - (void)nextAction1 {
     [self presentViewController:_playerViewController animated:YES completion:^{

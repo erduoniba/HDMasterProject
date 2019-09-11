@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CocoaLumberjack/Classes/DDFileLogger.m"
+            timestampString = "589897369.408591"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1008"
+            endingLineNumber = "1008"
+            landmarkName = "-lt_currentLogFileInfo"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DDFileLogger lt_currentLogFileInfo]"
+                  moduleName = "CocoaLumberjack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denglibing3/HDProject/GithubProject/HDMasterProject/Pods/CocoaLumberjack/Classes/DDFileLogger.m"
+                  timestampString = "589884744.754319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1008"
+                  endingLineNumber = "1008"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DDFileLogger lt_currentLogFileInfo]"
+                  moduleName = "CocoaLumberjack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denglibing3/HDProject/GithubProject/HDMasterProject/Pods/CocoaLumberjack/Classes/DDFileLogger.m"
+                  timestampString = "589884744.7566119"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1008"
+                  endingLineNumber = "1008"
+                  offsetFromSymbolStart = "59">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
   - IQKeyboardManager (6.1.1)
   - LBXScan/LBXZBar (2.3):
     - LBXScan/Types (~> 2.2)
@@ -27,6 +30,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaLumberjack
   - IQKeyboardManager (= 6.1.1)
   - LBXScan/LBXZBar (~> 2.3)
   - NYXImagesKit
@@ -35,6 +39,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CocoaLumberjack
     - IQKeyboardManager
     - LBXScan
     - NYXImagesKit
@@ -43,12 +48,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
-PODFILE CHECKSUM: 934534a542be4395f9fa3f52cd6ec8a5b5c2de3a
+PODFILE CHECKSUM: 16a95393c698efd2ef0b6fded8ec599ab7554930
 
 COCOAPODS: 1.5.3

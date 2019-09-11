@@ -209,6 +209,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDGCDTimeDemo"];
         [_dataArr addObject:@"HDMideaScanCodeDemo"];
         [_dataArr addObject:@"HDGesturePasswordDemo"];
+        [_dataArr addObject:@"HDDDLogDemo"];
         
     }
     return _dataArr;

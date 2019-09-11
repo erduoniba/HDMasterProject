@@ -40,6 +40,12 @@
 		04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */; };
 		04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */; };
 		32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */; };
+		AD3C5AF12328C50600EF742B /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */; };
+		AD3C5AF22328C50600EF742B /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD3C5AF52328C50C00EF742B /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */; };
+		AD3C5AF62328C50C00EF742B /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD7CC5402328CA5400F40291 /* HDDDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC53F2328CA5400F40291 /* HDDDLog.m */; };
+		AD7CC5432328CDB400F40291 /* HDDDLogDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC5422328CDB400F40291 /* HDDDLogDemo.m */; };
 		D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */; };
 		D9208DB2223621C4009CC38D /* HDPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9208DB1223621C4009CC38D /* HDPasswordView.m */; };
 		D9208DB5223622CE009CC38D /* HDPasswordItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9208DB4223622CE009CC38D /* HDPasswordItem.m */; };
@@ -52,8 +58,6 @@
 		D927D13D21F0851000C73547 /* HDGCDTimeDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = D927D13B21F0851000C73547 /* HDGCDTimeDemo.xib */; };
 		D93AE85A21E348BA006606A2 /* HDVideoDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93AE85921E348BA006606A2 /* HDVideoDemoViewController.m */; };
 		D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D93FC37B1ECD8946009A7C3C /* HDGCDTestVC.m */; };
-		D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
-		D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
 		D94F0C391EA87E0100697923 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E21EA740D8008A8EEA /* libsqlite3.0.tbd */; };
 		D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97914E41EA740DE008A8EEA /* CoreTelephony.framework */; };
 		D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94F0DC71EA8CD7000697923 /* CFNetwork.framework */; };
@@ -98,10 +102,6 @@
 		D98C3A001FFB58060082E14E /* UIDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98C39FF1FFB58060082E14E /* UIDocumentViewController.m */; };
 		D98C3A021FFB58FB0082E14E /* iOSAppReverseEngineering.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D98C3A011FFB58FB0082E14E /* iOSAppReverseEngineering.pdf */; };
 		D98C3A041FFB5A350082E14E /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98C3A031FFB5A350082E14E /* QuickLook.framework */; };
-		D9ACA6891EA86732009A9219 /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; };
-		D9ACA68A1EA86732009A9219 /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC1441CD069170021599C /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D9ACA68D1EA86732009A9219 /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; };
-		D9ACA68E1EA86732009A9219 /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9B7D90E2071D91900D64580 /* MideaAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B7D90C2071D91800D64580 /* MideaAlertController.m */; };
 		D9B7D9112071DE1200D64580 /* HDAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B7D9102071DE1200D64580 /* HDAlertViewController.m */; };
 		D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C64E941EF8ED28005194D7 /* HDSortVC.m */; };
@@ -129,33 +129,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		049DC1431CD069170021599C /* PBXContainerItemProxy */ = {
+		AD3C5AD52328C4DF00EF742B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */;
+			containerPortal = AD3C5AD12328C4DF00EF742B /* HDSubProjectOne.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 049DC1041CD052B70021599C;
 			remoteInfo = HDSubProjectOne;
 		};
-		049DC1491CD0691B0021599C /* PBXContainerItemProxy */ = {
+		AD3C5AEF2328C4F300EF742B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */;
+			containerPortal = AD3C5AE62328C4F300EF742B /* HDSubProjectTwo.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 049DC1191CD052CB0021599C;
 			remoteInfo = HDSubProjectTwo;
 		};
-		D9ACA68B1EA86732009A9219 /* PBXContainerItemProxy */ = {
+		AD3C5AF32328C50600EF742B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 049DC1031CD052B70021599C;
-			remoteInfo = HDSubProjectOne;
-		};
-		D9ACA68F1EA86732009A9219 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */;
+			containerPortal = AD3C5AE62328C4F300EF742B /* HDSubProjectTwo.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 049DC1181CD052CB0021599C;
 			remoteInfo = HDSubProjectTwo;
+		};
+		AD3C5AF72328C50C00EF742B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD3C5AD12328C4DF00EF742B /* HDSubProjectOne.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 049DC1031CD052B70021599C;
+			remoteInfo = HDSubProjectOne;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -166,8 +166,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D9ACA68E1EA86732009A9219 /* HDSubProjectTwo.framework in Embed Frameworks */,
-				D9ACA68A1EA86732009A9219 /* HDSubProjectOne.framework in Embed Frameworks */,
+				AD3C5AF62328C50C00EF742B /* HDSubProjectOne.framework in Embed Frameworks */,
+				AD3C5AF22328C50600EF742B /* HDSubProjectTwo.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,14 +230,18 @@
 		049DC0ED1CD0527C0021599C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		049DC0F21CD0527C0021599C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049DC0F41CD0527C0021599C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = SOURCE_ROOT; };
-		049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectTwo.xcodeproj; path = HDSubProjectTwo/HDSubProjectTwo.xcodeproj; sourceTree = SOURCE_ROOT; };
 		04BD82A01CE96AD900943C42 /* HDMessageWaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMessageWaysViewController.h; sourceTree = "<group>"; };
 		04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMessageWaysViewController.m; sourceTree = "<group>"; };
 		04BD82A31CE96B4D00943C42 /* NSObject+Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Messages.h"; sourceTree = "<group>"; };
 		04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Messages.m"; sourceTree = "<group>"; };
 		0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.release.xcconfig"; sourceTree = "<group>"; };
 		29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDMasterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3C5AD12328C4DF00EF742B /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = SOURCE_ROOT; };
+		AD3C5AE62328C4F300EF742B /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HDSubProjectTwo.xcodeproj; sourceTree = "<group>"; };
+		AD7CC53E2328CA5400F40291 /* HDDDLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDDLog.h; sourceTree = "<group>"; };
+		AD7CC53F2328CA5400F40291 /* HDDDLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDDLog.m; sourceTree = "<group>"; };
+		AD7CC5412328CDB400F40291 /* HDDDLogDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDDLogDemo.h; sourceTree = "<group>"; };
+		AD7CC5422328CDB400F40291 /* HDDDLogDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDDLogDemo.m; sourceTree = "<group>"; };
 		B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D90B8A0D210F174A00748600 /* HDTextFieldDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDTextFieldDemo.h; sourceTree = "<group>"; };
 		D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDTextFieldDemo.m; sourceTree = "<group>"; };
@@ -381,19 +385,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98C3A041FFB5A350082E14E /* QuickLook.framework in Frameworks */,
+				AD3C5AF12328C50600EF742B /* HDSubProjectTwo.framework in Frameworks */,
 				D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */,
 				D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */,
+				AD3C5AF52328C50C00EF742B /* HDSubProjectOne.framework in Frameworks */,
 				D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */,
 				D94F0C391EA87E0100697923 /* libsqlite3.0.tbd in Frameworks */,
 				D97914DF1EA740AC008A8EEA /* CoreGraphics.framework in Frameworks */,
-				D9ACA6891EA86732009A9219 /* HDSubProjectOne.framework in Frameworks */,
 				D97914E11EA740C4008A8EEA /* Security.framework in Frameworks */,
-				D9ACA68D1EA86732009A9219 /* HDSubProjectTwo.framework in Frameworks */,
 				D97914DB1EA7409C008A8EEA /* OpenGLES.framework in Frameworks */,
 				D97914D91EA74093008A8EEA /* QuartzCore.framework in Frameworks */,
 				D97914DD1EA740A3008A8EEA /* SystemConfiguration.framework in Frameworks */,
-				D94800D61D12F34400CCEE75 /* HDSubProjectTwo.framework in Frameworks */,
-				D94800D41D12F34100CCEE75 /* HDSubProjectOne.framework in Frameworks */,
 				04204B9A1D0678120069A9FE /* libz.tbd in Frameworks */,
 				04204B981D06780C0069A9FE /* JavaScriptCore.framework in Frameworks */,
 				04204B961D0677530069A9FE /* JSPatch.framework in Frameworks */,
@@ -555,6 +557,7 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				AD7CC53D2328CA3600F40291 /* HDDDLog */,
 				D9D919D021F6F9F90062B593 /* HDMideaScanCodeDemo */,
 				D9D0AA942226BE2F0089752A /* HDGesturePasswordDemo */,
 				D927D13521F084D800C73547 /* HDGCDTimeDemo */,
@@ -581,8 +584,8 @@
 				0428C4321D002E67001F9D6F /* HDFriendCycleViewController */,
 				046B87E61D0D23930087D99C /* HDPulldownPhotoViewController */,
 				04544FAE1D0E868100D02AD0 /* HDLogServiceViewController */,
+				AD3C5AE52328C4F300EF742B /* HDSubProjectTwo */,
 				049DC1241CD057030021599C /* HDSubProjectOne */,
-				049DC1251CD0571E0021599C /* HDSubProjectTwo */,
 				0428C4421D003F36001F9D6F /* ThreeParts */,
 				049DC0E31CD0527C0021599C /* Supporting Files */,
 			);
@@ -622,33 +625,9 @@
 		049DC1241CD057030021599C /* HDSubProjectOne */ = {
 			isa = PBXGroup;
 			children = (
-				049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */,
+				AD3C5AD12328C4DF00EF742B /* HDSubProjectOne.xcodeproj */,
 			);
 			path = HDSubProjectOne;
-			sourceTree = "<group>";
-		};
-		049DC1251CD0571E0021599C /* HDSubProjectTwo */ = {
-			isa = PBXGroup;
-			children = (
-				049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */,
-			);
-			path = HDSubProjectTwo;
-			sourceTree = "<group>";
-		};
-		049DC1401CD069170021599C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				049DC1441CD069170021599C /* HDSubProjectOne.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		049DC1461CD0691B0021599C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		04BD829D1CE96AB700943C42 /* HDMessageWays */ = {
@@ -660,6 +639,41 @@
 				04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */,
 			);
 			path = HDMessageWays;
+			sourceTree = "<group>";
+		};
+		AD3C5AD22328C4DF00EF742B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD3C5AE52328C4F300EF742B /* HDSubProjectTwo */ = {
+			isa = PBXGroup;
+			children = (
+				AD3C5AE62328C4F300EF742B /* HDSubProjectTwo.xcodeproj */,
+			);
+			path = HDSubProjectTwo;
+			sourceTree = "<group>";
+		};
+		AD3C5AE72328C4F300EF742B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD7CC53D2328CA3600F40291 /* HDDDLog */ = {
+			isa = PBXGroup;
+			children = (
+				AD7CC53E2328CA5400F40291 /* HDDDLog.h */,
+				AD7CC53F2328CA5400F40291 /* HDDDLog.m */,
+				AD7CC5412328CDB400F40291 /* HDDDLogDemo.h */,
+				AD7CC5422328CDB400F40291 /* HDDDLogDemo.m */,
+			);
+			path = HDDDLog;
 			sourceTree = "<group>";
 		};
 		D90B8A0C210F172A00748600 /* HDTextFieldDemo */ = {
@@ -1001,8 +1015,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D9ACA68C1EA86732009A9219 /* PBXTargetDependency */,
-				D9ACA6901EA86732009A9219 /* PBXTargetDependency */,
+				AD3C5AF42328C50600EF742B /* PBXTargetDependency */,
+				AD3C5AF82328C50C00EF742B /* PBXTargetDependency */,
 			);
 			name = HDMasterProject;
 			productName = HDMasterProject;
@@ -1035,6 +1049,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1043,12 +1058,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 049DC1401CD069170021599C /* Products */;
-					ProjectRef = 049DC13F1CD069170021599C /* HDSubProjectOne.xcodeproj */;
+					ProductGroup = AD3C5AD22328C4DF00EF742B /* Products */;
+					ProjectRef = AD3C5AD12328C4DF00EF742B /* HDSubProjectOne.xcodeproj */;
 				},
 				{
-					ProductGroup = 049DC1461CD0691B0021599C /* Products */;
-					ProjectRef = 049DC1451CD0691B0021599C /* HDSubProjectTwo.xcodeproj */;
+					ProductGroup = AD3C5AE72328C4F300EF742B /* Products */;
+					ProjectRef = AD3C5AE62328C4F300EF742B /* HDSubProjectTwo.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1059,18 +1074,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		049DC1441CD069170021599C /* HDSubProjectOne.framework */ = {
+		AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = HDSubProjectOne.framework;
-			remoteRef = 049DC1431CD069170021599C /* PBXContainerItemProxy */;
+			remoteRef = AD3C5AD52328C4DF00EF742B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		049DC14A1CD0691B0021599C /* HDSubProjectTwo.framework */ = {
+		AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = HDSubProjectTwo.framework;
-			remoteRef = 049DC1491CD0691B0021599C /* PBXContainerItemProxy */;
+			remoteRef = AD3C5AEF2328C4F300EF742B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1136,6 +1151,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework",
 				"${BUILT_PRODUCTS_DIR}/NYXImagesKit/NYXImagesKit.framework",
@@ -1145,6 +1161,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBXScan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYXImagesKit.framework",
@@ -1171,6 +1188,7 @@
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				D9B7D90E2071D91900D64580 /* MideaAlertController.m in Sources */,
 				D927D13C21F0851000C73547 /* HDGCDTimeDemo.m in Sources */,
+				AD7CC5432328CDB400F40291 /* HDDDLogDemo.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
 				D971642F208D6BC9005B4F4F /* HDDelegateObject2.m in Sources */,
 				D9841E222063954000B7E139 /* HDEyeView.m in Sources */,
@@ -1221,6 +1239,7 @@
 				D989756A20E24362005945D3 /* HDAddressBookDemo.m in Sources */,
 				D9C894962133DD2A00030E95 /* GYSwitch.m in Sources */,
 				D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */,
+				AD7CC5402328CA5400F40291 /* HDDDLog.m in Sources */,
 				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
 				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
 				D9208DB5223622CE009CC38D /* HDPasswordItem.m in Sources */,
@@ -1244,15 +1263,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D9ACA68C1EA86732009A9219 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HDSubProjectOne;
-			targetProxy = D9ACA68B1EA86732009A9219 /* PBXContainerItemProxy */;
-		};
-		D9ACA6901EA86732009A9219 /* PBXTargetDependency */ = {
+		AD3C5AF42328C50600EF742B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HDSubProjectTwo;
-			targetProxy = D9ACA68F1EA86732009A9219 /* PBXContainerItemProxy */;
+			targetProxy = AD3C5AF32328C50600EF742B /* PBXContainerItemProxy */;
+		};
+		AD3C5AF82328C50C00EF742B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HDSubProjectOne;
+			targetProxy = AD3C5AF72328C50C00EF742B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
