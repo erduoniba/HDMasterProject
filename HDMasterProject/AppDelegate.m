@@ -14,6 +14,7 @@
 #import <JSPatch/JSPatch.h>
 #import "ViewController.h"
 #import "HDDDLog.h"
+#import "MideaPerformance.h"
 
 #import <IQKeyboardManager/IQKeyboardManager.h>
 
@@ -53,9 +54,13 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 
     [self startLaunchingAnimation];
 
+    // 网络监控
     [[HDNetStatusManager sharedInstance] startMonitoring];
     
+    // 日志信息
     [HDDDLog configurationDDLog:@"HDLogs"];
+    
+    [MideaPerformance showMonitorView];
 
     return YES;
 }

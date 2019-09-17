@@ -144,7 +144,7 @@ static NSString *const hd_dateFormatString = @"yyyy/MM/dd HH:mm:ss";
     fileLogger.rollingFrequency = 3600 * 24;    // 每24小时创建一个新文件
     fileLogger.maximumFileSize = 1024 * 1024 * 1;   // 文件最大是1M
     fileLogger.doNotReuseLogFiles = YES;            // 每次启动生成新的log日志文件
-    fileLogger.logFileManager.maximumNumberOfLogFiles = 30; // 最多允许创建30个文件
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 50; // 最多允许创建30个文件
     [DDLog addLogger:fileLogger];
 }
 

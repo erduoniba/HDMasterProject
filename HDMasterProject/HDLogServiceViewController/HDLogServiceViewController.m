@@ -59,7 +59,7 @@
     /*
      1: NSLog信息本来保存在 STDOUT_FILENO 句柄 中，但是因为这个文件不在 该app的沙盒中，所以只能通过 freopen 来将NSLog信息 重定向 到指定的文件中。
     */
-    //[self logServiceOne];
+    [self logServiceOne];
     
     /*
      2: 通过获取手机所有的日志文件，根据该app的进程标识符来筛选该app的日志，这个也只是针对NSLog的输出，printf并没有获取
@@ -69,7 +69,7 @@
     /*
      3: 先将NSLog信息重定向到NSFileHandle中，然后监听NSFileHandle读入的通知，来获取NSLog信息
      */
-    [self logServiceThree];
+//    [self logServiceThree];
 }
 
 - (UITextView *)textView{

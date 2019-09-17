@@ -210,6 +210,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDMideaScanCodeDemo"];
         [_dataArr addObject:@"HDGesturePasswordDemo"];
         [_dataArr addObject:@"HDDDLogDemo"];
+        [_dataArr addObject:@"SPModalViewDemo"];
         
     }
     return _dataArr;

@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)configurationDDLog:(NSString *)logFolderName;
 
+@property (nonatomic, assign) NSString *assginString;
+@property (nonatomic, strong) NSString *strongString;
+
 @end
 
 NS_ASSUME_NONNULL_END

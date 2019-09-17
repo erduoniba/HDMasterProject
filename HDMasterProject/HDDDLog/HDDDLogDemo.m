@@ -9,14 +9,9 @@
 #import "HDDDLogDemo.h"
 
 #import <CocoaLumberjack/CocoaLumberjack.h>
+#import "HDDDLog.h"
 
 static const int ddLogLevel = DDLogLevelVerbose;
-//
-//#ifdef DEBUG
-//static const int ddLogLevel = DDLogLevelVerbose;
-//#else
-//static const int ddLogLevel = DDLogLevelError;
-//#endif
 
 @interface HDDDLogDemo ()
 
@@ -37,13 +32,37 @@ static const int ddLogLevel = DDLogLevelVerbose;
     
     _index = 0;
     _shouldStop = NO;
-    [self ddlog];
+//    [self ddlog];
+
+    
+    CFAbsoluteTime startNSLog = CFAbsoluteTimeGetCurrent();
+    for (int i = 0; i < 10000; i++) {
+        NSLog(@"%d", i);
+    }
+    CFAbsoluteTime endNSLog = CFAbsoluteTimeGetCurrent();
+    
+    CFAbsoluteTime startPrintf = CFAbsoluteTimeGetCurrent();
+    for (int i = 0; i < 10000; i++) {
+        printf("%d\n", i);
+    }
+    CFAbsoluteTime endPrintf = CFAbsoluteTimeGetCurrent();
+    
+    CFAbsoluteTime startDDLog = CFAbsoluteTimeGetCurrent();
+    for (int i = 0; i < 10000; i++) {
+        DDLogVerbose(@"DDLogVerbose %d", (int)i);
+    }
+    CFAbsoluteTime endDDLog = CFAbsoluteTimeGetCurrent();
+    
+    // NSLog time: 1.741361, printf time: 0.047443 (36.7) DDLog time: 0.752042 (2.3)
+    NSLog(@"NSLog time: %lf, printf time: %lf DDLog time: %lf", endNSLog - startNSLog, endPrintf - startPrintf, endDDLog - startDDLog);
+    
+
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
-    _shouldStop = YES;
+//    _shouldStop = YES;
 }
 
 - (void)ddlog {

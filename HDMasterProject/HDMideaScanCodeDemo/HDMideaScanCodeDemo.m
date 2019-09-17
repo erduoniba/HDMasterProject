@@ -10,6 +10,9 @@
 
 #import "MideaDisposeScanCodeTool.h"
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
+static const int ddLogLevel = DDLogLevelInfo;
+
 @interface HDMideaScanCodeDemo () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) UITextView *textView;
@@ -49,6 +52,10 @@
     } else {
         // 针对 11.0 以下的iOS系统进行处理
     }
+    
+    DDLogVerbose(@"DDLogVerbose %d", (int)1231);
+    DDLogWarn(@"DDLogWarn %d", (int)1231);
+    DDLogError(@"DDLogError %d", (int)1231);
 }
 
 - (void)qrCodeAction {
