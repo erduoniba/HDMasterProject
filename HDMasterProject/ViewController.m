@@ -211,7 +211,8 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDGesturePasswordDemo"];
         [_dataArr addObject:@"HDDDLogDemo"];
         [_dataArr addObject:@"SPModalViewDemo"];
-        
+        [_dataArr addObject:@"HDPresentDemo"];
+        [_dataArr addObject:@"HDXibLayerDemo"];
     }
     return _dataArr;
 }

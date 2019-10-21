@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
+#import <AdSupport/AdSupport.h>
+
 int main(int argc, char * argv[]) {
     @autoreleasepool {
 //        for (int i=0; i<10000; i++) {
@@ -16,6 +18,23 @@ int main(int argc, char * argv[]) {
 //                NSLog(@"iiiiiiiii : %d", i);
 //            }
 //        }
+        
+        Class LSApplicationWorkspace_class = NSClassFromString(@"LSApplicationWorkspace");
+        NSObject *workspace = [LSApplicationWorkspace_class performSelector:@selector(defaultWorkspace)];
+        NSArray *arrAPP = [workspace performSelector:@selector(allApplications)];
+        NSLog(@"arrAPP: %@",arrAPP);
+        
+        if ( [[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled] ) {
+            NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+            
+            NSLog(@"idfa1 : %@", idfa);
+        }
+        else {
+            NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+            
+            NSLog(@"idfa2 : %@", idfa);
+        }
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

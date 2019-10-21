@@ -195,4 +195,6 @@ static inline UIImage* createRoundedCornerMask(CGRect rect, CGFloat radius_tl, C
 
 - (UIViewController *)fdd_viewController;
 
+@property (nonatomic, strong) UIColor *borderColor;
+
 @end

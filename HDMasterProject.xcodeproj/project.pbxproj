@@ -71,6 +71,11 @@
 		AD7CC58923291FA600F40291 /* MDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC57223291FA600F40291 /* MDWeakProxy.m */; };
 		AD7CC58B23291FAB00F40291 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD7CC58A23291FAB00F40291 /* README.md */; };
 		AD7CC58D23291FB200F40291 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AD7CC58C23291FB200F40291 /* LICENSE */; };
+		ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */; };
+		ADC337F6235D7BC90019025B /* HDXibLayerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */; };
+		ADC337F9235D85070019025B /* CALayer+HD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F8235D85070019025B /* CALayer+HD.m */; };
+		ADFD852B2339B1CE002929F8 /* HDPresentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD852A2339B1CE002929F8 /* HDPresentDemo.m */; };
+		ADFD852E2339B21C002929F8 /* HDNextPresentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD852D2339B21C002929F8 /* HDNextPresentDemo.m */; };
 		D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */; };
 		D9208DB2223621C4009CC38D /* HDPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9208DB1223621C4009CC38D /* HDPasswordView.m */; };
 		D9208DB5223622CE009CC38D /* HDPasswordItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9208DB4223622CE009CC38D /* HDPasswordItem.m */; };
@@ -314,6 +319,15 @@
 		AD7CC57423291FA600F40291 /* MDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDWeakProxy.h; sourceTree = "<group>"; };
 		AD7CC58A23291FAB00F40291 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD7CC58C23291FB200F40291 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ADC337F2235D7BC90019025B /* HDXibLayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDXibLayerDemo.h; sourceTree = "<group>"; };
+		ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDXibLayerDemo.m; sourceTree = "<group>"; };
+		ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDXibLayerDemo.xib; sourceTree = "<group>"; };
+		ADC337F7235D85070019025B /* CALayer+HD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+HD.h"; sourceTree = "<group>"; };
+		ADC337F8235D85070019025B /* CALayer+HD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HD.m"; sourceTree = "<group>"; };
+		ADFD85292339B1CE002929F8 /* HDPresentDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPresentDemo.h; sourceTree = "<group>"; };
+		ADFD852A2339B1CE002929F8 /* HDPresentDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDPresentDemo.m; sourceTree = "<group>"; };
+		ADFD852C2339B21C002929F8 /* HDNextPresentDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNextPresentDemo.h; sourceTree = "<group>"; };
+		ADFD852D2339B21C002929F8 /* HDNextPresentDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNextPresentDemo.m; sourceTree = "<group>"; };
 		B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D90B8A0D210F174A00748600 /* HDTextFieldDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDTextFieldDemo.h; sourceTree = "<group>"; };
 		D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDTextFieldDemo.m; sourceTree = "<group>"; };
@@ -629,6 +643,8 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				ADC337F1235D7BA50019025B /* HDXibLayerDemo */,
+				ADFD85282339B1B5002929F8 /* HDPresentDemo */,
 				AD315AD12330798100E4731C /* SPModalView */,
 				AD7CC54423291F9D00F40291 /* MideaPerformance */,
 				AD7CC53D2328CA3600F40291 /* HDDDLog */,
@@ -865,6 +881,29 @@
 				AD7CC57423291FA600F40291 /* MDWeakProxy.h */,
 			);
 			path = FPS;
+			sourceTree = "<group>";
+		};
+		ADC337F1235D7BA50019025B /* HDXibLayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ADC337F7235D85070019025B /* CALayer+HD.h */,
+				ADC337F8235D85070019025B /* CALayer+HD.m */,
+				ADC337F2235D7BC90019025B /* HDXibLayerDemo.h */,
+				ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */,
+				ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */,
+			);
+			path = HDXibLayerDemo;
+			sourceTree = "<group>";
+		};
+		ADFD85282339B1B5002929F8 /* HDPresentDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ADFD85292339B1CE002929F8 /* HDPresentDemo.h */,
+				ADFD852A2339B1CE002929F8 /* HDPresentDemo.m */,
+				ADFD852C2339B21C002929F8 /* HDNextPresentDemo.h */,
+				ADFD852D2339B21C002929F8 /* HDNextPresentDemo.m */,
+			);
+			path = HDPresentDemo;
 			sourceTree = "<group>";
 		};
 		D90B8A0C210F172A00748600 /* HDTextFieldDemo */ = {
@@ -1294,6 +1333,7 @@
 				D97C981E1E9B4FC400DDA9D0 /* fdd_logo_refresh@3x.png in Resources */,
 				046B87F91D0D258D0087D99C /* 222.png in Resources */,
 				D9C894AB2134103B00030E95 /* public_ic_switchoff@2x.png in Resources */,
+				ADC337F6235D7BC90019025B /* HDXibLayerDemo.xib in Resources */,
 				D98C3A021FFB58FB0082E14E /* iOSAppReverseEngineering.pdf in Resources */,
 				D9841E332063BE6700B7E139 /* eye@2x.png in Resources */,
 				049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */,
@@ -1378,6 +1418,7 @@
 				D96607C52017273A00E7B989 /* HDDelegateTaget.m in Sources */,
 				D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */,
 				D9208DB822362C8B009CC38D /* HDGesturePasswordDemo.m in Sources */,
+				ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */,
 				AD7CC57C23291FA600F40291 /* MDCpuUsage.m in Sources */,
 				D9841E1F2063951700B7E139 /* HDEyeViewDemo.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
@@ -1414,6 +1455,7 @@
 				AD7CC57723291FA600F40291 /* MDFloatingBallManager.m in Sources */,
 				D9C894A42134034200030E95 /* HDSwitch.m in Sources */,
 				D9D919D521F6FA260062B593 /* MideaDisposeScanCodeTool.m in Sources */,
+				ADFD852B2339B1CE002929F8 /* HDPresentDemo.m in Sources */,
 				D9DFD01620C9213500763A00 /* HDShareInstanceSonDemo.m in Sources */,
 				D9841E2820639E7400B7E139 /* HDEyeAnimateView.m in Sources */,
 				AD7CC57B23291FA600F40291 /* MDAppMemory.m in Sources */,
@@ -1453,10 +1495,12 @@
 				AD7CC57A23291FA600F40291 /* MDFileManagerTool.m in Sources */,
 				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
 				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
+				ADFD852E2339B21C002929F8 /* HDNextPresentDemo.m in Sources */,
 				D9208DB5223622CE009CC38D /* HDPasswordItem.m in Sources */,
 				046B87EB1D0D23C80087D99C /* HDPulldownPhotoViewController.m in Sources */,
 				0428C47D1D011BC3001F9D6F /* HDPhotoGroupCell.m in Sources */,
 				D95615B42060EF2000072A3A /* HDBarChartsElementManager.m in Sources */,
+				ADC337F9235D85070019025B /* CALayer+HD.m in Sources */,
 				04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */,
 				AD7CC58223291FA600F40291 /* LJ_DirToolNavigatorController.m in Sources */,
 				AD7CC57623291FA600F40291 /* MDPerformanceView.m in Sources */,

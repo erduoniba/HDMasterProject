@@ -130,7 +130,7 @@ static NSString *const hd_dateFormatString = @"yyyy/MM/dd HH:mm:ss";
     [DDTTYLogger sharedInstance].logFormatter = customFormatter;
     
     // DDASLLogger，你的日志语句将被发送到苹果文件系统、你的日志状态会被发送到 Console.app (Xcode 控制台会打印两份，所以注释掉)
-    // [DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs 苹果系统日志
+//    [DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs 苹果系统日志
     
     // 自定义log日志存放的路径（文件存放在沙盒中）
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
