@@ -46,6 +46,8 @@
 		AD3C5AF22328C50600EF742B /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD3C5AF52328C50C00EF742B /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */; };
 		AD3C5AF62328C50C00EF742B /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD742CDA2361632200776D79 /* HDWKWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD742CD92361632200776D79 /* HDWKWebViewDemo.m */; };
+		AD742CDC2361714000776D79 /* jingxi.html in Resources */ = {isa = PBXBuildFile; fileRef = AD742CDB2361713F00776D79 /* jingxi.html */; };
 		AD7CC5402328CA5400F40291 /* HDDDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC53F2328CA5400F40291 /* HDDDLog.m */; };
 		AD7CC5432328CDB400F40291 /* HDDDLogDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC5422328CDB400F40291 /* HDDDLogDemo.m */; };
 		AD7CC57523291FA600F40291 /* MDNetworkFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC54823291FA600F40291 /* MDNetworkFlow.m */; };
@@ -71,9 +73,11 @@
 		AD7CC58923291FA600F40291 /* MDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC57223291FA600F40291 /* MDWeakProxy.m */; };
 		AD7CC58B23291FAB00F40291 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD7CC58A23291FAB00F40291 /* README.md */; };
 		AD7CC58D23291FB200F40291 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AD7CC58C23291FB200F40291 /* LICENSE */; };
+		AD906180235FEB3400B40A7A /* HDSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90617F235FEB3400B40A7A /* HDSwiftDemo.swift */; };
 		ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */; };
 		ADC337F6235D7BC90019025B /* HDXibLayerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */; };
 		ADC337F9235D85070019025B /* CALayer+HD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F8235D85070019025B /* CALayer+HD.m */; };
+		ADF55121236B050D0020411A /* HDTableViewHeaderDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF55120236B050D0020411A /* HDTableViewHeaderDemo.m */; };
 		ADFD852B2339B1CE002929F8 /* HDPresentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD852A2339B1CE002929F8 /* HDPresentDemo.m */; };
 		ADFD852E2339B21C002929F8 /* HDNextPresentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD852D2339B21C002929F8 /* HDNextPresentDemo.m */; };
 		D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B8A0E210F174A00748600 /* HDTextFieldDemo.m */; };
@@ -272,6 +276,9 @@
 		AD315AD623307A1200E4731C /* SPModalViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPModalViewDemo.m; sourceTree = "<group>"; };
 		AD3C5AD12328C4DF00EF742B /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AD3C5AE62328C4F300EF742B /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HDSubProjectTwo.xcodeproj; sourceTree = "<group>"; };
+		AD742CD82361632200776D79 /* HDWKWebViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWKWebViewDemo.h; sourceTree = "<group>"; };
+		AD742CD92361632200776D79 /* HDWKWebViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDWKWebViewDemo.m; sourceTree = "<group>"; };
+		AD742CDB2361713F00776D79 /* jingxi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jingxi.html; sourceTree = "<group>"; };
 		AD7CC53E2328CA5400F40291 /* HDDDLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDDLog.h; sourceTree = "<group>"; };
 		AD7CC53F2328CA5400F40291 /* HDDDLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDDLog.m; sourceTree = "<group>"; };
 		AD7CC5412328CDB400F40291 /* HDDDLogDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDDLogDemo.h; sourceTree = "<group>"; };
@@ -319,11 +326,15 @@
 		AD7CC57423291FA600F40291 /* MDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDWeakProxy.h; sourceTree = "<group>"; };
 		AD7CC58A23291FAB00F40291 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD7CC58C23291FB200F40291 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AD90617C235FEB1000B40A7A /* HDMasterProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDMasterProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD90617F235FEB3400B40A7A /* HDSwiftDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDSwiftDemo.swift; sourceTree = "<group>"; };
 		ADC337F2235D7BC90019025B /* HDXibLayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDXibLayerDemo.h; sourceTree = "<group>"; };
 		ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDXibLayerDemo.m; sourceTree = "<group>"; };
 		ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDXibLayerDemo.xib; sourceTree = "<group>"; };
 		ADC337F7235D85070019025B /* CALayer+HD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+HD.h"; sourceTree = "<group>"; };
 		ADC337F8235D85070019025B /* CALayer+HD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HD.m"; sourceTree = "<group>"; };
+		ADF5511F236B050D0020411A /* HDTableViewHeaderDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDTableViewHeaderDemo.h; sourceTree = "<group>"; };
+		ADF55120236B050D0020411A /* HDTableViewHeaderDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDTableViewHeaderDemo.m; sourceTree = "<group>"; };
 		ADFD85292339B1CE002929F8 /* HDPresentDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPresentDemo.h; sourceTree = "<group>"; };
 		ADFD852A2339B1CE002929F8 /* HDPresentDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDPresentDemo.m; sourceTree = "<group>"; };
 		ADFD852C2339B21C002929F8 /* HDNextPresentDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNextPresentDemo.h; sourceTree = "<group>"; };
@@ -643,6 +654,9 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				ADF5511E236B04EF0020411A /* HDTableViewHeaderDemo */,
+				AD742CD7236162A700776D79 /* HDUniverseLink */,
+				AD90617B235FEAF700B40A7A /* SwiftDemo */,
 				ADC337F1235D7BA50019025B /* HDXibLayerDemo */,
 				ADFD85282339B1B5002929F8 /* HDPresentDemo */,
 				AD315AD12330798100E4731C /* SPModalView */,
@@ -766,6 +780,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AD742CD7236162A700776D79 /* HDUniverseLink */ = {
+			isa = PBXGroup;
+			children = (
+				AD742CDB2361713F00776D79 /* jingxi.html */,
+				AD742CD82361632200776D79 /* HDWKWebViewDemo.h */,
+				AD742CD92361632200776D79 /* HDWKWebViewDemo.m */,
+			);
+			path = HDUniverseLink;
+			sourceTree = "<group>";
+		};
 		AD7CC53D2328CA3600F40291 /* HDDDLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -883,6 +907,15 @@
 			path = FPS;
 			sourceTree = "<group>";
 		};
+		AD90617B235FEAF700B40A7A /* SwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AD90617F235FEB3400B40A7A /* HDSwiftDemo.swift */,
+				AD90617C235FEB1000B40A7A /* HDMasterProject-Bridging-Header.h */,
+			);
+			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
 		ADC337F1235D7BA50019025B /* HDXibLayerDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -893,6 +926,15 @@
 				ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */,
 			);
 			path = HDXibLayerDemo;
+			sourceTree = "<group>";
+		};
+		ADF5511E236B04EF0020411A /* HDTableViewHeaderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ADF5511F236B050D0020411A /* HDTableViewHeaderDemo.h */,
+				ADF55120236B050D0020411A /* HDTableViewHeaderDemo.m */,
+			);
+			path = HDTableViewHeaderDemo;
 			sourceTree = "<group>";
 		};
 		ADFD85282339B1B5002929F8 /* HDPresentDemo */ = {
@@ -1265,6 +1307,7 @@
 					049DC0DF1CD0527C0021599C = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = HQ353LFGTA;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.HotspotConfiguration = {
@@ -1341,6 +1384,7 @@
 				D9C894A72134103200030E95 /* public_ic_switchon@3x.png in Resources */,
 				D97C981D1E9B4FC400DDA9D0 /* fdd_logo_refresh@2x.png in Resources */,
 				D959099721CE125B00F69F77 /* home_refresh@3x.png in Resources */,
+				AD742CDC2361714000776D79 /* jingxi.html in Resources */,
 				AD7CC58D23291FB200F40291 /* LICENSE in Resources */,
 				D927B40321D0AF340013B5F8 /* smart_ic_switch_l@2x.png in Resources */,
 				D9C894AC2134103B00030E95 /* public_ic_switchoff@3x.png in Resources */,
@@ -1424,6 +1468,7 @@
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				AD7CC57D23291FA600F40291 /* MideaPerformance.m in Sources */,
 				D9B7D90E2071D91900D64580 /* MideaAlertController.m in Sources */,
+				AD906180235FEB3400B40A7A /* HDSwiftDemo.swift in Sources */,
 				D927D13C21F0851000C73547 /* HDGCDTimeDemo.m in Sources */,
 				AD7CC5432328CDB400F40291 /* HDDDLogDemo.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
@@ -1462,6 +1507,7 @@
 				D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
+				ADF55121236B050D0020411A /* HDTableViewHeaderDemo.m in Sources */,
 				D9C894992133DD4500030E95 /* HDSwitchDemo.m in Sources */,
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
 				D97C97EA1E9B387500DDA9D0 /* UINavigationBar+Awesome.m in Sources */,
@@ -1497,6 +1543,7 @@
 				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
 				ADFD852E2339B21C002929F8 /* HDNextPresentDemo.m in Sources */,
 				D9208DB5223622CE009CC38D /* HDPasswordItem.m in Sources */,
+				AD742CDA2361632200776D79 /* HDWKWebViewDemo.m in Sources */,
 				046B87EB1D0D23C80087D99C /* HDPulldownPhotoViewController.m in Sources */,
 				0428C47D1D011BC3001F9D6F /* HDPhotoGroupCell.m in Sources */,
 				D95615B42060EF2000072A3A /* HDBarChartsElementManager.m in Sources */,
@@ -1647,6 +1694,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HQ353LFGTA;
@@ -1680,6 +1728,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "47c59c2c-9929-44d7-84cf-3d573ebaebbc";
 				PROVISIONING_PROFILE_SPECIFIER = denglibingWildcardID;
+				SWIFT_OBJC_BRIDGING_HEADER = "HDMasterProject/SwiftDemo/HDMasterProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
@@ -1690,6 +1741,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HQ353LFGTA;
@@ -1723,6 +1775,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = denglibingWildcardID;
+				SWIFT_OBJC_BRIDGING_HEADER = "HDMasterProject/SwiftDemo/HDMasterProject-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;

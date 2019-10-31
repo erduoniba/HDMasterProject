@@ -16,7 +16,6 @@
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *dataArr;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) HDDelegateTaget *delegateTaget;
 
@@ -213,6 +212,9 @@ __weak id reference = nil;
         [_dataArr addObject:@"SPModalViewDemo"];
         [_dataArr addObject:@"HDPresentDemo"];
         [_dataArr addObject:@"HDXibLayerDemo"];
+        [_dataArr addObject:@"HDSwiftDemo"];
+        [_dataArr addObject:@"HDWKWebViewDemo"];
+        [_dataArr addObject:@"HDTableViewHeaderDemo"];
     }
     return _dataArr;
 }
@@ -231,7 +233,12 @@ __weak id reference = nil;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Class vcClass = NSClassFromString(_dataArr[_dataArr.count - indexPath.row - 1]);
+    NSString *className = _dataArr[_dataArr.count - indexPath.row - 1];
+    Class vcClass = NSClassFromString(className);
+    if (!vcClass) {
+        // swift获取正确的Class
+        vcClass = [self swiftClassFromString:className];
+    }
     UIViewController *nextVC = [vcClass new];
     
     NSArray *titles = [NSStringFromClass(vcClass) componentsSeparatedByString:@"ViewController"];
@@ -248,6 +255,13 @@ __weak id reference = nil;
     CGFloat green = (arc4random()%255) / 255.0;
     CGFloat blue = (arc4random()%255) / 255.0;
     nextVC.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
+}
+
+- (Class)swiftClassFromString:(NSString *)className {
+    NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+    appName = [appName stringByReplacingOccurrencesOfString:@"-" withString:@"_"];
+    NSString *classStringName = [NSString stringWithFormat:@"_TtC%lu%@%lu%@", (unsigned long)appName.length, appName, (unsigned long)className.length, className];
+    return NSClassFromString(classStringName);
 }
 
 - (void)didReceiveMemoryWarning {
