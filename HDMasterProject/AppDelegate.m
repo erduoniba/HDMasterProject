@@ -30,6 +30,35 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 
 @implementation AppDelegate
 
+-(void)setup3DTouch{
+    
+    //    UIApplicationShortcutIcon *icon0 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeAdd];
+    
+    
+    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"pic1"];
+    UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"pic2"];
+    UIApplicationShortcutIcon *icon3 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"pic3"];
+    UIApplicationShortcutIcon *icon4 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"pic4"];
+    
+    //    UIMutableApplicationShortcutItem *item0 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"add" localizedTitle:@"进入add" localizedSubtitle:nil icon:icon0 userInfo:nil];
+    
+    UIMutableApplicationShortcutItem *item1 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic1" localizedTitle:@"进入pic1" localizedSubtitle:@"自定义图标pic1" icon:icon1 userInfo:nil];
+    UIMutableApplicationShortcutItem *item2 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic2" localizedTitle:@"进入pic2" localizedSubtitle:@"自定义图标pic2" icon:icon2 userInfo:nil];
+    UIMutableApplicationShortcutItem *item3 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic3" localizedTitle:@"进入pic3" localizedSubtitle:@"自定义图标pic3" icon:icon3 userInfo:nil];
+    UIMutableApplicationShortcutItem *item4 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic4" localizedTitle:@"进入pic4" localizedSubtitle:@"自定义图标pic4" icon:icon4 userInfo:nil];
+    
+    
+    UIMutableApplicationShortcutItem *item5 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic1" localizedTitle:@"进入pic1" localizedSubtitle:@"自定义图标pic5" icon:icon1 userInfo:nil];
+    UIMutableApplicationShortcutItem *item6 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic2" localizedTitle:@"进入pic2" localizedSubtitle:@"自定义图标pic6" icon:icon2 userInfo:nil];
+    UIMutableApplicationShortcutItem *item7 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic3" localizedTitle:@"进入pic3" localizedSubtitle:@"自定义图标pic7" icon:icon3 userInfo:nil];
+    UIMutableApplicationShortcutItem *item8 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic4" localizedTitle:@"进入pic4" localizedSubtitle:@"自定义图标pic8" icon:icon4 userInfo:nil];
+    
+    
+    [[UIApplication sharedApplication] setShortcutItems:@[item1,item2,item3,item4,item5,item6,item7,item8]];
+    //      [[UIApplication sharedApplication] setShortcutItems:@[item0]];
+    
+}
+
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
     NSString *videoAllowRotation = [[NSUserDefaults standardUserDefaults] objectForKey:@"videoAllowRotation"];
     if ([videoAllowRotation isEqualToString:@"1"]) {
@@ -39,6 +68,14 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     return UIInterfaceOrientationMaskPortrait;
 }
 
+/*
+ **# didFinishLaunchingWithOptions      初始化
+ **# applicationDidBecomeActive         进入前台
+ **# applicationWillResignActive        即将离开前台
+ **# applicationDidEnterBackground      已经进入后台
+ **# applicationWillEnterForeground     即将进入前台
+ **# applicationDidBecomeActive         已经进入前台
+*/
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
@@ -61,6 +98,16 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     [HDDDLog configurationDDLog:@"HDLogs"];
     
     [MideaPerformance showMonitorView];
+    
+    // 首先判断是否支持3DTouch
+    if(self.window.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable)
+    {
+        
+    }
+    
+    [self setup3DTouch];
+    
+    NSLog(@"**# didFinishLaunchingWithOptions");
 
     return YES;
 }
@@ -153,6 +200,7 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     
+    NSLog(@"**# applicationWillResignActive");
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
@@ -160,13 +208,14 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
     //
-    
+    NSLog(@"**# applicationDidEnterBackground");
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     
     //
+    NSLog(@"**# applicationWillEnterForeground");
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -178,6 +227,8 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     [self.class doIt2];
     
     [ViewController dddd];
+    
+    NSLog(@"**# applicationDidBecomeActive");
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

@@ -45,6 +45,9 @@ __weak id reference = nil;
 
     _delegateTaget = [HDDelegateTaget sharedInstance];
     
+    _tableView.contentInset = UIEdgeInsetsMake(40, 0, 0, 0);
+    _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(40, 0, 0, 0);
+    
 //    [self methodSync1];
 //
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -176,7 +179,7 @@ __weak id reference = nil;
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     
-    _tableView.frame = self.view.bounds;
+//    _tableView.frame = self.view.bounds;
 }
 
 - (NSMutableArray *) dataArr{
@@ -215,6 +218,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDSwiftDemo"];
         [_dataArr addObject:@"HDWKWebViewDemo"];
         [_dataArr addObject:@"HDTableViewHeaderDemo"];
+        [_dataArr addObject:@"HDLoadDemo"];
     }
     return _dataArr;
 }

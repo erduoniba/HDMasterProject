@@ -93,6 +93,12 @@
         return;
     }
     
+    if ([urlString containsString:@"openapp.jdpingou"]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+        decisionHandler(WKNavigationActionPolicyAllow);
+        return;
+    }
+    
     if (_shouldUL) {
         //允许跳转
         decisionHandler(WKNavigationActionPolicyAllow);

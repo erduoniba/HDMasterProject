@@ -29,7 +29,7 @@
     
     self.parentVC = [self.class currentVC];
     
-    [self.parentVC dismissViewControllerAnimated:NO completion:^{
+    [self dismissViewControllerAnimated:NO completion:^{
         
     }];
 }

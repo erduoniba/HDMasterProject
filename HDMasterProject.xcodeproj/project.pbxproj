@@ -39,7 +39,12 @@
 		049DC0F31CD0527C0021599C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049DC0F11CD0527C0021599C /* LaunchScreen.storyboard */; };
 		04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A11CE96AD900943C42 /* HDMessageWaysViewController.m */; };
 		04BD82A51CE96B4D00943C42 /* NSObject+Messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */; };
-		32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */; };
+		20947655C2905BFBDCFC1A1E /* Pods_HDMasterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A9E2A1AF566A424BF56CB /* Pods_HDMasterProject.framework */; };
+		AD21739723702BDC00848867 /* HDLoadDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD21739623702BDC00848867 /* HDLoadDemo.m */; };
+		AD21739A23702C0E00848867 /* HDLoadObj.m in Sources */ = {isa = PBXBuildFile; fileRef = AD21739923702C0E00848867 /* HDLoadObj.m */; };
+		AD21739D23702E3E00848867 /* HDSonLoadObj.m in Sources */ = {isa = PBXBuildFile; fileRef = AD21739C23702E3E00848867 /* HDSonLoadObj.m */; };
+		AD2173A023702EBB00848867 /* HDLoadObj+HD.m in Sources */ = {isa = PBXBuildFile; fileRef = AD21739F23702EBB00848867 /* HDLoadObj+HD.m */; };
+		AD2173A323702ECB00848867 /* HDSonLoadObj+HD.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2173A223702ECB00848867 /* HDSonLoadObj+HD.m */; };
 		AD315AD42330799200E4731C /* SPModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD315AD32330799200E4731C /* SPModalView.m */; };
 		AD315AD723307A1200E4731C /* SPModalViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD315AD623307A1200E4731C /* SPModalViewDemo.m */; };
 		AD3C5AF12328C50600EF742B /* HDSubProjectTwo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */; };
@@ -269,7 +274,17 @@
 		04BD82A31CE96B4D00943C42 /* NSObject+Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Messages.h"; sourceTree = "<group>"; };
 		04BD82A41CE96B4D00943C42 /* NSObject+Messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Messages.m"; sourceTree = "<group>"; };
 		0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDMasterProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject.release.xcconfig"; sourceTree = "<group>"; };
-		29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDMasterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		185A9E2A1AF566A424BF56CB /* Pods_HDMasterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDMasterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD21739523702BDC00848867 /* HDLoadDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDLoadDemo.h; sourceTree = "<group>"; };
+		AD21739623702BDC00848867 /* HDLoadDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDLoadDemo.m; sourceTree = "<group>"; };
+		AD21739823702C0E00848867 /* HDLoadObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDLoadObj.h; sourceTree = "<group>"; };
+		AD21739923702C0E00848867 /* HDLoadObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDLoadObj.m; sourceTree = "<group>"; };
+		AD21739B23702E3E00848867 /* HDSonLoadObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDSonLoadObj.h; sourceTree = "<group>"; };
+		AD21739C23702E3E00848867 /* HDSonLoadObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDSonLoadObj.m; sourceTree = "<group>"; };
+		AD21739E23702EBB00848867 /* HDLoadObj+HD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDLoadObj+HD.h"; sourceTree = "<group>"; };
+		AD21739F23702EBB00848867 /* HDLoadObj+HD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HDLoadObj+HD.m"; sourceTree = "<group>"; };
+		AD2173A123702ECB00848867 /* HDSonLoadObj+HD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDSonLoadObj+HD.h"; sourceTree = "<group>"; };
+		AD2173A223702ECB00848867 /* HDSonLoadObj+HD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HDSonLoadObj+HD.m"; sourceTree = "<group>"; };
 		AD315AD22330799200E4731C /* SPModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPModalView.h; sourceTree = "<group>"; };
 		AD315AD32330799200E4731C /* SPModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPModalView.m; sourceTree = "<group>"; };
 		AD315AD523307A1200E4731C /* SPModalViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPModalViewDemo.h; sourceTree = "<group>"; };
@@ -496,7 +511,7 @@
 				04204B9A1D0678120069A9FE /* libz.tbd in Frameworks */,
 				04204B981D06780C0069A9FE /* JavaScriptCore.framework in Frameworks */,
 				04204B961D0677530069A9FE /* JSPatch.framework in Frameworks */,
-				32C23849EA2DA46D0B68DB0B /* Pods_HDMasterProject.framework in Frameworks */,
+				20947655C2905BFBDCFC1A1E /* Pods_HDMasterProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +661,7 @@
 		049DC0E21CD0527C0021599C /* HDMasterProject */ = {
 			isa = PBXGroup;
 			children = (
+				AD4A28B92390B97900FBEBE6 /* New Group */,
 				D9BA48AE21B75D6600977CDB /* HDMasterProject.entitlements */,
 				049DC0E61CD0527C0021599C /* AppDelegate.h */,
 				049DC0E71CD0527C0021599C /* AppDelegate.m */,
@@ -654,6 +670,7 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				AD21739423702BCC00848867 /* HDLoadDemo */,
 				ADF5511E236B04EF0020411A /* HDTableViewHeaderDemo */,
 				AD742CD7236162A700776D79 /* HDUniverseLink */,
 				AD90617B235FEAF700B40A7A /* SwiftDemo */,
@@ -745,6 +762,23 @@
 			path = HDMessageWays;
 			sourceTree = "<group>";
 		};
+		AD21739423702BCC00848867 /* HDLoadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AD21739523702BDC00848867 /* HDLoadDemo.h */,
+				AD21739623702BDC00848867 /* HDLoadDemo.m */,
+				AD21739823702C0E00848867 /* HDLoadObj.h */,
+				AD21739923702C0E00848867 /* HDLoadObj.m */,
+				AD21739B23702E3E00848867 /* HDSonLoadObj.h */,
+				AD21739C23702E3E00848867 /* HDSonLoadObj.m */,
+				AD21739E23702EBB00848867 /* HDLoadObj+HD.h */,
+				AD21739F23702EBB00848867 /* HDLoadObj+HD.m */,
+				AD2173A123702ECB00848867 /* HDSonLoadObj+HD.h */,
+				AD2173A223702ECB00848867 /* HDSonLoadObj+HD.m */,
+			);
+			path = HDLoadDemo;
+			sourceTree = "<group>";
+		};
 		AD315AD12330798100E4731C /* SPModalView */ = {
 			isa = PBXGroup;
 			children = (
@@ -778,6 +812,13 @@
 				AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4A28B92390B97900FBEBE6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		AD742CD7236162A700776D79 /* HDUniverseLink */ = {
@@ -1265,7 +1306,7 @@
 				D97914DA1EA7409C008A8EEA /* OpenGLES.framework */,
 				D97914D81EA74093008A8EEA /* QuartzCore.framework */,
 				D97914D61EA7408B008A8EEA /* CoreLocation.framework */,
-				29F8C3C00F5FE8E00226E67E /* Pods_HDMasterProject.framework */,
+				185A9E2A1AF566A424BF56CB /* Pods_HDMasterProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1281,8 +1322,8 @@
 				049DC0DC1CD0527C0021599C /* Sources */,
 				049DC0DD1CD0527C0021599C /* Frameworks */,
 				049DC0DE1CD0527C0021599C /* Resources */,
-				77C2F095BC7489696DC8A7C1 /* [CP] Embed Pods Frameworks */,
 				D9ACA6911EA86732009A9219 /* Embed Frameworks */,
+				BB23A735F08EAD2A203D09B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1421,27 +1462,35 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		77C2F095BC7489696DC8A7C1 /* [CP] Embed Pods Frameworks */ = {
+		BB23A735F08EAD2A203D09B3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HDMasterProject/Pods-HDMasterProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework",
+				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/NYXImagesKit/NYXImagesKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/ZBarSDK/ZBarSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBXScan.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYXImagesKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZBarSDK.framework",
@@ -1491,6 +1540,8 @@
 				D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */,
 				D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */,
 				049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */,
+				AD21739A23702C0E00848867 /* HDLoadObj.m in Sources */,
+				AD21739D23702E3E00848867 /* HDSonLoadObj.m in Sources */,
 				D9716429208D6BAC005B4F4F /* HDDelegateDemo.m in Sources */,
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
@@ -1504,6 +1555,7 @@
 				D9DFD01620C9213500763A00 /* HDShareInstanceSonDemo.m in Sources */,
 				D9841E2820639E7400B7E139 /* HDEyeAnimateView.m in Sources */,
 				AD7CC57B23291FA600F40291 /* MDAppMemory.m in Sources */,
+				AD21739723702BDC00848867 /* HDLoadDemo.m in Sources */,
 				D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
@@ -1523,7 +1575,9 @@
 				0428C4721D00454C001F9D6F /* UIView+Helpers.m in Sources */,
 				D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */,
 				D964E3EA208DD1A600197A98 /* HDCategoryDemo.m in Sources */,
+				AD2173A323702ECB00848867 /* HDSonLoadObj+HD.m in Sources */,
 				D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */,
+				AD2173A023702EBB00848867 /* HDLoadObj+HD.m in Sources */,
 				D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */,
 				D977296521847434008A0A07 /* HDNetStatusViewController1.m in Sources */,
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
