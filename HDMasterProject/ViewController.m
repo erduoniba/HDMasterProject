@@ -220,6 +220,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDTableViewHeaderDemo"];
         [_dataArr addObject:@"HDLoadDemo"];
         [_dataArr addObject:@"HDSSCrollViewDemoViewController"];
+        [_dataArr addObject:@"HDBaseUIWebViewController"];
     }
     return _dataArr;
 }

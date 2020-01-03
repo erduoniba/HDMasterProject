@@ -428,7 +428,7 @@
 
 - (void)cancelAllImageLoad {
     [_cells enumerateObjectsUsingBlock:^(HDPhotoGroupCell *cell, NSUInteger idx, BOOL *stop) {
-        [cell.imageView sd_cancelCurrentImageLoad];
+        [cell.imageView sd_cancelCurrentAnimationImagesLoad];
     }];
 }
 

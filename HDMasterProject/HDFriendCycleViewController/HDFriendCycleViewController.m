@@ -26,7 +26,9 @@
     [super viewDidLoad];
     
     [[SDImageCache sharedImageCache] clearMemory];
-    [[SDImageCache sharedImageCache] clearDisk];
+    [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
+        
+    }];
     
     [self.tableView registerClass:HDFriendCycleTableViewCell.class forCellReuseIdentifier:NSStringFromClass(HDFriendCycleTableViewCell.class)];
     

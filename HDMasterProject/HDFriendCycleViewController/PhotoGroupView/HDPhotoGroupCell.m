@@ -86,7 +86,7 @@
     
     
     __weak typeof(self) wSelf = self;
-    [_imageView sd_setImageWithURL:item.largeImageURL placeholderImage:item.thumbImage options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+    [_imageView sd_setImageWithURL:item.largeImageURL placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
         __strong typeof(wSelf) sSelf = wSelf;
         if (!sSelf) return;
         CGFloat progress = receivedSize / (float)expectedSize;
@@ -94,7 +94,7 @@
         if (isnan(progress)) progress = 0;
         sSelf.progressLayer.hidden = NO;
         sSelf.progressLayer.strokeEnd = progress;
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         __strong typeof(wSelf) sSelf = wSelf;
         if (!sSelf) return;
         sSelf.progressLayer.hidden = YES;

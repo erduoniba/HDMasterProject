@@ -8,15 +8,18 @@ pre_install do |installer|
 end
 
 target 'HDMasterProject' do
-    pod 'NYXImagesKit'            # image各种处理Category
+    pod 'NYXImagesKit', '2.3'            # image各种处理Category
     pod 'IQKeyboardManager', '6.1.1'
-    pod 'SDWebImage', '3.7.2'
-    pod 'AFNetworking'
+    pod 'AFNetworking', '3.2.1'
     pod 'LBXScan/LBXZBar','~> 2.3'
     
     pod 'CocoaLumberjack', '~> 3.5.3'
     
-    pod 'MLeaksFinder'
+    pod 'MLeaksFinder', '1.0.0'
+    
+    pod 'SDWebImage', '4.2.1'
+    pod 'MJRefresh', '3.2.0'
+    pod 'HDBaseProject', :git => 'https://github.com/erduoniba/HDBaseProject.git'
 
 #    pod 'Dynatrace', :git => 'http://172.16.10.165/midea-common/Dynatrace.git', :branch => 'master'
 #    pod 'WeexSDK', :inhibit_warnings => true, :git => 'http://172.16.10.165/midea-common/Weex.git', :branch => 'master'
