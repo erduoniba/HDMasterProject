@@ -95,4 +95,11 @@
     [self.tableView endUpdates];
 }
 
+- (void)injected {
+    _headerView.backgroundColor = [UIColor redColor];
+    [self.tableView beginUpdates];
+    _headerView.frame = CGRectMake(0, 0, self.view.frame.size.width, 300 + random() % 400);
+    [self.tableView endUpdates];
+}
+
 @end

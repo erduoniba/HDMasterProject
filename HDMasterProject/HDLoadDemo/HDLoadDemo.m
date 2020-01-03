@@ -11,6 +11,8 @@
 #import "HDLoadObj.h"
 #import "HDSonLoadObj.h"
 
+#import "HDSSCrollViewDemoViewController.h"
+
 @interface HDLoadDemo ()
 
 @property (nonatomic, strong) HDSonLoadObj *obj;
@@ -20,6 +22,29 @@
 @end
 
 @implementation HDLoadDemo
+
++ (void)load {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    view.backgroundColor = [UIColor orangeColor];
+    NSLog(@"[UIScreen mainScreen].bounds : %@", [NSValue valueWithCGRect:[UIScreen mainScreen].bounds]);
+    HDSSCrollViewDemoViewController *vc = HDSSCrollViewDemoViewController.new;
+    [[UIApplication sharedApplication].keyWindow addSubview:vc.view];
+}
+
+
+- (void)hd_performOnMainThread:(void(^)(void))block
+{
+    if (!block) {
+        return ;
+    }
+    
+    if ([NSThread isMainThread]) {
+        block();
+        return;
+    }
+
+    dispatch_async(dispatch_get_main_queue(), block);
+}
 
 - (void)dealloc {
     NSLog(@"HDLoadDemo dealloc");
@@ -31,6 +56,12 @@
     
     _obj = [HDSonLoadObj new];
     _obj.viewController = self;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self hd_performOnMainThread:^{
+            [self.navigationController popViewControllerAnimated:YES];
+        }];
+    });
     
     /*
      ^^^ HDLoadObj load

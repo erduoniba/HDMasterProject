@@ -5,52 +5,59 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
          <BreakpointContent
-            uuid = "3C76778D-4F37-42F4-9F40-5D558FF73104"
+            uuid = "310869FA-72B2-42B2-81BB-72613FE2D8E5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/CocoaLumberjack/Classes/DDFileLogger.m"
-            timestampString = "589897369.408591"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1008"
-            endingLineNumber = "1008"
-            landmarkName = "-lt_currentLogFileInfo"
-            landmarkType = "7">
+            symbolName = "[UINavigationController pushViewController:animated:]"
+            moduleName = "">
             <Locations>
                <Location
-                  uuid = "3C76778D-4F37-42F4-9F40-5D558FF73104 - 9941dc9b293f1757"
+                  uuid = "310869FA-72B2-42B2-81BB-72613FE2D8E5 - a0337e797ed6a91b"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[DDFileLogger lt_currentLogFileInfo]"
-                  moduleName = "CocoaLumberjack"
+                  symbolName = "-[UINavigationController pushViewController:animated:]"
+                  moduleName = "UIKitCore"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/denglibing3/HDProject/GithubProject/HDMasterProject/Pods/CocoaLumberjack/Classes/DDFileLogger.m"
-                  timestampString = "589884744.754319"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1008"
-                  endingLineNumber = "1008"
-                  offsetFromSymbolStart = "19">
+                  offsetFromSymbolStart = "0">
                </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "72FCF258-3AFA-497F-987A-42A9B36731C9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            condition = "[UIViewController pushViewController:animated:]"
+            continueAfterRunningActions = "No"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "1B6455F8-9513-420C-8FEA-23230092AFB7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "[UIViewController viewWillAppear:]"
+            moduleName = "">
+            <Locations>
                <Location
-                  uuid = "3C76778D-4F37-42F4-9F40-5D558FF73104 - 9941dc9b293f1757"
+                  uuid = "1B6455F8-9513-420C-8FEA-23230092AFB7 - bb3a1d5491d689b"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[DDFileLogger lt_currentLogFileInfo]"
-                  moduleName = "CocoaLumberjack"
+                  symbolName = "-[UIViewController viewWillAppear:]"
+                  moduleName = "UIKitCore"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/denglibing3/HDProject/GithubProject/HDMasterProject/Pods/CocoaLumberjack/Classes/DDFileLogger.m"
-                  timestampString = "589884744.7566119"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1008"
-                  endingLineNumber = "1008"
-                  offsetFromSymbolStart = "59">
+                  offsetFromSymbolStart = "0">
                </Location>
             </Locations>
          </BreakpointContent>

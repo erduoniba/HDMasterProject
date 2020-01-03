@@ -51,6 +51,8 @@
 		AD3C5AF22328C50600EF742B /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD3C5AF52328C50C00EF742B /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */; };
 		AD3C5AF62328C50C00EF742B /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD4A2B4E2395FA1100FBEBE6 /* HDSScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A2B4B2395FA1100FBEBE6 /* HDSScrollTableViewCell.m */; };
+		AD4A2B4F2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A2B4D2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m */; };
 		AD742CDA2361632200776D79 /* HDWKWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD742CD92361632200776D79 /* HDWKWebViewDemo.m */; };
 		AD742CDC2361714000776D79 /* jingxi.html in Resources */ = {isa = PBXBuildFile; fileRef = AD742CDB2361713F00776D79 /* jingxi.html */; };
 		AD7CC5402328CA5400F40291 /* HDDDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC53F2328CA5400F40291 /* HDDDLog.m */; };
@@ -78,6 +80,13 @@
 		AD7CC58923291FA600F40291 /* MDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC57223291FA600F40291 /* MDWeakProxy.m */; };
 		AD7CC58B23291FAB00F40291 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD7CC58A23291FAB00F40291 /* README.md */; };
 		AD7CC58D23291FB200F40291 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AD7CC58C23291FB200F40291 /* LICENSE */; };
+		AD9004ED239E59E700CF8EEB /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9004EC239E59E700CF8EEB /* NotificationService.m */; };
+		AD9004F1239E59E700CF8EEB /* H.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD9004E9239E59E700CF8EEB /* H.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD9004FC239E59FC00CF8EEB /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9004FB239E59FC00CF8EEB /* UserNotifications.framework */; };
+		AD9004FE239E59FC00CF8EEB /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9004FD239E59FC00CF8EEB /* UserNotificationsUI.framework */; };
+		AD900502239E59FD00CF8EEB /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD900501239E59FD00CF8EEB /* NotificationViewController.m */; };
+		AD900505239E59FD00CF8EEB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD900503239E59FD00CF8EEB /* MainInterface.storyboard */; };
+		AD900509239E59FD00CF8EEB /* HUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD9004FA239E59FC00CF8EEB /* HUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD906180235FEB3400B40A7A /* HDSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90617F235FEB3400B40A7A /* HDSwiftDemo.swift */; };
 		ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */; };
 		ADC337F6235D7BC90019025B /* HDXibLayerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */; };
@@ -196,9 +205,35 @@
 			remoteGlobalIDString = 049DC1031CD052B70021599C;
 			remoteInfo = HDSubProjectOne;
 		};
+		AD9004EF239E59E700CF8EEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049DC0D81CD0527C0021599C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD9004E8239E59E700CF8EEB;
+			remoteInfo = H;
+		};
+		AD900507239E59FD00CF8EEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 049DC0D81CD0527C0021599C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD9004F9239E59FC00CF8EEB;
+			remoteInfo = HUI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AD9004F2239E59E700CF8EEB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AD9004F1239E59E700CF8EEB /* H.appex in Embed App Extensions */,
+				AD900509239E59FD00CF8EEB /* HUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9ACA6911EA86732009A9219 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +326,10 @@
 		AD315AD623307A1200E4731C /* SPModalViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPModalViewDemo.m; sourceTree = "<group>"; };
 		AD3C5AD12328C4DF00EF742B /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AD3C5AE62328C4F300EF742B /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HDSubProjectTwo.xcodeproj; sourceTree = "<group>"; };
+		AD4A2B4A2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSSCrollViewDemoViewController.h; sourceTree = "<group>"; };
+		AD4A2B4B2395FA1100FBEBE6 /* HDSScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSScrollTableViewCell.m; sourceTree = "<group>"; };
+		AD4A2B4C2395FA1100FBEBE6 /* HDSScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSScrollTableViewCell.h; sourceTree = "<group>"; };
+		AD4A2B4D2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSSCrollViewDemoViewController.m; sourceTree = "<group>"; };
 		AD742CD82361632200776D79 /* HDWKWebViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWKWebViewDemo.h; sourceTree = "<group>"; };
 		AD742CD92361632200776D79 /* HDWKWebViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDWKWebViewDemo.m; sourceTree = "<group>"; };
 		AD742CDB2361713F00776D79 /* jingxi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jingxi.html; sourceTree = "<group>"; };
@@ -341,6 +380,17 @@
 		AD7CC57423291FA600F40291 /* MDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDWeakProxy.h; sourceTree = "<group>"; };
 		AD7CC58A23291FAB00F40291 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD7CC58C23291FB200F40291 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AD9004E9239E59E700CF8EEB /* H.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = H.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9004EB239E59E700CF8EEB /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		AD9004EC239E59E700CF8EEB /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		AD9004EE239E59E700CF8EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD9004FA239E59FC00CF8EEB /* HUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9004FB239E59FC00CF8EEB /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AD9004FD239E59FC00CF8EEB /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		AD900500239E59FD00CF8EEB /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		AD900501239E59FD00CF8EEB /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		AD900504239E59FD00CF8EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AD900506239E59FD00CF8EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD90617C235FEB1000B40A7A /* HDMasterProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDMasterProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD90617F235FEB3400B40A7A /* HDSwiftDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDSwiftDemo.swift; sourceTree = "<group>"; };
 		ADC337F2235D7BC90019025B /* HDXibLayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDXibLayerDemo.h; sourceTree = "<group>"; };
@@ -515,6 +565,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD9004E6239E59E700CF8EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9004F7239E59FC00CF8EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9004FE239E59FC00CF8EEB /* UserNotificationsUI.framework in Frameworks */,
+				AD9004FC239E59FC00CF8EEB /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -644,6 +710,8 @@
 			isa = PBXGroup;
 			children = (
 				049DC0E21CD0527C0021599C /* HDMasterProject */,
+				AD9004EA239E59E700CF8EEB /* H */,
+				AD9004FF239E59FD00CF8EEB /* HUI */,
 				049DC0E11CD0527C0021599C /* Products */,
 				EC8AE065F7280139CE980EFA /* Pods */,
 				FEC4E83549D260BFBCCAC003 /* Frameworks */,
@@ -654,6 +722,8 @@
 			isa = PBXGroup;
 			children = (
 				049DC0E01CD0527C0021599C /* HDMasterProject.app */,
+				AD9004E9239E59E700CF8EEB /* H.appex */,
+				AD9004FA239E59FC00CF8EEB /* HUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -661,7 +731,6 @@
 		049DC0E21CD0527C0021599C /* HDMasterProject */ = {
 			isa = PBXGroup;
 			children = (
-				AD4A28B92390B97900FBEBE6 /* New Group */,
 				D9BA48AE21B75D6600977CDB /* HDMasterProject.entitlements */,
 				049DC0E61CD0527C0021599C /* AppDelegate.h */,
 				049DC0E71CD0527C0021599C /* AppDelegate.m */,
@@ -670,6 +739,7 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				AD4A2B492395FA1100FBEBE6 /* HDSSCrollViewDemo */,
 				AD21739423702BCC00848867 /* HDLoadDemo */,
 				ADF5511E236B04EF0020411A /* HDTableViewHeaderDemo */,
 				AD742CD7236162A700776D79 /* HDUniverseLink */,
@@ -814,11 +884,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD4A28B92390B97900FBEBE6 /* New Group */ = {
+		AD4A2B492395FA1100FBEBE6 /* HDSSCrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AD4A2B4C2395FA1100FBEBE6 /* HDSScrollTableViewCell.h */,
+				AD4A2B4B2395FA1100FBEBE6 /* HDSScrollTableViewCell.m */,
+				AD4A2B4A2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.h */,
+				AD4A2B4D2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m */,
 			);
-			path = "New Group";
+			path = HDSSCrollViewDemo;
 			sourceTree = "<group>";
 		};
 		AD742CD7236162A700776D79 /* HDUniverseLink */ = {
@@ -946,6 +1020,27 @@
 				AD7CC57423291FA600F40291 /* MDWeakProxy.h */,
 			);
 			path = FPS;
+			sourceTree = "<group>";
+		};
+		AD9004EA239E59E700CF8EEB /* H */ = {
+			isa = PBXGroup;
+			children = (
+				AD9004EB239E59E700CF8EEB /* NotificationService.h */,
+				AD9004EC239E59E700CF8EEB /* NotificationService.m */,
+				AD9004EE239E59E700CF8EEB /* Info.plist */,
+			);
+			path = H;
+			sourceTree = "<group>";
+		};
+		AD9004FF239E59FD00CF8EEB /* HUI */ = {
+			isa = PBXGroup;
+			children = (
+				AD900500239E59FD00CF8EEB /* NotificationViewController.h */,
+				AD900501239E59FD00CF8EEB /* NotificationViewController.m */,
+				AD900503239E59FD00CF8EEB /* MainInterface.storyboard */,
+				AD900506239E59FD00CF8EEB /* Info.plist */,
+			);
+			path = HUI;
 			sourceTree = "<group>";
 		};
 		AD90617B235FEAF700B40A7A /* SwiftDemo */ = {
@@ -1307,6 +1402,8 @@
 				D97914D81EA74093008A8EEA /* QuartzCore.framework */,
 				D97914D61EA7408B008A8EEA /* CoreLocation.framework */,
 				185A9E2A1AF566A424BF56CB /* Pods_HDMasterProject.framework */,
+				AD9004FB239E59FC00CF8EEB /* UserNotifications.framework */,
+				AD9004FD239E59FC00CF8EEB /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1324,17 +1421,54 @@
 				049DC0DE1CD0527C0021599C /* Resources */,
 				D9ACA6911EA86732009A9219 /* Embed Frameworks */,
 				BB23A735F08EAD2A203D09B3 /* [CP] Embed Pods Frameworks */,
+				AD9004F2239E59E700CF8EEB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				AD3C5AF42328C50600EF742B /* PBXTargetDependency */,
 				AD3C5AF82328C50C00EF742B /* PBXTargetDependency */,
+				AD9004F0239E59E700CF8EEB /* PBXTargetDependency */,
+				AD900508239E59FD00CF8EEB /* PBXTargetDependency */,
 			);
 			name = HDMasterProject;
 			productName = HDMasterProject;
 			productReference = 049DC0E01CD0527C0021599C /* HDMasterProject.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AD9004E8239E59E700CF8EEB /* H */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9004F5239E59E700CF8EEB /* Build configuration list for PBXNativeTarget "H" */;
+			buildPhases = (
+				AD9004E5239E59E700CF8EEB /* Sources */,
+				AD9004E6239E59E700CF8EEB /* Frameworks */,
+				AD9004E7239E59E700CF8EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H;
+			productName = H;
+			productReference = AD9004E9239E59E700CF8EEB /* H.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AD9004F9239E59FC00CF8EEB /* HUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD90050A239E59FD00CF8EEB /* Build configuration list for PBXNativeTarget "HUI" */;
+			buildPhases = (
+				AD9004F6239E59FC00CF8EEB /* Sources */,
+				AD9004F7239E59FC00CF8EEB /* Frameworks */,
+				AD9004F8239E59FC00CF8EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HUI;
+			productName = HUI;
+			productReference = AD9004FA239E59FC00CF8EEB /* HUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -1342,6 +1476,7 @@
 		049DC0D81CD0527C0021599C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = HarryDeng;
 				TargetAttributes = {
@@ -1355,6 +1490,16 @@
 								enabled = 0;
 							};
 						};
+					};
+					AD9004E8239E59E700CF8EEB = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = HQ353LFGTA;
+						ProvisioningStyle = Automatic;
+					};
+					AD9004F9239E59FC00CF8EEB = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = HQ353LFGTA;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1383,6 +1528,8 @@
 			projectRoot = "";
 			targets = (
 				049DC0DF1CD0527C0021599C /* HDMasterProject */,
+				AD9004E8239E59E700CF8EEB /* H */,
+				AD9004F9239E59FC00CF8EEB /* HUI */,
 			);
 		};
 /* End PBXProject section */
@@ -1438,6 +1585,21 @@
 				AD7CC58323291FA600F40291 /* SandBoxPreviewTool.bundle in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
 				046B87F81D0D258D0087D99C /* 123.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9004E7239E59E700CF8EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9004F8239E59FC00CF8EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD900505239E59FD00CF8EEB /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1513,6 +1675,7 @@
 				D9208DB822362C8B009CC38D /* HDGesturePasswordDemo.m in Sources */,
 				ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */,
 				AD7CC57C23291FA600F40291 /* MDCpuUsage.m in Sources */,
+				AD4A2B4F2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m in Sources */,
 				D9841E1F2063951700B7E139 /* HDEyeViewDemo.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				AD7CC57D23291FA600F40291 /* MideaPerformance.m in Sources */,
@@ -1559,6 +1722,7 @@
 				D964E3ED208DD1B400197A98 /* HDCategory.m in Sources */,
 				049DC0E51CD0527C0021599C /* main.m in Sources */,
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
+				AD4A2B4E2395FA1100FBEBE6 /* HDSScrollTableViewCell.m in Sources */,
 				ADF55121236B050D0020411A /* HDTableViewHeaderDemo.m in Sources */,
 				D9C894992133DD4500030E95 /* HDSwitchDemo.m in Sources */,
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
@@ -1621,6 +1785,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD9004E5239E59E700CF8EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9004ED239E59E700CF8EEB /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9004F6239E59FC00CF8EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD900502239E59FD00CF8EEB /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1633,6 +1813,16 @@
 			isa = PBXTargetDependency;
 			name = HDSubProjectOne;
 			targetProxy = AD3C5AF72328C50C00EF742B /* PBXContainerItemProxy */;
+		};
+		AD9004F0239E59E700CF8EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD9004E8239E59E700CF8EEB /* H */;
+			targetProxy = AD9004EF239E59E700CF8EEB /* PBXContainerItemProxy */;
+		};
+		AD900508239E59FD00CF8EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD9004F9239E59FC00CF8EEB /* HUI */;
+			targetProxy = AD900507239E59FD00CF8EEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1651,6 +1841,14 @@
 				049DC0F21CD0527C0021599C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AD900503239E59FD00CF8EEB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD900504239E59FD00CF8EEB /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1835,6 +2033,132 @@
 			};
 			name = Release;
 		};
+		AD9004F3239E59E700CF8EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ353LFGTA;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = H/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject.H;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD9004F4239E59E700CF8EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ353LFGTA;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = H/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject.H;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD90050B239E59FD00CF8EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ353LFGTA;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject.HUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD90050C239E59FD00CF8EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQ353LFGTA;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject.HUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1852,6 +2176,24 @@
 			buildConfigurations = (
 				049DC0F81CD0527C0021599C /* Debug */,
 				049DC0F91CD0527C0021599C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9004F5239E59E700CF8EEB /* Build configuration list for PBXNativeTarget "H" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9004F3239E59E700CF8EEB /* Debug */,
+				AD9004F4239E59E700CF8EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD90050A239E59FD00CF8EEB /* Build configuration list for PBXNativeTarget "HUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD90050B239E59FD00CF8EEB /* Debug */,
+				AD90050C239E59FD00CF8EEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

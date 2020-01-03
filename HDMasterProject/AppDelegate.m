@@ -105,6 +105,8 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     
     [self setup3DTouch];
     
+    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+    
     NSLog(@"**# didFinishLaunchingWithOptions");
 
     return YES;
