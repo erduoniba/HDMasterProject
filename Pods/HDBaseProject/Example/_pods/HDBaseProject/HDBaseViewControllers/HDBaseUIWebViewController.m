@@ -148,11 +148,9 @@ static NSString *backImageName;
     }
 }
 
-- (void)injected {
-    NSLog(@"I've been injected: %@", self);
-}
 
 - (void)dealloc {
-    
+    NSLog(@"new dealloc");
 }
+
 @end

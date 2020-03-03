@@ -55,6 +55,11 @@
 		AD4A2B4F2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A2B4D2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m */; };
 		AD742CDA2361632200776D79 /* HDWKWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD742CD92361632200776D79 /* HDWKWebViewDemo.m */; };
 		AD742CDC2361714000776D79 /* jingxi.html in Resources */ = {isa = PBXBuildFile; fileRef = AD742CDB2361713F00776D79 /* jingxi.html */; };
+		AD7562D1240E271A001E0E54 /* HDPageLimitDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7562D0240E271A001E0E54 /* HDPageLimitDemo.m */; };
+		AD7562D4240E2775001E0E54 /* PGPageLimitSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7562D2240E2774001E0E54 /* PGPageLimitSetting.m */; };
+		AD7562D7240E27B2001E0E54 /* WareInfoBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7562D6240E27B2001E0E54 /* WareInfoBViewController.m */; };
+		AD7562DA240E27D6001E0E54 /* HDPageBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7562D9240E27D6001E0E54 /* HDPageBaseViewController.m */; };
+		AD7562DD240E285E001E0E54 /* PGProductDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7562DC240E285E001E0E54 /* PGProductDetailController.m */; };
 		AD7CC5402328CA5400F40291 /* HDDDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC53F2328CA5400F40291 /* HDDDLog.m */; };
 		AD7CC5432328CDB400F40291 /* HDDDLogDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC5422328CDB400F40291 /* HDDDLogDemo.m */; };
 		AD7CC57523291FA600F40291 /* MDNetworkFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC54823291FA600F40291 /* MDNetworkFlow.m */; };
@@ -333,6 +338,16 @@
 		AD742CD82361632200776D79 /* HDWKWebViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWKWebViewDemo.h; sourceTree = "<group>"; };
 		AD742CD92361632200776D79 /* HDWKWebViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDWKWebViewDemo.m; sourceTree = "<group>"; };
 		AD742CDB2361713F00776D79 /* jingxi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jingxi.html; sourceTree = "<group>"; };
+		AD7562CF240E271A001E0E54 /* HDPageLimitDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPageLimitDemo.h; sourceTree = "<group>"; };
+		AD7562D0240E271A001E0E54 /* HDPageLimitDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDPageLimitDemo.m; sourceTree = "<group>"; };
+		AD7562D2240E2774001E0E54 /* PGPageLimitSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPageLimitSetting.m; sourceTree = "<group>"; };
+		AD7562D3240E2775001E0E54 /* PGPageLimitSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPageLimitSetting.h; sourceTree = "<group>"; };
+		AD7562D5240E27B2001E0E54 /* WareInfoBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WareInfoBViewController.h; sourceTree = "<group>"; };
+		AD7562D6240E27B2001E0E54 /* WareInfoBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WareInfoBViewController.m; sourceTree = "<group>"; };
+		AD7562D8240E27D6001E0E54 /* HDPageBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPageBaseViewController.h; sourceTree = "<group>"; };
+		AD7562D9240E27D6001E0E54 /* HDPageBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDPageBaseViewController.m; sourceTree = "<group>"; };
+		AD7562DB240E285E001E0E54 /* PGProductDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGProductDetailController.h; sourceTree = "<group>"; };
+		AD7562DC240E285E001E0E54 /* PGProductDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGProductDetailController.m; sourceTree = "<group>"; };
 		AD7CC53E2328CA5400F40291 /* HDDDLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDDLog.h; sourceTree = "<group>"; };
 		AD7CC53F2328CA5400F40291 /* HDDDLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDDDLog.m; sourceTree = "<group>"; };
 		AD7CC5412328CDB400F40291 /* HDDDLogDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDDDLogDemo.h; sourceTree = "<group>"; };
@@ -739,6 +754,7 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				AD7562CE240E26D7001E0E54 /* HDPageLimitDemo */,
 				AD4A2B492395FA1100FBEBE6 /* HDSSCrollViewDemo */,
 				AD21739423702BCC00848867 /* HDLoadDemo */,
 				ADF5511E236B04EF0020411A /* HDTableViewHeaderDemo */,
@@ -903,6 +919,23 @@
 				AD742CD92361632200776D79 /* HDWKWebViewDemo.m */,
 			);
 			path = HDUniverseLink;
+			sourceTree = "<group>";
+		};
+		AD7562CE240E26D7001E0E54 /* HDPageLimitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AD7562D3240E2775001E0E54 /* PGPageLimitSetting.h */,
+				AD7562D2240E2774001E0E54 /* PGPageLimitSetting.m */,
+				AD7562CF240E271A001E0E54 /* HDPageLimitDemo.h */,
+				AD7562D0240E271A001E0E54 /* HDPageLimitDemo.m */,
+				AD7562D8240E27D6001E0E54 /* HDPageBaseViewController.h */,
+				AD7562D9240E27D6001E0E54 /* HDPageBaseViewController.m */,
+				AD7562D5240E27B2001E0E54 /* WareInfoBViewController.h */,
+				AD7562D6240E27B2001E0E54 /* WareInfoBViewController.m */,
+				AD7562DB240E285E001E0E54 /* PGProductDetailController.h */,
+				AD7562DC240E285E001E0E54 /* PGProductDetailController.m */,
+			);
+			path = HDPageLimitDemo;
 			sourceTree = "<group>";
 		};
 		AD7CC53D2328CA3600F40291 /* HDDDLog */ = {
@@ -1686,6 +1719,7 @@
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				AD7CC57D23291FA600F40291 /* MideaPerformance.m in Sources */,
 				D9B7D90E2071D91900D64580 /* MideaAlertController.m in Sources */,
+				AD7562DD240E285E001E0E54 /* PGProductDetailController.m in Sources */,
 				AD906180235FEB3400B40A7A /* HDSwiftDemo.swift in Sources */,
 				D927D13C21F0851000C73547 /* HDGCDTimeDemo.m in Sources */,
 				AD7CC5432328CDB400F40291 /* HDDDLogDemo.m in Sources */,
@@ -1706,13 +1740,16 @@
 				AD315AD723307A1200E4731C /* SPModalViewDemo.m in Sources */,
 				0428C43E1D003E80001F9D6F /* HDFriendCycleTableViewCell.m in Sources */,
 				0428C4381D002EA3001F9D6F /* HDFriendCycleModel.m in Sources */,
+				AD7562D1240E271A001E0E54 /* HDPageLimitDemo.m in Sources */,
 				D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */,
 				D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */,
 				049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */,
 				AD21739A23702C0E00848867 /* HDLoadObj.m in Sources */,
+				AD7562DA240E27D6001E0E54 /* HDPageBaseViewController.m in Sources */,
 				AD21739D23702E3E00848867 /* HDSonLoadObj.m in Sources */,
 				D9716429208D6BAC005B4F4F /* HDDelegateDemo.m in Sources */,
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
+				AD7562D4240E2775001E0E54 /* PGPageLimitSetting.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				D927B40121D0AEDA0013B5F8 /* HDDSwitch.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
@@ -1749,6 +1786,7 @@
 				D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */,
 				AD2173A023702EBB00848867 /* HDLoadObj+HD.m in Sources */,
 				D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */,
+				AD7562D7240E27B2001E0E54 /* WareInfoBViewController.m in Sources */,
 				D977296521847434008A0A07 /* HDNetStatusViewController1.m in Sources */,
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
 				AD7CC58423291FA600F40291 /* LJ_FileInfo.m in Sources */,

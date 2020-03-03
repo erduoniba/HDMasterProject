@@ -87,14 +87,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   HDBaseProject:
-    :commit: 0f3640dd7523b87f4b18a7da92909bfc675e7365
+    :commit: 00098d0b7fd4baa22c0e55f972498794e5552b9c
     :git: https://github.com/erduoniba/HDBaseProject.git
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
-  HDBaseProject: 0d07ea3225245ab1edfc8c7fd38f800cfe4f9b95
+  HDBaseProject: 103f126c82d6d6a9609d29ef8d4a768936fe04b2
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   LBXScan: e51449f0832d1fe17da632af0d22adeb3cfa3543
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
