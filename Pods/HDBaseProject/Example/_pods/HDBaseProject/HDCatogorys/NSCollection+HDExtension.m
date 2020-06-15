@@ -212,6 +212,7 @@ void safeCollectionLog(NSString *fmt, ...)
 }
 
 + (void)load {
+    return;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         //NSArray
@@ -407,6 +408,7 @@ void safeCollectionLog(NSString *fmt, ...)
 }
 
 + (void) load {
+    return;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         //NSString

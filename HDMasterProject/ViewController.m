@@ -59,6 +59,7 @@ __weak id reference = nil;
 //    });
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ddd) name:@"xx" object:nil];
+    
 }
 
 - (void)ddd {
@@ -222,6 +223,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDSSCrollViewDemoViewController"];
         [_dataArr addObject:@"HDBaseUIWebViewController"];
         [_dataArr addObject:@"HDPageLimitDemo"];
+        [_dataArr addObject:@"HDNSArrayCrashDemo"];
     }
     return _dataArr;
 }

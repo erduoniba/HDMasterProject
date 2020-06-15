@@ -96,6 +96,9 @@
 		ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */; };
 		ADC337F6235D7BC90019025B /* HDXibLayerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */; };
 		ADC337F9235D85070019025B /* CALayer+HD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F8235D85070019025B /* CALayer+HD.m */; };
+		ADD9738E2477707300282F10 /* HDNSArrayCrashDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */; };
+		ADE591A52497961500CBA35F /* HDJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE591A42497961500CBA35F /* HDJSBridge.m */; };
+		ADE591A724979F8400CBA35F /* hdjssdk.js in Resources */ = {isa = PBXBuildFile; fileRef = ADE591A624979F8400CBA35F /* hdjssdk.js */; };
 		ADF55121236B050D0020411A /* HDTableViewHeaderDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF55120236B050D0020411A /* HDTableViewHeaderDemo.m */; };
 		ADFD852B2339B1CE002929F8 /* HDPresentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD852A2339B1CE002929F8 /* HDPresentDemo.m */; };
 		ADFD852E2339B21C002929F8 /* HDNextPresentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD852D2339B21C002929F8 /* HDNextPresentDemo.m */; };
@@ -413,6 +416,11 @@
 		ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDXibLayerDemo.xib; sourceTree = "<group>"; };
 		ADC337F7235D85070019025B /* CALayer+HD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+HD.h"; sourceTree = "<group>"; };
 		ADC337F8235D85070019025B /* CALayer+HD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HD.m"; sourceTree = "<group>"; };
+		ADD9738C2477707300282F10 /* HDNSArrayCrashDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNSArrayCrashDemo.h; sourceTree = "<group>"; };
+		ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNSArrayCrashDemo.m; sourceTree = "<group>"; };
+		ADE591A32497961500CBA35F /* HDJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDJSBridge.h; sourceTree = "<group>"; };
+		ADE591A42497961500CBA35F /* HDJSBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDJSBridge.m; sourceTree = "<group>"; };
+		ADE591A624979F8400CBA35F /* hdjssdk.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = hdjssdk.js; sourceTree = "<group>"; };
 		ADF5511F236B050D0020411A /* HDTableViewHeaderDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDTableViewHeaderDemo.h; sourceTree = "<group>"; };
 		ADF55120236B050D0020411A /* HDTableViewHeaderDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDTableViewHeaderDemo.m; sourceTree = "<group>"; };
 		ADFD85292339B1CE002929F8 /* HDPresentDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPresentDemo.h; sourceTree = "<group>"; };
@@ -754,6 +762,7 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				ADD9738B2477705200282F10 /* HDNSArrayCrashDemo */,
 				AD7562CE240E26D7001E0E54 /* HDPageLimitDemo */,
 				AD4A2B492395FA1100FBEBE6 /* HDSSCrollViewDemo */,
 				AD21739423702BCC00848867 /* HDLoadDemo */,
@@ -915,8 +924,11 @@
 			isa = PBXGroup;
 			children = (
 				AD742CDB2361713F00776D79 /* jingxi.html */,
+				ADE591A624979F8400CBA35F /* hdjssdk.js */,
 				AD742CD82361632200776D79 /* HDWKWebViewDemo.h */,
 				AD742CD92361632200776D79 /* HDWKWebViewDemo.m */,
+				ADE591A32497961500CBA35F /* HDJSBridge.h */,
+				ADE591A42497961500CBA35F /* HDJSBridge.m */,
 			);
 			path = HDUniverseLink;
 			sourceTree = "<group>";
@@ -1095,6 +1107,15 @@
 				ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */,
 			);
 			path = HDXibLayerDemo;
+			sourceTree = "<group>";
+		};
+		ADD9738B2477705200282F10 /* HDNSArrayCrashDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ADD9738C2477707300282F10 /* HDNSArrayCrashDemo.h */,
+				ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */,
+			);
+			path = HDNSArrayCrashDemo;
 			sourceTree = "<group>";
 		};
 		ADF5511E236B04EF0020411A /* HDTableViewHeaderDemo */ = {
@@ -1617,6 +1638,7 @@
 				D9C894A82134103200030E95 /* public_ic_switchon@2x.png in Resources */,
 				AD7CC58323291FA600F40291 /* SandBoxPreviewTool.bundle in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
+				ADE591A724979F8400CBA35F /* hdjssdk.js in Resources */,
 				046B87F81D0D258D0087D99C /* 123.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1749,6 +1771,7 @@
 				AD21739D23702E3E00848867 /* HDSonLoadObj.m in Sources */,
 				D9716429208D6BAC005B4F4F /* HDDelegateDemo.m in Sources */,
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
+				ADD9738E2477707300282F10 /* HDNSArrayCrashDemo.m in Sources */,
 				AD7562D4240E2775001E0E54 /* PGPageLimitSetting.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				D927B40121D0AEDA0013B5F8 /* HDDSwitch.m in Sources */,
@@ -1767,6 +1790,7 @@
 				04544FB91D0EA3F900D02AD0 /* HDSystemLogMessage.m in Sources */,
 				AD4A2B4E2395FA1100FBEBE6 /* HDSScrollTableViewCell.m in Sources */,
 				ADF55121236B050D0020411A /* HDTableViewHeaderDemo.m in Sources */,
+				ADE591A52497961500CBA35F /* HDJSBridge.m in Sources */,
 				D9C894992133DD4500030E95 /* HDSwitchDemo.m in Sources */,
 				0428C4271CFDA4F7001F9D6F /* HDAnimalProxy.m in Sources */,
 				D97C97EA1E9B387500DDA9D0 /* UINavigationBar+Awesome.m in Sources */,

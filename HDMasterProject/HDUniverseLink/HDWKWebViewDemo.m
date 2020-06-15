@@ -10,7 +10,9 @@
 
 #import <WebKit/WebKit.h>
 
-@interface HDWKWebViewDemo () <WKUIDelegate, WKNavigationDelegate>
+#import "HDJSBridge.h"
+
+@interface HDWKWebViewDemo () <WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler>
 
 @property (nonatomic, strong) WKWebView *webView;
 
@@ -20,6 +22,10 @@
 
 @implementation HDWKWebViewDemo
 
+- (void)dealloc {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -28,61 +34,91 @@
         _shouldUL = NO;
     }
     
-    WKWebViewConfiguration * configuration = [[WKWebViewConfiguration alloc]init];
-    WKUserContentController *userContentController =[[WKUserContentController alloc]init];
+    // 配置环境
+    WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
+    // WKUserContentController实现js native交互。
+    WKUserContentController *userContentController =[[WKUserContentController alloc] init];
     configuration.userContentController = userContentController;
-
+    
     _webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:configuration];
+    // WKUIDelegate主要处理JS脚本，确认框、警告框等
     _webView.UIDelegate = self;
     _webView.navigationDelegate = self;
     [self.view addSubview:_webView];
     
-    NSURL *fileUrl = [[NSBundle mainBundle] URLForResource:@"jingxi.html" withExtension:nil];
-
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"file://%@",[[NSBundle mainBundle] pathForResource:@"jingxi" ofType:@"html"]]];
+    // 注册一个name为sayHello的js方法
+    [userContentController addScriptMessageHandler:self name:@"sayHello"];
     
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"file://%@",[[NSBundle mainBundle] pathForResource:@"jingxi" ofType:@"html"]]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
+    
+    // 注册自定义的js方法到h5中，无需每个h5都去加载js，通过对象管理
+    [HDJSBridge addCustomJS:_webView scriptMessageHandler:self];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    // 页面离开并且回到父视图下
+    if (self.isMovingFromParentViewController) {
+        // 这里需要注意，前面增加过的方法一定要remove掉。
+        [_webView.configuration.userContentController removeScriptMessageHandlerForName:@"sayHello"];
+    }
 }
 
 #pragma mark - WKNavigationDelegate
 // 页面开始加载时调用
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
-
+    NSLog(@"didStartProvisionalNavigation : %@", navigation);
 }
+
 // 当内容开始返回时调用
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation{
-
+    NSLog(@"didCommitNavigation : %@", navigation);
 }
+
 // 页面加载完成之后调用
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
+    NSLog(@"didFinishNavigation : %@", navigation);
     [self.webView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id _Nullable response, NSError * _Nullable error) {
         NSLog(@"navigator.userAgent: %@", response);
-     }];
+    }];
+    
+    // oc调用JS方法
+    [self.webView evaluateJavaScript:@"say()" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+        NSLog(@"oc call js result: %@", result);
+    }];
 }
-// 页面加载失败时调用
-- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation{
 
+// error
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error {
+    // 类似 UIWebView 的- webView:didFailLoadWithError:
+    NSLog(@"webView:didFailProvisionalNavigation:withError: 启动时加载数据发生错误就会调用这个方法。  \n\n");
 }
+
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error{
+    NSLog(@"webView:didFailNavigation: 当一个正在提交的页面在跳转过程中出现错误时调用这个方法。  \n\n");
+}
+
+
 // 接收到服务器跳转请求之后调用
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation{
-
+    NSLog(@"didReceiveServerRedirectForProvisionalNavigation : %@", navigation);
 }
+
 // 在收到响应后，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
-
     NSLog(@"decidePolicyForNavigationResponse %@",navigationResponse.response.URL.absoluteString);
     //允许跳转
     decisionHandler(WKNavigationResponsePolicyAllow);
     //不允许跳转
     //decisionHandler(WKNavigationResponsePolicyCancel);
 }
+
 // 在发送请求之前，决定是否跳转
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-
-     NSLog(@"decidePolicyForNavigationAction %@",navigationAction.request.URL.absoluteString);
-    
-    
+    NSLog(@"decidePolicyForNavigationAction %@",navigationAction.request.URL.absoluteString);
     NSURL *url = navigationAction.request.URL;
     NSString *urlString = (url) ? url.absoluteString : @"";
     
@@ -110,29 +146,46 @@
         // http://awhisper.github.io/2018/01/08/wechatkilluniversallink/
         decisionHandler(WKNavigationActionPolicyAllow + 2);
     }
-
+    
     //不允许跳转
     //decisionHandler(WKNavigationActionPolicyCancel);
+}
+
+- (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView {
+    NSLog(@"webViewWebContentProcessDidTerminate 网页加载内容进程终止");
 }
 
 
 #pragma mark - WKUIDelegate
 // 创建一个新的WebView
 - (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures{
-    return [[WKWebView alloc]init];
+    return [[WKWebView alloc] init];
 }
+
 // 输入框
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * __nullable result))completionHandler{
     completionHandler(@"http");
 }
+
 // 确认框
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler{
     completionHandler(YES);
 }
+
 // 警告框
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler{
     NSLog(@"%@",message);
     completionHandler();
+}
+
+
+#pragma mark - WKScriptMessageHandler
+/// js调用oc代码在这里处理
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
+    NSLog(@"name:%@ \n body:%@ \n",message.name, message.body);
+    if ([HDJSBridge disposeHDJSObj:message wkWebView:_webView controller:self]) {
+        return;
+    }
 }
 
 @end

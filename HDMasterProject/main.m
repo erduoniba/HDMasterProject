@@ -35,6 +35,17 @@ int main(int argc, char * argv[]) {
             NSLog(@"idfa2 : %@", idfa);
         }
         
+        NSMutableSet *set = [NSMutableSet set];
+        [set addObject:@"1"];
+        [set addObject:@"1"];
+        [set addObject:@"1"];
+        [set addObject:@"2"];
+        [set addObject:@"2"];
+        [set addObject:@"2"];
+        [set addObject:@"2"];
+        NSLog(@"set == %@", set);
+        
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

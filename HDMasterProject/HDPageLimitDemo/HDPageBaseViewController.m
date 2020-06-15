@@ -28,6 +28,10 @@
     CGFloat green = (arc4random()%255) / 255.0;
     CGFloat blue = (arc4random()%255) / 255.0;
     self.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 44)];
+    view.backgroundColor = [UIColor orangeColor];
+    self.navigationItem.titleView = view;
 }
 
 - (void)modalAction {
