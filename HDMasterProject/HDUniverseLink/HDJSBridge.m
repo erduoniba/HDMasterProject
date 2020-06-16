@@ -10,7 +10,7 @@
 
 #import <objc/message.h>
 
-static NSString *hdjsobjname = @"hdjsobj";
+NSString * const hdjsobjname = @"hdjsobj";
 
 @implementation HDJSBridge
 
@@ -48,17 +48,49 @@ static NSString *hdjsobjname = @"hdjsobj";
         return NO;
     }
     
-    SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@:wkWebView:controller:", method]);
+    NSString *callback = body[@"callback"];
+    
+    SEL selector = NSSelectorFromString([NSString stringWithFormat:@"%@:message:controller:callback:", method]);
     if (![self respondsToSelector:selector]) {
         return NO;
     }
-    ((void(*)(id, SEL, NSString *, WKWebView *, UIViewController *))objc_msgSend)(self, selector, body[@"params"], wkWebView, controller);
+    ((void(*)(id, SEL, NSString *, WKScriptMessage *, UIViewController *, NSString *))objc_msgSend)(self, selector, body[@"params"], message, controller, callback);
     return YES;
 }
 
-+ (void)hdWantSleep:(NSString *)params wkWebView:(WKWebView *)wkWebView controller:(UIViewController *)controller {
-    NSLog(@"hdWantSleep : %@", params);
++ (void)hdWantSleep:(NSString *)params message:(WKScriptMessage *)message controller:(UIViewController *)controller callback:(NSString *)callback {
+    NSLog(@"[js to oc] hdWantSleep : %@", params);
+    
+    if (callback) {
+        [self callbackMessage:message result:@{@"result" : @"already sleep"} callbackName:callback];
+    }
 }
+
++ (void)hdWantRun:(NSString *)params message:(WKScriptMessage *)message controller:(UIViewController *)controller callback:(NSString *)callback {
+    NSLog(@"[js to oc] hdWantRun : %@", params);
+    
+    if (callback) {
+        [self callbackMessage:message result:@{@"result" : @"already running"} callbackName:callback];
+    }
+}
+
+
++ (void)callbackMessage:(WKScriptMessage *)message result:(NSDictionary *)result callbackName:(NSString *)callbackName {
+    if (!callbackName) {
+        return;
+    }
+    
+    NSDictionary *callbackMessage = @{
+        @"result" : result ? : @{},
+        @"callback" : callbackName,
+    };
+    NSString *json = [self disposeCallbackMessage:callbackMessage];
+    NSString *jsString = [NSString stringWithFormat:@"hdjsobj.hdCallBack(%@)", json];
+    [message.webView evaluateJavaScript:jsString completionHandler:^(id _Nullable result, NSError * _Nullable error) {
+        NSLog(@"result: %@ error: %@", result, error);
+    }];
+}
+
 
 
 + (NSDictionary *)disposeMessageBody:(id)body {
@@ -78,6 +110,15 @@ static NSString *hdjsobjname = @"hdjsobj";
         params = (NSDictionary *)body;
     }
     return params;
+}
+
++ (NSString *)disposeCallbackMessage:(NSDictionary *)messageDic {
+    NSData *data =  [NSJSONSerialization dataWithJSONObject:messageDic options:NSJSONWritingPrettyPrinted error:nil];
+    if (!data) {
+        return @"";
+    }
+    NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return jsonString;
 }
 
 @end

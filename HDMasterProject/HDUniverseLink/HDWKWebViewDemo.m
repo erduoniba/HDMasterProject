@@ -64,6 +64,7 @@
     if (self.isMovingFromParentViewController) {
         // 这里需要注意，前面增加过的方法一定要remove掉。
         [_webView.configuration.userContentController removeScriptMessageHandlerForName:@"sayHello"];
+        [_webView.configuration.userContentController removeScriptMessageHandlerForName:hdjsobjname];
     }
 }
 
@@ -87,7 +88,7 @@
     
     // oc调用JS方法
     [self.webView evaluateJavaScript:@"say()" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
-        NSLog(@"oc call js result: %@", result);
+        NSLog(@"[oc call js] result: %@", result);
     }];
 }
 
@@ -182,7 +183,7 @@
 #pragma mark - WKScriptMessageHandler
 /// js调用oc代码在这里处理
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
-    NSLog(@"name:%@ \n body:%@ \n",message.name, message.body);
+    NSLog(@"[js to oc] didReceiveScriptMessage name:%@ \n body:%@ \n",message.name, message.body);
     if ([HDJSBridge disposeHDJSObj:message wkWebView:_webView controller:self]) {
         return;
     }

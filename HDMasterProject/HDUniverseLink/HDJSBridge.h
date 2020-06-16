@@ -10,6 +10,8 @@
 
 #import <WebKit/WebKit.h>
 
+extern NSString * _Nonnull const hdjsobjname;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HDJSBridge : NSObject

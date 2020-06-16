@@ -11,6 +11,15 @@
                         body: 'hello world!'
                     });
                 }
+            
+            function hdWantRun(params) {
+                // callback需要挂在
+                window.callback = function(result) {
+                    const jsonString = JSON.stringify(result);
+                    console.log("[oc callback to js] result: " + jsonString);
+                };
+                hdjsobj.hdWantRun(params, 'callback');
+            }
             </script>
             
     </head>
@@ -33,7 +42,10 @@
         <button onclick="say()">html包含js代码（say hello）</button>
         
         <p>
-        <button onclick="hdjsobj.hdWantSleep('sleep')r">js代码是原生注入（say hello）</button>
+        <button onclick="hdjsobj.hdWantSleep('sleep')">js代码是原生注入（hdWantSleep）</button>
+        
+        <p>
+        <button onclick="hdWantRun('run')">js代码是原生注入,包含callback（hdWantRun）</button>
         
     </body>
 </html>
