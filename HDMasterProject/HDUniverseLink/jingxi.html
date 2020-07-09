@@ -20,6 +20,12 @@
                 };
                 hdjsobj.hdWantRun(params, 'callback');
             }
+            
+            function prompts(text, defaultText) {
+                console.log(text + defaultText);
+                var result =  window.prompt(text, defaultText);
+                console.log("result:" + result);
+            }
             </script>
             
     </head>
@@ -27,25 +33,29 @@
         <h1>1</h1>
         <p>hello</p>
         <p>hello</p>
-        <a href="https://wqslinkst.jd.com/ul/ul.action?openapp.jdpingou://virtual?params=%7B%22des%22%3A%22m%22%2C%22url%22%3A%22https%3a%2f%2fitem.m.jd.com%2fitem%2fjxview%3fwareId%3d31493000771%22%2C%22sourceType%22%3A%22JSHOP_SOURCE_TYPE%22%2C%22sourceValue%22%3A%22JSHOP_SOURCE_VALUE%22%2C%22M_sourceFrom%22%3A%22mxz%22%2C%22category%22%3A%22jump%22%2C%22msf_type%22%3A%22click%22%2C%22m_param%22%3A%7B%22m_source%22%3A%220%22%2C%22event_series%22%3A%7B%7D%2C%22jda%22%3A%22101385626.15693799311571576586202.1569379931.1570776799.1570784127.20%22%2C%22usc%22%3A%22jdzt_refer_null%22%2C%22ucp%22%3A%22t_232310336_1%22%2C%22umd%22%3A%22jzt-zhitou%22%2C%22utr%22%3A%22wzj100901%22%2C%22jdv%22%3A%22137720036%257Cjdzt_refer_null%257Ct_232310336_1%257Cjzt-zhitou%257Cwzj100901%257C1570773169047%22%2C%22ref%22%3A%22https%253A%252F%252Fwqs.jd.com%252FdownloadApp%252FopenPgApp.html%253FuseUlInvoke%253D1%2526showxintent%253D1%22%2C%22psn%22%3A%2215693799311571576586202%7C20%22%2C%22psq%22%3A14%2C%22unpl%22%3A%22%22%2C%22pc_source%22%3A%22%22%2C%22mba_muid%22%3A%2215693799311571576586202%22%2C%22mba_sid%22%3A%2215707877325104736312449142408%22%2C%22std%22%3A%22MO-J2011-1%22%2C%22par%22%3A%22useUlInvoke%253D1%2526showxintent%253D1%22%2C%22event_id%22%3A%22%22%2C%22mt_xid%22%3A%22%22%2C%22mt_subsite%22%3A%22%22%7D%2C%22SE%22%3A%7B%22mt_subsite%22%3A%22%22%2C%22__jdv%22%3A%22137720036%257Cjdzt_refer_null%257Ct_232310336_1%257Cjzt-zhitou%257Cwzj100901%257C1570773169047%22%2C%22unpl%22%3A%22%22%2C%22__jda%22%3A%22101385626.15693799311571576586202.1569379931.1570776799.1570784127.20%22%7D%2C%22imkParam%22%3A%7B%22imkUserId%22%3A%22imk7560%22%2C%22downloadChannel%22%3A%22pingou_jindou1%22%2C%22os%22%3A%22ios%22%2C%22device%22%3A%22iphone%22%7D%7D">UL点击跳转到京喜</a>
+        <a style='font-size:40px' href="https://wqslinkst.jd.com/ul/ul.action?openapp.jdpingou://virtual?params=%7B%22des%22%3A%22m%22%2C%22url%22%3A%22https%3a%2f%2fitem.m.jd.com%2fitem%2fjxview%3fwareId%3d31493000771%22%2C%22sourceType%22%3A%22JSHOP_SOURCE_TYPE%22%2C%22sourceValue%22%3A%22JSHOP_SOURCE_VALUE%22%2C%22M_sourceFrom%22%3A%22mxz%22%2C%22category%22%3A%22jump%22%2C%22msf_type%22%3A%22click%22%2C%22m_param%22%3A%7B%22m_source%22%3A%220%22%2C%22event_series%22%3A%7B%7D%2C%22jda%22%3A%22101385626.15693799311571576586202.1569379931.1570776799.1570784127··.20%22%2C%22usc%22%3A%22jdzt_refer_null%22%2C%22ucp%22%3A%22t_232310336_1%22%2C%22umd%22%3A%22jzt-zhitou%22%2C%22utr%22%3A%22wzj100901%22%2C%22jdv%22%3A%22137720036%257Cjdzt_refer_null%257Ct_232310336_1%257Cjzt-zhitou%257Cwzj100901%257C1570773169047%22%2C%22ref%22%3A%22https%253A%252F%252Fwqs.jd.com%252FdownloadApp%252FopenPgApp.html%253FuseUlInvoke%253D1%2526showxintent%253D1%22%2C%22psn%22%3A%2215693799311571576586202%7C20%22%2C%22psq%22%3A14%2C%22unpl%22%3A%22%22%2C%22pc_source%22%3A%22%22%2C%22mba_muid%22%3A%2215693799311571576586202%22%2C%22mba_sid%22%3A%2215707877325104736312449142408%22%2C%22std%22%3A%22MO-J2011-1%22%2C%22par%22%3A%22useUlInvoke%253D1%2526showxintent%253D1%22%2C%22event_id%22%3A%22%22%2C%22mt_xid%22%3A%22%22%2C%22mt_subsite%22%3A%22%22%7D%2C%22SE%22%3A%7B%22mt_subsite%22%3A%22%22%2C%22__jdv%22%3A%22137720036%257Cjdzt_refer_null%257Ct_232310336_1%257Cjzt-zhitou%257Cwzj100901%257C1570773169047%22%2C%22unpl%22%3A%22%22%2C%22__jda%22%3A%22101385626.15693799311571576586202.1569379931.1570776799.1570784127.20%22%7D%2C%22imkParam%22%3A%7B%22imkUserId%22%3A%22imk7560%22%2C%22downloadChannel%22%3A%22pingou_jindou1%22%2C%22os%22%3A%22ios%22%2C%22device%22%3A%22iphone%22%7D%7D">UL点击跳转到京喜</a>
         
         <p>
         
-        <a href="itms-apps://itunes.apple.com/cn/app/京东拼购/id1453661340?l=zh&ls=1&mt=8">AppStore跳转</a>
+        <a style='font-size:40px' href="itms-apps://itunes.apple.com/cn/app/京东拼购/id1453661340?l=zh&ls=1&mt=8">AppStore跳转</a>
         
         
-        <a href="openapp.jdpingou://wqs.jd.com/pingou/index.shtml?showFootNav=0">Scheme跳转到京喜</a>
-        
-        <p>
-        
-        <h1>hello world</h1>
-        <button onclick="say()">html包含js代码（say hello）</button>
+        <a style='font-size:40px' href="openapp.jdpingou://wqs.jd.com/pingou/index.shtml?showFootNav=0">Scheme跳转到京喜</a>
         
         <p>
-        <button onclick="hdjsobj.hdWantSleep('sleep')">js代码是原生注入（hdWantSleep）</button>
+        
+        <h1 style='font-size:40px'>hello world</h1>
+        <button style='font-size:40px' onclick="say()">html包含js代码（say hello）</button>
         
         <p>
-        <button onclick="hdWantRun('run')">js代码是原生注入,包含callback（hdWantRun）</button>
+        <button style='font-size:40px' onclick="hdjsobj.hdWantSleep('sleep')">js代码是原生注入（hdWantSleep）</button>
+        
+        <p>
+        <button style='font-size:40px'  onclick="hdWantRun('run')">js代码是原生注入,包含callback（hdWantRun）</button>
+        
+        <p>
+        <button style='font-size:40px'  onclick="prompts('我是text', 'defaultText')">同步方法</button>
+
         
     </body>
 </html>

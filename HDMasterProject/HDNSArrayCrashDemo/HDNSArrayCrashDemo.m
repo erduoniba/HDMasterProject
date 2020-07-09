@@ -15,6 +15,9 @@
 
 @property (nonatomic, strong) dispatch_queue_t concurrentQueue;
 
+@property (nonatomic, strong) NSString *str1;
+@property (nonatomic, strong) NSString *str2;
+
 @end
 
 @implementation HDNSArrayCrashDemo
@@ -27,6 +30,12 @@
     _concurrentQueue = dispatch_queue_create("com.360buy.jdpingou.safe.array.jsapi", DISPATCH_QUEUE_CONCURRENT);
     _index = 0;
     [self addAction:_index];
+    
+    _str1 = @"str1";
+    _str2 = _str1;
+    _str1 = @"str2";
+    
+    NSLog(@"_str2 : %@", _str2);
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             for (int j=0; j<100; j++) {

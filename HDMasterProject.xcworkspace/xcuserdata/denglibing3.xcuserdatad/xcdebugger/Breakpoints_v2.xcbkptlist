@@ -104,8 +104,8 @@
             filePath = "HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "-safeAddObject:"
             landmarkType = "7">
          </BreakpointContent>
@@ -120,8 +120,8 @@
             filePath = "HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-copyArray"
             landmarkType = "7">
          </BreakpointContent>
@@ -155,6 +155,86 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "+addCustomJS:scriptMessageHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD - a700b8157e0e3097"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HDNSArrayCrashDemo viewDidLoad]"
+                  moduleName = "HDMasterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denglibing3/HDProject/GithubProject/HDMasterProject/HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD - d9784a3b2bf29635"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__33-[HDNSArrayCrashDemo viewDidLoad]_block_invoke"
+                  moduleName = "HDMasterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denglibing3/HDProject/GithubProject/HDMasterProject/HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74D7F96C-22F5-402A-BE11-AB12B7C3A2A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/MJRefresh/MJRefresh/Base/MJRefreshBackFooter.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-scrollViewContentSizeDidChange:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24E1E1AE-727A-4ABF-9306-6A28FC9A8943"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/MJRefresh/MJRefresh/Base/MJRefreshBackFooter.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-scrollViewContentSizeDidChange:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

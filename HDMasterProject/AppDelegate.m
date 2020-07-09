@@ -31,10 +31,7 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 @implementation AppDelegate
 
 -(void)setup3DTouch{
-    
     //    UIApplicationShortcutIcon *icon0 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeAdd];
-    
-    
     UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeCompose];
     UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeAdd];
     UIApplicationShortcutIcon *icon3 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeHome];
@@ -46,15 +43,15 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     UIMutableApplicationShortcutItem *item2 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic2" localizedTitle:@"进入pic2" localizedSubtitle:@"自定义图标pic2" icon:icon2 userInfo:nil];
     UIMutableApplicationShortcutItem *item3 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic3" localizedTitle:@"进入pic3" localizedSubtitle:@"自定义图标pic3" icon:icon3 userInfo:nil];
     UIMutableApplicationShortcutItem *item4 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic4" localizedTitle:@"进入pic4" localizedSubtitle:@"自定义图标pic4" icon:icon4 userInfo:nil];
-//
-//
+    //
+    //
     UIMutableApplicationShortcutItem *item5 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic1" localizedTitle:@"进入pic1" localizedSubtitle:@"自定义图标pic5" icon:icon1 userInfo:nil];
     UIMutableApplicationShortcutItem *item6 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic2" localizedTitle:@"进入pic2" localizedSubtitle:@"自定义图标pic6" icon:icon2 userInfo:nil];
     UIMutableApplicationShortcutItem *item7 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic3" localizedTitle:@"进入pic3" localizedSubtitle:@"自定义图标pic7" icon:icon3 userInfo:nil];
     UIMutableApplicationShortcutItem *item8 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"pic4" localizedTitle:@"进入pic4" localizedSubtitle:@"自定义图标pic8" icon:icon4 userInfo:nil];
     
     // 以info.plist为准
-    [[UIApplication sharedApplication] setShortcutItems:@[item1,item2,item3,item4,item5,item6,item7,item8]];    
+    [[UIApplication sharedApplication] setShortcutItems:@[item1,item2,item3,item4,item5,item6,item7,item8]];
 }
 
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
@@ -73,22 +70,22 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
  **# applicationDidEnterBackground      已经进入后台
  **# applicationWillEnterForeground     即将进入前台
  **# applicationDidBecomeActive         已经进入前台
-*/
+ */
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-//    [JSPatch startWithAppKey:@"fa85a64ff99a5290"];
-//
-//    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDpHyYFneEdiA1KmWQtr9WL7+UD\nEtqAG9eC3S1PR2ttxQs6XXMtuEEJCcsTSHazN54Q0+jZO0W1CXZABPn2wuAT44n3\nTZ9ocQP6cgFPvs0+b0eqx3Dy1sisypA8Ifr8feTDV7CVwqIrjnCdPl7qlYcpUINy\nfedwf5vAt8PhiGd8eQIDAQAB\n-----END PUBLIC KEY-----"];
-
+    
+    //    [JSPatch startWithAppKey:@"fa85a64ff99a5290"];
+    //
+    //    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDpHyYFneEdiA1KmWQtr9WL7+UD\nEtqAG9eC3S1PR2ttxQs6XXMtuEEJCcsTSHazN54Q0+jZO0W1CXZABPn2wuAT44n3\nTZ9ocQP6cgFPvs0+b0eqx3Dy1sisypA8Ifr8feTDV7CVwqIrjnCdPl7qlYcpUINy\nfedwf5vAt8PhiGd8eQIDAQAB\n-----END PUBLIC KEY-----"];
+    
     [HDSubProjectMethodOne hdSubProjectMethodOne];
     [HDSubProjectMethodTwo hdSubProjectMethodTwo];
-
+    
     [IQKeyboardManager sharedManager].enable = YES;
     [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
-
+    
     [self startLaunchingAnimation];
-
+    
     // 网络监控
     [[HDNetStatusManager sharedInstance] startMonitoring];
     
@@ -108,7 +105,9 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
     
     NSLog(@"**# didFinishLaunchingWithOptions");
-
+    
+    [self testRegular];
+    
     return YES;
 }
 
@@ -241,7 +240,7 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     UIView *launchScreenView = sb.instantiateInitialViewController.view;
     launchScreenView.frame = window.bounds;
     [window.rootViewController.view addSubview:launchScreenView];
-
+    
     [UIView animateWithDuration:0.3 delay:0.2 options:UIViewAnimationOptionCurveLinear animations:^{
         launchScreenView.alpha = 0;
     } completion:^(BOOL finished) {
@@ -252,6 +251,58 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     //不管APP在后台还是进程被杀死，只要通过主屏快捷操作进来的，都会调用这个方法
     NSLog(@"name:%@\ntype:%@", shortcutItem.localizedTitle, shortcutItem.type);
+}
+
+- (void)testRegular {
+    NSString *url = @"https://wqs.jd.com/pingou/account/index.html?showFootNav=0&sceneVal=2&key=value";
+     NSString *urlReg = @"^https?:[/]{2}((st[.]jingxi[.]com)|(wqs[.]jd[.]com))[/]pingou[/]account[/]index[.]html[?]showFootNav=0.*";
+    
+    // 正则替换
+    NSString *reg = @"(^https:[/][/])wqs.jd.com(.*)&sceneVal=2(.*)";
+    NSString *replace = @"$1st.jingxi.com$2$3";
+    
+//    [self url:url urlReg:urlReg reg:reg replace:replace];
+    
+    url = @"https://wqs.jd.com/jxlive/detail.html?id=123&&cover=indexImage&origin=origin&ptag=ptag";
+    urlReg = @"^https?:[/]{2}((st[.]jingxi[.]com)|(wqs[.]jd[.]com))[/](pglive|jxlive)[/]detail[.]html[-A-Za-z0-9+&@#/%?=~_|!:,.;]*";
+    BOOL reuslt = [self regexMatching:urlReg forString:url];
+    NSLog(@"reuslt : %d", reuslt);
+    
+    NSLog(@"=================================");
+    [self testRegular2];
+}
+
+- (void)testRegular2 {
+    NSString *url = @"http://wqs.jd.com/pingou/account/index.html?showFootNav=0&sceneVal=2&key=value";
+     NSString *urlReg = @"^https?:[/]{2}((st[.]jingxi[.]com)|(wqs[.]jd[.]com))[/]pingou[/]account[/]index[.]html[?]showFootNav=0.*";
+    
+    // 正则替换
+    NSString *reg = @"(^https?:[/][/])wqs[.]jd[.]com(.*)&sceneVal=2(.*)";
+    NSString *replace = @"$1st.jingxi.com$2$3";
+    
+    [self url:url urlReg:urlReg reg:reg replace:replace];
+}
+
+- (BOOL)regexMatching:(NSString *)regex forString:(NSString *)sourceStr {
+    NSPredicate *predURL = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    BOOL result = [predURL evaluateWithObject:sourceStr];
+    return result;
+}
+
+- (NSString *)url:(NSString *)url urlReg:(NSString *)urlReg reg:(NSString *)reg replace:(NSString *)replace {
+    BOOL result = [self regexMatching:urlReg forString:url];
+     if (result) {
+         // 正则替换
+         NSRegularExpression *regExp = [[NSRegularExpression alloc] initWithPattern:reg options:NSRegularExpressionCaseInsensitive error:nil];
+         NSString *resultStr = [regExp stringByReplacingMatchesInString:url
+                                                      options:NSMatchingReportProgress
+                                                        range:NSMakeRange(0, url.length)
+                                                 withTemplate:replace];
+         NSLog(@"resultStr: %@", resultStr);
+         return resultStr;
+     }
+    NSLog(@"resultStr: %@", url);
+    return url;
 }
 
 @end

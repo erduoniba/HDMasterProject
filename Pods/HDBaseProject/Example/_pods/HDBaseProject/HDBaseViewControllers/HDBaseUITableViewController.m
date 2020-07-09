@@ -151,8 +151,10 @@
     // 设置文字
     [footer setTitle:@"" forState:MJRefreshStateIdle];
 
+    footer.ignoredScrollViewContentInsetBottom = -400;
     // 设置footer
     self.tableView.mj_footer = footer;
+//    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -400, 0);
 }
 
 

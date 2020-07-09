@@ -99,6 +99,9 @@
 		ADD9738E2477707300282F10 /* HDNSArrayCrashDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */; };
 		ADE591A52497961500CBA35F /* HDJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE591A42497961500CBA35F /* HDJSBridge.m */; };
 		ADE591A724979F8400CBA35F /* hdjssdk.js in Resources */ = {isa = PBXBuildFile; fileRef = ADE591A624979F8400CBA35F /* hdjssdk.js */; };
+		ADE6836324AE099E003AD11D /* HDPreferRefreshDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE6836224AE099E003AD11D /* HDPreferRefreshDemo.m */; };
+		ADE6836D24AEFDA2003AD11D /* HDRegexDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE6836B24AEFDA2003AD11D /* HDRegexDemo.m */; };
+		ADE6836E24AEFDA2003AD11D /* HDRegexDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE6836C24AEFDA2003AD11D /* HDRegexDemo.xib */; };
 		ADF55121236B050D0020411A /* HDTableViewHeaderDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF55120236B050D0020411A /* HDTableViewHeaderDemo.m */; };
 		ADFD852B2339B1CE002929F8 /* HDPresentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD852A2339B1CE002929F8 /* HDPresentDemo.m */; };
 		ADFD852E2339B21C002929F8 /* HDNextPresentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD852D2339B21C002929F8 /* HDNextPresentDemo.m */; };
@@ -421,6 +424,11 @@
 		ADE591A32497961500CBA35F /* HDJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDJSBridge.h; sourceTree = "<group>"; };
 		ADE591A42497961500CBA35F /* HDJSBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDJSBridge.m; sourceTree = "<group>"; };
 		ADE591A624979F8400CBA35F /* hdjssdk.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = hdjssdk.js; sourceTree = "<group>"; };
+		ADE6836124AE099E003AD11D /* HDPreferRefreshDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPreferRefreshDemo.h; sourceTree = "<group>"; };
+		ADE6836224AE099E003AD11D /* HDPreferRefreshDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDPreferRefreshDemo.m; sourceTree = "<group>"; };
+		ADE6836A24AEFDA2003AD11D /* HDRegexDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDRegexDemo.h; sourceTree = "<group>"; };
+		ADE6836B24AEFDA2003AD11D /* HDRegexDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDRegexDemo.m; sourceTree = "<group>"; };
+		ADE6836C24AEFDA2003AD11D /* HDRegexDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDRegexDemo.xib; sourceTree = "<group>"; };
 		ADF5511F236B050D0020411A /* HDTableViewHeaderDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDTableViewHeaderDemo.h; sourceTree = "<group>"; };
 		ADF55120236B050D0020411A /* HDTableViewHeaderDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDTableViewHeaderDemo.m; sourceTree = "<group>"; };
 		ADFD85292339B1CE002929F8 /* HDPresentDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPresentDemo.h; sourceTree = "<group>"; };
@@ -762,6 +770,8 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				ADE6836624AEFD24003AD11D /* HDRegexDemo */,
+				ADE6836024AE096D003AD11D /* HDPreferRefreshDemo */,
 				ADD9738B2477705200282F10 /* HDNSArrayCrashDemo */,
 				AD7562CE240E26D7001E0E54 /* HDPageLimitDemo */,
 				AD4A2B492395FA1100FBEBE6 /* HDSSCrollViewDemo */,
@@ -1116,6 +1126,25 @@
 				ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */,
 			);
 			path = HDNSArrayCrashDemo;
+			sourceTree = "<group>";
+		};
+		ADE6836024AE096D003AD11D /* HDPreferRefreshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ADE6836124AE099E003AD11D /* HDPreferRefreshDemo.h */,
+				ADE6836224AE099E003AD11D /* HDPreferRefreshDemo.m */,
+			);
+			path = HDPreferRefreshDemo;
+			sourceTree = "<group>";
+		};
+		ADE6836624AEFD24003AD11D /* HDRegexDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ADE6836A24AEFDA2003AD11D /* HDRegexDemo.h */,
+				ADE6836B24AEFDA2003AD11D /* HDRegexDemo.m */,
+				ADE6836C24AEFDA2003AD11D /* HDRegexDemo.xib */,
+			);
+			path = HDRegexDemo;
 			sourceTree = "<group>";
 		};
 		ADF5511E236B04EF0020411A /* HDTableViewHeaderDemo */ = {
@@ -1635,6 +1664,7 @@
 				D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */,
 				D97C98231E9B778800DDA9D0 /* 2222.jpg in Resources */,
 				D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */,
+				ADE6836E24AEFDA2003AD11D /* HDRegexDemo.xib in Resources */,
 				D9C894A82134103200030E95 /* public_ic_switchon@2x.png in Resources */,
 				AD7CC58323291FA600F40291 /* SandBoxPreviewTool.bundle in Resources */,
 				049DC0EE1CD0527C0021599C /* Main.storyboard in Resources */,
@@ -1746,6 +1776,7 @@
 				D927D13C21F0851000C73547 /* HDGCDTimeDemo.m in Sources */,
 				AD7CC5432328CDB400F40291 /* HDDDLogDemo.m in Sources */,
 				04544FC01D1129E700D02AD0 /* HDBaseNavigationController.m in Sources */,
+				ADE6836D24AEFDA2003AD11D /* HDRegexDemo.m in Sources */,
 				AD7CC57923291FA600F40291 /* MDPerformanceViewController.m in Sources */,
 				D971642F208D6BC9005B4F4F /* HDDelegateObject2.m in Sources */,
 				D9841E222063954000B7E139 /* HDEyeView.m in Sources */,
@@ -1815,6 +1846,7 @@
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
 				AD7CC58423291FA600F40291 /* LJ_FileInfo.m in Sources */,
 				D927D13021F07BB400C73547 /* MideaVideoViewController.m in Sources */,
+				ADE6836324AE099E003AD11D /* HDPreferRefreshDemo.m in Sources */,
 				AD7CC58823291FA600F40291 /* MDFPSLabel.m in Sources */,
 				D9D919D921F6FAA20062B593 /* HDMideaScanCodeDemo.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,
