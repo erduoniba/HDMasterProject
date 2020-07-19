@@ -773,6 +773,7 @@
 				ADE6836624AEFD24003AD11D /* HDRegexDemo */,
 				ADE6836024AE096D003AD11D /* HDPreferRefreshDemo */,
 				ADD9738B2477705200282F10 /* HDNSArrayCrashDemo */,
+				D974D28324167613008DFFCD /* HDArrayDemo */,
 				AD7562CE240E26D7001E0E54 /* HDPageLimitDemo */,
 				AD4A2B492395FA1100FBEBE6 /* HDSSCrollViewDemo */,
 				AD21739423702BCC00848867 /* HDLoadDemo */,
@@ -1267,6 +1268,13 @@
 				D9716430208D6F4E005B4F4F /* HDProtocol.h */,
 			);
 			path = HDDelegateDemo;
+			sourceTree = "<group>";
+		};
+		D974D28324167613008DFFCD /* HDArrayDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HDArrayDemo;
 			sourceTree = "<group>";
 		};
 		D977295F21845F95008A0A07 /* HDNetStatusManager */ = {

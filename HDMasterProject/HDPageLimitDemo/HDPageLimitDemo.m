@@ -22,6 +22,15 @@
     
     PGPageLimitSetting.shareInstance.currentPdNum = 0;
     PGPageLimitSetting.shareInstance.currentAllNum = 2;
+    
+    // 没有 crash
+    NSMutableArray *testArray = [NSMutableArray array];
+    [testArray addObject:@"1"];
+    [testArray addObject:@"2"];
+    [testArray removeLastObject];
+    [testArray removeLastObject];
+    [testArray removeLastObject];
+    [testArray removeLastObject];
 }
 
 /*

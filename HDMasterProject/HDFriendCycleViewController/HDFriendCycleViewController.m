@@ -10,7 +10,7 @@
 #import "HDFriendCycleModel.h"
 #import "HDFriendCycleTableViewCell.h"
 
-#import "SDImageCache.h"
+//#import "SDImageCache.h"
 #import "HDPhotoGroupView.h"
 
 @interface HDFriendCycleViewController () <UITableViewDelegate, UITableViewDataSource, HDFriendCycleTableViewCellDelegate>
@@ -25,10 +25,10 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    [[SDImageCache sharedImageCache] clearMemory];
-    [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
-        
-    }];
+//    [[SDImageCache sharedImageCache] clearMemory];
+//    [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
+//        
+//    }];
     
     [self.tableView registerClass:HDFriendCycleTableViewCell.class forCellReuseIdentifier:NSStringFromClass(HDFriendCycleTableViewCell.class)];
     
