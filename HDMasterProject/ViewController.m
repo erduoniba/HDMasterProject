@@ -23,9 +23,31 @@
 
 @implementation ViewController
 
++ (BOOL)isPgWhiteList:(NSString *)host {
+    BOOL isWiteHost = NO;
+    NSArray *safeList = @[
+        @"*.jd.com",
+        @"*.3.cn",
+        @"3.cn",
+    ];
+    for (int i=0; i<safeList.count; i++) {
+        NSString *safeHost = [safeList[i] lowercaseString];
+        NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF LIKE %@", safeHost];
+        isWiteHost = [pre evaluateWithObject:host];
+        if (isWiteHost) {
+            break;
+        }
+    }
+    return isWiteHost;
+}
+
 __weak id reference = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSURL *url = [NSURL URLWithString:@"https://3.cn/-140vmG9?jump_rd=1821922"];
+    BOOL success = [self.class isPgWhiteList:url.host];
+    NSLog(@"success : %d", success);
 
     NSString *str;
     @autoreleasepool {
@@ -151,8 +173,8 @@ __weak id reference = nil;
     [UIApplication sharedApplication].statusBarHidden = NO;
 
     NSLog(@"----------------reference3:%@", reference);
-
     NSLog(@"%d", _delegateTaget.index);
+    
     _delegateTaget.index ++;
 
     CFAbsoluteTime StartTime = CFAbsoluteTimeGetCurrent();
@@ -226,6 +248,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDNSArrayCrashDemo"];
         [_dataArr addObject:@"HDPreferRefreshDemo"];
         [_dataArr addObject:@"HDRegexDemo"];
+        
     }
     return _dataArr;
 }

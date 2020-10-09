@@ -93,6 +93,13 @@
 		AD900505239E59FD00CF8EEB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD900503239E59FD00CF8EEB /* MainInterface.storyboard */; };
 		AD900509239E59FD00CF8EEB /* HUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD9004FA239E59FC00CF8EEB /* HUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD906180235FEB3400B40A7A /* HDSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90617F235FEB3400B40A7A /* HDSwiftDemo.swift */; };
+		AD95C42A24FF4E9F000B0792 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95C42924FF4E9E000B0792 /* AVKit.framework */; };
+		AD95C42C24FF4EA3000B0792 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95C42B24FF4EA3000B0792 /* AVFoundation.framework */; };
+		AD95C42E24FF4EBF000B0792 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95C42D24FF4EBF000B0792 /* WebKit.framework */; };
+		AD95C43024FF4EDD000B0792 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95C42F24FF4EDD000B0792 /* AddressBook.framework */; };
+		AD95C43224FF4F3C000B0792 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95C43124FF4F3C000B0792 /* Accelerate.framework */; };
+		AD95C43424FF4F6A000B0792 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95C43324FF4F6A000B0792 /* CoreMedia.framework */; };
+		AD95C43624FF4F91000B0792 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95C43524FF4F91000B0792 /* AdSupport.framework */; };
 		ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */; };
 		ADC337F6235D7BC90019025B /* HDXibLayerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */; };
 		ADC337F9235D85070019025B /* CALayer+HD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F8235D85070019025B /* CALayer+HD.m */; };
@@ -414,6 +421,13 @@
 		AD900506239E59FD00CF8EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD90617C235FEB1000B40A7A /* HDMasterProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDMasterProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD90617F235FEB3400B40A7A /* HDSwiftDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDSwiftDemo.swift; sourceTree = "<group>"; };
+		AD95C42924FF4E9E000B0792 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		AD95C42B24FF4EA3000B0792 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AD95C42D24FF4EBF000B0792 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AD95C42F24FF4EDD000B0792 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		AD95C43124FF4F3C000B0792 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		AD95C43324FF4F6A000B0792 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		AD95C43524FF4F91000B0792 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		ADC337F2235D7BC90019025B /* HDXibLayerDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDXibLayerDemo.h; sourceTree = "<group>"; };
 		ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDXibLayerDemo.m; sourceTree = "<group>"; };
 		ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDXibLayerDemo.xib; sourceTree = "<group>"; };
@@ -578,20 +592,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98C3A041FFB5A350082E14E /* QuickLook.framework in Frameworks */,
+				AD95C42A24FF4E9F000B0792 /* AVKit.framework in Frameworks */,
+				AD95C42C24FF4EA3000B0792 /* AVFoundation.framework in Frameworks */,
 				AD3C5AF12328C50600EF742B /* HDSubProjectTwo.framework in Frameworks */,
 				D94F0DC81EA8CD7000697923 /* CFNetwork.framework in Frameworks */,
 				D94F0DAB1EA8C2A500697923 /* CoreTelephony.framework in Frameworks */,
+				AD95C43624FF4F91000B0792 /* AdSupport.framework in Frameworks */,
 				AD3C5AF52328C50C00EF742B /* HDSubProjectOne.framework in Frameworks */,
 				D97914D71EA7408B008A8EEA /* CoreLocation.framework in Frameworks */,
 				D94F0C391EA87E0100697923 /* libsqlite3.0.tbd in Frameworks */,
 				D97914DF1EA740AC008A8EEA /* CoreGraphics.framework in Frameworks */,
+				AD95C43024FF4EDD000B0792 /* AddressBook.framework in Frameworks */,
 				D97914E11EA740C4008A8EEA /* Security.framework in Frameworks */,
+				AD95C43424FF4F6A000B0792 /* CoreMedia.framework in Frameworks */,
 				D97914DB1EA7409C008A8EEA /* OpenGLES.framework in Frameworks */,
 				D97914D91EA74093008A8EEA /* QuartzCore.framework in Frameworks */,
 				D97914DD1EA740A3008A8EEA /* SystemConfiguration.framework in Frameworks */,
+				AD95C43224FF4F3C000B0792 /* Accelerate.framework in Frameworks */,
 				04204B9A1D0678120069A9FE /* libz.tbd in Frameworks */,
 				04204B981D06780C0069A9FE /* JavaScriptCore.framework in Frameworks */,
 				04204B961D0677530069A9FE /* JSPatch.framework in Frameworks */,
+				AD95C42E24FF4EBF000B0792 /* WebKit.framework in Frameworks */,
 				20947655C2905BFBDCFC1A1E /* Pods_HDMasterProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1481,6 +1502,13 @@
 		FEC4E83549D260BFBCCAC003 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD95C43524FF4F91000B0792 /* AdSupport.framework */,
+				AD95C43324FF4F6A000B0792 /* CoreMedia.framework */,
+				AD95C43124FF4F3C000B0792 /* Accelerate.framework */,
+				AD95C42F24FF4EDD000B0792 /* AddressBook.framework */,
+				AD95C42D24FF4EBF000B0792 /* WebKit.framework */,
+				AD95C42B24FF4EA3000B0792 /* AVFoundation.framework */,
+				AD95C42924FF4E9E000B0792 /* AVKit.framework */,
 				D98C3A031FFB5A350082E14E /* QuickLook.framework */,
 				D94F0DC71EA8CD7000697923 /* CFNetwork.framework */,
 				D94F0D9E1EA8C12F00697923 /* HDDemoDLib.framework */,
@@ -2053,8 +2081,9 @@
 			baseConfigurationReference = B3594B95ABBAD787AB99AD68 /* Pods-HDMasterProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CC = "";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HQ353LFGTA;
@@ -2100,8 +2129,9 @@
 			baseConfigurationReference = 0DD9BCDA704485722CB79C99 /* Pods-HDMasterProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CC = "";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HQ353LFGTA;

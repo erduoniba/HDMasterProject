@@ -50,6 +50,8 @@
     [userContentController addScriptMessageHandler:self name:@"sayHello"];
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"file://%@",[[NSBundle mainBundle] pathForResource:@"jingxi" ofType:@"html"]]];
+//    NSURL *url = [NSURL URLWithString:@"https://wqs.jd.com/data/coss/tolerant/new/3_1.shtml"];
+//    NSURL *url = [NSURL URLWithString:@"https://jd.com/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
     
@@ -89,6 +91,19 @@
     // oc调用JS方法
     [self.webView evaluateJavaScript:@"say()" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
         NSLog(@"[oc call js] result: %@", result);
+    }];
+    
+    [self testLoadingTime:webView];
+}
+
+- (void)testLoadingTime:(WKWebView *)webView {
+    NSString *js = @"function getWebLoadingTime() {let times = {};let t = window.performance.timing;times.url = document.URL;times.redirectTime = t.redirectEnd - t.redirectStart;times.dnsTime = t.domainLookupEnd - t.domainLookupStart;times.ttfbTime = t.responseStart - t.navigationStart;times.appcacheTime = t.domainLookupStart - t.fetchStart;times.unloadTime = t.unloadEventEnd - t.unloadEventStart;times.tcpTime = t.connectEnd - t.connectStart;times.reqTime = t.responseEnd - t.responseStart;times.domAnalysisTime = t.domComplete - t.domInteractive;times.blankTime = (t.domInteractive || t.domLoading) - t.fetchStart;times.domReadyTime = t.domContentLoadedEventEnd - t.fetchStart;times.allTime = t.domComplete - t.fetchStart;return times;}getWebLoadingTime();";
+    [webView evaluateJavaScript:js completionHandler:^(id  _Nullable obj, NSError * _Nullable error) {
+        NSLog(@"!=====! 2 %@ %@", obj, error);
+    }];
+    
+    [webView evaluateJavaScript:@"function getLoadingTime(){var e=document.URL,n=document.referrer,t=window.performance,o=t.navigation.redirectCount,r=t&&t.timing,i=r.domainLookupEnd-r.domainLookupStart,a=r.connectEnd-r.connectStart,d=r.responseStart-r.requestStart,m=r.loadEventEnd-r.loadEventStart,s=r.domInteractive-r.navigationStart,c=r.domContentLoadedEventEnd-r.domLoading,u=r.domComplete-r.domContentLoadedEventEnd,v=r.domComplete-r.navigationStart,T=t.getEntriesByType('resource'),g=0;for(index in T){var E=T[index].transferSize;E&&(g+=E)}var l=t.getEntriesByType('navigation');for(index in l){var S=l[index].transferSize;S&&(g+=S)}return{url:e,referrer:n,dnsTime:i,connectTime:a,requestResponseTime:d,loadEventTime:m,domParseTime:c,domResourceTime:u,blankTime:s,allLoadTime:v,redirectCount:o,allTransferSize:g}}getLoadingTime();" completionHandler:^(id  _Nullable obj, NSError * _Nullable error) {
+        NSLog(@"!=====! 3 %@ %@", obj, error);
     }];
 }
 

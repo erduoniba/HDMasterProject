@@ -10,7 +10,7 @@
 #import "MideaVideoViewController.h"
 
 #import <AVFoundation/AVFoundation.h>
-#import <AVKit/AVPlayerViewController.h>
+#import <AVKit/AVKit.h>
 
 @interface HDVideoDemoViewController ()
 

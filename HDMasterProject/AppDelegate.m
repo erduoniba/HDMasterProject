@@ -95,18 +95,17 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     [MideaPerformance showMonitorView];
     
     // 首先判断是否支持3DTouch
-    if(self.window.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable)
-    {
+    if(self.window.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
         
     }
     
     [self setup3DTouch];
+    [self testRegular];
     
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
     
     NSLog(@"**# didFinishLaunchingWithOptions");
     
-    [self testRegular];
     
     return YES;
 }
