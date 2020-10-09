@@ -97,6 +97,10 @@
 }
 
 - (void)testLoadingTime:(WKWebView *)webView {
+    /*
+     10分钟彻底搞懂前端页面性能监控：https://developer.aliyun.com/article/752954
+     Navigation Timing Level 2  https://www.w3.org/TR/navigation-timing-2/
+     */
     NSString *js = @"function getWebLoadingTime() {let times = {};let t = window.performance.timing;times.url = document.URL;times.redirectTime = t.redirectEnd - t.redirectStart;times.dnsTime = t.domainLookupEnd - t.domainLookupStart;times.ttfbTime = t.responseStart - t.navigationStart;times.appcacheTime = t.domainLookupStart - t.fetchStart;times.unloadTime = t.unloadEventEnd - t.unloadEventStart;times.tcpTime = t.connectEnd - t.connectStart;times.reqTime = t.responseEnd - t.responseStart;times.domAnalysisTime = t.domComplete - t.domInteractive;times.blankTime = (t.domInteractive || t.domLoading) - t.fetchStart;times.domReadyTime = t.domContentLoadedEventEnd - t.fetchStart;times.allTime = t.domComplete - t.fetchStart;return times;}getWebLoadingTime();";
     [webView evaluateJavaScript:js completionHandler:^(id  _Nullable obj, NSError * _Nullable error) {
         NSLog(@"!=====! 2 %@ %@", obj, error);
