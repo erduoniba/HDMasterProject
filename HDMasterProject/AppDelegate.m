@@ -20,6 +20,8 @@
 
 #import "HDNetStatusManager/HDNetStatusManager.h"
 
+#import "XXShieldSDK.h"
+
 static NSString *const leancloudAppId = @"0MekiRXH3vAPyw6SI3Uc6FSY-gzGzoHsz";
 static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
 
@@ -106,6 +108,7 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     
     NSLog(@"**# didFinishLaunchingWithOptions");
     
+    [XXShieldSDK registerStabilityClassNames:@[@"HDNetDemoViewController"]];
     
     return YES;
 }

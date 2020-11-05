@@ -248,6 +248,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDNSArrayCrashDemo"];
         [_dataArr addObject:@"HDPreferRefreshDemo"];
         [_dataArr addObject:@"HDRegexDemo"];
+        [_dataArr addObject:@"HDNetDemoViewController"];
         
     }
     return _dataArr;

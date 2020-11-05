@@ -142,7 +142,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD - a700b8157e0e3097"
+                  uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD - 3cf6b2f9cd50463f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -157,7 +157,7 @@
                   offsetFromSymbolStart = "352">
                </Location>
                <Location
-                  uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD - d9784a3b2bf29635"
+                  uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD - 428e40d798ace0be"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -218,38 +218,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "50F3DBA4-B216-4D81-AC03-FB0043C8E625"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HDMasterProject/ViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BF9EA4AE-9FDD-4E27-B28A-0572C7488DB8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HDMasterProject/ViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "+isPgWhiteList:"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

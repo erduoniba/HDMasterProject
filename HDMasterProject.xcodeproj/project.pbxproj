@@ -85,6 +85,12 @@
 		AD7CC58923291FA600F40291 /* MDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7CC57223291FA600F40291 /* MDWeakProxy.m */; };
 		AD7CC58B23291FAB00F40291 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD7CC58A23291FAB00F40291 /* README.md */; };
 		AD7CC58D23291FB200F40291 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AD7CC58C23291FB200F40291 /* LICENSE */; };
+		AD8870262553F518008AB7CC /* XXDanglingPonterService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8870232553F518008AB7CC /* XXDanglingPonterService.m */; };
+		AD8870272553F518008AB7CC /* NSObject+DanglingPointer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AD8870242553F518008AB7CC /* NSObject+DanglingPointer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD8870282553F518008AB7CC /* XXDanglingPointStub.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8870252553F518008AB7CC /* XXDanglingPointStub.m */; };
+		AD88702B2553F623008AB7CC /* XXShieldStubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8870292553F623008AB7CC /* XXShieldStubObject.m */; };
+		AD8870302553F66E008AB7CC /* XXRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = AD88702F2553F66E008AB7CC /* XXRecord.m */; };
+		AD8870332553F68D008AB7CC /* XXShieldSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8870322553F68D008AB7CC /* XXShieldSDK.m */; };
 		AD9004ED239E59E700CF8EEB /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9004EC239E59E700CF8EEB /* NotificationService.m */; };
 		AD9004F1239E59E700CF8EEB /* H.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD9004E9239E59E700CF8EEB /* H.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD9004FC239E59FC00CF8EEB /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9004FB239E59FC00CF8EEB /* UserNotifications.framework */; };
@@ -103,6 +109,8 @@
 		ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F3235D7BC90019025B /* HDXibLayerDemo.m */; };
 		ADC337F6235D7BC90019025B /* HDXibLayerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */; };
 		ADC337F9235D85070019025B /* CALayer+HD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F8235D85070019025B /* CALayer+HD.m */; };
+		ADCDEED22541656B00D9BB73 /* HDNetDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCDEED12541656B00D9BB73 /* HDNetDemoViewController.m */; };
+		ADCDEED5254165E000D9BB73 /* HDNetMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCDEED4254165DF00D9BB73 /* HDNetMonitor.m */; };
 		ADD9738E2477707300282F10 /* HDNSArrayCrashDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */; };
 		ADE591A52497961500CBA35F /* HDJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE591A42497961500CBA35F /* HDJSBridge.m */; };
 		ADE591A724979F8400CBA35F /* hdjssdk.js in Resources */ = {isa = PBXBuildFile; fileRef = ADE591A624979F8400CBA35F /* hdjssdk.js */; };
@@ -408,6 +416,19 @@
 		AD7CC57423291FA600F40291 /* MDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDWeakProxy.h; sourceTree = "<group>"; };
 		AD7CC58A23291FAB00F40291 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD7CC58C23291FB200F40291 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AD8870202553F517008AB7CC /* NSObject+DanglingPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DanglingPointer.h"; sourceTree = "<group>"; };
+		AD8870212553F517008AB7CC /* XXDanglingPointStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDanglingPointStub.h; sourceTree = "<group>"; };
+		AD8870222553F518008AB7CC /* XXDanglingPonterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDanglingPonterService.h; sourceTree = "<group>"; };
+		AD8870232553F518008AB7CC /* XXDanglingPonterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDanglingPonterService.m; sourceTree = "<group>"; };
+		AD8870242553F518008AB7CC /* NSObject+DanglingPointer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+DanglingPointer.mm"; sourceTree = "<group>"; };
+		AD8870252553F518008AB7CC /* XXDanglingPointStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDanglingPointStub.m; sourceTree = "<group>"; };
+		AD8870292553F623008AB7CC /* XXShieldStubObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXShieldStubObject.m; sourceTree = "<group>"; };
+		AD88702A2553F623008AB7CC /* XXShieldStubObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXShieldStubObject.h; sourceTree = "<group>"; };
+		AD88702E2553F66E008AB7CC /* XXRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRecord.h; sourceTree = "<group>"; };
+		AD88702F2553F66E008AB7CC /* XXRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRecord.m; sourceTree = "<group>"; };
+		AD8870312553F68C008AB7CC /* XXShieldSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXShieldSDK.h; sourceTree = "<group>"; };
+		AD8870322553F68D008AB7CC /* XXShieldSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXShieldSDK.m; sourceTree = "<group>"; };
+		AD8870382553F87A008AB7CC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		AD9004E9239E59E700CF8EEB /* H.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = H.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9004EB239E59E700CF8EEB /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
 		AD9004EC239E59E700CF8EEB /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
@@ -433,6 +454,10 @@
 		ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDXibLayerDemo.xib; sourceTree = "<group>"; };
 		ADC337F7235D85070019025B /* CALayer+HD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+HD.h"; sourceTree = "<group>"; };
 		ADC337F8235D85070019025B /* CALayer+HD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+HD.m"; sourceTree = "<group>"; };
+		ADCDEED02541656B00D9BB73 /* HDNetDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetDemoViewController.h; sourceTree = "<group>"; };
+		ADCDEED12541656B00D9BB73 /* HDNetDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNetDemoViewController.m; sourceTree = "<group>"; };
+		ADCDEED3254165DF00D9BB73 /* HDNetMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetMonitor.h; sourceTree = "<group>"; };
+		ADCDEED4254165DF00D9BB73 /* HDNetMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNetMonitor.m; sourceTree = "<group>"; };
 		ADD9738C2477707300282F10 /* HDNSArrayCrashDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNSArrayCrashDemo.h; sourceTree = "<group>"; };
 		ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNSArrayCrashDemo.m; sourceTree = "<group>"; };
 		ADE591A32497961500CBA35F /* HDJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDJSBridge.h; sourceTree = "<group>"; };
@@ -791,10 +816,11 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				AD88701F2553F4DB008AB7CC /* HDDanglingPointerShield */,
+				ADCDEECF2541655000D9BB73 /* HDNetDemo */,
 				ADE6836624AEFD24003AD11D /* HDRegexDemo */,
 				ADE6836024AE096D003AD11D /* HDPreferRefreshDemo */,
 				ADD9738B2477705200282F10 /* HDNSArrayCrashDemo */,
-				D974D28324167613008DFFCD /* HDArrayDemo */,
 				AD7562CE240E26D7001E0E54 /* HDPageLimitDemo */,
 				AD4A2B492395FA1100FBEBE6 /* HDSSCrollViewDemo */,
 				AD21739423702BCC00848867 /* HDLoadDemo */,
@@ -1099,6 +1125,33 @@
 			path = FPS;
 			sourceTree = "<group>";
 		};
+		AD88701F2553F4DB008AB7CC /* HDDanglingPointerShield */ = {
+			isa = PBXGroup;
+			children = (
+				AD8870202553F517008AB7CC /* NSObject+DanglingPointer.h */,
+				AD8870242553F518008AB7CC /* NSObject+DanglingPointer.mm */,
+				AD8870212553F517008AB7CC /* XXDanglingPointStub.h */,
+				AD8870252553F518008AB7CC /* XXDanglingPointStub.m */,
+				AD8870222553F518008AB7CC /* XXDanglingPonterService.h */,
+				AD8870232553F518008AB7CC /* XXDanglingPonterService.m */,
+				AD88702D2553F65D008AB7CC /* Other */,
+			);
+			path = HDDanglingPointerShield;
+			sourceTree = "<group>";
+		};
+		AD88702D2553F65D008AB7CC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AD88702E2553F66E008AB7CC /* XXRecord.h */,
+				AD88702F2553F66E008AB7CC /* XXRecord.m */,
+				AD8870312553F68C008AB7CC /* XXShieldSDK.h */,
+				AD8870322553F68D008AB7CC /* XXShieldSDK.m */,
+				AD88702A2553F623008AB7CC /* XXShieldStubObject.h */,
+				AD8870292553F623008AB7CC /* XXShieldStubObject.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		AD9004EA239E59E700CF8EEB /* H */ = {
 			isa = PBXGroup;
 			children = (
@@ -1139,6 +1192,17 @@
 				ADC337F4235D7BC90019025B /* HDXibLayerDemo.xib */,
 			);
 			path = HDXibLayerDemo;
+			sourceTree = "<group>";
+		};
+		ADCDEECF2541655000D9BB73 /* HDNetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ADCDEED02541656B00D9BB73 /* HDNetDemoViewController.h */,
+				ADCDEED12541656B00D9BB73 /* HDNetDemoViewController.m */,
+				ADCDEED3254165DF00D9BB73 /* HDNetMonitor.h */,
+				ADCDEED4254165DF00D9BB73 /* HDNetMonitor.m */,
+			);
+			path = HDNetDemo;
 			sourceTree = "<group>";
 		};
 		ADD9738B2477705200282F10 /* HDNSArrayCrashDemo */ = {
@@ -1289,13 +1353,6 @@
 				D9716430208D6F4E005B4F4F /* HDProtocol.h */,
 			);
 			path = HDDelegateDemo;
-			sourceTree = "<group>";
-		};
-		D974D28324167613008DFFCD /* HDArrayDemo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HDArrayDemo;
 			sourceTree = "<group>";
 		};
 		D977295F21845F95008A0A07 /* HDNetStatusManager */ = {
@@ -1502,6 +1559,7 @@
 		FEC4E83549D260BFBCCAC003 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD8870382553F87A008AB7CC /* libc++.tbd */,
 				AD95C43524FF4F91000B0792 /* AdSupport.framework */,
 				AD95C43324FF4F6A000B0792 /* CoreMedia.framework */,
 				AD95C43124FF4F3C000B0792 /* Accelerate.framework */,
@@ -1601,7 +1659,7 @@
 				TargetAttributes = {
 					049DC0DF1CD0527C0021599C = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = HQ353LFGTA;
+						DevelopmentTeam = KC6BPGQZW4;
 						LastSwiftMigration = 1030;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -1612,13 +1670,13 @@
 					};
 					AD9004E8239E59E700CF8EEB = {
 						CreatedOnToolsVersion = 11.2.1;
-						DevelopmentTeam = HQ353LFGTA;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = KC6BPGQZW4;
+						ProvisioningStyle = Manual;
 					};
 					AD9004F9239E59FC00CF8EEB = {
 						CreatedOnToolsVersion = 11.2.1;
-						DevelopmentTeam = HQ353LFGTA;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = KC6BPGQZW4;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1796,6 +1854,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8870262553F518008AB7CC /* XXDanglingPonterService.m in Sources */,
 				D95615B920624BD700072A3A /* HDBarChartsModel.m in Sources */,
 				D96607C52017273A00E7B989 /* HDDelegateTaget.m in Sources */,
 				D9C64E951EF8ED28005194D7 /* HDSortVC.m in Sources */,
@@ -1840,9 +1899,11 @@
 				0428C41F1CFDA445001F9D6F /* HDDog.m in Sources */,
 				ADD9738E2477707300282F10 /* HDNSArrayCrashDemo.m in Sources */,
 				AD7562D4240E2775001E0E54 /* PGPageLimitSetting.m in Sources */,
+				AD88702B2553F623008AB7CC /* XXShieldStubObject.m in Sources */,
 				0428C4181CFD8C43001F9D6F /* HDProxy.m in Sources */,
 				D927B40121D0AEDA0013B5F8 /* HDDSwitch.m in Sources */,
 				0428C4411D003EA8001F9D6F /* HDDynamicImageView.m in Sources */,
+				AD8870332553F68D008AB7CC /* XXShieldSDK.m in Sources */,
 				AD7CC58523291FA600F40291 /* LJ_FileInfoController.m in Sources */,
 				AD7CC57723291FA600F40291 /* MDFloatingBallManager.m in Sources */,
 				D9C894A42134034200030E95 /* HDSwitch.m in Sources */,
@@ -1874,6 +1935,7 @@
 				D93FC37C1ECD8946009A7C3C /* HDGCDTestVC.m in Sources */,
 				D964E3EA208DD1A600197A98 /* HDCategoryDemo.m in Sources */,
 				AD2173A323702ECB00848867 /* HDSonLoadObj+HD.m in Sources */,
+				AD8870302553F66E008AB7CC /* XXRecord.m in Sources */,
 				D95615AD2060B11000072A3A /* HDBarChartsViewController.m in Sources */,
 				AD2173A023702EBB00848867 /* HDLoadObj+HD.m in Sources */,
 				D971642C208D6BBF005B4F4F /* HDDelegateObject1.m in Sources */,
@@ -1884,11 +1946,14 @@
 				D927D13021F07BB400C73547 /* MideaVideoViewController.m in Sources */,
 				ADE6836324AE099E003AD11D /* HDPreferRefreshDemo.m in Sources */,
 				AD7CC58823291FA600F40291 /* MDFPSLabel.m in Sources */,
+				ADCDEED5254165E000D9BB73 /* HDNetMonitor.m in Sources */,
 				D9D919D921F6FAA20062B593 /* HDMideaScanCodeDemo.m in Sources */,
 				0428C47E1D011BC3001F9D6F /* HDPhotoGroupView.m in Sources */,
 				D977296821847445008A0A07 /* HDNetStatusViewController2.m in Sources */,
+				AD8870282553F518008AB7CC /* XXDanglingPointStub.m in Sources */,
 				D989756A20E24362005945D3 /* HDAddressBookDemo.m in Sources */,
 				D9C894962133DD2A00030E95 /* GYSwitch.m in Sources */,
+				ADCDEED22541656B00D9BB73 /* HDNetDemoViewController.m in Sources */,
 				D90B8A0F210F174A00748600 /* HDTextFieldDemo.m in Sources */,
 				AD7CC57823291FA600F40291 /* MDFloatingBall.m in Sources */,
 				AD7CC5402328CA5400F40291 /* HDDDLog.m in Sources */,
@@ -1898,6 +1963,7 @@
 				ADFD852E2339B21C002929F8 /* HDNextPresentDemo.m in Sources */,
 				D9208DB5223622CE009CC38D /* HDPasswordItem.m in Sources */,
 				AD742CDA2361632200776D79 /* HDWKWebViewDemo.m in Sources */,
+				AD8870272553F518008AB7CC /* NSObject+DanglingPointer.mm in Sources */,
 				046B87EB1D0D23C80087D99C /* HDPulldownPhotoViewController.m in Sources */,
 				0428C47D1D011BC3001F9D6F /* HDPhotoGroupCell.m in Sources */,
 				D95615B42060EF2000072A3A /* HDBarChartsElementManager.m in Sources */,
@@ -2086,7 +2152,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = HQ353LFGTA;
+				DEVELOPMENT_TEAM = KC6BPGQZW4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
@@ -2116,11 +2182,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "47c59c2c-9929-44d7-84cf-3d573ebaebbc";
-				PROVISIONING_PROFILE_SPECIFIER = denglibingWildcardID;
+				PROVISIONING_PROFILE_SPECIFIER = wildcardDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "HDMasterProject/SwiftDemo/HDMasterProject-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -2134,7 +2199,7 @@
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = HQ353LFGTA;
+				DEVELOPMENT_TEAM = KC6BPGQZW4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDMasterProject",
@@ -2164,10 +2229,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = denglibingWildcardID;
+				PROVISIONING_PROFILE_SPECIFIER = wildcardDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "HDMasterProject/SwiftDemo/HDMasterProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -2188,8 +2252,8 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQ353LFGTA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KC6BPGQZW4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = H/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -2198,6 +2262,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject.H;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcardDev;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2220,8 +2285,8 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQ353LFGTA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KC6BPGQZW4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = H/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -2229,6 +2294,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject.H;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcardDev;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2251,8 +2317,8 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQ353LFGTA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KC6BPGQZW4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = HUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -2261,6 +2327,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject.HUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcardDev;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2283,8 +2350,8 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQ353LFGTA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = KC6BPGQZW4;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = HUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -2292,6 +2359,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDMasterProject.HUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcardDev;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
