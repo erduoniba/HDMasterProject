@@ -11,7 +11,7 @@
 #import "HDLoadObj.h"
 #import "HDSonLoadObj.h"
 
-#import "HDSSCrollViewDemoViewController.h"
+#import "HDTableViewHeaderDemo.h"
 
 @interface HDLoadDemo ()
 
@@ -27,7 +27,7 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     view.backgroundColor = [UIColor orangeColor];
     NSLog(@"[UIScreen mainScreen].bounds : %@", [NSValue valueWithCGRect:[UIScreen mainScreen].bounds]);
-    HDSSCrollViewDemoViewController *vc = HDSSCrollViewDemoViewController.new;
+    HDTableViewHeaderDemo *vc = HDTableViewHeaderDemo.new;
     [[UIApplication sharedApplication].keyWindow addSubview:vc.view];
 }
 

@@ -81,38 +81,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CD9D19B2-4E65-4E68-8171-8DDE694FBEA5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "-safeAddObject:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0EF5438C-AC93-481B-AECE-AE6AC42AE55E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "-copyArray"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "94DFA206-C964-42E3-8E5C-E305C057A6EE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -124,54 +92,6 @@
             endingLineNumber = "31"
             landmarkName = "+addCustomJS:scriptMessageHandler:"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD - 3cf6b2f9cd50463f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[HDNSArrayCrashDemo viewDidLoad]"
-                  moduleName = "HDMasterProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/denglibing3/HDProject/GithubProject/HDMasterProject/HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "352">
-               </Location>
-               <Location
-                  uuid = "8D56C2C1-0967-4CD4-A6BC-8C2F660D52BD - 428e40d798ace0be"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__33-[HDNSArrayCrashDemo viewDidLoad]_block_invoke"
-                  moduleName = "HDMasterProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/denglibing3/HDProject/GithubProject/HDMasterProject/HDMasterProject/HDNSArrayCrashDemo/HDNSArrayCrashDemo.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -218,6 +138,54 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A3C69F7-FE0D-4883-B56E-55B98D284A28"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/TDFScreenDebugger/Classes/WildPointerCheck/TDFSDWildPointerChecker.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-injectZombieProxy"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BBDBB11-A7E0-4028-B40D-4DF8C34B089D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/TDFScreenDebugger/Classes/WildPointerCheck/TDFSDWildPointerChecker.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "+sharedInstance"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE3445F6-F478-49BA-B754-26EB7B272BB9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/TDFScreenDebugger/Classes/WildPointerCheck/TDFSDWildPointerChecker.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-injectZombieProxy"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

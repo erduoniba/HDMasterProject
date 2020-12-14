@@ -51,7 +51,7 @@
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"file://%@",[[NSBundle mainBundle] pathForResource:@"jingxi" ofType:@"html"]]];
 //    NSURL *url = [NSURL URLWithString:@"https://wqs.jd.com/data/coss/tolerant/new/3_1.shtml"];
-//    NSURL *url = [NSURL URLWithString:@"https://jd.com/"];
+//    NSURL *url = [NSURL URLWithString:@"https://wq.jd.com/mitem/view?_fd=jdw&sku=100012885246#main"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
     

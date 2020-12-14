@@ -8,6 +8,8 @@
 
 #import "HDNSArrayCrashDemo.h"
 
+#import "HDLRUCache.h"
+
 @interface HDNSArrayCrashDemo ()
 
 @property (nonatomic, strong) NSMutableArray *jsApis;
@@ -15,8 +17,8 @@
 
 @property (nonatomic, strong) dispatch_queue_t concurrentQueue;
 
-@property (nonatomic, strong) NSString *str1;
-@property (nonatomic, strong) NSString *str2;
+@property (nonatomic, copy) NSString *str1;
+@property (nonatomic, copy) NSString *str2;
 
 @end
 
@@ -26,30 +28,39 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _jsApis = [NSMutableArray array];
-    _concurrentQueue = dispatch_queue_create("com.360buy.jdpingou.safe.array.jsapi", DISPATCH_QUEUE_CONCURRENT);
-    _index = 0;
-    [self addAction:_index];
+    HDLRUCache *lruCache = [[HDLRUCache alloc] initWithMaxCountLRU:5];
+    for (int i=0; i<100; i++) {
+        NSString *key = [NSString stringWithFormat:@"key_%d", rand() % 10];
+        [lruCache setObject:@(i) forKey:key];
+        NSLog(@"lruCache: %@\n %@ \n %@", key, [lruCache lruDict], [lruCache lruKeys]);
+        NSLog(@"======================");
+    }
     
-    _str1 = @"str1";
-    _str2 = _str1;
-    _str1 = @"str2";
     
-    NSLog(@"_str2 : %@", _str2);
+//    _jsApis = [NSMutableArray array];
+//    _concurrentQueue = dispatch_queue_create("com.360buy.jdpingou.safe.array.jsapi", DISPATCH_QUEUE_CONCURRENT);
+//    _index = 0;
+//    [self addAction:_index];
+//
+//    _str1 = @"str1";
+//    _str2 = _str1;
+//    _str1 = @"str2";
+//
+//    NSLog(@"_str2 : %@", _str2);
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            for (int j=0; j<100; j++) {
-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                    for (int i=0; i<100; i++) {
-        //                NSLog(@"_jsApis count : %d", _jsApis.count);
-                        [self copyArray];
-        //                NSArray *tempArr = [NSArray arrayWithArray:_jsApis];
-        //                NSMutableArray *tempss = _jsApis.mutableCopy;
-        //                NSArray *tempArr = _jsApis.copy;
-                    }
-                });
-            }
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            for (int j=0; j<100; j++) {
+//                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//                    for (int i=0; i<100; i++) {
+//        //                NSLog(@"_jsApis count : %d", _jsApis.count);
+//                        [self copyArray];
+//        //                NSArray *tempArr = [NSArray arrayWithArray:_jsApis];
+//        //                NSMutableArray *tempss = _jsApis.mutableCopy;
+//        //                NSArray *tempArr = _jsApis.copy;
+//                    }
+//                });
+//            }
+//    });
 
     
 //    [self copyArray];

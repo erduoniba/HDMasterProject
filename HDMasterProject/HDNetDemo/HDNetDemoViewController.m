@@ -24,18 +24,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        for (int i=0; i<10000000; i++) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(i * 1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                // 有问题
-                [[[HDNetMonitor alloc] init] getInternetface];
-                
-                NSURL *url = [NSURL URLWithString:@"https://jd.com/"];
-                NSURLRequest *request = [NSURLRequest requestWithURL:url];
-                [[[WKWebView alloc] init] loadRequest:request];
-            });
-        }
-    });
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        for (int i=0; i<10000000; i++) {
+//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(i * 1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//                // 有问题
+//                [[[HDNetMonitor alloc] init] getInternetface];
+//                
+//                NSURL *url = [NSURL URLWithString:@"https://jd.com/"];
+//                NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//                [[[WKWebView alloc] init] loadRequest:request];
+//            });
+//        }
+//    });
     
     UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake(100, 200, 200, 30)];
     tf.secureTextEntry = YES;

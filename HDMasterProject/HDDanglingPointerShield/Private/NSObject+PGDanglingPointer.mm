@@ -1,29 +1,27 @@
 //
-//  NSObject+DanglingPointer.h
-//  XXShield
+//  NSObject+PGDanglingPointer.m
+//  pgBFoundationModule
 //
-//  Created by nero on 2017/1/18.
-//  Copyright © 2017年 XXShield. All rights reserved.
+//  Created by 邓立兵 on 2020/11/6.
 //
 
+#import "NSObject+PGDanglingPointer.h"
 
-#import <objc/runtime.h>
-#import "NSObject+DanglingPointer.h"
-#import "XXDanglingPointStub.h"
-#import "XXDanglingPonterService.h"
+#import "PGDanglingPointService.h"
+#import "PGDanglingPointStub.h"
+
 #import <list>
-
-static NSInteger const threshold = 100;
+#import <objc/runtime.h>
 
 static std::list<id> undellocedList;
 
-@implementation NSObject (DanglingPointer)
+@implementation NSObject (PGDanglingPointer)
 
-- (void)xx_danglingPointer_dealloc {
+- (void)pg_danglingPointer_dealloc {
     Class selfClazz = object_getClass(self);
     
     BOOL needProtect = NO;
-    for (NSString *className in [XXDanglingPonterService getInstance].classArr) {
+    for (NSString *className in PGDanglingPointService.shared.classArr) {
         Class clazz = objc_getClass([className UTF8String]);
         if (clazz == selfClazz) {
             needProtect = YES;
@@ -35,10 +33,10 @@ static std::list<id> undellocedList;
         // 进行析构操作
         objc_destructInstance(self);
         // 将self的isa指向换成我们新产生的这个类
-        object_setClass(self, [XXDanglingPointStub class]);
+        object_setClass(self, [PGDanglingPointStub class]);
         
         undellocedList.size();
-        if (undellocedList.size() >= threshold) {
+        if (undellocedList.size() >= PGDanglingPointService.shared.maxRetainCount) {
             // 返回当前vector容器中起始元素的引用
             id object = undellocedList.front();
             // 删除容器内的第一个
@@ -49,9 +47,8 @@ static std::list<id> undellocedList;
         // 在容器尾部插入新元素
         undellocedList.push_back(self);
     } else {
-        [self xx_danglingPointer_dealloc];
+        [self pg_danglingPointer_dealloc];
     }
 }
 
 @end
-

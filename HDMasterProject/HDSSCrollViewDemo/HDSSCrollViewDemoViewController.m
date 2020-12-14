@@ -26,7 +26,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+    // NSObject+zombieDealloc.m 生效，则下面的代码会因为野指针问题而crash
+    UIView *testObj = [[UIView alloc] init];
+    [testObj release];
+    for (int i=0; i<100; i++) {
+        UIView *testObj = [[UIView alloc] init];
+        testObj.frame = CGRectZero;
+        [self.view addSubview:testObj];
+    }
+    [testObj setNeedsLayout];
     
     
     _dataArr = [@[] mutableCopy];

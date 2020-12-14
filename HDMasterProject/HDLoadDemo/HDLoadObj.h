@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HDLoadObj : NSObject
 
++ (NSString *)isJDProxyOpened;
+
++ (NSString *)isJDProxyOpened2;
+
 @end
 
 NS_ASSUME_NONNULL_END

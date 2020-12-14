@@ -13,6 +13,8 @@
 #include <libkern/OSAtomic.h>
 #include <execinfo.h>
 
+#import "HDLoadObj.h"
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *dataArr;
@@ -81,6 +83,9 @@ __weak id reference = nil;
 //    });
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ddd) name:@"xx" object:nil];
+    
+    NSLog(@"ss  : %f", UIApplication.sharedApplication.keyWindow.safeAreaInsets.top);
+    
     
 }
 
@@ -290,6 +295,17 @@ __weak id reference = nil;
     CGFloat green = (arc4random()%255) / 255.0;
     CGFloat blue = (arc4random()%255) / 255.0;
     nextVC.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
+    
+    if (indexPath.row == 0) {
+        for (int i=0; i<100; i++) {
+            NSLog(@"[HDLoadObj isJDProxyOpened] : %@", [HDLoadObj isJDProxyOpened]);
+        }
+    }
+    else {
+        for (int i=0; i<100; i++) {
+            NSLog(@"[HDLoadObj isJDProxyOpened2] : %@", [HDLoadObj isJDProxyOpened2]);
+        }
+    }
 }
 
 - (Class)swiftClassFromString:(NSString *)className {

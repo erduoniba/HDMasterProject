@@ -1,20 +1,16 @@
 //
-//  XXShieldSDK.m
-//  XXShield
+//  PGDanglingPointSDK.m
+//  pgBFoundationModule
 //
-//  Created by nero on 2017/1/18.
-//  Copyright © 2017年 XXShield. All rights reserved.
+//  Created by 邓立兵 on 2020/11/6.
 //
 
+#import "PGDanglingPointSDK.h"
 
 #import <objc/runtime.h>
-#import <UIKit/UIKit.h>
-#import "XXShieldSDK.h"
-#import "NSObject+DanglingPointer.h"
-#import "XXDanglingPonterService.h"
-#import "XXRecord.h"
+#import "PGDanglingPointService.h"
 
-@implementation XXShieldSDK
+@implementation PGDanglingPointSDK
 
 BOOL defaultSwizzlingOCMethod(Class self, SEL origSel_, SEL altSel_) {
     Method origMethod = class_getInstanceMethod(self, origSel_);
@@ -40,26 +36,22 @@ BOOL defaultSwizzlingOCMethod(Class self, SEL origSel_, SEL altSel_) {
     return YES;
 }
 
-+ (void)registerStabilityClassNames:(NSArray *)arr {
-    if ([arr count]) {
-        [self registerDanglingPointer:arr];
-    }
-}
-
-+ (void)registerDanglingPointer:(NSArray *)arr {
-    NSMutableArray *avaibleList = arr.mutableCopy;
-    for (NSString *className in arr) {
++ (void)registerStabilityClassNames:(nonnull NSArray<NSString *> *)classNames maxRetainCount:(NSInteger)maxRetainCount {
+    NSMutableArray *avaibleList = classNames.mutableCopy;
+    for (NSString *className in classNames) {
         NSBundle *classBundle = [NSBundle bundleForClass:NSClassFromString(className)];
         if (classBundle != [NSBundle mainBundle]) {
             [avaibleList removeObject:className];
         }
     }
-    [XXDanglingPonterService getInstance].classArr = avaibleList;
-    defaultSwizzlingOCMethod([NSObject class], NSSelectorFromString(@"dealloc"), @selector(xx_danglingPointer_dealloc));
+    PGDanglingPointService.shared.classArr = avaibleList;
+    PGDanglingPointService.shared.maxRetainCount = maxRetainCount;
+    defaultSwizzlingOCMethod([NSObject class], NSSelectorFromString(@"dealloc"), @selector(pg_danglingPointer_dealloc));
 }
 
-+ (void)registerRecordHandler:(nonnull id<XXRecordProtocol>)record { 
-    [XXRecord registerRecordHandler:record];
++ (void)registerRecordHandler:(nonnull id<PGDanglingPointRecordProtocol>)record {
+    [PGDanglingPointRecord registerRecordHandler:record];
 }
+
 
 @end

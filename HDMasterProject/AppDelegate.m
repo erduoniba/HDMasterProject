@@ -20,7 +20,8 @@
 
 #import "HDNetStatusManager/HDNetStatusManager.h"
 
-#import "XXShieldSDK.h"
+#import "PGDanglingPointSDK.h"
+#import <mach-o/dyld.h>
 
 static NSString *const leancloudAppId = @"0MekiRXH3vAPyw6SI3Uc6FSY-gzGzoHsz";
 static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
@@ -94,7 +95,7 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     // 日志信息
     [HDDDLog configurationDDLog:@"HDLogs"];
     
-    [MideaPerformance showMonitorView];
+//    [MideaPerformance showMonitorView];
     
     // 首先判断是否支持3DTouch
     if(self.window.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
@@ -108,9 +109,44 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     
     NSLog(@"**# didFinishLaunchingWithOptions");
     
-    [XXShieldSDK registerStabilityClassNames:@[@"HDNetDemoViewController"]];
+//    [PGDanglingPointSDK registerStabilityClassNames:@[@"HDNetDemoViewController"] maxRetainCount:100];
+    
+    NSDictionary *params = @{
+        @"notifyTime" : [NSNull null],
+    };
+    NSDate *notifyTime = nil;
+    if (![params[@"notifyTime"] isKindOfClass:NSNull.class]) {
+        NSString *notifyTimeValue = [NSString stringWithFormat:@"%@", params[@"notifyTime"] ? : @""];
+        if (notifyTimeValue.length > 0) {
+            notifyTime = [NSDate dateWithTimeIntervalSince1970:[notifyTimeValue doubleValue] / 1000];
+        }
+    }
+    
+    [self logDylib];
     
     return YES;
+}
+
+- (void)logDylib {
+    printf(" ====================== \n");
+    int dyld_count = _dyld_image_count();
+    for (int i = 0; i < dyld_count; i++) {
+        const char * imageName = _dyld_get_image_name(i);
+        printf(" %s \n", imageName);
+        NSString *res = [NSString stringWithUTF8String:imageName];
+        if([res containsString:@"/var/containers/Bundle/Application/"]) {
+            printf("Frameworks: ====================== %s \n", imageName);
+            // iOS12.2之后注入swift动态库，属于非法注入
+            if (@available(iOS 12.2, *)) {
+                if ([res hasSuffix:@"libswiftCore.dylib"]) {
+                    [NSUserDefaults.standardUserDefaults setBool:YES forKey:@"com.360buy.jdpingou.isExternalLibs"];
+                    printf(" ====================== \n");
+                }
+            }
+        }
+    }
+    
+    printf(" ====================== \n");
 }
 
 - (void)dispatch{
