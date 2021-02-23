@@ -124,7 +124,21 @@ static NSString *const leancloudClientKey = @"iQXXT7muTw32op7OlF10YrmH";
     
     [self logDylib];
     
+
+    
     return YES;
+}
+
+- (CGFloat)statusBarHeight {
+    CGFloat statusBarHeight = 0;
+    if (@available(iOS 13.0, *)) {
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager;
+        statusBarHeight = statusBarManager.statusBarFrame.size.height;
+    }
+    else {
+        statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    }
+    return statusBarHeight;
 }
 
 - (void)logDylib {

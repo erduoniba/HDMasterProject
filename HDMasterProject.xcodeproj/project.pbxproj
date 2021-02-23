@@ -109,8 +109,10 @@
 		ADC337F9235D85070019025B /* CALayer+HD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC337F8235D85070019025B /* CALayer+HD.m */; };
 		ADCDEED22541656B00D9BB73 /* HDNetDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCDEED12541656B00D9BB73 /* HDNetDemoViewController.m */; };
 		ADCDEED5254165E000D9BB73 /* HDNetMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCDEED4254165DF00D9BB73 /* HDNetMonitor.m */; };
+		ADD216732588BE9700BEF79F /* HDNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD216722588BE9700BEF79F /* HDNetwork.swift */; };
 		ADD9738E2477707300282F10 /* HDNSArrayCrashDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */; };
 		ADDF207E2584F29400D30C4F /* HDLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDF207D2584F29400D30C4F /* HDLRUCache.m */; };
+		ADDF21882587788B00D30C4F /* HDProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDF21872587788B00D30C4F /* HDProtocol.swift */; };
 		ADE591A52497961500CBA35F /* HDJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE591A42497961500CBA35F /* HDJSBridge.m */; };
 		ADE591A724979F8400CBA35F /* hdjssdk.js in Resources */ = {isa = PBXBuildFile; fileRef = ADE591A624979F8400CBA35F /* hdjssdk.js */; };
 		ADE6836324AE099E003AD11D /* HDPreferRefreshDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE6836224AE099E003AD11D /* HDPreferRefreshDemo.m */; };
@@ -441,10 +443,12 @@
 		ADCDEED12541656B00D9BB73 /* HDNetDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNetDemoViewController.m; sourceTree = "<group>"; };
 		ADCDEED3254165DF00D9BB73 /* HDNetMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetMonitor.h; sourceTree = "<group>"; };
 		ADCDEED4254165DF00D9BB73 /* HDNetMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNetMonitor.m; sourceTree = "<group>"; };
+		ADD216722588BE9700BEF79F /* HDNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDNetwork.swift; sourceTree = "<group>"; };
 		ADD9738C2477707300282F10 /* HDNSArrayCrashDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNSArrayCrashDemo.h; sourceTree = "<group>"; };
 		ADD9738D2477707300282F10 /* HDNSArrayCrashDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNSArrayCrashDemo.m; sourceTree = "<group>"; };
 		ADDF207C2584F29400D30C4F /* HDLRUCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDLRUCache.h; sourceTree = "<group>"; };
 		ADDF207D2584F29400D30C4F /* HDLRUCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDLRUCache.m; sourceTree = "<group>"; };
+		ADDF21872587788B00D30C4F /* HDProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDProtocol.swift; sourceTree = "<group>"; };
 		ADE591A32497961500CBA35F /* HDJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDJSBridge.h; sourceTree = "<group>"; };
 		ADE591A42497961500CBA35F /* HDJSBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDJSBridge.m; sourceTree = "<group>"; };
 		ADE591A624979F8400CBA35F /* hdjssdk.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = hdjssdk.js; sourceTree = "<group>"; };
@@ -1161,8 +1165,10 @@
 		AD90617B235FEAF700B40A7A /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ADDF21872587788B00D30C4F /* HDProtocol.swift */,
 				AD90617F235FEB3400B40A7A /* HDSwiftDemo.swift */,
 				AD90617C235FEB1000B40A7A /* HDMasterProject-Bridging-Header.h */,
+				ADD216722588BE9700BEF79F /* HDNetwork.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -1962,6 +1968,7 @@
 				AD7CC5402328CA5400F40291 /* HDDDLog.m in Sources */,
 				AD7CC57A23291FA600F40291 /* MDFileManagerTool.m in Sources */,
 				04BD82A21CE96AD900943C42 /* HDMessageWaysViewController.m in Sources */,
+				ADDF21882587788B00D30C4F /* HDProtocol.swift in Sources */,
 				0428C4221CFDA498001F9D6F /* HDCat.m in Sources */,
 				ADFD852E2339B21C002929F8 /* HDNextPresentDemo.m in Sources */,
 				D9208DB5223622CE009CC38D /* HDPasswordItem.m in Sources */,
@@ -1987,6 +1994,7 @@
 				D9B7D9112071DE1200D64580 /* HDAlertViewController.m in Sources */,
 				046B87F11D0D24000087D99C /* HDPhotoViewController.m in Sources */,
 				D927D13421F0811D00C73547 /* HDRangeDemoViewController.m in Sources */,
+				ADD216732588BE9700BEF79F /* HDNetwork.swift in Sources */,
 				AD7CC58623291FA600F40291 /* LJAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

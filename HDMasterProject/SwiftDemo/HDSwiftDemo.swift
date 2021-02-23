@@ -20,6 +20,17 @@ class HDSwiftDemo: UIViewController {
         super.viewDidLoad()
 
         enumTest()
+        
+        Person(name: "harry").greet()
+        Cat(name: "ww").greet()
+        
+        UserRequest().send { (user) in
+            print("user1: \(user?.url)")
+        }
+        
+        URLSessionClient().send(UserRequest()) { (user) in
+            print("user2: \(user?.url)")
+        }
     }
     
     

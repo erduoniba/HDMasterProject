@@ -27,6 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    NSString *oUrl = @"https://wq.jd.com/jxjmp/nativeapp/deal/confirmorder/main?sourceType=1&fromKey=fromShoppingCart&ptag=138844.1.1&addrId=2737784960";
+    NSString *tUrl = [self regexMatchingJDToJingxi:oUrl];
+    NSLog(@"tUrl : %@", tUrl);
 }
 
 - (IBAction)regexAction {
@@ -73,6 +77,51 @@
          return resultStr;
      }
     NSLog(@"resultStr: %@", url);
+    return url;
+}
+
+- (NSString *)regexMatchingJDToJingxi:(NSString *)url  {
+    NSDictionary *replaceHost;
+    if (!replaceHost) {
+        replaceHost = @{
+            @"configs":@[
+                    @{
+                        @"urlReg": @"^https?:[/]{2}(wqs[.]jd[.]com).*",
+                        @"replaceFrom": @"(^https?:[/][/])wqs[.]jd[.]com(.*)",
+                        @"replaceTo": @"$1st.jingxi.com$2",
+                        @"status": @"on"
+                    },
+                    @{
+                        @"urlReg": @"^https?:[/]{2}wq[.]jd[.]com[/]jxjmp[/]nativeapp[/]deal[/]confirmorder[/]main.*",
+                        @"replaceFrom": @"^https?:[/]{2}wq[.]jd[.]com[/]jxjmp[/]nativeapp[/]deal[/]confirmorder[/]main.*",
+                        @"replaceTo": @"http://wqdeal.jd.com/socialconfirmorder/appredirect",
+                        @"status": @"on"
+                    }]
+        };
+    }
+    
+    NSArray *configs = replaceHost[@"configs"];
+    
+    for (int i=0; i<configs.count; i++) {
+        NSDictionary *regs = configs[i];
+        
+        NSString *urlReg = regs[@"urlReg"];
+        NSPredicate *predURL = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", urlReg];
+        BOOL result = [predURL evaluateWithObject:url];
+        NSString *replaceFrom = regs[@"replaceFrom"];
+        NSString *replaceTo = regs[@"replaceTo"];
+        
+        // 该url被匹配上，则根据规则进行替换
+        if (result && replaceFrom && replaceTo) {
+            NSRegularExpression *regExp = [[NSRegularExpression alloc] initWithPattern:replaceFrom options:NSRegularExpressionCaseInsensitive error:nil];
+            NSString *resultStr = [regExp stringByReplacingMatchesInString:url
+                                                                   options:NSMatchingReportProgress
+                                                                     range:NSMakeRange(0, url.length)
+                                                              withTemplate:replaceTo];
+            return resultStr;
+        }
+    }
+    
     return url;
 }
 

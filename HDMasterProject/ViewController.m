@@ -12,14 +12,17 @@
 
 #include <libkern/OSAtomic.h>
 #include <execinfo.h>
+#import <CoreLocation/CoreLocation.h>
+
 
 #import "HDLoadObj.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *dataArr;
 
 @property (nonatomic, strong) HDDelegateTaget *delegateTaget;
+@property (nonatomic, strong) CLLocationManager *ll;
 
 @end
 
@@ -46,7 +49,7 @@
 __weak id reference = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     NSURL *url = [NSURL URLWithString:@"https://3.cn/-140vmG9?jump_rd=1821922"];
     BOOL success = [self.class isPgWhiteList:url.host];
     NSLog(@"success : %d", success);
@@ -84,9 +87,10 @@ __weak id reference = nil;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ddd) name:@"xx" object:nil];
     
-    NSLog(@"ss  : %f", UIApplication.sharedApplication.keyWindow.safeAreaInsets.top);
-    
-    
+    _ll = [[CLLocationManager alloc] init];
+    _ll.delegate = self;
+    [_ll requestWhenInUseAuthorization];
+    [_ll requestAlwaysAuthorization];
 }
 
 - (void)ddd {
@@ -296,16 +300,16 @@ __weak id reference = nil;
     CGFloat blue = (arc4random()%255) / 255.0;
     nextVC.view.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1];
     
-    if (indexPath.row == 0) {
-        for (int i=0; i<100; i++) {
-            NSLog(@"[HDLoadObj isJDProxyOpened] : %@", [HDLoadObj isJDProxyOpened]);
-        }
-    }
-    else {
-        for (int i=0; i<100; i++) {
-            NSLog(@"[HDLoadObj isJDProxyOpened2] : %@", [HDLoadObj isJDProxyOpened2]);
-        }
-    }
+//    if (indexPath.row == 0) {
+//        for (int i=0; i<100; i++) {
+//            NSLog(@"[HDLoadObj isJDProxyOpened] : %@", [HDLoadObj isJDProxyOpened]);
+//        }
+//    }
+//    else {
+//        for (int i=0; i<100; i++) {
+//            NSLog(@"[HDLoadObj isJDProxyOpened2] : %@", [HDLoadObj isJDProxyOpened2]);
+//        }
+//    }
 }
 
 - (Class)swiftClassFromString:(NSString *)className {
