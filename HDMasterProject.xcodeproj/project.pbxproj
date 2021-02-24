@@ -51,6 +51,9 @@
 		AD3C5AF22328C50600EF742B /* HDSubProjectTwo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD3C5AF52328C50C00EF742B /* HDSubProjectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */; };
 		AD3C5AF62328C50C00EF742B /* HDSubProjectOne.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C5AD62328C4DF00EF742B /* HDSubProjectOne.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD4805B225E52EBE00646426 /* HDNotifPopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4805B125E52EBE00646426 /* HDNotifPopManager.swift */; };
+		AD4805BB25E5413900646426 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4805BA25E5413900646426 /* AppIcon.xcassets */; };
+		AD4805BD25E6000600646426 /* HDNotifPopViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4805BC25E6000500646426 /* HDNotifPopViewViewController.swift */; };
 		AD4A2B4E2395FA1100FBEBE6 /* HDSScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A2B4B2395FA1100FBEBE6 /* HDSScrollTableViewCell.m */; };
 		AD4A2B4F2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A2B4D2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD6FA56B2570F62C0085AE5F /* NSObject+zombieDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6FA56A2570F62C0085AE5F /* NSObject+zombieDealloc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -337,6 +340,9 @@
 		AD315AD623307A1200E4731C /* SPModalViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPModalViewDemo.m; sourceTree = "<group>"; };
 		AD3C5AD12328C4DF00EF742B /* HDSubProjectOne.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HDSubProjectOne.xcodeproj; path = HDSubProjectOne/HDSubProjectOne.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AD3C5AE62328C4F300EF742B /* HDSubProjectTwo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HDSubProjectTwo.xcodeproj; sourceTree = "<group>"; };
+		AD4805B125E52EBE00646426 /* HDNotifPopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDNotifPopManager.swift; sourceTree = "<group>"; };
+		AD4805BA25E5413900646426 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		AD4805BC25E6000500646426 /* HDNotifPopViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDNotifPopViewViewController.swift; sourceTree = "<group>"; };
 		AD4A2B4A2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSSCrollViewDemoViewController.h; sourceTree = "<group>"; };
 		AD4A2B4B2395FA1100FBEBE6 /* HDSScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSScrollTableViewCell.m; sourceTree = "<group>"; };
 		AD4A2B4C2395FA1100FBEBE6 /* HDSScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSScrollTableViewCell.h; sourceTree = "<group>"; };
@@ -805,6 +811,7 @@
 				D959099621CE125B00F69F77 /* home_refresh@3x.png */,
 				04544FBE1D1129E700D02AD0 /* HDBaseNavigationController.h */,
 				04544FBF1D1129E700D02AD0 /* HDBaseNavigationController.m */,
+				AD4805B025E52D5000646426 /* HDNotifPopView */,
 				AD88701F2553F4DB008AB7CC /* HDDanglingPointerShield */,
 				ADCDEECF2541655000D9BB73 /* HDNetDemo */,
 				ADE6836624AEFD24003AD11D /* HDRegexDemo */,
@@ -881,6 +888,7 @@
 				049DC0F41CD0527C0021599C /* Info.plist */,
 				049DC0E41CD0527C0021599C /* main.m */,
 				0428C4391D0035A4001F9D6F /* PrefixHeader.pch */,
+				AD4805BA25E5413900646426 /* AppIcon.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -954,6 +962,15 @@
 				AD3C5AF02328C4F300EF742B /* HDSubProjectTwo.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4805B025E52D5000646426 /* HDNotifPopView */ = {
+			isa = PBXGroup;
+			children = (
+				AD4805B125E52EBE00646426 /* HDNotifPopManager.swift */,
+				AD4805BC25E6000500646426 /* HDNotifPopViewViewController.swift */,
+			);
+			path = HDNotifPopView;
 			sourceTree = "<group>";
 		};
 		AD4A2B492395FA1100FBEBE6 /* HDSSCrollViewDemo */ = {
@@ -1747,6 +1764,7 @@
 				D9C894AC2134103B00030E95 /* public_ic_switchoff@3x.png in Resources */,
 				0428C4741D011149001F9D6F /* loading@2x.png in Resources */,
 				D9CB74001E979CB2000968FA /* 4444@2x.png in Resources */,
+				AD4805BB25E5413900646426 /* AppIcon.xcassets in Resources */,
 				D9CB73F31E978BC2000968FA /* 3333.jpg in Resources */,
 				D97C98231E9B778800DDA9D0 /* 2222.jpg in Resources */,
 				D9EC73BA1E8B727800C92320 /* MessageBubble_Reviceder@2x.png in Resources */,
@@ -1954,6 +1972,7 @@
 				D97C98211E9B5B6700DDA9D0 /* NHSelectBar.m in Sources */,
 				AD7CC58423291FA600F40291 /* LJ_FileInfo.m in Sources */,
 				D927D13021F07BB400C73547 /* MideaVideoViewController.m in Sources */,
+				AD4805B225E52EBE00646426 /* HDNotifPopManager.swift in Sources */,
 				ADE6836324AE099E003AD11D /* HDPreferRefreshDemo.m in Sources */,
 				AD7CC58823291FA600F40291 /* MDFPSLabel.m in Sources */,
 				ADCDEED5254165E000D9BB73 /* HDNetMonitor.m in Sources */,
@@ -1996,6 +2015,7 @@
 				D927D13421F0811D00C73547 /* HDRangeDemoViewController.m in Sources */,
 				ADD216732588BE9700BEF79F /* HDNetwork.swift in Sources */,
 				AD7CC58623291FA600F40291 /* LJAlertView.m in Sources */,
+				AD4805BD25E6000600646426 /* HDNotifPopViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

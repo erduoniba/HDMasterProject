@@ -14,6 +14,7 @@
 #include <execinfo.h>
 #import <CoreLocation/CoreLocation.h>
 
+#import "HDMasterProject-Swift.h"
 
 #import "HDLoadObj.h"
 
@@ -258,6 +259,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDPreferRefreshDemo"];
         [_dataArr addObject:@"HDRegexDemo"];
         [_dataArr addObject:@"HDNetDemoViewController"];
+        [_dataArr addObject:@"HDNotifPopViewViewController"];
         
     }
     return _dataArr;
