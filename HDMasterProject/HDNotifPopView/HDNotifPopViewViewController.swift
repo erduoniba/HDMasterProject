@@ -19,6 +19,10 @@ class HDNotifPopViewViewController: UIViewController {
     
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        showNotifPopView()
+    }
+
+    private func showNotifPopView() {
         let obj = HDNotifObj()
         obj.title = "消息中心"
         obj.text = "消息中心消息中心消息中心消息中心消息中心消息中心消息中心消息中心消息中心消息中心"
@@ -26,5 +30,4 @@ class HDNotifPopViewViewController: UIViewController {
             debugPrint("tapHandler")
         }
     }
-
 }
