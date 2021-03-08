@@ -260,6 +260,7 @@ __weak id reference = nil;
         [_dataArr addObject:@"HDRegexDemo"];
         [_dataArr addObject:@"HDNetDemoViewController"];
         [_dataArr addObject:@"HDNotifPopViewViewController"];
+        [_dataArr addObject:@"HDRemindDemoViewController"];
         
     }
     return _dataArr;

@@ -56,6 +56,9 @@
 		AD4805BD25E6000600646426 /* HDNotifPopViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4805BC25E6000500646426 /* HDNotifPopViewViewController.swift */; };
 		AD4A2B4E2395FA1100FBEBE6 /* HDSScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A2B4B2395FA1100FBEBE6 /* HDSScrollTableViewCell.m */; };
 		AD4A2B4F2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4A2B4D2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD6238A025F6239F00237CDB /* PGRemindManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62389F25F6239F00237CDB /* PGRemindManager.m */; };
+		AD6238A225F623B800237CDB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6238A125F623B800237CDB /* EventKit.framework */; };
+		AD6238FC25F624FE00237CDB /* HDRemindDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6238FB25F624FE00237CDB /* HDRemindDemoViewController.m */; };
 		AD6FA56B2570F62C0085AE5F /* NSObject+zombieDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6FA56A2570F62C0085AE5F /* NSObject+zombieDealloc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD742CDA2361632200776D79 /* HDWKWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD742CD92361632200776D79 /* HDWKWebViewDemo.m */; };
 		AD742CDC2361714000776D79 /* jingxi.html in Resources */ = {isa = PBXBuildFile; fileRef = AD742CDB2361713F00776D79 /* jingxi.html */; };
@@ -347,6 +350,11 @@
 		AD4A2B4B2395FA1100FBEBE6 /* HDSScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSScrollTableViewCell.m; sourceTree = "<group>"; };
 		AD4A2B4C2395FA1100FBEBE6 /* HDSScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDSScrollTableViewCell.h; sourceTree = "<group>"; };
 		AD4A2B4D2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDSSCrollViewDemoViewController.m; sourceTree = "<group>"; };
+		AD62389E25F6239F00237CDB /* PGRemindManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRemindManager.h; sourceTree = "<group>"; };
+		AD62389F25F6239F00237CDB /* PGRemindManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRemindManager.m; sourceTree = "<group>"; };
+		AD6238A125F623B800237CDB /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		AD6238FA25F624FE00237CDB /* HDRemindDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDRemindDemoViewController.h; sourceTree = "<group>"; };
+		AD6238FB25F624FE00237CDB /* HDRemindDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDRemindDemoViewController.m; sourceTree = "<group>"; };
 		AD6FA5692570F62B0085AE5F /* NSObject+zombieDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+zombieDealloc.h"; sourceTree = "<group>"; };
 		AD6FA56A2570F62C0085AE5F /* NSObject+zombieDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+zombieDealloc.m"; sourceTree = "<group>"; };
 		AD742CD82361632200776D79 /* HDWKWebViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWKWebViewDemo.h; sourceTree = "<group>"; };
@@ -627,6 +635,7 @@
 				AD95C43424FF4F6A000B0792 /* CoreMedia.framework in Frameworks */,
 				D97914DB1EA7409C008A8EEA /* OpenGLES.framework in Frameworks */,
 				D97914D91EA74093008A8EEA /* QuartzCore.framework in Frameworks */,
+				AD6238A225F623B800237CDB /* EventKit.framework in Frameworks */,
 				D97914DD1EA740A3008A8EEA /* SystemConfiguration.framework in Frameworks */,
 				AD95C43224FF4F3C000B0792 /* Accelerate.framework in Frameworks */,
 				04204B9A1D0678120069A9FE /* libz.tbd in Frameworks */,
@@ -803,6 +812,7 @@
 		049DC0E21CD0527C0021599C /* HDMasterProject */ = {
 			isa = PBXGroup;
 			children = (
+				AD62389D25F6238A00237CDB /* HDRemind */,
 				D9BA48AE21B75D6600977CDB /* HDMasterProject.entitlements */,
 				049DC0E61CD0527C0021599C /* AppDelegate.h */,
 				049DC0E71CD0527C0021599C /* AppDelegate.m */,
@@ -982,6 +992,17 @@
 				AD4A2B4D2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m */,
 			);
 			path = HDSSCrollViewDemo;
+			sourceTree = "<group>";
+		};
+		AD62389D25F6238A00237CDB /* HDRemind */ = {
+			isa = PBXGroup;
+			children = (
+				AD62389E25F6239F00237CDB /* PGRemindManager.h */,
+				AD62389F25F6239F00237CDB /* PGRemindManager.m */,
+				AD6238FA25F624FE00237CDB /* HDRemindDemoViewController.h */,
+				AD6238FB25F624FE00237CDB /* HDRemindDemoViewController.m */,
+			);
+			path = HDRemind;
 			sourceTree = "<group>";
 		};
 		AD742CD7236162A700776D79 /* HDWKWebViewDemo */ = {
@@ -1569,6 +1590,7 @@
 		FEC4E83549D260BFBCCAC003 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD6238A125F623B800237CDB /* EventKit.framework */,
 				AD8870382553F87A008AB7CC /* libc++.tbd */,
 				AD95C43524FF4F91000B0792 /* AdSupport.framework */,
 				AD95C43324FF4F6A000B0792 /* CoreMedia.framework */,
@@ -1888,6 +1910,7 @@
 				ADC337F5235D7BC90019025B /* HDXibLayerDemo.m in Sources */,
 				AD7CC57C23291FA600F40291 /* MDCpuUsage.m in Sources */,
 				AD4A2B4F2395FA1100FBEBE6 /* HDSSCrollViewDemoViewController.m in Sources */,
+				AD6238FC25F624FE00237CDB /* HDRemindDemoViewController.m in Sources */,
 				D9841E1F2063951700B7E139 /* HDEyeViewDemo.m in Sources */,
 				0428C41B1CFD8C5E001F9D6F /* HDProxyModel.m in Sources */,
 				AD7CC57D23291FA600F40291 /* MideaPerformance.m in Sources */,
@@ -1918,6 +1941,7 @@
 				0428C4381D002EA3001F9D6F /* HDFriendCycleModel.m in Sources */,
 				AD7562D1240E271A001E0E54 /* HDPageLimitDemo.m in Sources */,
 				D9CB73D11E973F1B000968FA /* HDInvertedImageVC.m in Sources */,
+				AD6238A025F6239F00237CDB /* PGRemindManager.m in Sources */,
 				D9E5701A1E8A7B8C00C6C130 /* HDMaskLayerVC.m in Sources */,
 				049DC0E81CD0527C0021599C /* AppDelegate.m in Sources */,
 				AD21739A23702C0E00848867 /* HDLoadObj.m in Sources */,
